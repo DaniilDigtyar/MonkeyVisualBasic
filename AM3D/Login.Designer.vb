@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LabelLogo = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -61,7 +61,8 @@ Partial Class Form1
         '
         Me.LabelLogo.AutoSize = True
         Me.LabelLogo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelLogo.Location = New System.Drawing.Point(44, 15)
+        Me.LabelLogo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(157, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LabelLogo.Location = New System.Drawing.Point(44, 21)
         Me.LabelLogo.Name = "LabelLogo"
         Me.LabelLogo.Size = New System.Drawing.Size(158, 25)
         Me.LabelLogo.TabIndex = 1
@@ -188,6 +189,7 @@ Partial Class Form1
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.PictureBox5)
         Me.Panel2.Controls.Add(Me.PictureBox3)
         Me.Panel2.Controls.Add(Me.TextBoxContrasenya)

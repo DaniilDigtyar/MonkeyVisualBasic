@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Login
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBoxUsuari.TextChanged
 
     End Sub
