@@ -10,3 +10,14 @@ D:\danii\Documents\GitHub\MonkeyVisualBasic\AM3D\obj\Debug\AM3D.exe
 D:\danii\Documents\GitHub\MonkeyVisualBasic\AM3D\obj\Debug\AM3D.xml
 D:\danii\Documents\GitHub\MonkeyVisualBasic\AM3D\obj\Debug\AM3D.pdb
 D:\danii\Documents\GitHub\MonkeyVisualBasic\AM3D\obj\Debug\AM3D.vbprojResolveAssemblyReference.cache
+d:\Users\x4737162j\Documents\GitHub\MonkeyVisualBasic\AM3D\bin\Debug\AM3D.exe.config
+d:\Users\x4737162j\Documents\GitHub\MonkeyVisualBasic\AM3D\bin\Debug\AM3D.exe
+d:\Users\x4737162j\Documents\GitHub\MonkeyVisualBasic\AM3D\bin\Debug\AM3D.pdb
+d:\Users\x4737162j\Documents\GitHub\MonkeyVisualBasic\AM3D\bin\Debug\AM3D.xml
+d:\Users\x4737162j\Documents\GitHub\MonkeyVisualBasic\AM3D\obj\Debug\AM3D.vbprojResolveAssemblyReference.cache
+d:\Users\x4737162j\Documents\GitHub\MonkeyVisualBasic\AM3D\obj\Debug\AM3D.Form1.resources
+d:\Users\x4737162j\Documents\GitHub\MonkeyVisualBasic\AM3D\obj\Debug\AM3D.Resources.resources
+d:\Users\x4737162j\Documents\GitHub\MonkeyVisualBasic\AM3D\obj\Debug\AM3D.vbproj.GenerateResource.Cache
+d:\Users\x4737162j\Documents\GitHub\MonkeyVisualBasic\AM3D\obj\Debug\AM3D.exe
+d:\Users\x4737162j\Documents\GitHub\MonkeyVisualBasic\AM3D\obj\Debug\AM3D.xml
+d:\Users\x4737162j\Documents\GitHub\MonkeyVisualBasic\AM3D\obj\Debug\AM3D.pdb
