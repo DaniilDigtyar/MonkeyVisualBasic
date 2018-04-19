@@ -33,11 +33,11 @@ Partial Class MenuPrincipal
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LBInici = New System.Windows.Forms.Label()
         Me.MenuVertical = New System.Windows.Forms.Panel()
+        Me.LBImpressions = New System.Windows.Forms.Label()
         Me.Impressions = New System.Windows.Forms.PictureBox()
+        Me.LBImpressores = New System.Windows.Forms.Label()
         Me.Impressores = New System.Windows.Forms.PictureBox()
         Me.desplegar = New System.Windows.Forms.PictureBox()
-        Me.LBImpressores = New System.Windows.Forms.Label()
-        Me.LBImpressions = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.PanelControl.SuspendLayout()
@@ -162,6 +162,19 @@ Partial Class MenuPrincipal
         Me.MenuVertical.TabIndex = 1
         Me.MenuVertical.Visible = False
         '
+        'LBImpressions
+        '
+        Me.LBImpressions.AutoSize = True
+        Me.LBImpressions.BackColor = System.Drawing.Color.Transparent
+        Me.LBImpressions.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBImpressions.ForeColor = System.Drawing.Color.Black
+        Me.LBImpressions.Location = New System.Drawing.Point(62, 111)
+        Me.LBImpressions.Name = "LBImpressions"
+        Me.LBImpressions.Size = New System.Drawing.Size(83, 17)
+        Me.LBImpressions.TabIndex = 2
+        Me.LBImpressions.Text = "Impressions"
+        Me.LBImpressions.Visible = False
+        '
         'Impressions
         '
         Me.Impressions.Image = CType(resources.GetObject("Impressions.Image"), System.Drawing.Image)
@@ -171,28 +184,6 @@ Partial Class MenuPrincipal
         Me.Impressions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Impressions.TabIndex = 2
         Me.Impressions.TabStop = False
-        '
-        'Impressores
-        '
-        Me.Impressores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Impressores.Image = CType(resources.GetObject("Impressores.Image"), System.Drawing.Image)
-        Me.Impressores.Location = New System.Drawing.Point(7, 21)
-        Me.Impressores.Name = "Impressores"
-        Me.Impressores.Size = New System.Drawing.Size(50, 53)
-        Me.Impressores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Impressores.TabIndex = 1
-        Me.Impressores.TabStop = False
-        '
-        'desplegar
-        '
-        Me.desplegar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.desplegar.Image = CType(resources.GetObject("desplegar.Image"), System.Drawing.Image)
-        Me.desplegar.Location = New System.Drawing.Point(7, 422)
-        Me.desplegar.Name = "desplegar"
-        Me.desplegar.Size = New System.Drawing.Size(50, 39)
-        Me.desplegar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.desplegar.TabIndex = 0
-        Me.desplegar.TabStop = False
         '
         'LBImpressores
         '
@@ -207,18 +198,26 @@ Partial Class MenuPrincipal
         Me.LBImpressores.Text = "Impressores"
         Me.LBImpressores.Visible = False
         '
-        'LBImpressions
+        'Impressores
         '
-        Me.LBImpressions.AutoSize = True
-        Me.LBImpressions.BackColor = System.Drawing.Color.Transparent
-        Me.LBImpressions.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBImpressions.ForeColor = System.Drawing.Color.Black
-        Me.LBImpressions.Location = New System.Drawing.Point(62, 111)
-        Me.LBImpressions.Name = "LBImpressions"
-        Me.LBImpressions.Size = New System.Drawing.Size(83, 17)
-        Me.LBImpressions.TabIndex = 2
-        Me.LBImpressions.Text = "Impressions"
-        Me.LBImpressions.Visible = False
+        Me.Impressores.Image = CType(resources.GetObject("Impressores.Image"), System.Drawing.Image)
+        Me.Impressores.Location = New System.Drawing.Point(7, 21)
+        Me.Impressores.Name = "Impressores"
+        Me.Impressores.Size = New System.Drawing.Size(50, 53)
+        Me.Impressores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Impressores.TabIndex = 1
+        Me.Impressores.TabStop = False
+        '
+        'desplegar
+        '
+        Me.desplegar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.desplegar.Image = Global.AM3D.My.Resources.Resources.arrows
+        Me.desplegar.Location = New System.Drawing.Point(7, 422)
+        Me.desplegar.Name = "desplegar"
+        Me.desplegar.Size = New System.Drawing.Size(50, 39)
+        Me.desplegar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.desplegar.TabIndex = 0
+        Me.desplegar.TabStop = False
         '
         'MenuPrincipal
         '
