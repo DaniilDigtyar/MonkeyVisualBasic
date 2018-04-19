@@ -140,11 +140,21 @@
     <Content Include="Resources\Fonts\ExiSL-OT\ReadMe.txt" />
     <Content Include="Resources\Fonts\ExiUL-OT\ReadMe.txt" />
     <Content Include="Resources\Img\arrows_left.png" />
+    <Content Include="Resources\Img\bobina.png" />
     <Content Include="Resources\Img\cross.png" />
+    <Content Include="Resources\Img\gcode.png" />
+    <Content Include="Resources\Img\impressions.png" />
+    <Content Include="Resources\Img\impressores.png" />
     <Content Include="Resources\Img\logo.png" />
+    <Content Include="Resources\Img\logo2.png" />
+    <Content Include="Resources\Img\logout.png" />
+    <Content Include="Resources\Img\menu.png" />
     <Content Include="Resources\Img\minimize.png" />
+    <Content Include="Resources\Img\model.png" />
+    <Content Include="Resources\Img\opcions.png" />
     <Content Include="Resources\Img\password.png" />
     <Content Include="Resources\Img\user.png" />
+    <Content Include="Resources\Img\usuari.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
