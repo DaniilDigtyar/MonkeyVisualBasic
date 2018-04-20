@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MenuPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,12 @@ Partial Class MenuPrincipal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrincipal))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LBUser = New System.Windows.Forms.Label()
+        Me.user = New System.Windows.Forms.ComboBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.LBGestio = New System.Windows.Forms.Label()
         Me.PanelControl = New System.Windows.Forms.Panel()
@@ -32,27 +34,45 @@ Partial Class MenuPrincipal
         Me.minimizar = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LBInici = New System.Windows.Forms.Label()
-        Me.MenuVertical = New System.Windows.Forms.Panel()
+        Me.MenuVerticalControl = New System.Windows.Forms.Panel()
         Me.LBImpressions = New System.Windows.Forms.Label()
         Me.Impressions = New System.Windows.Forms.PictureBox()
         Me.LBImpressores = New System.Windows.Forms.Label()
         Me.Impressores = New System.Windows.Forms.PictureBox()
         Me.desplegar = New System.Windows.Forms.PictureBox()
+        Me.MenuVerticalGestio = New System.Windows.Forms.Panel()
+        Me.LBGCode = New System.Windows.Forms.Label()
+        Me.LBModelsCar = New System.Windows.Forms.Label()
+        Me.Gcode = New System.Windows.Forms.PictureBox()
+        Me.Models = New System.Windows.Forms.PictureBox()
+        Me.LBBobines = New System.Windows.Forms.Label()
+        Me.Bobines = New System.Windows.Forms.PictureBox()
+        Me.LBUsuaris = New System.Windows.Forms.Label()
+        Me.Usuaris = New System.Windows.Forms.PictureBox()
+        Me.desplegar2 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.PanelControl.SuspendLayout()
         CType(Me.cerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuVertical.SuspendLayout()
+        Me.MenuVerticalControl.SuspendLayout()
         CType(Me.Impressions, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Impressores, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.desplegar, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuVerticalGestio.SuspendLayout()
+        CType(Me.Gcode, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Models, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Bobines, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Usuaris, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.desplegar2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Black
+        Me.Panel1.Controls.Add(Me.LBUser)
+        Me.Panel1.Controls.Add(Me.user)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.PanelControl)
         Me.Panel1.Controls.Add(Me.cerrar)
@@ -61,15 +81,37 @@ Partial Class MenuPrincipal
         Me.Panel1.Controls.Add(Me.LBInici)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(788, 36)
+        Me.Panel1.Size = New System.Drawing.Size(898, 36)
         Me.Panel1.TabIndex = 0
+        '
+        'LBUser
+        '
+        Me.LBUser.AutoSize = True
+        Me.LBUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBUser.ForeColor = System.Drawing.Color.White
+        Me.LBUser.Location = New System.Drawing.Point(581, 12)
+        Me.LBUser.Name = "LBUser"
+        Me.LBUser.Size = New System.Drawing.Size(41, 15)
+        Me.LBUser.TabIndex = 1
+        Me.LBUser.Text = "USER"
+        '
+        'user
+        '
+        Me.user.BackColor = System.Drawing.SystemColors.Menu
+        Me.user.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.user.FormattingEnabled = True
+        Me.user.ImeMode = System.Windows.Forms.ImeMode.Off
+        Me.user.Location = New System.Drawing.Point(648, 9)
+        Me.user.Name = "user"
+        Me.user.Size = New System.Drawing.Size(142, 21)
+        Me.user.TabIndex = 9
         '
         'Panel4
         '
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.LBGestio)
         Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel4.Location = New System.Drawing.Point(300, 2)
+        Me.Panel4.Location = New System.Drawing.Point(300, 1)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(82, 33)
         Me.Panel4.TabIndex = 8
@@ -79,7 +121,7 @@ Partial Class MenuPrincipal
         Me.LBGestio.AutoSize = True
         Me.LBGestio.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBGestio.ForeColor = System.Drawing.Color.White
-        Me.LBGestio.Location = New System.Drawing.Point(3, 5)
+        Me.LBGestio.Location = New System.Drawing.Point(3, 4)
         Me.LBGestio.Name = "LBGestio"
         Me.LBGestio.Size = New System.Drawing.Size(74, 25)
         Me.LBGestio.TabIndex = 0
@@ -89,7 +131,7 @@ Partial Class MenuPrincipal
         '
         Me.PanelControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PanelControl.Controls.Add(Me.LBControl)
-        Me.PanelControl.Location = New System.Drawing.Point(190, 2)
+        Me.PanelControl.Location = New System.Drawing.Point(190, 1)
         Me.PanelControl.Name = "PanelControl"
         Me.PanelControl.Size = New System.Drawing.Size(82, 33)
         Me.PanelControl.TabIndex = 7
@@ -109,7 +151,7 @@ Partial Class MenuPrincipal
         '
         Me.cerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.cerrar.Image = CType(resources.GetObject("cerrar.Image"), System.Drawing.Image)
-        Me.cerrar.Location = New System.Drawing.Point(757, 6)
+        Me.cerrar.Location = New System.Drawing.Point(867, 6)
         Me.cerrar.Name = "cerrar"
         Me.cerrar.Size = New System.Drawing.Size(28, 27)
         Me.cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -119,7 +161,7 @@ Partial Class MenuPrincipal
         'minimizar
         '
         Me.minimizar.Image = CType(resources.GetObject("minimizar.Image"), System.Drawing.Image)
-        Me.minimizar.Location = New System.Drawing.Point(722, 6)
+        Me.minimizar.Location = New System.Drawing.Point(832, 6)
         Me.minimizar.Name = "minimizar"
         Me.minimizar.Size = New System.Drawing.Size(29, 27)
         Me.minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -129,7 +171,7 @@ Partial Class MenuPrincipal
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 6)
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 5)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(21, 25)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -141,26 +183,26 @@ Partial Class MenuPrincipal
         Me.LBInici.AutoSize = True
         Me.LBInici.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBInici.ForeColor = System.Drawing.Color.White
-        Me.LBInici.Location = New System.Drawing.Point(33, 8)
+        Me.LBInici.Location = New System.Drawing.Point(33, 6)
         Me.LBInici.Name = "LBInici"
         Me.LBInici.Size = New System.Drawing.Size(128, 25)
         Me.LBInici.TabIndex = 3
         Me.LBInici.Text = "AM3D - Inici"
         '
-        'MenuVertical
+        'MenuVerticalControl
         '
-        Me.MenuVertical.BackColor = System.Drawing.Color.DarkGray
-        Me.MenuVertical.Controls.Add(Me.LBImpressions)
-        Me.MenuVertical.Controls.Add(Me.Impressions)
-        Me.MenuVertical.Controls.Add(Me.LBImpressores)
-        Me.MenuVertical.Controls.Add(Me.Impressores)
-        Me.MenuVertical.Controls.Add(Me.desplegar)
-        Me.MenuVertical.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.MenuVertical.Location = New System.Drawing.Point(0, 36)
-        Me.MenuVertical.Name = "MenuVertical"
-        Me.MenuVertical.Size = New System.Drawing.Size(64, 464)
-        Me.MenuVertical.TabIndex = 1
-        Me.MenuVertical.Visible = False
+        Me.MenuVerticalControl.BackColor = System.Drawing.Color.DarkGray
+        Me.MenuVerticalControl.Controls.Add(Me.LBImpressions)
+        Me.MenuVerticalControl.Controls.Add(Me.Impressions)
+        Me.MenuVerticalControl.Controls.Add(Me.LBImpressores)
+        Me.MenuVerticalControl.Controls.Add(Me.Impressores)
+        Me.MenuVerticalControl.Controls.Add(Me.desplegar)
+        Me.MenuVerticalControl.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.MenuVerticalControl.Location = New System.Drawing.Point(0, 36)
+        Me.MenuVerticalControl.Name = "MenuVerticalControl"
+        Me.MenuVerticalControl.Size = New System.Drawing.Size(64, 554)
+        Me.MenuVerticalControl.TabIndex = 1
+        Me.MenuVerticalControl.Visible = False
         '
         'LBImpressions
         '
@@ -212,20 +254,143 @@ Partial Class MenuPrincipal
         '
         Me.desplegar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.desplegar.Image = Global.AM3D.My.Resources.Resources.arrows
-        Me.desplegar.Location = New System.Drawing.Point(7, 422)
+        Me.desplegar.Location = New System.Drawing.Point(7, 512)
         Me.desplegar.Name = "desplegar"
         Me.desplegar.Size = New System.Drawing.Size(50, 39)
         Me.desplegar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.desplegar.TabIndex = 0
         Me.desplegar.TabStop = False
         '
+        'MenuVerticalGestio
+        '
+        Me.MenuVerticalGestio.BackColor = System.Drawing.Color.DarkGray
+        Me.MenuVerticalGestio.Controls.Add(Me.LBGCode)
+        Me.MenuVerticalGestio.Controls.Add(Me.LBModelsCar)
+        Me.MenuVerticalGestio.Controls.Add(Me.Gcode)
+        Me.MenuVerticalGestio.Controls.Add(Me.Models)
+        Me.MenuVerticalGestio.Controls.Add(Me.LBBobines)
+        Me.MenuVerticalGestio.Controls.Add(Me.Bobines)
+        Me.MenuVerticalGestio.Controls.Add(Me.LBUsuaris)
+        Me.MenuVerticalGestio.Controls.Add(Me.Usuaris)
+        Me.MenuVerticalGestio.Controls.Add(Me.desplegar2)
+        Me.MenuVerticalGestio.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.MenuVerticalGestio.Location = New System.Drawing.Point(0, 36)
+        Me.MenuVerticalGestio.Name = "MenuVerticalGestio"
+        Me.MenuVerticalGestio.Size = New System.Drawing.Size(64, 554)
+        Me.MenuVerticalGestio.TabIndex = 3
+        Me.MenuVerticalGestio.Visible = False
+        '
+        'LBGCode
+        '
+        Me.LBGCode.AutoSize = True
+        Me.LBGCode.BackColor = System.Drawing.Color.Transparent
+        Me.LBGCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBGCode.ForeColor = System.Drawing.Color.Black
+        Me.LBGCode.Location = New System.Drawing.Point(62, 252)
+        Me.LBGCode.Name = "LBGCode"
+        Me.LBGCode.Size = New System.Drawing.Size(52, 17)
+        Me.LBGCode.TabIndex = 6
+        Me.LBGCode.Text = "GCode"
+        Me.LBGCode.Visible = False
+        '
+        'LBModelsCar
+        '
+        Me.LBModelsCar.AutoSize = True
+        Me.LBModelsCar.BackColor = System.Drawing.Color.Transparent
+        Me.LBModelsCar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBModelsCar.ForeColor = System.Drawing.Color.Black
+        Me.LBModelsCar.Location = New System.Drawing.Point(62, 181)
+        Me.LBModelsCar.Name = "LBModelsCar"
+        Me.LBModelsCar.Size = New System.Drawing.Size(53, 17)
+        Me.LBModelsCar.TabIndex = 5
+        Me.LBModelsCar.Text = "Models"
+        Me.LBModelsCar.Visible = False
+        '
+        'Gcode
+        '
+        Me.Gcode.Image = CType(resources.GetObject("Gcode.Image"), System.Drawing.Image)
+        Me.Gcode.Location = New System.Drawing.Point(7, 231)
+        Me.Gcode.Name = "Gcode"
+        Me.Gcode.Size = New System.Drawing.Size(50, 53)
+        Me.Gcode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Gcode.TabIndex = 4
+        Me.Gcode.TabStop = False
+        '
+        'Models
+        '
+        Me.Models.Image = CType(resources.GetObject("Models.Image"), System.Drawing.Image)
+        Me.Models.Location = New System.Drawing.Point(7, 162)
+        Me.Models.Name = "Models"
+        Me.Models.Size = New System.Drawing.Size(50, 53)
+        Me.Models.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Models.TabIndex = 3
+        Me.Models.TabStop = False
+        '
+        'LBBobines
+        '
+        Me.LBBobines.AutoSize = True
+        Me.LBBobines.BackColor = System.Drawing.Color.Transparent
+        Me.LBBobines.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBBobines.ForeColor = System.Drawing.Color.Black
+        Me.LBBobines.Location = New System.Drawing.Point(62, 111)
+        Me.LBBobines.Name = "LBBobines"
+        Me.LBBobines.Size = New System.Drawing.Size(59, 17)
+        Me.LBBobines.TabIndex = 2
+        Me.LBBobines.Text = "Bobines"
+        Me.LBBobines.Visible = False
+        '
+        'Bobines
+        '
+        Me.Bobines.Image = CType(resources.GetObject("Bobines.Image"), System.Drawing.Image)
+        Me.Bobines.Location = New System.Drawing.Point(7, 93)
+        Me.Bobines.Name = "Bobines"
+        Me.Bobines.Size = New System.Drawing.Size(50, 53)
+        Me.Bobines.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Bobines.TabIndex = 2
+        Me.Bobines.TabStop = False
+        '
+        'LBUsuaris
+        '
+        Me.LBUsuaris.AutoSize = True
+        Me.LBUsuaris.BackColor = System.Drawing.Color.Transparent
+        Me.LBUsuaris.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBUsuaris.ForeColor = System.Drawing.Color.Black
+        Me.LBUsuaris.Location = New System.Drawing.Point(62, 38)
+        Me.LBUsuaris.Name = "LBUsuaris"
+        Me.LBUsuaris.Size = New System.Drawing.Size(56, 17)
+        Me.LBUsuaris.TabIndex = 1
+        Me.LBUsuaris.Text = "Usuaris"
+        Me.LBUsuaris.Visible = False
+        '
+        'Usuaris
+        '
+        Me.Usuaris.Image = CType(resources.GetObject("Usuaris.Image"), System.Drawing.Image)
+        Me.Usuaris.Location = New System.Drawing.Point(7, 21)
+        Me.Usuaris.Name = "Usuaris"
+        Me.Usuaris.Size = New System.Drawing.Size(50, 53)
+        Me.Usuaris.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Usuaris.TabIndex = 1
+        Me.Usuaris.TabStop = False
+        '
+        'desplegar2
+        '
+        Me.desplegar2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.desplegar2.Image = Global.AM3D.My.Resources.Resources.arrows
+        Me.desplegar2.Location = New System.Drawing.Point(7, 512)
+        Me.desplegar2.Name = "desplegar2"
+        Me.desplegar2.Size = New System.Drawing.Size(50, 39)
+        Me.desplegar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.desplegar2.TabIndex = 0
+        Me.desplegar2.TabStop = False
+        '
         'MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(788, 500)
-        Me.Controls.Add(Me.MenuVertical)
+        Me.ClientSize = New System.Drawing.Size(898, 590)
+        Me.Controls.Add(Me.MenuVerticalGestio)
+        Me.Controls.Add(Me.MenuVerticalControl)
         Me.Controls.Add(Me.Panel1)
         Me.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -240,11 +405,18 @@ Partial Class MenuPrincipal
         CType(Me.cerrar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.minimizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuVertical.ResumeLayout(False)
-        Me.MenuVertical.PerformLayout()
+        Me.MenuVerticalControl.ResumeLayout(False)
+        Me.MenuVerticalControl.PerformLayout()
         CType(Me.Impressions, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Impressores, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.desplegar, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuVerticalGestio.ResumeLayout(False)
+        Me.MenuVerticalGestio.PerformLayout()
+        CType(Me.Gcode, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Models, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Bobines, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Usuaris, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.desplegar2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -254,7 +426,7 @@ Partial Class MenuPrincipal
     Friend WithEvents LBInici As Label
     Friend WithEvents cerrar As PictureBox
     Friend WithEvents minimizar As PictureBox
-    Friend WithEvents MenuVertical As Panel
+    Friend WithEvents MenuVerticalControl As Panel
     Friend WithEvents PanelControl As Panel
     Friend WithEvents LBControl As Label
     Friend WithEvents Panel4 As Panel
@@ -264,4 +436,16 @@ Partial Class MenuPrincipal
     Friend WithEvents Impressores As PictureBox
     Friend WithEvents LBImpressores As Label
     Friend WithEvents LBImpressions As Label
+    Friend WithEvents user As ComboBox
+    Friend WithEvents LBUser As Label
+    Friend WithEvents MenuVerticalGestio As Panel
+    Friend WithEvents LBGCode As Label
+    Friend WithEvents LBModelsCar As Label
+    Friend WithEvents Gcode As PictureBox
+    Friend WithEvents Models As PictureBox
+    Friend WithEvents LBBobines As Label
+    Friend WithEvents Bobines As PictureBox
+    Friend WithEvents LBUsuaris As Label
+    Friend WithEvents Usuaris As PictureBox
+    Friend WithEvents desplegar2 As PictureBox
 End Class

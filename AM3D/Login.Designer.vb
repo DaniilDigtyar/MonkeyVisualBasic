@@ -61,7 +61,7 @@ Partial Class Login
         '
         Me.LabelLogo.AutoSize = True
         Me.LabelLogo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelLogo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(157, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LabelLogo.ForeColor = System.Drawing.Color.White
         Me.LabelLogo.Location = New System.Drawing.Point(44, 21)
         Me.LabelLogo.Name = "LabelLogo"
         Me.LabelLogo.Size = New System.Drawing.Size(158, 25)
@@ -93,7 +93,7 @@ Partial Class Login
         '
         Me.LabelUsuari.AutoSize = True
         Me.LabelUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelUsuari.ForeColor = System.Drawing.Color.FromArgb(CType(CType(157, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.LabelUsuari.ForeColor = System.Drawing.Color.White
         Me.LabelUsuari.Location = New System.Drawing.Point(52, 32)
         Me.LabelUsuari.Name = "LabelUsuari"
         Me.LabelUsuari.Size = New System.Drawing.Size(51, 18)
@@ -104,7 +104,7 @@ Partial Class Login
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(157, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(52, 115)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(92, 18)
@@ -140,7 +140,7 @@ Partial Class Login
         Me.CheckBoxRecordar.Cursor = System.Windows.Forms.Cursors.Default
         Me.CheckBoxRecordar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CheckBoxRecordar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBoxRecordar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(157, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CheckBoxRecordar.ForeColor = System.Drawing.Color.White
         Me.CheckBoxRecordar.Location = New System.Drawing.Point(189, 169)
         Me.CheckBoxRecordar.Name = "CheckBoxRecordar"
         Me.CheckBoxRecordar.Size = New System.Drawing.Size(133, 22)
@@ -150,10 +150,10 @@ Partial Class Login
         '
         'ButtonLogin
         '
-        Me.ButtonLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.ButtonLogin.BackColor = System.Drawing.Color.DimGray
         Me.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(157, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ButtonLogin.ForeColor = System.Drawing.Color.White
         Me.ButtonLogin.Location = New System.Drawing.Point(6, 237)
         Me.ButtonLogin.Name = "ButtonLogin"
         Me.ButtonLogin.Size = New System.Drawing.Size(378, 40)
@@ -163,7 +163,7 @@ Partial Class Login
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.Black
         Me.Panel1.Controls.Add(Me.ComboBox1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.LabelLogo)
@@ -223,17 +223,17 @@ Partial Class Login
         Me.PictureBox3.TabIndex = 13
         Me.PictureBox3.TabStop = False
         '
-        'Form1
+        'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.Disable
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(500, 396)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
+        Me.Name = "Login"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
