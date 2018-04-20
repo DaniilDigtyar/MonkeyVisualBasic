@@ -22,18 +22,8 @@ Partial Class MenuPrincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrincipal))
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.LBUser = New System.Windows.Forms.Label()
-        Me.user = New System.Windows.Forms.ComboBox()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.LBGestio = New System.Windows.Forms.Label()
-        Me.PanelControl = New System.Windows.Forms.Panel()
-        Me.LBControl = New System.Windows.Forms.Label()
-        Me.cerrar = New System.Windows.Forms.PictureBox()
-        Me.minimizar = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LBInici = New System.Windows.Forms.Label()
         Me.MenuVerticalControl = New System.Windows.Forms.Panel()
         Me.LBImpressions = New System.Windows.Forms.Label()
         Me.Impressions = New System.Windows.Forms.PictureBox()
@@ -50,12 +40,22 @@ Partial Class MenuPrincipal
         Me.LBUsuaris = New System.Windows.Forms.Label()
         Me.Usuaris = New System.Windows.Forms.PictureBox()
         Me.desplegar2 = New System.Windows.Forms.PictureBox()
-        Me.Panel1.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.PanelControl.SuspendLayout()
-        CType(Me.cerrar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.minimizar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LBInici = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.minimizar = New System.Windows.Forms.PictureBox()
+        Me.cerrar = New System.Windows.Forms.PictureBox()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.LBGestio = New System.Windows.Forms.Label()
+        Me.user = New System.Windows.Forms.ComboBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LBUser = New System.Windows.Forms.Label()
+        Me.PanelControl = New System.Windows.Forms.Panel()
+        Me.LBControl = New System.Windows.Forms.Label()
+        Me.MSGBox1 = New System.Windows.Forms.Panel()
+        Me.LBMSG1 = New System.Windows.Forms.Label()
+        Me.MSGBox2 = New System.Windows.Forms.Panel()
+        Me.LBMSG2 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MenuVerticalControl.SuspendLayout()
         CType(Me.Impressions, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Impressores, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,128 +66,15 @@ Partial Class MenuPrincipal
         CType(Me.Bobines, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Usuaris, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.desplegar2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.minimizar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cerrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel4.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.PanelControl.SuspendLayout()
+        Me.MSGBox1.SuspendLayout()
+        Me.MSGBox2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Black
-        Me.Panel1.Controls.Add(Me.LBUser)
-        Me.Panel1.Controls.Add(Me.user)
-        Me.Panel1.Controls.Add(Me.Panel4)
-        Me.Panel1.Controls.Add(Me.PanelControl)
-        Me.Panel1.Controls.Add(Me.cerrar)
-        Me.Panel1.Controls.Add(Me.minimizar)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.LBInici)
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(898, 36)
-        Me.Panel1.TabIndex = 0
-        '
-        'LBUser
-        '
-        Me.LBUser.AutoSize = True
-        Me.LBUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBUser.ForeColor = System.Drawing.Color.White
-        Me.LBUser.Location = New System.Drawing.Point(581, 12)
-        Me.LBUser.Name = "LBUser"
-        Me.LBUser.Size = New System.Drawing.Size(41, 15)
-        Me.LBUser.TabIndex = 1
-        Me.LBUser.Text = "USER"
-        '
-        'user
-        '
-        Me.user.BackColor = System.Drawing.SystemColors.Menu
-        Me.user.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.user.FormattingEnabled = True
-        Me.user.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.user.Location = New System.Drawing.Point(648, 9)
-        Me.user.Name = "user"
-        Me.user.Size = New System.Drawing.Size(142, 21)
-        Me.user.TabIndex = 9
-        '
-        'Panel4
-        '
-        Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel4.Controls.Add(Me.LBGestio)
-        Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel4.Location = New System.Drawing.Point(300, 1)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(82, 33)
-        Me.Panel4.TabIndex = 8
-        '
-        'LBGestio
-        '
-        Me.LBGestio.AutoSize = True
-        Me.LBGestio.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBGestio.ForeColor = System.Drawing.Color.White
-        Me.LBGestio.Location = New System.Drawing.Point(3, 4)
-        Me.LBGestio.Name = "LBGestio"
-        Me.LBGestio.Size = New System.Drawing.Size(74, 25)
-        Me.LBGestio.TabIndex = 0
-        Me.LBGestio.Text = "Gestió"
-        '
-        'PanelControl
-        '
-        Me.PanelControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelControl.Controls.Add(Me.LBControl)
-        Me.PanelControl.Location = New System.Drawing.Point(190, 1)
-        Me.PanelControl.Name = "PanelControl"
-        Me.PanelControl.Size = New System.Drawing.Size(82, 33)
-        Me.PanelControl.TabIndex = 7
-        '
-        'LBControl
-        '
-        Me.LBControl.AutoSize = True
-        Me.LBControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBControl.ForeColor = System.Drawing.Color.White
-        Me.LBControl.Location = New System.Drawing.Point(0, 6)
-        Me.LBControl.Name = "LBControl"
-        Me.LBControl.Size = New System.Drawing.Size(81, 25)
-        Me.LBControl.TabIndex = 0
-        Me.LBControl.Text = "Control"
-        '
-        'cerrar
-        '
-        Me.cerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cerrar.Image = CType(resources.GetObject("cerrar.Image"), System.Drawing.Image)
-        Me.cerrar.Location = New System.Drawing.Point(867, 6)
-        Me.cerrar.Name = "cerrar"
-        Me.cerrar.Size = New System.Drawing.Size(28, 27)
-        Me.cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.cerrar.TabIndex = 5
-        Me.cerrar.TabStop = False
-        '
-        'minimizar
-        '
-        Me.minimizar.Image = CType(resources.GetObject("minimizar.Image"), System.Drawing.Image)
-        Me.minimizar.Location = New System.Drawing.Point(832, 6)
-        Me.minimizar.Name = "minimizar"
-        Me.minimizar.Size = New System.Drawing.Size(29, 27)
-        Me.minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.minimizar.TabIndex = 6
-        Me.minimizar.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 5)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(21, 25)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
-        '
-        'LBInici
-        '
-        Me.LBInici.AutoSize = True
-        Me.LBInici.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBInici.ForeColor = System.Drawing.Color.White
-        Me.LBInici.Location = New System.Drawing.Point(33, 6)
-        Me.LBInici.Name = "LBInici"
-        Me.LBInici.Size = New System.Drawing.Size(128, 25)
-        Me.LBInici.TabIndex = 3
-        Me.LBInici.Text = "AM3D - Inici"
         '
         'MenuVerticalControl
         '
@@ -383,12 +270,178 @@ Partial Class MenuPrincipal
         Me.desplegar2.TabIndex = 0
         Me.desplegar2.TabStop = False
         '
+        'LBInici
+        '
+        Me.LBInici.AutoSize = True
+        Me.LBInici.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBInici.ForeColor = System.Drawing.Color.White
+        Me.LBInici.Location = New System.Drawing.Point(33, 6)
+        Me.LBInici.Name = "LBInici"
+        Me.LBInici.Size = New System.Drawing.Size(128, 25)
+        Me.LBInici.TabIndex = 3
+        Me.LBInici.Text = "AM3D - Inici"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 5)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(21, 25)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
+        '
+        'minimizar
+        '
+        Me.minimizar.Image = CType(resources.GetObject("minimizar.Image"), System.Drawing.Image)
+        Me.minimizar.Location = New System.Drawing.Point(832, 6)
+        Me.minimizar.Name = "minimizar"
+        Me.minimizar.Size = New System.Drawing.Size(29, 27)
+        Me.minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.minimizar.TabIndex = 6
+        Me.minimizar.TabStop = False
+        '
+        'cerrar
+        '
+        Me.cerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.cerrar.Image = CType(resources.GetObject("cerrar.Image"), System.Drawing.Image)
+        Me.cerrar.Location = New System.Drawing.Point(867, 6)
+        Me.cerrar.Name = "cerrar"
+        Me.cerrar.Size = New System.Drawing.Size(28, 27)
+        Me.cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.cerrar.TabIndex = 5
+        Me.cerrar.TabStop = False
+        '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.LBGestio)
+        Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel4.Location = New System.Drawing.Point(300, 1)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(82, 33)
+        Me.Panel4.TabIndex = 8
+        '
+        'LBGestio
+        '
+        Me.LBGestio.AutoSize = True
+        Me.LBGestio.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBGestio.ForeColor = System.Drawing.Color.White
+        Me.LBGestio.Location = New System.Drawing.Point(3, 4)
+        Me.LBGestio.Name = "LBGestio"
+        Me.LBGestio.Size = New System.Drawing.Size(74, 25)
+        Me.LBGestio.TabIndex = 0
+        Me.LBGestio.Text = "Gestió"
+        '
+        'user
+        '
+        Me.user.BackColor = System.Drawing.SystemColors.Menu
+        Me.user.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.user.FormattingEnabled = True
+        Me.user.ImeMode = System.Windows.Forms.ImeMode.Off
+        Me.user.Location = New System.Drawing.Point(648, 9)
+        Me.user.Name = "user"
+        Me.user.Size = New System.Drawing.Size(142, 21)
+        Me.user.TabIndex = 9
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Black
+        Me.Panel1.Controls.Add(Me.LBUser)
+        Me.Panel1.Controls.Add(Me.user)
+        Me.Panel1.Controls.Add(Me.Panel4)
+        Me.Panel1.Controls.Add(Me.PanelControl)
+        Me.Panel1.Controls.Add(Me.cerrar)
+        Me.Panel1.Controls.Add(Me.minimizar)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.LBInici)
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(898, 36)
+        Me.Panel1.TabIndex = 0
+        '
+        'LBUser
+        '
+        Me.LBUser.AutoSize = True
+        Me.LBUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBUser.ForeColor = System.Drawing.Color.White
+        Me.LBUser.Location = New System.Drawing.Point(581, 12)
+        Me.LBUser.Name = "LBUser"
+        Me.LBUser.Size = New System.Drawing.Size(41, 15)
+        Me.LBUser.TabIndex = 1
+        Me.LBUser.Text = "USER"
+        '
+        'PanelControl
+        '
+        Me.PanelControl.Controls.Add(Me.LBControl)
+        Me.PanelControl.Location = New System.Drawing.Point(190, 1)
+        Me.PanelControl.Name = "PanelControl"
+        Me.PanelControl.Size = New System.Drawing.Size(82, 33)
+        Me.PanelControl.TabIndex = 7
+        '
+        'LBControl
+        '
+        Me.LBControl.AutoSize = True
+        Me.LBControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBControl.ForeColor = System.Drawing.Color.White
+        Me.LBControl.Location = New System.Drawing.Point(0, 6)
+        Me.LBControl.Name = "LBControl"
+        Me.LBControl.Size = New System.Drawing.Size(81, 25)
+        Me.LBControl.TabIndex = 0
+        Me.LBControl.Text = "Control"
+        '
+        'MSGBox1
+        '
+        Me.MSGBox1.BackColor = System.Drawing.Color.DarkRed
+        Me.MSGBox1.Controls.Add(Me.LBMSG1)
+        Me.MSGBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.MSGBox1.Location = New System.Drawing.Point(63, 563)
+        Me.MSGBox1.Name = "MSGBox1"
+        Me.MSGBox1.Size = New System.Drawing.Size(835, 27)
+        Me.MSGBox1.TabIndex = 4
+        Me.MSGBox1.Visible = False
+        '
+        'LBMSG1
+        '
+        Me.LBMSG1.AutoSize = True
+        Me.LBMSG1.Location = New System.Drawing.Point(6, 8)
+        Me.LBMSG1.Name = "LBMSG1"
+        Me.LBMSG1.Size = New System.Drawing.Size(31, 13)
+        Me.LBMSG1.TabIndex = 0
+        Me.LBMSG1.Text = "MSG"
+        Me.LBMSG1.Visible = False
+        '
+        'MSGBox2
+        '
+        Me.MSGBox2.BackColor = System.Drawing.Color.DarkRed
+        Me.MSGBox2.Controls.Add(Me.LBMSG2)
+        Me.MSGBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.MSGBox2.Location = New System.Drawing.Point(0, 563)
+        Me.MSGBox2.Name = "MSGBox2"
+        Me.MSGBox2.Size = New System.Drawing.Size(898, 27)
+        Me.MSGBox2.TabIndex = 5
+        Me.MSGBox2.Visible = False
+        '
+        'LBMSG2
+        '
+        Me.LBMSG2.AutoSize = True
+        Me.LBMSG2.Location = New System.Drawing.Point(6, 8)
+        Me.LBMSG2.Name = "LBMSG2"
+        Me.LBMSG2.Size = New System.Drawing.Size(31, 13)
+        Me.LBMSG2.TabIndex = 0
+        Me.LBMSG2.Text = "MSG"
+        Me.LBMSG2.Visible = False
+        '
+        'Timer1
+        '
+        '
         'MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(898, 590)
+        Me.Controls.Add(Me.MSGBox2)
+        Me.Controls.Add(Me.MSGBox1)
         Me.Controls.Add(Me.MenuVerticalGestio)
         Me.Controls.Add(Me.MenuVerticalControl)
         Me.Controls.Add(Me.Panel1)
@@ -396,15 +449,6 @@ Partial Class MenuPrincipal
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MenuPrincipal"
         Me.Text = "Menu"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        Me.PanelControl.ResumeLayout(False)
-        Me.PanelControl.PerformLayout()
-        CType(Me.cerrar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.minimizar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuVerticalControl.ResumeLayout(False)
         Me.MenuVerticalControl.PerformLayout()
         CType(Me.Impressions, System.ComponentModel.ISupportInitialize).EndInit()
@@ -417,27 +461,28 @@ Partial Class MenuPrincipal
         CType(Me.Bobines, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Usuaris, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.desplegar2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.minimizar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cerrar, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.PanelControl.ResumeLayout(False)
+        Me.PanelControl.PerformLayout()
+        Me.MSGBox1.ResumeLayout(False)
+        Me.MSGBox1.PerformLayout()
+        Me.MSGBox2.ResumeLayout(False)
+        Me.MSGBox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents LBInici As Label
-    Friend WithEvents cerrar As PictureBox
-    Friend WithEvents minimizar As PictureBox
     Friend WithEvents MenuVerticalControl As Panel
-    Friend WithEvents PanelControl As Panel
-    Friend WithEvents LBControl As Label
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents LBGestio As Label
     Friend WithEvents desplegar As PictureBox
     Friend WithEvents Impressions As PictureBox
     Friend WithEvents Impressores As PictureBox
     Friend WithEvents LBImpressores As Label
     Friend WithEvents LBImpressions As Label
-    Friend WithEvents user As ComboBox
-    Friend WithEvents LBUser As Label
     Friend WithEvents MenuVerticalGestio As Panel
     Friend WithEvents LBGCode As Label
     Friend WithEvents LBModelsCar As Label
@@ -448,4 +493,20 @@ Partial Class MenuPrincipal
     Friend WithEvents LBUsuaris As Label
     Friend WithEvents Usuaris As PictureBox
     Friend WithEvents desplegar2 As PictureBox
+    Friend WithEvents LBInici As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents minimizar As PictureBox
+    Friend WithEvents cerrar As PictureBox
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents LBGestio As Label
+    Friend WithEvents user As ComboBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents LBUser As Label
+    Friend WithEvents PanelControl As Panel
+    Friend WithEvents LBControl As Label
+    Friend WithEvents MSGBox1 As Panel
+    Friend WithEvents LBMSG1 As Label
+    Friend WithEvents MSGBox2 As Panel
+    Friend WithEvents LBMSG2 As Label
+    Friend WithEvents Timer1 As Timer
 End Class

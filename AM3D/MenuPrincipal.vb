@@ -1,7 +1,7 @@
 ﻿Public Class MenuPrincipal
     Dim pos_menu As String
     Dim menu_desplegat As Boolean
-
+    Dim segundos
     Private Sub desplegar_Click(sender As Object, e As EventArgs) Handles desplegar.Click
         If menu_desplegat = False Then
             desplegar.Image = My.Resources.arrows_left
@@ -20,6 +20,7 @@
     End Sub
 
     Private Sub LBControl_Click(sender As Object, e As EventArgs) Handles LBControl.Click
+        globals.menu = "control"
         desplegar.Image = My.Resources.arrows
         menu_desplegat = False
         MenuVerticalControl.Width = 64
@@ -37,13 +38,16 @@
 
     Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ''Login.Close()
+        globals.menu = "home"
         setLang()
         menu_desplegat = False
         desplegar.Image = My.Resources.arrows
     End Sub
 
     Private Sub LBInici_Click(sender As Object, e As EventArgs) Handles LBInici.Click
+        globals.menu = "home"
         MenuVerticalControl.Visible = False
+        MenuVerticalGestio.Visible = False
     End Sub
 
     Private Sub user_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles user.KeyPress
@@ -51,6 +55,7 @@
     End Sub
 
     Private Sub LBGestio_Click(sender As Object, e As EventArgs) Handles LBGestio.Click
+        globals.menu = "gestio"
         desplegar2.Image = My.Resources.arrows
         menu_desplegat = False
         MenuVerticalGestio.Width = 64
@@ -66,9 +71,11 @@
         Dim opcio1 As String
         Dim opcio2 As String
         Dim opcio3 As String
+        Dim opcio4 As String
         opcio1 = My.Resources.cat.opcioPerfil
         opcio2 = My.Resources.cat.opcioCambiarIdioma
         opcio3 = My.Resources.cat.opcioSortir
+        opcio4 = My.Resources.cat.opcioGenerarEstadistiques
         LBControl.Text = My.Resources.cat.LBControl
         LBGestio.Text = My.Resources.cat.LBGestio
         LBUser.Text = globals.user
@@ -77,6 +84,7 @@
         user.Items.Add(opcio1)
         user.Items.Add(opcio2)
         user.Items.Add(opcio3)
+        user.Items.Add(opcio4)
     End Function
 
     Private Sub user_SelectedIndexChanged(sender As Object, e As EventArgs) Handles user.SelectedIndexChanged
@@ -90,8 +98,31 @@
         If user.SelectedIndex = 1 Then
 
         End If
+        If user.SelectedIndex = 3 Then
+            If generarFitxers() Then
+
+            Else
+                showMSG("error")
+
+            End If
+        End If
 
     End Sub
+
+
+    Function showMSG(msg As String)
+        If msg = "error" Then
+            globals.msgError = My.Resources.cat.ErrorFitxer
+        End If
+        Timer1.Interval = 100
+        segundos = 0
+        Timer1.Enabled = True
+    End Function
+
+    Function generarFitxers() As Boolean
+        Return False
+
+    End Function
 
     Private Sub desplegar2_Click(sender As Object, e As EventArgs) Handles desplegar2.Click
 
@@ -162,4 +193,31 @@
 
     End Sub
 
+    Private Sub minimizar_Click(sender As Object, e As EventArgs) Handles minimizar.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        segundos += 1
+        If globals.menu = "home" Then
+            MSGBox1.Visible = False
+            MSGBox2.Visible = True
+            LBMSG1.Visible = False
+            LBMSG2.Text = globals.msgError
+            LBMSG2.Visible = True
+        Else
+            MSGBox1.Visible = True
+            MSGBox2.Visible = False
+            LBMSG1.Text = globals.msgError
+            LBMSG1.Visible = True
+            LBMSG2.Visible = False
+        End If
+        If segundos = 60 Then
+            Timer1.Enabled = False
+            MSGBox2.Visible = False
+            MSGBox1.Visible = False
+            LBMSG1.Visible = False
+            LBMSG2.Visible = False
+        End If
+    End Sub
 End Class

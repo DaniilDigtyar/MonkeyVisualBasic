@@ -34,7 +34,6 @@ Partial Class Login
         Me.CheckBoxRecordar = New System.Windows.Forms.CheckBox()
         Me.ButtonLogin = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -50,9 +49,9 @@ Partial Class Login
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 6)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 40)
+        Me.PictureBox1.Size = New System.Drawing.Size(22, 27)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -62,7 +61,7 @@ Partial Class Login
         Me.LabelLogo.AutoSize = True
         Me.LabelLogo.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelLogo.ForeColor = System.Drawing.Color.White
-        Me.LabelLogo.Location = New System.Drawing.Point(44, 21)
+        Me.LabelLogo.Location = New System.Drawing.Point(31, 4)
         Me.LabelLogo.Name = "LabelLogo"
         Me.LabelLogo.Size = New System.Drawing.Size(158, 25)
         Me.LabelLogo.TabIndex = 1
@@ -72,9 +71,9 @@ Partial Class Login
         '
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(452, 6)
+        Me.PictureBox2.Location = New System.Drawing.Point(467, 7)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox2.Size = New System.Drawing.Size(21, 23)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 2
         Me.PictureBox2.TabStop = False
@@ -82,9 +81,9 @@ Partial Class Login
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(406, 6)
+        Me.PictureBox4.Location = New System.Drawing.Point(442, 7)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox4.Size = New System.Drawing.Size(19, 23)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 4
         Me.PictureBox4.TabStop = False
@@ -93,7 +92,7 @@ Partial Class Login
         '
         Me.LabelUsuari.AutoSize = True
         Me.LabelUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelUsuari.ForeColor = System.Drawing.Color.White
+        Me.LabelUsuari.ForeColor = System.Drawing.SystemColors.WindowText
         Me.LabelUsuari.Location = New System.Drawing.Point(52, 32)
         Me.LabelUsuari.Name = "LabelUsuari"
         Me.LabelUsuari.Size = New System.Drawing.Size(51, 18)
@@ -104,7 +103,7 @@ Partial Class Login
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.ForeColor = System.Drawing.SystemColors.WindowText
         Me.Label1.Location = New System.Drawing.Point(52, 115)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(92, 18)
@@ -113,10 +112,10 @@ Partial Class Login
         '
         'TextBoxUsuari
         '
-        Me.TextBoxUsuari.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TextBoxUsuari.BackColor = System.Drawing.Color.Silver
         Me.TextBoxUsuari.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBoxUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxUsuari.ForeColor = System.Drawing.Color.FromArgb(CType(CType(157, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBoxUsuari.ForeColor = System.Drawing.Color.Black
         Me.TextBoxUsuari.Location = New System.Drawing.Point(6, 56)
         Me.TextBoxUsuari.Name = "TextBoxUsuari"
         Me.TextBoxUsuari.Size = New System.Drawing.Size(379, 24)
@@ -124,10 +123,10 @@ Partial Class Login
         '
         'TextBoxContrasenya
         '
-        Me.TextBoxContrasenya.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TextBoxContrasenya.BackColor = System.Drawing.Color.Silver
         Me.TextBoxContrasenya.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBoxContrasenya.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxContrasenya.ForeColor = System.Drawing.Color.FromArgb(CType(CType(157, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBoxContrasenya.ForeColor = System.Drawing.Color.Black
         Me.TextBoxContrasenya.Location = New System.Drawing.Point(7, 139)
         Me.TextBoxContrasenya.Name = "TextBoxContrasenya"
         Me.TextBoxContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -137,20 +136,21 @@ Partial Class Login
         'CheckBoxRecordar
         '
         Me.CheckBoxRecordar.AutoSize = True
+        Me.CheckBoxRecordar.BackColor = System.Drawing.Color.Silver
         Me.CheckBoxRecordar.Cursor = System.Windows.Forms.Cursors.Default
         Me.CheckBoxRecordar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CheckBoxRecordar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBoxRecordar.ForeColor = System.Drawing.Color.White
+        Me.CheckBoxRecordar.ForeColor = System.Drawing.Color.Black
         Me.CheckBoxRecordar.Location = New System.Drawing.Point(189, 169)
         Me.CheckBoxRecordar.Name = "CheckBoxRecordar"
         Me.CheckBoxRecordar.Size = New System.Drawing.Size(133, 22)
         Me.CheckBoxRecordar.TabIndex = 9
         Me.CheckBoxRecordar.Text = "Recordar usuari"
-        Me.CheckBoxRecordar.UseVisualStyleBackColor = True
+        Me.CheckBoxRecordar.UseVisualStyleBackColor = False
         '
         'ButtonLogin
         '
-        Me.ButtonLogin.BackColor = System.Drawing.Color.DimGray
+        Me.ButtonLogin.BackColor = System.Drawing.Color.Black
         Me.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonLogin.ForeColor = System.Drawing.Color.White
@@ -164,31 +164,18 @@ Partial Class Login
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Black
-        Me.Panel1.Controls.Add(Me.ComboBox1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.LabelLogo)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.PictureBox4)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(500, 50)
+        Me.Panel1.Size = New System.Drawing.Size(500, 33)
         Me.Panel1.TabIndex = 11
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"ES", "EN", "CA"})
-        Me.ComboBox1.Location = New System.Drawing.Point(360, 6)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(40, 40)
-        Me.ComboBox1.TabIndex = 5
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel2.BackColor = System.Drawing.Color.Silver
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.PictureBox5)
         Me.Panel2.Controls.Add(Me.PictureBox3)
@@ -228,7 +215,7 @@ Partial Class Login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.Disable
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(500, 396)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -260,7 +247,6 @@ Partial Class Login
     Friend WithEvents ButtonLogin As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
 End Class
