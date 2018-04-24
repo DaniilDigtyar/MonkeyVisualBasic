@@ -47,7 +47,7 @@ Partial Class MenuPrincipal
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.LBGestio = New System.Windows.Forms.Label()
         Me.user = New System.Windows.Forms.ComboBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.LBUser = New System.Windows.Forms.Label()
         Me.PanelControl = New System.Windows.Forms.Panel()
         Me.LBControl = New System.Windows.Forms.Label()
@@ -56,6 +56,9 @@ Partial Class MenuPrincipal
         Me.MSGBox2 = New System.Windows.Forms.Panel()
         Me.LBMSG2 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.MSGBox3 = New System.Windows.Forms.Panel()
+        Me.LBMSG3 = New System.Windows.Forms.Label()
+        Me.PCont = New System.Windows.Forms.Panel()
         Me.MenuVerticalControl.SuspendLayout()
         CType(Me.Impressions, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Impressores, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,10 +73,11 @@ Partial Class MenuPrincipal
         CType(Me.minimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
-        Me.Panel1.SuspendLayout()
+        Me.MenuSup.SuspendLayout()
         Me.PanelControl.SuspendLayout()
         Me.MSGBox1.SuspendLayout()
         Me.MSGBox2.SuspendLayout()
+        Me.MSGBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuVerticalControl
@@ -343,21 +347,21 @@ Partial Class MenuPrincipal
         Me.user.Size = New System.Drawing.Size(142, 21)
         Me.user.TabIndex = 9
         '
-        'Panel1
+        'MenuSup
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Black
-        Me.Panel1.Controls.Add(Me.LBUser)
-        Me.Panel1.Controls.Add(Me.user)
-        Me.Panel1.Controls.Add(Me.Panel4)
-        Me.Panel1.Controls.Add(Me.PanelControl)
-        Me.Panel1.Controls.Add(Me.cerrar)
-        Me.Panel1.Controls.Add(Me.minimizar)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.LBInici)
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(898, 36)
-        Me.Panel1.TabIndex = 0
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Controls.Add(Me.LBUser)
+        Me.MenuSup.Controls.Add(Me.user)
+        Me.MenuSup.Controls.Add(Me.Panel4)
+        Me.MenuSup.Controls.Add(Me.PanelControl)
+        Me.MenuSup.Controls.Add(Me.cerrar)
+        Me.MenuSup.Controls.Add(Me.minimizar)
+        Me.MenuSup.Controls.Add(Me.PictureBox1)
+        Me.MenuSup.Controls.Add(Me.LBInici)
+        Me.MenuSup.Location = New System.Drawing.Point(0, 0)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(898, 36)
+        Me.MenuSup.TabIndex = 0
         '
         'LBUser
         '
@@ -434,17 +438,48 @@ Partial Class MenuPrincipal
         'Timer1
         '
         '
+        'MSGBox3
+        '
+        Me.MSGBox3.BackColor = System.Drawing.Color.DarkRed
+        Me.MSGBox3.Controls.Add(Me.LBMSG3)
+        Me.MSGBox3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.MSGBox3.Location = New System.Drawing.Point(159, 563)
+        Me.MSGBox3.Name = "MSGBox3"
+        Me.MSGBox3.Size = New System.Drawing.Size(739, 27)
+        Me.MSGBox3.TabIndex = 6
+        Me.MSGBox3.Visible = False
+        '
+        'LBMSG3
+        '
+        Me.LBMSG3.AutoSize = True
+        Me.LBMSG3.Location = New System.Drawing.Point(6, 8)
+        Me.LBMSG3.Name = "LBMSG3"
+        Me.LBMSG3.Size = New System.Drawing.Size(31, 13)
+        Me.LBMSG3.TabIndex = 0
+        Me.LBMSG3.Text = "MSG"
+        Me.LBMSG3.Visible = False
+        '
+        'PCont
+        '
+        Me.PCont.BackColor = System.Drawing.Color.White
+        Me.PCont.Location = New System.Drawing.Point(72, 36)
+        Me.PCont.Name = "PCont"
+        Me.PCont.Size = New System.Drawing.Size(826, 521)
+        Me.PCont.TabIndex = 7
+        '
         'MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(898, 590)
+        Me.Controls.Add(Me.MSGBox3)
         Me.Controls.Add(Me.MSGBox2)
         Me.Controls.Add(Me.MSGBox1)
         Me.Controls.Add(Me.MenuVerticalGestio)
         Me.Controls.Add(Me.MenuVerticalControl)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.MenuSup)
+        Me.Controls.Add(Me.PCont)
         Me.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MenuPrincipal"
@@ -466,14 +501,16 @@ Partial Class MenuPrincipal
         CType(Me.cerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.MenuSup.ResumeLayout(False)
+        Me.MenuSup.PerformLayout()
         Me.PanelControl.ResumeLayout(False)
         Me.PanelControl.PerformLayout()
         Me.MSGBox1.ResumeLayout(False)
         Me.MSGBox1.PerformLayout()
         Me.MSGBox2.ResumeLayout(False)
         Me.MSGBox2.PerformLayout()
+        Me.MSGBox3.ResumeLayout(False)
+        Me.MSGBox3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -500,7 +537,7 @@ Partial Class MenuPrincipal
     Friend WithEvents Panel4 As Panel
     Friend WithEvents LBGestio As Label
     Friend WithEvents user As ComboBox
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents MenuSup As Panel
     Friend WithEvents LBUser As Label
     Friend WithEvents PanelControl As Panel
     Friend WithEvents LBControl As Label
@@ -509,4 +546,7 @@ Partial Class MenuPrincipal
     Friend WithEvents MSGBox2 As Panel
     Friend WithEvents LBMSG2 As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents MSGBox3 As Panel
+    Friend WithEvents LBMSG3 As Label
+    Friend WithEvents PCont As Panel
 End Class

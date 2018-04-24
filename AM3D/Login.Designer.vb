@@ -33,14 +33,14 @@ Partial Class Login
         Me.TextBoxContrasenya = New System.Windows.Forms.TextBox()
         Me.CheckBoxRecordar = New System.Windows.Forms.CheckBox()
         Me.ButtonLogin = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
+        Me.MenuSup.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -161,17 +161,17 @@ Partial Class Login
         Me.ButtonLogin.Text = "Entrar"
         Me.ButtonLogin.UseVisualStyleBackColor = False
         '
-        'Panel1
+        'MenuSup
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Black
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.LabelLogo)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(500, 33)
-        Me.Panel1.TabIndex = 11
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Controls.Add(Me.PictureBox1)
+        Me.MenuSup.Controls.Add(Me.LabelLogo)
+        Me.MenuSup.Controls.Add(Me.PictureBox2)
+        Me.MenuSup.Controls.Add(Me.PictureBox4)
+        Me.MenuSup.Location = New System.Drawing.Point(0, 0)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(500, 33)
+        Me.MenuSup.TabIndex = 11
         '
         'Panel2
         '
@@ -218,15 +218,15 @@ Partial Class Login
         Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(500, 396)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.MenuSup)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Login"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.MenuSup.ResumeLayout(False)
+        Me.MenuSup.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -245,7 +245,7 @@ Partial Class Login
     Friend WithEvents TextBoxContrasenya As TextBox
     Friend WithEvents CheckBoxRecordar As CheckBox
     Friend WithEvents ButtonLogin As Button
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents MenuSup As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox

@@ -72,6 +72,60 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FBobines.Designer.vb">
+      <DependentUpon>FBobines.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FBobines.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCambIdiom.Designer.vb">
+      <DependentUpon>FCambIdiom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FCambIdiom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGcode.Designer.vb">
+      <DependentUpon>FGcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FImpressions.Designer.vb">
+      <DependentUpon>FImpressions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FImpressions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FImpressores.Designer.vb">
+      <DependentUpon>FImpressores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FImpressores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInici.Designer.vb">
+      <DependentUpon>FInici.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FInici.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FModels.Designer.vb">
+      <DependentUpon>FModels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FModels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPerfil.Designer.vb">
+      <DependentUpon>FPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUsuaris.Designer.vb">
+      <DependentUpon>FUsuaris.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FUsuaris.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="globals.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
@@ -107,6 +161,33 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FBobines.resx">
+      <DependentUpon>FBobines.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCambIdiom.resx">
+      <DependentUpon>FCambIdiom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGcode.resx">
+      <DependentUpon>FGcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FImpressions.resx">
+      <DependentUpon>FImpressions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FImpressores.resx">
+      <DependentUpon>FImpressores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInici.resx">
+      <DependentUpon>FInici.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FModels.resx">
+      <DependentUpon>FModels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPerfil.resx">
+      <DependentUpon>FPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUsuaris.resx">
+      <DependentUpon>FUsuaris.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
