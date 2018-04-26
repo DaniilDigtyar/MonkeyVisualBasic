@@ -12,13 +12,15 @@
     End Sub
 
     Private Sub ButtonLogin_Click(sender As Object, e As EventArgs) Handles ButtonLogin.Click
-        Dim authentication As New Authentication
-        If (authentication.AuthenticateUser(TextBoxUsuari.Text, TextBoxContrasenya.Text)) Then
+        Dim SQLCommands As New SQLCommands
+        If (SQLCommands.AuthenticateUser(TextBoxUsuari.Text, TextBoxContrasenya.Text)) Then
             'LOGUE CORRECTO
-            MsgBox("Correcto")
+            SQLCommands.SelectAllFromTable(SQLCommands.SelectUserDatabase(TextBoxUsuari.Text), "bobines")
+            MsgBox("Correcto") 'Borrar
+
         Else
             'LOGUE INCORRECTO
-            MsgBox("Incorrecto")
+            MsgBox("Incorrecto") 'Borrar
         End If
     End Sub
 End Class
