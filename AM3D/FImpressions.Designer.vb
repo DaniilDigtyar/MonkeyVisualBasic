@@ -22,19 +22,77 @@ Partial Class FImpressions
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.BTImprimirGCODE = New System.Windows.Forms.DataGridView()
+        Me.BTImpressionsCancelar = New System.Windows.Forms.Button()
+        Me.BTImpressionsPeçaRetirada = New System.Windows.Forms.Button()
+        Me.BTImpressionsPausar = New System.Windows.Forms.Button()
+        Me.BTImprimirG = New System.Windows.Forms.Button()
+        CType(Me.BTImprimirGCODE, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'BTImprimirGCODE
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(307, 245)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(203, 31)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "IMPRESSIONS"
+        Me.BTImprimirGCODE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.BTImprimirGCODE.Location = New System.Drawing.Point(12, 103)
+        Me.BTImprimirGCODE.Name = "BTImprimirGCODE"
+        Me.BTImprimirGCODE.Size = New System.Drawing.Size(802, 406)
+        Me.BTImprimirGCODE.TabIndex = 0
+        '
+        'BTImpressionsCancelar
+        '
+        Me.BTImpressionsCancelar.BackColor = System.Drawing.Color.White
+        Me.BTImpressionsCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTImpressionsCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTImpressionsCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTImpressionsCancelar.ForeColor = System.Drawing.Color.Black
+        Me.BTImpressionsCancelar.Location = New System.Drawing.Point(12, 23)
+        Me.BTImpressionsCancelar.Name = "BTImpressionsCancelar"
+        Me.BTImpressionsCancelar.Size = New System.Drawing.Size(154, 62)
+        Me.BTImpressionsCancelar.TabIndex = 10
+        Me.BTImpressionsCancelar.Text = "Cancelar"
+        Me.BTImpressionsCancelar.UseVisualStyleBackColor = False
+        '
+        'BTImpressionsPeçaRetirada
+        '
+        Me.BTImpressionsPeçaRetirada.BackColor = System.Drawing.Color.White
+        Me.BTImpressionsPeçaRetirada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTImpressionsPeçaRetirada.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTImpressionsPeçaRetirada.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTImpressionsPeçaRetirada.ForeColor = System.Drawing.Color.Black
+        Me.BTImpressionsPeçaRetirada.Location = New System.Drawing.Point(225, 23)
+        Me.BTImpressionsPeçaRetirada.Name = "BTImpressionsPeçaRetirada"
+        Me.BTImpressionsPeçaRetirada.Size = New System.Drawing.Size(154, 62)
+        Me.BTImpressionsPeçaRetirada.TabIndex = 11
+        Me.BTImpressionsPeçaRetirada.Text = "Peça retirada"
+        Me.BTImpressionsPeçaRetirada.UseVisualStyleBackColor = False
+        '
+        'BTImpressionsPausar
+        '
+        Me.BTImpressionsPausar.BackColor = System.Drawing.Color.White
+        Me.BTImpressionsPausar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTImpressionsPausar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTImpressionsPausar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTImpressionsPausar.ForeColor = System.Drawing.Color.Black
+        Me.BTImpressionsPausar.Location = New System.Drawing.Point(446, 23)
+        Me.BTImpressionsPausar.Name = "BTImpressionsPausar"
+        Me.BTImpressionsPausar.Size = New System.Drawing.Size(154, 62)
+        Me.BTImpressionsPausar.TabIndex = 12
+        Me.BTImpressionsPausar.Text = "Pausar"
+        Me.BTImpressionsPausar.UseVisualStyleBackColor = False
+        '
+        'BTImprimirG
+        '
+        Me.BTImprimirG.BackColor = System.Drawing.Color.White
+        Me.BTImprimirG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTImprimirG.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTImprimirG.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTImprimirG.ForeColor = System.Drawing.Color.Black
+        Me.BTImprimirG.Location = New System.Drawing.Point(660, 23)
+        Me.BTImprimirG.Name = "BTImprimirG"
+        Me.BTImprimirG.Size = New System.Drawing.Size(154, 62)
+        Me.BTImprimirG.TabIndex = 13
+        Me.BTImprimirG.Text = "Imprimir GCODE"
+        Me.BTImprimirG.UseVisualStyleBackColor = False
         '
         'FImpressions
         '
@@ -42,14 +100,23 @@ Partial Class FImpressions
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(826, 521)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.BTImprimirG)
+        Me.Controls.Add(Me.BTImpressionsPausar)
+        Me.Controls.Add(Me.BTImpressionsPeçaRetirada)
+        Me.Controls.Add(Me.BTImpressionsCancelar)
+        Me.Controls.Add(Me.BTImprimirGCODE)
+        Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FImpressions"
         Me.Text = "FImpressions"
+        CType(Me.BTImprimirGCODE, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents BTImprimirGCODE As DataGridView
+    Friend WithEvents BTImpressionsCancelar As Button
+    Friend WithEvents BTImpressionsPeçaRetirada As Button
+    Friend WithEvents BTImpressionsPausar As Button
+    Friend WithEvents BTImprimirG As Button
 End Class

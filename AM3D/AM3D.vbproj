@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CanviarBobina.Designer.vb">
+      <DependentUpon>CanviarBobina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CanviarBobina.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FBobines.Designer.vb">
       <DependentUpon>FBobines.vb</DependentUpon>
     </Compile>
@@ -127,6 +133,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="globals.vb" />
+    <Compile Include="ImprimirGCODE.Designer.vb">
+      <DependentUpon>ImprimirGCODE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimirGCODE.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -137,6 +149,12 @@
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuari.Designer.vb">
+      <DependentUpon>ModificarUsuari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUsuari.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -154,6 +172,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PanelConnectarNovaImpressora.Designer.vb">
+      <DependentUpon>PanelConnectarNovaImpressora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelConnectarNovaImpressora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelLlistaImpressores.Designer.vb">
+      <DependentUpon>PanelLlistaImpressores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelLlistaImpressores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelModificarEliminarUsuaris.Designer.vb">
+      <DependentUpon>PanelModificarEliminarUsuaris.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelModificarEliminarUsuaris.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelUsuarisAfegir.Designer.vb">
+      <DependentUpon>PanelUsuarisAfegir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelUsuarisAfegir.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Resources\Lang\cat.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -161,6 +203,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CanviarBobina.resx">
+      <DependentUpon>CanviarBobina.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FBobines.resx">
       <DependentUpon>FBobines.vb</DependentUpon>
     </EmbeddedResource>
@@ -188,17 +233,35 @@
     <EmbeddedResource Include="FUsuaris.resx">
       <DependentUpon>FUsuaris.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ImprimirGCODE.resx">
+      <DependentUpon>ImprimirGCODE.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModificarUsuari.resx">
+      <DependentUpon>ModificarUsuari.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelConnectarNovaImpressora.resx">
+      <DependentUpon>PanelConnectarNovaImpressora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelLlistaImpressores.resx">
+      <DependentUpon>PanelLlistaImpressores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelModificarEliminarUsuaris.resx">
+      <DependentUpon>PanelModificarEliminarUsuaris.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelUsuarisAfegir.resx">
+      <DependentUpon>PanelUsuarisAfegir.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Lang\cat.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
@@ -233,6 +296,7 @@
     <Content Include="Resources\Fonts\ExiUL-OT\ReadMe.txt" />
     <Content Include="Resources\Img\arrows_left.png" />
     <Content Include="Resources\Img\bobina.png" />
+    <None Include="Resources\Img\button.png" />
     <Content Include="Resources\Img\cross.png" />
     <Content Include="Resources\Img\gcode.png" />
     <Content Include="Resources\Img\impressions.png" />

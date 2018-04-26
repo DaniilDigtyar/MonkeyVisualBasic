@@ -22,19 +22,47 @@ Partial Class FImpressores
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.BTLlista = New System.Windows.Forms.Button()
+        Me.BTConnectar = New System.Windows.Forms.Button()
+        Me.PImpressores = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
-        'Label1
+        'BTLlista
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(374, 245)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(213, 31)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "IMPRESSORES"
+        Me.BTLlista.BackColor = System.Drawing.Color.White
+        Me.BTLlista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTLlista.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTLlista.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTLlista.ForeColor = System.Drawing.Color.Black
+        Me.BTLlista.Location = New System.Drawing.Point(614, 39)
+        Me.BTLlista.Name = "BTLlista"
+        Me.BTLlista.Size = New System.Drawing.Size(154, 62)
+        Me.BTLlista.TabIndex = 1
+        Me.BTLlista.Text = "Llista d'impressores"
+        Me.BTLlista.UseVisualStyleBackColor = False
+        '
+        'BTConnectar
+        '
+        Me.BTConnectar.BackColor = System.Drawing.Color.White
+        Me.BTConnectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTConnectar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTConnectar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTConnectar.ForeColor = System.Drawing.Color.Black
+        Me.BTConnectar.Location = New System.Drawing.Point(70, 39)
+        Me.BTConnectar.Name = "BTConnectar"
+        Me.BTConnectar.Size = New System.Drawing.Size(154, 62)
+        Me.BTConnectar.TabIndex = 2
+        Me.BTConnectar.Text = "Connectar nova impressora"
+        Me.BTConnectar.UseVisualStyleBackColor = False
+        '
+        'PImpressores
+        '
+        Me.PImpressores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PImpressores.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PImpressores.Location = New System.Drawing.Point(12, 135)
+        Me.PImpressores.Name = "PImpressores"
+        Me.PImpressores.Size = New System.Drawing.Size(802, 374)
+        Me.PImpressores.TabIndex = 3
         '
         'FImpressores
         '
@@ -42,14 +70,16 @@ Partial Class FImpressores
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(826, 521)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PImpressores)
+        Me.Controls.Add(Me.BTConnectar)
+        Me.Controls.Add(Me.BTLlista)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FImpressores"
         Me.Text = "FImpressores"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
+    Friend WithEvents BTLlista As Button
+    Friend WithEvents BTConnectar As Button
+    Friend WithEvents PImpressores As Panel
 End Class
