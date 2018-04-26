@@ -12,6 +12,13 @@
     End Sub
 
     Private Sub ButtonLogin_Click(sender As Object, e As EventArgs) Handles ButtonLogin.Click
-
+        Dim authentication As New Authentication
+        If (authentication.AuthenticateUser(TextBoxUsuari.Text, TextBoxContrasenya.Text)) Then
+            'LOGUE CORRECTO
+            MsgBox("Correcto")
+        Else
+            'LOGUE INCORRECTO
+            MsgBox("Incorrecto")
+        End If
     End Sub
 End Class
