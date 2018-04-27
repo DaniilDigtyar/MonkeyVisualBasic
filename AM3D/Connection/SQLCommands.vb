@@ -8,7 +8,7 @@ Public Class SQLCommands
     Dim cmd As SqlCommand
 
     ''' <summary>
-    ''' Funcion para authentificar el logueo del usuario
+    ''' Llamas a un stored procedure en SQL server para authentificar el logueo del usuario
     ''' </summary>
     ''' <param name="nickname">Nickname del usuario</param>
     ''' <param name="password">Contraseña que introduce el usuario, sin encriptar</param>
@@ -84,12 +84,13 @@ Public Class SQLCommands
     Public Function SelectAllFromTable(ByVal dbToConnect As String, ByVal table As String)
         Try
             Dim i As Integer
+            Dim dr As SqlDataReader
+            Dim query As String
+
             Me.connectDataBaseClient(dbToConnect)
-            Dim query As String = "select *
-                                   from " + table
+            query = "select * from " + table
             cmd = New SqlCommand(query)
             cmd.Connection = connectionClient
-            Dim dr As SqlDataReader
             dr = cmd.ExecuteReader
             If dr.HasRows Then
                 While (dr.Read())
@@ -131,6 +132,8 @@ Public Class SQLCommands
                     listaUsuaris.Add(usuari)
                 End While
                 Return listaUsuaris
+            Else
+                'No users
             End If
 
         Catch ex As Exception

@@ -65,7 +65,7 @@
             Return Me.bobinaCarregada
         End Get
         Set(value)
-            Me.bobinaCarregada = bobinaCarregada
+            Me.bobinaCarregada = value
         End Set
     End Property
 End Class

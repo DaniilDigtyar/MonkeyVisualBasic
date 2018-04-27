@@ -32,7 +32,7 @@
             Return Me.nicknameCreador
         End Get
         Set(value)
-            Me.nicknameCreador = nicknameCreador
+            Me.nicknameCreador = value
         End Set
     End Property
 End Class

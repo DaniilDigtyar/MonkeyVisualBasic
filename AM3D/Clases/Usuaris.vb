@@ -47,7 +47,7 @@
             Return Me.cognom
         End Get
         Set(value)
-            Me.cognom = cognom
+            Me.cognom = value
         End Set
     End Property
 

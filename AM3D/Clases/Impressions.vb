@@ -29,7 +29,7 @@
             Return Me.numeroCopia
         End Get
         Set(value)
-            Me.numeroCopia = numeroCopia
+            Me.numeroCopia = value
         End Set
     End Property
 
@@ -38,7 +38,7 @@
             Return Me.codiImpresora
         End Get
         Set(value)
-            Me.codiImpresora = codiImpresora
+            Me.codiImpresora = value
         End Set
     End Property
 

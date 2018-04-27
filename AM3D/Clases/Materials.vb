@@ -15,4 +15,13 @@
             Me.tipusMaterial = value
         End Set
     End Property
+
+    Property GetSetDescripcio
+        Get
+            Return Me.descripcio
+        End Get
+        Set(value)
+            Me.descripcio = value
+        End Set
+    End Property
 End Class
