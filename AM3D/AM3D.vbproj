@@ -151,6 +151,12 @@
     <Compile Include="MenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ModificarModel.Designer.vb">
+      <DependentUpon>ModificarModel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarModel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModificarUsuari.Designer.vb">
       <DependentUpon>ModificarUsuari.vb</DependentUpon>
     </Compile>
@@ -182,6 +188,18 @@
       <DependentUpon>PanelLlistaImpressores.vb</DependentUpon>
     </Compile>
     <Compile Include="PanelLlistaImpressores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelModelAfegir.Designer.vb">
+      <DependentUpon>PanelModelAfegir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelModelAfegir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelModelModificarEliminar.Designer.vb">
+      <DependentUpon>PanelModelModificarEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelModelModificarEliminar.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PanelModificarEliminarUsuaris.Designer.vb">
@@ -242,6 +260,9 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModificarModel.resx">
+      <DependentUpon>ModificarModel.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModificarUsuari.resx">
       <DependentUpon>ModificarUsuari.vb</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +277,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PanelLlistaImpressores.resx">
       <DependentUpon>PanelLlistaImpressores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelModelAfegir.resx">
+      <DependentUpon>PanelModelAfegir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelModelModificarEliminar.resx">
+      <DependentUpon>PanelModelModificarEliminar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelModificarEliminarUsuaris.resx">
       <DependentUpon>PanelModificarEliminarUsuaris.vb</DependentUpon>
