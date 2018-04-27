@@ -172,4 +172,37 @@ Public Class SQLCommands
             Me.disconnectDataBaseClient()
         End Try
     End Function
+
+    ''' <summary>
+    ''' De la base de datos cliente recupera todos los permisos y devuelve un hashset de Permisos
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <returns>Hash set de la clase Permisos</returns>
+    Public Function SelectAllTenenFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaTenen As HashSet(Of Tenen) = New HashSet(Of Tenen)
+            Dim tenen As Tenen
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from tenen"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    tenen = New Tenen(dr(0), dr(1))
+                    listaTenen.Add(tenen)
+                End While
+                Return listaTenen
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
 End Class
