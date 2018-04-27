@@ -68,4 +68,5 @@
             Me.email = value
         End Set
     End Property
+
 End Class
