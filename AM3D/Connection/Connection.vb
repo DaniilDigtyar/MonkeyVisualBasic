@@ -1,5 +1,8 @@
 ﻿Imports System.Data.SqlClient
 
+''' <summary>
+''' Clase para realizar la conexion a BD
+''' </summary>
 Public Class Connection
     Protected connectionUsuaris As New SqlConnection
     Protected connectionClient As New SqlConnection

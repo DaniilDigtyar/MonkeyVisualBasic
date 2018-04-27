@@ -1,5 +1,8 @@
 ﻿Imports System.Data.SqlClient
 
+''' <summary>
+''' Clase para ejecutar transacciones SQL, se realiza la conexion automaticamente.
+''' </summary>
 Public Class SQLCommands
     Inherits Connection
     Dim cmd As SqlCommand
