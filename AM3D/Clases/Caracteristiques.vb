@@ -31,6 +31,17 @@
         Me.diametreFilamentAcceptat = diametreFilamentAcceptat
     End Sub
 
+    Public Overrides Function GetHashCode() As Integer
+        Return Me.GetSetMarca.GetHashCode + Me.GetSetModel.GetHashCode
+    End Function
+
+    Public Overrides Function Equals(obj As Object) As Boolean
+        If (obj.GetType().Equals(Me.GetType)) Then
+            Return Me.GetSetMarca.Equals(obj.GetSetMarca) And Me.GetSetModel.Equals(obj.GetSetModel)
+        End If
+        Return False
+    End Function
+
     Property GetSetMarca
         Get
             Return marca

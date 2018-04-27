@@ -15,6 +15,17 @@
         Me.bobinaCarregada = bobinaCarregada
     End Sub
 
+    Public Overrides Function GetHashCode() As Integer
+        Return Me.GetSetCodiImpressora.GetHashCode
+    End Function
+
+    Public Overrides Function Equals(obj As Object) As Boolean
+        If (obj.GetType().Equals(Me.GetType)) Then
+            Return Me.GetSetCodiImpressora.Equals(obj.GetSetCodiImpressora)
+        End If
+        Return False
+    End Function
+
     Property GetSetCodiImpressora
         Get
             Return Me.codiImpressora

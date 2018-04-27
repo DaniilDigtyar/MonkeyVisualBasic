@@ -15,6 +15,17 @@
         Me.nickname = nickname
     End Sub
 
+    Public Overrides Function GetHashCode() As Integer
+        Return Me.GetSetNomGcode.GetHashCode + Me.GetSetNumeroCopia.GetHashCode + Me.GetSetCodiImpresora.GetHashCode
+    End Function
+
+    Public Overrides Function Equals(obj As Object) As Boolean
+        If (obj.GetType().Equals(Me.GetType)) Then
+            Return Me.GetSetNomGcode.Equals(obj.GetSetNomGcode) And Me.GetSetNumeroCopia.Equals(obj.GetSetNumeroCopia) And Me.GetSetCodiImpresora.Equals(obj.GetSetCodiImpresora)
+        End If
+        Return False
+    End Function
+
     Property GetSetNomGcode
         Get
             Return Me.nomGcode

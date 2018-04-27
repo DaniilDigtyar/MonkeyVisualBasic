@@ -5,6 +5,17 @@
         Me.marcaProductora = marcaProductora
     End Sub
 
+    Public Overrides Function GetHashCode() As Integer
+        Return Me.GetSetMarcaProductora.GetHashCode
+    End Function
+
+    Public Overrides Function Equals(obj As Object) As Boolean
+        If (obj.GetType().Equals(Me.GetType)) Then
+            Return Me.GetSetMarcaProductora.Equals(obj.GetSetMarcaProductora)
+        End If
+        Return False
+    End Function
+
     Property GetSetMarcaProductora
         Get
             Return Me.marcaProductora

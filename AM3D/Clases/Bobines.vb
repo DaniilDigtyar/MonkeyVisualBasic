@@ -13,6 +13,17 @@
         Me.diametre = diametre
     End Sub
 
+    Public Overrides Function GetHashCode() As Integer
+        Return Me.GetSetCodiBobina.GetHashCode
+    End Function
+
+    Public Overrides Function Equals(obj As Object) As Boolean
+        If (obj.GetType().Equals(Me.GetType)) Then
+            Return Me.GetSetCodiBobina.Equals(obj.GetSetCodiBobina)
+        End If
+        Return False
+    End Function
+
     Property GetSetCodiBobina
         Get
             Return Me.codiBobina

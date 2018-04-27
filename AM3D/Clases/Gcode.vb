@@ -9,6 +9,17 @@
         Me.nicknameCreador = nicknameCreador
     End Sub
 
+    Public Overrides Function GetHashCode() As Integer
+        Return Me.GetSetNomGcode.GetHashCode
+    End Function
+
+    Public Overrides Function Equals(obj As Object) As Boolean
+        If (obj.GetType().Equals(Me.GetType)) Then
+            Return Me.GetSetNomGcode.Equals(obj.GetSetNomGcode)
+        End If
+        Return False
+    End Function
+
     Property GetSetNomGcode
         Get
             Return Me.nomGcode

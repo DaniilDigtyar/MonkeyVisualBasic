@@ -10,6 +10,17 @@
         Me.contrasenya = contrasenya
     End Sub
 
+    Public Overrides Function GetHashCode() As Integer
+        Return Me.GetSetNickname.GetHashCode
+    End Function
+
+    Public Overrides Function Equals(obj As Object) As Boolean
+        If (obj.GetType().Equals(Me.GetType)) Then
+            Return Me.GetSetNickname.Equals(obj.GetSetNickname)
+        End If
+        Return False
+    End Function
+
     Public Property GetSetNickname
         Get
             Return Me.nickname

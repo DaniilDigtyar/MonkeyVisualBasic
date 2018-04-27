@@ -9,6 +9,17 @@
         Me.model = model
     End Sub
 
+    Public Overrides Function GetHashCode() As Integer
+        Return Me.GetSetTipusMaterial.GetHashCode + Me.GetSetMarca.GetHashCode + Me.GetSetModel.GetHashCode
+    End Function
+
+    Public Overrides Function Equals(obj As Object) As Boolean
+        If (obj.GetType().Equals(Me.GetType)) Then
+            Return Me.GetSetTipusMaterial.Equals(obj.GetSetTipusMaterial) And Me.GetSetMarca.Equals(obj.GetSetMarca) And Me.GetSetModel.Equals(obj.GetSetModel)
+        End If
+        Return False
+    End Function
+
     Property GetSetTipusMaterial
         Get
             Return Me.tipusMaterial
