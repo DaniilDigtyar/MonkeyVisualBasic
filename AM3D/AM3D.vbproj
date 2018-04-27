@@ -72,7 +72,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Bobines.vb" />
+    <Compile Include="Clases\Caracteristiques.vb" />
+    <Compile Include="Clases\Colors.vb" />
+    <Compile Include="Clases\Gcode.vb" />
+    <Compile Include="Clases\Impressions.vb" />
+    <Compile Include="Clases\Impressores.vb" />
+    <Compile Include="Clases\Marca.vb" />
+    <Compile Include="Clases\MarquesBobines.vb" />
+    <Compile Include="Clases\Materials.vb" />
+    <Compile Include="Clases\Models.vb" />
     <Compile Include="Clases\Permisos.vb" />
+    <Compile Include="Clases\Suporta.vb" />
     <Compile Include="Clases\Tenen.vb" />
     <Compile Include="Clases\BD_Usuaris\Users.vb" />
     <Compile Include="Clases\Usuaris.vb" />
