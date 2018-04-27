@@ -1,8 +1,8 @@
 ﻿Public Class Tenen
-    Private usuaris As Usuaris
-    Private permisos As Permisos
+    Private usuaris As String
+    Private permisos As String
 
-    Sub New(ByVal usuari As Usuaris, ByVal permisos As Permisos)
+    Sub New(ByVal usuari As String, ByVal permisos As String)
         Me.usuaris = usuari
         Me.permisos = permisos
     End Sub
