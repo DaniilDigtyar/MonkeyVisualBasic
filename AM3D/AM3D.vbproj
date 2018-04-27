@@ -72,6 +72,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Permisos.vb" />
+    <Compile Include="Clases\Tenen.vb" />
+    <Compile Include="Clases\BD_Usuaris\Users.vb" />
+    <Compile Include="Clases\Usuaris.vb" />
     <Compile Include="Connection\SQLCommands.vb" />
     <Compile Include="Connection\Connection.vb" />
     <Compile Include="Login.Designer.vb">
