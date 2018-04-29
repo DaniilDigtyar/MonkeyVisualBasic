@@ -208,4 +208,32 @@ Public Class SQLCommands
             Me.disconnectDataBaseClient()
         End Try
     End Function
+
+    Public Function SelectAllPrintersFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaImpressores As HashSet(Of Impressores) = New HashSet(Of Impressores)
+            Dim impressores As Impressores
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from impressores"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    impressores = New Impressores(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5))
+                    listaImpressores.Add(impressores)
+                End While
+                Return listaImpressores
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
 End Class
