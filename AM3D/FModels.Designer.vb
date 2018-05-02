@@ -22,7 +22,7 @@ Partial Class FModels
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.BTImpressionsCancelar = New System.Windows.Forms.Button()
+        Me.BTMarcaAfegir = New System.Windows.Forms.Button()
         Me.BTMarcaModificar = New System.Windows.Forms.Button()
         Me.BTModelAfegir = New System.Windows.Forms.Button()
         Me.BTModelModificar = New System.Windows.Forms.Button()
@@ -31,19 +31,19 @@ Partial Class FModels
         Me.PMarcaModel = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
-        'BTImpressionsCancelar
+        'BTMarcaAfegir
         '
-        Me.BTImpressionsCancelar.BackColor = System.Drawing.Color.White
-        Me.BTImpressionsCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTImpressionsCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BTImpressionsCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTImpressionsCancelar.ForeColor = System.Drawing.Color.Black
-        Me.BTImpressionsCancelar.Location = New System.Drawing.Point(28, 48)
-        Me.BTImpressionsCancelar.Name = "BTImpressionsCancelar"
-        Me.BTImpressionsCancelar.Size = New System.Drawing.Size(154, 62)
-        Me.BTImpressionsCancelar.TabIndex = 11
-        Me.BTImpressionsCancelar.Text = "Afegir"
-        Me.BTImpressionsCancelar.UseVisualStyleBackColor = False
+        Me.BTMarcaAfegir.BackColor = System.Drawing.Color.White
+        Me.BTMarcaAfegir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTMarcaAfegir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTMarcaAfegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTMarcaAfegir.ForeColor = System.Drawing.Color.Black
+        Me.BTMarcaAfegir.Location = New System.Drawing.Point(28, 48)
+        Me.BTMarcaAfegir.Name = "BTMarcaAfegir"
+        Me.BTMarcaAfegir.Size = New System.Drawing.Size(154, 62)
+        Me.BTMarcaAfegir.TabIndex = 11
+        Me.BTMarcaAfegir.Text = "Afegir"
+        Me.BTMarcaAfegir.UseVisualStyleBackColor = False
         '
         'BTMarcaModificar
         '
@@ -128,7 +128,7 @@ Partial Class FModels
         Me.Controls.Add(Me.BTModelModificar)
         Me.Controls.Add(Me.BTModelAfegir)
         Me.Controls.Add(Me.BTMarcaModificar)
-        Me.Controls.Add(Me.BTImpressionsCancelar)
+        Me.Controls.Add(Me.BTMarcaAfegir)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FModels"
         Me.Text = "FModels"
@@ -137,7 +137,7 @@ Partial Class FModels
 
     End Sub
 
-    Friend WithEvents BTImpressionsCancelar As Button
+    Friend WithEvents BTMarcaAfegir As Button
     Friend WithEvents BTMarcaModificar As Button
     Friend WithEvents BTModelAfegir As Button
     Friend WithEvents BTModelModificar As Button

@@ -22,19 +22,19 @@ Partial Class PanelModificarEliminarUsuaris
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DGUsuaris = New System.Windows.Forms.DataGridView()
         Me.BTEliminarUsuari = New System.Windows.Forms.Button()
         Me.BTModificarUsuari = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGUsuaris, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'DGUsuaris
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(21, 89)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(739, 268)
-        Me.DataGridView1.TabIndex = 0
+        Me.DGUsuaris.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGUsuaris.Location = New System.Drawing.Point(21, 89)
+        Me.DGUsuaris.Name = "DGUsuaris"
+        Me.DGUsuaris.Size = New System.Drawing.Size(739, 268)
+        Me.DGUsuaris.TabIndex = 0
         '
         'BTEliminarUsuari
         '
@@ -72,17 +72,17 @@ Partial Class PanelModificarEliminarUsuaris
         Me.ClientSize = New System.Drawing.Size(780, 380)
         Me.Controls.Add(Me.BTEliminarUsuari)
         Me.Controls.Add(Me.BTModificarUsuari)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DGUsuaris)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PanelModificarEliminarUsuaris"
         Me.Text = "PanelModificarEliminarUsuaris"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGUsuaris, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DGUsuaris As DataGridView
     Friend WithEvents BTEliminarUsuari As Button
     Friend WithEvents BTModificarUsuari As Button
 End Class
