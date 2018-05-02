@@ -22,19 +22,48 @@ Partial Class FCambIdiom
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.BTCatala = New System.Windows.Forms.Button()
+        Me.BTIngles = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label1
+        'Label3
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(356, 245)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(242, 31)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "CAMBIAR IDIOMA"
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(268, 42)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(270, 31)
+        Me.Label3.TabIndex = 14
+        Me.Label3.Text = "Selecciona un idioma"
+        '
+        'BTCatala
+        '
+        Me.BTCatala.BackColor = System.Drawing.Color.White
+        Me.BTCatala.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTCatala.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTCatala.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTCatala.ForeColor = System.Drawing.Color.Black
+        Me.BTCatala.Location = New System.Drawing.Point(147, 163)
+        Me.BTCatala.Name = "BTCatala"
+        Me.BTCatala.Size = New System.Drawing.Size(179, 133)
+        Me.BTCatala.TabIndex = 16
+        Me.BTCatala.Text = "Català"
+        Me.BTCatala.UseVisualStyleBackColor = False
+        '
+        'BTIngles
+        '
+        Me.BTIngles.BackColor = System.Drawing.Color.White
+        Me.BTIngles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTIngles.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTIngles.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTIngles.ForeColor = System.Drawing.Color.Black
+        Me.BTIngles.Location = New System.Drawing.Point(455, 163)
+        Me.BTIngles.Name = "BTIngles"
+        Me.BTIngles.Size = New System.Drawing.Size(179, 133)
+        Me.BTIngles.TabIndex = 15
+        Me.BTIngles.Text = "Ingles"
+        Me.BTIngles.UseVisualStyleBackColor = False
         '
         'FCambIdiom
         '
@@ -42,7 +71,10 @@ Partial Class FCambIdiom
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(826, 521)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.BTCatala)
+        Me.Controls.Add(Me.BTIngles)
+        Me.Controls.Add(Me.Label3)
+        Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FCambIdiom"
         Me.Text = "FCambIdiom"
@@ -51,5 +83,7 @@ Partial Class FCambIdiom
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents BTCatala As Button
+    Friend WithEvents BTIngles As Button
 End Class

@@ -22,19 +22,45 @@ Partial Class FGcode
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PGcode = New System.Windows.Forms.Panel()
+        Me.BTAfegir = New System.Windows.Forms.Button()
+        Me.BTModificarEliminar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label1
+        'PGcode
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(312, 245)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(114, 31)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "GCODE"
+        Me.PGcode.Location = New System.Drawing.Point(23, 113)
+        Me.PGcode.Name = "PGcode"
+        Me.PGcode.Size = New System.Drawing.Size(780, 380)
+        Me.PGcode.TabIndex = 8
+        '
+        'BTAfegir
+        '
+        Me.BTAfegir.BackColor = System.Drawing.Color.White
+        Me.BTAfegir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTAfegir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTAfegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTAfegir.ForeColor = System.Drawing.Color.Black
+        Me.BTAfegir.Location = New System.Drawing.Point(84, 27)
+        Me.BTAfegir.Name = "BTAfegir"
+        Me.BTAfegir.Size = New System.Drawing.Size(190, 62)
+        Me.BTAfegir.TabIndex = 7
+        Me.BTAfegir.Text = "Afegir"
+        Me.BTAfegir.UseVisualStyleBackColor = False
+        '
+        'BTModificarEliminar
+        '
+        Me.BTModificarEliminar.BackColor = System.Drawing.Color.White
+        Me.BTModificarEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTModificarEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTModificarEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTModificarEliminar.ForeColor = System.Drawing.Color.Black
+        Me.BTModificarEliminar.Location = New System.Drawing.Point(571, 27)
+        Me.BTModificarEliminar.Name = "BTModificarEliminar"
+        Me.BTModificarEliminar.Size = New System.Drawing.Size(190, 62)
+        Me.BTModificarEliminar.TabIndex = 6
+        Me.BTModificarEliminar.Text = "Modificar/Eliminar"
+        Me.BTModificarEliminar.UseVisualStyleBackColor = False
         '
         'FGcode
         '
@@ -42,14 +68,17 @@ Partial Class FGcode
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(826, 521)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PGcode)
+        Me.Controls.Add(Me.BTAfegir)
+        Me.Controls.Add(Me.BTModificarEliminar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FGcode"
         Me.Text = "FGcode"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents PGcode As Panel
+    Friend WithEvents BTAfegir As Button
+    Friend WithEvents BTModificarEliminar As Button
 End Class

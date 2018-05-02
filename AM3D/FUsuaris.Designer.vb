@@ -22,38 +22,38 @@ Partial Class FUsuaris
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.BTConnectar = New System.Windows.Forms.Button()
-        Me.BTLlista = New System.Windows.Forms.Button()
+        Me.BTAfegir = New System.Windows.Forms.Button()
+        Me.BTModificarEliminar = New System.Windows.Forms.Button()
         Me.PUsuaris = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
-        'BTConnectar
+        'BTAfegir
         '
-        Me.BTConnectar.BackColor = System.Drawing.Color.White
-        Me.BTConnectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTConnectar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BTConnectar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTConnectar.ForeColor = System.Drawing.Color.Black
-        Me.BTConnectar.Location = New System.Drawing.Point(82, 33)
-        Me.BTConnectar.Name = "BTConnectar"
-        Me.BTConnectar.Size = New System.Drawing.Size(190, 62)
-        Me.BTConnectar.TabIndex = 4
-        Me.BTConnectar.Text = "Afegir"
-        Me.BTConnectar.UseVisualStyleBackColor = False
+        Me.BTAfegir.BackColor = System.Drawing.Color.White
+        Me.BTAfegir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTAfegir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTAfegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTAfegir.ForeColor = System.Drawing.Color.Black
+        Me.BTAfegir.Location = New System.Drawing.Point(82, 33)
+        Me.BTAfegir.Name = "BTAfegir"
+        Me.BTAfegir.Size = New System.Drawing.Size(190, 62)
+        Me.BTAfegir.TabIndex = 4
+        Me.BTAfegir.Text = "Afegir"
+        Me.BTAfegir.UseVisualStyleBackColor = False
         '
-        'BTLlista
+        'BTModificarEliminar
         '
-        Me.BTLlista.BackColor = System.Drawing.Color.White
-        Me.BTLlista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTLlista.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BTLlista.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTLlista.ForeColor = System.Drawing.Color.Black
-        Me.BTLlista.Location = New System.Drawing.Point(569, 33)
-        Me.BTLlista.Name = "BTLlista"
-        Me.BTLlista.Size = New System.Drawing.Size(190, 62)
-        Me.BTLlista.TabIndex = 3
-        Me.BTLlista.Text = "Modificar/Eliminar"
-        Me.BTLlista.UseVisualStyleBackColor = False
+        Me.BTModificarEliminar.BackColor = System.Drawing.Color.White
+        Me.BTModificarEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTModificarEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTModificarEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTModificarEliminar.ForeColor = System.Drawing.Color.Black
+        Me.BTModificarEliminar.Location = New System.Drawing.Point(569, 33)
+        Me.BTModificarEliminar.Name = "BTModificarEliminar"
+        Me.BTModificarEliminar.Size = New System.Drawing.Size(190, 62)
+        Me.BTModificarEliminar.TabIndex = 3
+        Me.BTModificarEliminar.Text = "Modificar/Eliminar"
+        Me.BTModificarEliminar.UseVisualStyleBackColor = False
         '
         'PUsuaris
         '
@@ -69,8 +69,8 @@ Partial Class FUsuaris
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(826, 521)
         Me.Controls.Add(Me.PUsuaris)
-        Me.Controls.Add(Me.BTConnectar)
-        Me.Controls.Add(Me.BTLlista)
+        Me.Controls.Add(Me.BTAfegir)
+        Me.Controls.Add(Me.BTModificarEliminar)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FUsuaris"
@@ -79,7 +79,7 @@ Partial Class FUsuaris
 
     End Sub
 
-    Friend WithEvents BTConnectar As Button
-    Friend WithEvents BTLlista As Button
+    Friend WithEvents BTAfegir As Button
+    Friend WithEvents BTModificarEliminar As Button
     Friend WithEvents PUsuaris As Panel
 End Class

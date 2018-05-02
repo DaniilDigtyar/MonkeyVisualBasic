@@ -151,6 +151,18 @@
     <Compile Include="MenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ModificarGcode.Designer.vb">
+      <DependentUpon>ModificarGcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarGcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarMarca.Designer.vb">
+      <DependentUpon>ModificarMarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarMarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModificarModel.Designer.vb">
       <DependentUpon>ModificarModel.vb</DependentUpon>
     </Compile>
@@ -184,10 +196,34 @@
     <Compile Include="PanelConnectarNovaImpressora.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PanelGcodeAfegir.Designer.vb">
+      <DependentUpon>PanelGcodeAfegir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelGcodeAfegir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelGcodeModificarEliminar.Designer.vb">
+      <DependentUpon>PanelGcodeModificarEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelGcodeModificarEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PanelLlistaImpressores.Designer.vb">
       <DependentUpon>PanelLlistaImpressores.vb</DependentUpon>
     </Compile>
     <Compile Include="PanelLlistaImpressores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelMarcaAfegir.Designer.vb">
+      <DependentUpon>PanelMarcaAfegir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelMarcaAfegir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelMarcaModificarEliminar.Designer.vb">
+      <DependentUpon>PanelMarcaModificarEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelMarcaModificarEliminar.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PanelModelAfegir.Designer.vb">
@@ -260,6 +296,12 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModificarGcode.resx">
+      <DependentUpon>ModificarGcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarMarca.resx">
+      <DependentUpon>ModificarMarca.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModificarModel.resx">
       <DependentUpon>ModificarModel.vb</DependentUpon>
     </EmbeddedResource>
@@ -275,8 +317,20 @@
     <EmbeddedResource Include="PanelConnectarNovaImpressora.resx">
       <DependentUpon>PanelConnectarNovaImpressora.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PanelGcodeAfegir.resx">
+      <DependentUpon>PanelGcodeAfegir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelGcodeModificarEliminar.resx">
+      <DependentUpon>PanelGcodeModificarEliminar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PanelLlistaImpressores.resx">
       <DependentUpon>PanelLlistaImpressores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelMarcaAfegir.resx">
+      <DependentUpon>PanelMarcaAfegir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelMarcaModificarEliminar.resx">
+      <DependentUpon>PanelMarcaModificarEliminar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelModelAfegir.resx">
       <DependentUpon>PanelModelAfegir.vb</DependentUpon>
