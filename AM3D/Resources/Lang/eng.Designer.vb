@@ -25,7 +25,7 @@ Namespace My.Resources
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
-    Friend Class cat
+    Friend Class eng
         
         Private Shared resourceMan As Global.System.Resources.ResourceManager
         
@@ -43,7 +43,7 @@ Namespace My.Resources
         Friend Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
-                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("AM3D.cat", GetType(cat).Assembly)
+                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("AM3D.eng", GetType(eng).Assembly)
                     resourceMan = temp
                 End If
                 Return resourceMan
@@ -65,7 +65,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Afegir.
+        '''  Busca una cadena traducida similar a Ad.
         '''</summary>
         Friend Shared ReadOnly Property BTAfegir() As String
             Get
@@ -74,7 +74,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Cancelar.
+        '''  Busca una cadena traducida similar a Cancel.
         '''</summary>
         Friend Shared ReadOnly Property BTCancelar() As String
             Get
@@ -83,7 +83,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Canviar.
+        '''  Busca una cadena traducida similar a Change.
         '''</summary>
         Friend Shared ReadOnly Property BTCanviar() As String
             Get
@@ -92,7 +92,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Canviar Bobina.
+        '''  Busca una cadena traducida similar a Change Coil.
         '''</summary>
         Friend Shared ReadOnly Property BTCanviarBobina() As String
             Get
@@ -101,7 +101,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Connectar.
+        '''  Busca una cadena traducida similar a Connect.
         '''</summary>
         Friend Shared ReadOnly Property BTConnectar() As String
             Get
@@ -110,7 +110,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Eliminar Bobina.
+        '''  Busca una cadena traducida similar a Remove Coil.
         '''</summary>
         Friend Shared ReadOnly Property BTEliminarBobina() As String
             Get
@@ -119,7 +119,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Eliminar Color.
+        '''  Busca una cadena traducida similar a Remove Color.
         '''</summary>
         Friend Shared ReadOnly Property BTEliminarColor() As String
             Get
@@ -128,7 +128,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Eliminar GCode.
+        '''  Busca una cadena traducida similar a Remove GCode.
         '''</summary>
         Friend Shared ReadOnly Property BTEliminarGcode() As String
             Get
@@ -137,7 +137,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Eliminar Impressora.
+        '''  Busca una cadena traducida similar a Remove Printer.
         '''</summary>
         Friend Shared ReadOnly Property BTEliminarImpressora() As String
             Get
@@ -146,7 +146,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Eliminar Marca.
+        '''  Busca una cadena traducida similar a Remove Brand.
         '''</summary>
         Friend Shared ReadOnly Property BTEliminarMarca() As String
             Get
@@ -155,7 +155,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Eliminar Material.
+        '''  Busca una cadena traducida similar a Remove Material.
         '''</summary>
         Friend Shared ReadOnly Property BTEliminarMaterial() As String
             Get
@@ -164,7 +164,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Eliminar Model.
+        '''  Busca una cadena traducida similar a Remove Model.
         '''</summary>
         Friend Shared ReadOnly Property BTEliminarModel() As String
             Get
@@ -173,7 +173,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Eliminar Usuari.
+        '''  Busca una cadena traducida similar a Remove User.
         '''</summary>
         Friend Shared ReadOnly Property BTEliminarUsuari() As String
             Get
@@ -182,7 +182,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Pausar.
+        '''  Busca una cadena traducida similar a Pause.
         '''</summary>
         Friend Shared ReadOnly Property BTImpressionsPausar() As String
             Get
@@ -191,7 +191,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Retirar Peça.
+        '''  Busca una cadena traducida similar a Remove Piece.
         '''</summary>
         Friend Shared ReadOnly Property BTImpressionsPeçaRetirada() As String
             Get
@@ -200,7 +200,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Imprimir.
+        '''  Busca una cadena traducida similar a Print.
         '''</summary>
         Friend Shared ReadOnly Property BTImprimir() As String
             Get
@@ -209,7 +209,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Imprimir Gcode.
+        '''  Busca una cadena traducida similar a Print GCode.
         '''</summary>
         Friend Shared ReadOnly Property BTImprimirG() As String
             Get
@@ -218,7 +218,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Llista.
+        '''  Busca una cadena traducida similar a List.
         '''</summary>
         Friend Shared ReadOnly Property BTLlista() As String
             Get
@@ -227,7 +227,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Modificar Bobina.
+        '''  Busca una cadena traducida similar a Change Coil.
         '''</summary>
         Friend Shared ReadOnly Property BTModificarBobina() As String
             Get
@@ -236,7 +236,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Modificar Color.
+        '''  Busca una cadena traducida similar a Change Color.
         '''</summary>
         Friend Shared ReadOnly Property BTModificarColor() As String
             Get
@@ -245,7 +245,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Modificar/Eliminar.
+        '''  Busca una cadena traducida similar a Change/Remove.
         '''</summary>
         Friend Shared ReadOnly Property BTModificarEliminar() As String
             Get
@@ -254,7 +254,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Modificar GCode.
+        '''  Busca una cadena traducida similar a Change GCode.
         '''</summary>
         Friend Shared ReadOnly Property BTModificarGcode() As String
             Get
@@ -263,7 +263,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Modificar Impressora.
+        '''  Busca una cadena traducida similar a Change Printer.
         '''</summary>
         Friend Shared ReadOnly Property BTModificarImpressora() As String
             Get
@@ -272,7 +272,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Modificar Marca.
+        '''  Busca una cadena traducida similar a Change Brand.
         '''</summary>
         Friend Shared ReadOnly Property BTModificarMarca() As String
             Get
@@ -281,7 +281,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Modificar Material.
+        '''  Busca una cadena traducida similar a Change Material.
         '''</summary>
         Friend Shared ReadOnly Property BTModificarMaterial() As String
             Get
@@ -290,7 +290,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Modificar Model.
+        '''  Busca una cadena traducida similar a Chanhe Model.
         '''</summary>
         Friend Shared ReadOnly Property BTModificarModel() As String
             Get
@@ -299,7 +299,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Modificar Usuari.
+        '''  Busca una cadena traducida similar a Change User.
         '''</summary>
         Friend Shared ReadOnly Property BTModificarUsuari() As String
             Get
@@ -308,7 +308,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Entrar.
+        '''  Busca una cadena traducida similar a Login.
         '''</summary>
         Friend Shared ReadOnly Property ButtonLogin() As String
             Get
@@ -317,7 +317,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Canviar Contrasenya.
+        '''  Busca una cadena traducida similar a Change Password.
         '''</summary>
         Friend Shared ReadOnly Property CanviarContrasenya() As String
             Get
@@ -326,7 +326,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Modificar.
+        '''  Busca una cadena traducida similar a Change.
         '''</summary>
         Friend Shared ReadOnly Property CBModificar() As String
             Get
@@ -335,7 +335,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Recordar usuari.
+        '''  Busca una cadena traducida similar a Remember User.
         '''</summary>
         Friend Shared ReadOnly Property CBRecordar() As String
             Get
@@ -344,7 +344,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a No s&apos;ha pogut crear el fitxer.
+        '''  Busca una cadena traducida similar a The file could not be created.
         '''</summary>
         Friend Shared ReadOnly Property ErrorFitxer() As String
             Get
@@ -353,7 +353,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Generar Estadistiques.
+        '''  Busca una cadena traducida similar a Generate Statistics.
         '''</summary>
         Friend Shared ReadOnly Property GenerarEstad() As String
             Get
@@ -371,7 +371,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Aplicacions funcionals.
+        '''  Busca una cadena traducida similar a Functional applications.
         '''</summary>
         Friend Shared ReadOnly Property LApliFun() As String
             Get
@@ -380,7 +380,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Area d&apos;impressió X.
+        '''  Busca una cadena traducida similar a X printing area.
         '''</summary>
         Friend Shared ReadOnly Property LAreaX() As String
             Get
@@ -389,7 +389,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Area d&apos;impressió Y.
+        '''  Busca una cadena traducida similar a Y printing area.
         '''</summary>
         Friend Shared ReadOnly Property LAreaY() As String
             Get
@@ -398,7 +398,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Area d&apos;impressió Z.
+        '''  Busca una cadena traducida similar a Z printing area.
         '''</summary>
         Friend Shared ReadOnly Property LAreaZ() As String
             Get
@@ -416,7 +416,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Benvingut.
+        '''  Busca una cadena traducida similar a Welcome.
         '''</summary>
         Friend Shared ReadOnly Property LBenvingut() As String
             Get
@@ -425,7 +425,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Gestió.
+        '''  Busca una cadena traducida similar a Management.
         '''</summary>
         Friend Shared ReadOnly Property LBGestio() As String
             Get
@@ -434,7 +434,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Impressions.
+        '''  Busca una cadena traducida similar a Printings.
         '''</summary>
         Friend Shared ReadOnly Property LBImpressions() As String
             Get
@@ -443,7 +443,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Impressores.
+        '''  Busca una cadena traducida similar a Printers.
         '''</summary>
         Friend Shared ReadOnly Property LBImpressores() As String
             Get
@@ -452,7 +452,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Bobina.
+        '''  Busca una cadena traducida similar a Coil.
         '''</summary>
         Friend Shared ReadOnly Property LBobina() As String
             Get
@@ -461,7 +461,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Bobines.
+        '''  Busca una cadena traducida similar a Coils.
         '''</summary>
         Friend Shared ReadOnly Property LBobines() As String
             Get
@@ -470,7 +470,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Canviar Contrasenya.
+        '''  Busca una cadena traducida similar a Change Password.
         '''</summary>
         Friend Shared ReadOnly Property LCanvContr() As String
             Get
@@ -479,7 +479,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Cognom.
+        '''  Busca una cadena traducida similar a Surname.
         '''</summary>
         Friend Shared ReadOnly Property LCognom() As String
             Get
@@ -497,7 +497,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Contrasenya.
+        '''  Busca una cadena traducida similar a Password.
         '''</summary>
         Friend Shared ReadOnly Property LContrasenya() As String
             Get
@@ -515,7 +515,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Correu.
+        '''  Busca una cadena traducida similar a Email.
         '''</summary>
         Friend Shared ReadOnly Property LCorreu() As String
             Get
@@ -524,7 +524,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Dades.
+        '''  Busca una cadena traducida similar a Details.
         '''</summary>
         Friend Shared ReadOnly Property LDades() As String
             Get
@@ -533,7 +533,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Diàmetre.
+        '''  Busca una cadena traducida similar a Diameter.
         '''</summary>
         Friend Shared ReadOnly Property LDiametre() As String
             Get
@@ -542,7 +542,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Diàmetre de filament.
+        '''  Busca una cadena traducida similar a Filament diameter.
         '''</summary>
         Friend Shared ReadOnly Property LDiametreFil() As String
             Get
@@ -578,7 +578,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Gestió.
+        '''  Busca una cadena traducida similar a Management.
         '''</summary>
         Friend Shared ReadOnly Property LGestio() As String
             Get
@@ -587,7 +587,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Codi HEX.
+        '''  Busca una cadena traducida similar a HEX Code.
         '''</summary>
         Friend Shared ReadOnly Property LHex() As String
             Get
@@ -596,7 +596,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Idioma.
+        '''  Busca una cadena traducida similar a Language.
         '''</summary>
         Friend Shared ReadOnly Property Lidioma() As String
             Get
@@ -605,7 +605,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Impressora.
+        '''  Busca una cadena traducida similar a Printer.
         '''</summary>
         Friend Shared ReadOnly Property LImpressora() As String
             Get
@@ -614,7 +614,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Impressores.
+        '''  Busca una cadena traducida similar a Printing.
         '''</summary>
         Friend Shared ReadOnly Property LImpressores() As String
             Get
@@ -623,7 +623,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Inici.
+        '''  Busca una cadena traducida similar a Home.
         '''</summary>
         Friend Shared ReadOnly Property LInici() As String
             Get
@@ -632,7 +632,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Marca.
+        '''  Busca una cadena traducida similar a Brand.
         '''</summary>
         Friend Shared ReadOnly Property LMarca() As String
             Get
@@ -641,7 +641,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Marca productora.
+        '''  Busca una cadena traducida similar a Producer brand.
         '''</summary>
         Friend Shared ReadOnly Property LMarcaProductora() As String
             Get
@@ -659,20 +659,11 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Material suportat.
+        '''  Busca una cadena traducida similar a Supported material.
         '''</summary>
         Friend Shared ReadOnly Property LMaterialsSup() As String
             Get
                 Return ResourceManager.GetString("LMaterialsSup", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Busca una cadena traducida similar a Material Suportat.
-        '''</summary>
-        Friend Shared ReadOnly Property LMaterialSup() As String
-            Get
-                Return ResourceManager.GetString("LMaterialSup", resourceCulture)
             End Get
         End Property
         
@@ -704,7 +695,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Nº Extrusors.
+        '''  Busca una cadena traducida similar a Nº Extruders.
         '''</summary>
         Friend Shared ReadOnly Property LNExtru() As String
             Get
@@ -713,7 +704,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Nom.
+        '''  Busca una cadena traducida similar a Name.
         '''</summary>
         Friend Shared ReadOnly Property LNom() As String
             Get
@@ -722,7 +713,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Nom del GCode.
+        '''  Busca una cadena traducida similar a Name of the GCode.
         '''</summary>
         Friend Shared ReadOnly Property LNomGcode() As String
             Get
@@ -731,7 +722,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Nom d&apos;usuari.
+        '''  Busca una cadena traducida similar a User name.
         '''</summary>
         Friend Shared ReadOnly Property LNomUsuari() As String
             Get
@@ -740,7 +731,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Nova.
+        '''  Busca una cadena traducida similar a New.
         '''</summary>
         Friend Shared ReadOnly Property LNova() As String
             Get
@@ -749,7 +740,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Sortir.
+        '''  Busca una cadena traducida similar a Logout.
         '''</summary>
         Friend Shared ReadOnly Property Logout() As String
             Get
@@ -758,7 +749,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Repeteix la contrasenya.
+        '''  Busca una cadena traducida similar a Repeat the password.
         '''</summary>
         Friend Shared ReadOnly Property LRContra() As String
             Get
@@ -767,16 +758,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Repeteix la contrasenya.
-        '''</summary>
-        Friend Shared ReadOnly Property LRepContrasenya() As String
-            Get
-                Return ResourceManager.GetString("LRepContrasenya", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Busca una cadena traducida similar a Resolució máxima de capa.
+        '''  Busca una cadena traducida similar a Maximum layer resolution.
         '''</summary>
         Friend Shared ReadOnly Property LResMaxCapa() As String
             Get
@@ -785,7 +767,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Resolució mínima de capa.
+        '''  Busca una cadena traducida similar a Minimum layer resolution.
         '''</summary>
         Friend Shared ReadOnly Property LResMinCapa() As String
             Get
@@ -794,7 +776,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Ruta del ficher.
+        '''  Busca una cadena traducida similar a File path.
         '''</summary>
         Friend Shared ReadOnly Property LRutaFich() As String
             Get
@@ -803,7 +785,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Seleciona un Idioma.
+        '''  Busca una cadena traducida similar a Select a language.
         '''</summary>
         Friend Shared ReadOnly Property LSelecionarIdioma() As String
             Get
@@ -812,7 +794,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Nom Tècnic.
+        '''  Busca una cadena traducida similar a Technical Name.
         '''</summary>
         Friend Shared ReadOnly Property LTecnic() As String
             Get
@@ -821,7 +803,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Temperatura máxima del extrusor.
+        '''  Busca una cadena traducida similar a Maximum extruder temperature.
         '''</summary>
         Friend Shared ReadOnly Property LTempMaxExt() As String
             Get
@@ -830,7 +812,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Temperatura máxima del llit.
+        '''  Busca una cadena traducida similar a Maximum bed temperature.
         '''</summary>
         Friend Shared ReadOnly Property LTempMaxLlit() As String
             Get
@@ -839,7 +821,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Temperatura mínima del extrusor.
+        '''  Busca una cadena traducida similar a Minimum extruder temperature.
         '''</summary>
         Friend Shared ReadOnly Property LTempMinExt() As String
             Get
@@ -848,7 +830,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Temperatura mínima del llit.
+        '''  Busca una cadena traducida similar a Minimum bed temperature.
         '''</summary>
         Friend Shared ReadOnly Property LTempMinLlit() As String
             Get
@@ -857,7 +839,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Usuari.
+        '''  Busca una cadena traducida similar a User.
         '''</summary>
         Friend Shared ReadOnly Property LUsuari() As String
             Get
@@ -866,7 +848,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Usuaris.
+        '''  Busca una cadena traducida similar a Users.
         '''</summary>
         Friend Shared ReadOnly Property LUsuaris() As String
             Get
@@ -875,7 +857,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Velocitat máxima de l&apos;extrusor.
+        '''  Busca una cadena traducida similar a Maximum speed of the extruder.
         '''</summary>
         Friend Shared ReadOnly Property LVelMaxExt() As String
             Get
@@ -884,7 +866,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Cambiar Idioma.
+        '''  Busca una cadena traducida similar a Change language.
         '''</summary>
         Friend Shared ReadOnly Property opcioCambiarIdioma() As String
             Get
@@ -893,7 +875,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Generar Estadistiques.
+        '''  Busca una cadena traducida similar a Generate Statistics.
         '''</summary>
         Friend Shared ReadOnly Property opcioGenerarEstadistiques() As String
             Get
@@ -902,7 +884,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Perfil.
+        '''  Busca una cadena traducida similar a Profile.
         '''</summary>
         Friend Shared ReadOnly Property opcioPerfil() As String
             Get
@@ -911,7 +893,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Tancar la sessió.
+        '''  Busca una cadena traducida similar a Logout.
         '''</summary>
         Friend Shared ReadOnly Property opcioSortir() As String
             Get
@@ -920,7 +902,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Perfil.
+        '''  Busca una cadena traducida similar a Profile.
         '''</summary>
         Friend Shared ReadOnly Property Perfil() As String
             Get

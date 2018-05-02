@@ -72,71 +72,71 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CanviarBobina.Designer.vb">
+    <Compile Include="Popups\CanviarBobina.Designer.vb">
       <DependentUpon>CanviarBobina.vb</DependentUpon>
     </Compile>
-    <Compile Include="CanviarBobina.vb">
+    <Compile Include="Popups\CanviarBobina.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FBobines.Designer.vb">
+    <Compile Include="Forms\FBobines.Designer.vb">
       <DependentUpon>FBobines.vb</DependentUpon>
     </Compile>
-    <Compile Include="FBobines.vb">
+    <Compile Include="Forms\FBobines.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FCambIdiom.Designer.vb">
+    <Compile Include="Forms\FCambIdiom.Designer.vb">
       <DependentUpon>FCambIdiom.vb</DependentUpon>
     </Compile>
-    <Compile Include="FCambIdiom.vb">
+    <Compile Include="Forms\FCambIdiom.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FGcode.Designer.vb">
+    <Compile Include="Forms\FGcode.Designer.vb">
       <DependentUpon>FGcode.vb</DependentUpon>
     </Compile>
-    <Compile Include="FGcode.vb">
+    <Compile Include="Forms\FGcode.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FImpressions.Designer.vb">
+    <Compile Include="Forms\FImpressions.Designer.vb">
       <DependentUpon>FImpressions.vb</DependentUpon>
     </Compile>
-    <Compile Include="FImpressions.vb">
+    <Compile Include="Forms\FImpressions.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FImpressores.Designer.vb">
+    <Compile Include="Forms\FImpressores.Designer.vb">
       <DependentUpon>FImpressores.vb</DependentUpon>
     </Compile>
-    <Compile Include="FImpressores.vb">
+    <Compile Include="Forms\FImpressores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FInici.Designer.vb">
+    <Compile Include="Forms\FInici.Designer.vb">
       <DependentUpon>FInici.vb</DependentUpon>
     </Compile>
-    <Compile Include="FInici.vb">
+    <Compile Include="Forms\FInici.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FModels.Designer.vb">
+    <Compile Include="Forms\FModels.Designer.vb">
       <DependentUpon>FModels.vb</DependentUpon>
     </Compile>
-    <Compile Include="FModels.vb">
+    <Compile Include="Forms\FModels.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FPerfil.Designer.vb">
+    <Compile Include="Forms\FPerfil.Designer.vb">
       <DependentUpon>FPerfil.vb</DependentUpon>
     </Compile>
-    <Compile Include="FPerfil.vb">
+    <Compile Include="Forms\FPerfil.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FUsuaris.Designer.vb">
+    <Compile Include="Forms\FUsuaris.Designer.vb">
       <DependentUpon>FUsuaris.vb</DependentUpon>
     </Compile>
-    <Compile Include="FUsuaris.vb">
+    <Compile Include="Forms\FUsuaris.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="globals.vb" />
-    <Compile Include="ImprimirGCODE.Designer.vb">
+    <Compile Include="Popups\ImprimirGCODE.Designer.vb">
       <DependentUpon>ImprimirGCODE.vb</DependentUpon>
     </Compile>
-    <Compile Include="ImprimirGCODE.vb">
+    <Compile Include="Popups\ImprimirGCODE.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
@@ -151,34 +151,52 @@
     <Compile Include="MenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarBobinesBobina.Designer.vb">
+    <Compile Include="Popups\ModificarBobinesBobina.Designer.vb">
       <DependentUpon>ModificarBobinesBobina.vb</DependentUpon>
     </Compile>
-    <Compile Include="ModificarBobinesBobina.vb">
+    <Compile Include="Popups\ModificarBobinesBobina.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarGcode.Designer.vb">
+    <Compile Include="Popups\ModificarBobinesColor.Designer.vb">
+      <DependentUpon>ModificarBobinesColor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\ModificarBobinesColor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\ModificarBobinesMarca.Designer.vb">
+      <DependentUpon>ModificarBobinesMarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\ModificarBobinesMarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\ModificarBobinesMaterial.Designer.vb">
+      <DependentUpon>ModificarBobinesMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\ModificarBobinesMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\ModificarGcode.Designer.vb">
       <DependentUpon>ModificarGcode.vb</DependentUpon>
     </Compile>
-    <Compile Include="ModificarGcode.vb">
+    <Compile Include="Popups\ModificarGcode.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarMarca.Designer.vb">
+    <Compile Include="Popups\ModificarMarca.Designer.vb">
       <DependentUpon>ModificarMarca.vb</DependentUpon>
     </Compile>
-    <Compile Include="ModificarMarca.vb">
+    <Compile Include="Popups\ModificarMarca.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarModel.Designer.vb">
+    <Compile Include="Popups\ModificarModel.Designer.vb">
       <DependentUpon>ModificarModel.vb</DependentUpon>
     </Compile>
-    <Compile Include="ModificarModel.vb">
+    <Compile Include="Popups\ModificarModel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarUsuari.Designer.vb">
+    <Compile Include="Popups\ModificarUsuari.Designer.vb">
       <DependentUpon>ModificarUsuari.vb</DependentUpon>
     </Compile>
-    <Compile Include="ModificarUsuari.vb">
+    <Compile Include="Popups\ModificarUsuari.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -196,71 +214,118 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PanelBobinesBobinaAfegir.Designer.vb">
+    <Compile Include="Panels\PanelBobinesBobinaAfegir.Designer.vb">
       <DependentUpon>PanelBobinesBobinaAfegir.vb</DependentUpon>
     </Compile>
-    <Compile Include="PanelBobinesBobinaAfegir.vb">
+    <Compile Include="Panels\PanelBobinesBobinaAfegir.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelConnectarNovaImpressora.Designer.vb">
+    <Compile Include="Panels\PanelBobinesBobinaModificarEliminar.Designer.vb">
+      <DependentUpon>PanelBobinesBobinaModificarEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesBobinaModificarEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesColorAfegir.Designer.vb">
+      <DependentUpon>PanelBobinesColorAfegir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesColorAfegir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesColorModificarEliminar.Designer.vb">
+      <DependentUpon>PanelBobinesColorModificarEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesColorModificarEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesMarcaAfegir.Designer.vb">
+      <DependentUpon>PanelBobinesMarcaAfegir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesMarcaAfegir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesMarcaModificarEliminar.Designer.vb">
+      <DependentUpon>PanelBobinesMarcaModificarEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesMarcaModificarEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesMaterialAfegir.Designer.vb">
+      <DependentUpon>PanelBobinesMaterialAfegir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesMaterialAfegir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesMaterialModificarEliminar.Designer.vb">
+      <DependentUpon>PanelBobinesMaterialModificarEliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelBobinesMaterialModificarEliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\PanelConnectarNovaImpressora.Designer.vb">
       <DependentUpon>PanelConnectarNovaImpressora.vb</DependentUpon>
     </Compile>
-    <Compile Include="PanelConnectarNovaImpressora.vb">
+    <Compile Include="Panels\PanelConnectarNovaImpressora.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelGcodeAfegir.Designer.vb">
+    <Compile Include="Panels\PanelGcodeAfegir.Designer.vb">
       <DependentUpon>PanelGcodeAfegir.vb</DependentUpon>
     </Compile>
-    <Compile Include="PanelGcodeAfegir.vb">
+    <Compile Include="Panels\PanelGcodeAfegir.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelGcodeModificarEliminar.Designer.vb">
+    <Compile Include="Panels\PanelGcodeModificarEliminar.Designer.vb">
       <DependentUpon>PanelGcodeModificarEliminar.vb</DependentUpon>
     </Compile>
-    <Compile Include="PanelGcodeModificarEliminar.vb">
+    <Compile Include="Panels\PanelGcodeModificarEliminar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelLlistaImpressores.Designer.vb">
+    <Compile Include="Panels\PanelLlistaImpressores.Designer.vb">
       <DependentUpon>PanelLlistaImpressores.vb</DependentUpon>
     </Compile>
-    <Compile Include="PanelLlistaImpressores.vb">
+    <Compile Include="Panels\PanelLlistaImpressores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelMarcaAfegir.Designer.vb">
+    <Compile Include="Panels\PanelMarcaAfegir.Designer.vb">
       <DependentUpon>PanelMarcaAfegir.vb</DependentUpon>
     </Compile>
-    <Compile Include="PanelMarcaAfegir.vb">
+    <Compile Include="Panels\PanelMarcaAfegir.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelMarcaModificarEliminar.Designer.vb">
+    <Compile Include="Panels\PanelMarcaModificarEliminar.Designer.vb">
       <DependentUpon>PanelMarcaModificarEliminar.vb</DependentUpon>
     </Compile>
-    <Compile Include="PanelMarcaModificarEliminar.vb">
+    <Compile Include="Panels\PanelMarcaModificarEliminar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelModelAfegir.Designer.vb">
+    <Compile Include="Panels\PanelModelAfegir.Designer.vb">
       <DependentUpon>PanelModelAfegir.vb</DependentUpon>
     </Compile>
-    <Compile Include="PanelModelAfegir.vb">
+    <Compile Include="Panels\PanelModelAfegir.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelModelModificarEliminar.Designer.vb">
+    <Compile Include="Panels\PanelModelModificarEliminar.Designer.vb">
       <DependentUpon>PanelModelModificarEliminar.vb</DependentUpon>
     </Compile>
-    <Compile Include="PanelModelModificarEliminar.vb">
+    <Compile Include="Panels\PanelModelModificarEliminar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelModificarEliminarUsuaris.Designer.vb">
+    <Compile Include="Panels\PanelModificarEliminarUsuaris.Designer.vb">
       <DependentUpon>PanelModificarEliminarUsuaris.vb</DependentUpon>
     </Compile>
-    <Compile Include="PanelModificarEliminarUsuaris.vb">
+    <Compile Include="Panels\PanelModificarEliminarUsuaris.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PanelUsuarisAfegir.Designer.vb">
+    <Compile Include="Panels\PanelUsuarisAfegir.Designer.vb">
       <DependentUpon>PanelUsuarisAfegir.vb</DependentUpon>
     </Compile>
-    <Compile Include="PanelUsuarisAfegir.vb">
+    <Compile Include="Panels\PanelUsuarisAfegir.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Lang\eng.Designer.vb">
+      <DependentUpon>eng.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Resources\Lang\cat.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -269,37 +334,37 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CanviarBobina.resx">
+    <EmbeddedResource Include="Popups\CanviarBobina.resx">
       <DependentUpon>CanviarBobina.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FBobines.resx">
+    <EmbeddedResource Include="Forms\FBobines.resx">
       <DependentUpon>FBobines.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FCambIdiom.resx">
+    <EmbeddedResource Include="Forms\FCambIdiom.resx">
       <DependentUpon>FCambIdiom.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FGcode.resx">
+    <EmbeddedResource Include="Forms\FGcode.resx">
       <DependentUpon>FGcode.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FImpressions.resx">
+    <EmbeddedResource Include="Forms\FImpressions.resx">
       <DependentUpon>FImpressions.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FImpressores.resx">
+    <EmbeddedResource Include="Forms\FImpressores.resx">
       <DependentUpon>FImpressores.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FInici.resx">
+    <EmbeddedResource Include="Forms\FInici.resx">
       <DependentUpon>FInici.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FModels.resx">
+    <EmbeddedResource Include="Forms\FModels.resx">
       <DependentUpon>FModels.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FPerfil.resx">
+    <EmbeddedResource Include="Forms\FPerfil.resx">
       <DependentUpon>FPerfil.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FUsuaris.resx">
+    <EmbeddedResource Include="Forms\FUsuaris.resx">
       <DependentUpon>FUsuaris.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ImprimirGCODE.resx">
+    <EmbeddedResource Include="Popups\ImprimirGCODE.resx">
       <DependentUpon>ImprimirGCODE.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
@@ -308,19 +373,28 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarBobinesBobina.resx">
+    <EmbeddedResource Include="Popups\ModificarBobinesBobina.resx">
       <DependentUpon>ModificarBobinesBobina.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarGcode.resx">
+    <EmbeddedResource Include="Popups\ModificarBobinesColor.resx">
+      <DependentUpon>ModificarBobinesColor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ModificarBobinesMarca.resx">
+      <DependentUpon>ModificarBobinesMarca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ModificarBobinesMaterial.resx">
+      <DependentUpon>ModificarBobinesMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ModificarGcode.resx">
       <DependentUpon>ModificarGcode.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarMarca.resx">
+    <EmbeddedResource Include="Popups\ModificarMarca.resx">
       <DependentUpon>ModificarMarca.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarModel.resx">
+    <EmbeddedResource Include="Popups\ModificarModel.resx">
       <DependentUpon>ModificarModel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarUsuari.resx">
+    <EmbeddedResource Include="Popups\ModificarUsuari.resx">
       <DependentUpon>ModificarUsuari.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -329,38 +403,64 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelBobinesBobinaAfegir.resx">
+    <EmbeddedResource Include="Panels\PanelBobinesBobinaAfegir.resx">
       <DependentUpon>PanelBobinesBobinaAfegir.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelConnectarNovaImpressora.resx">
+    <EmbeddedResource Include="Panels\PanelBobinesBobinaModificarEliminar.resx">
+      <DependentUpon>PanelBobinesBobinaModificarEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelBobinesColorAfegir.resx">
+      <DependentUpon>PanelBobinesColorAfegir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelBobinesColorModificarEliminar.resx">
+      <DependentUpon>PanelBobinesColorModificarEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelBobinesMarcaAfegir.resx">
+      <DependentUpon>PanelBobinesMarcaAfegir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelBobinesMarcaModificarEliminar.resx">
+      <DependentUpon>PanelBobinesMarcaModificarEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelBobinesMaterialAfegir.resx">
+      <DependentUpon>PanelBobinesMaterialAfegir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelBobinesMaterialModificarEliminar.resx">
+      <DependentUpon>PanelBobinesMaterialModificarEliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\PanelConnectarNovaImpressora.resx">
       <DependentUpon>PanelConnectarNovaImpressora.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelGcodeAfegir.resx">
+    <EmbeddedResource Include="Panels\PanelGcodeAfegir.resx">
       <DependentUpon>PanelGcodeAfegir.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelGcodeModificarEliminar.resx">
+    <EmbeddedResource Include="Panels\PanelGcodeModificarEliminar.resx">
       <DependentUpon>PanelGcodeModificarEliminar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelLlistaImpressores.resx">
+    <EmbeddedResource Include="Panels\PanelLlistaImpressores.resx">
       <DependentUpon>PanelLlistaImpressores.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelMarcaAfegir.resx">
+    <EmbeddedResource Include="Panels\PanelMarcaAfegir.resx">
       <DependentUpon>PanelMarcaAfegir.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelMarcaModificarEliminar.resx">
+    <EmbeddedResource Include="Panels\PanelMarcaModificarEliminar.resx">
       <DependentUpon>PanelMarcaModificarEliminar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelModelAfegir.resx">
+    <EmbeddedResource Include="Panels\PanelModelAfegir.resx">
       <DependentUpon>PanelModelAfegir.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelModelModificarEliminar.resx">
+    <EmbeddedResource Include="Panels\PanelModelModificarEliminar.resx">
       <DependentUpon>PanelModelModificarEliminar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelModificarEliminarUsuaris.resx">
+    <EmbeddedResource Include="Panels\PanelModificarEliminarUsuaris.resx">
       <DependentUpon>PanelModificarEliminarUsuaris.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelUsuarisAfegir.resx">
+    <EmbeddedResource Include="Panels\PanelUsuarisAfegir.resx">
       <DependentUpon>PanelUsuarisAfegir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Lang\eng.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>eng.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Lang\cat.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>

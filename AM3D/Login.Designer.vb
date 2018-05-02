@@ -27,13 +27,15 @@ Partial Class Login
         Me.LabelLogo = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.LabelUsuari = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LUsuari = New System.Windows.Forms.Label()
+        Me.LContrasenya = New System.Windows.Forms.Label()
         Me.TextBoxUsuari = New System.Windows.Forms.TextBox()
         Me.TextBoxContrasenya = New System.Windows.Forms.TextBox()
-        Me.CheckBoxRecordar = New System.Windows.Forms.CheckBox()
+        Me.CBRecordar = New System.Windows.Forms.CheckBox()
         Me.ButtonLogin = New System.Windows.Forms.Button()
         Me.MenuSup = New System.Windows.Forms.Panel()
+        Me.CBIdioma = New System.Windows.Forms.ComboBox()
+        Me.Lidioma = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -88,27 +90,27 @@ Partial Class Login
         Me.PictureBox4.TabIndex = 4
         Me.PictureBox4.TabStop = False
         '
-        'LabelUsuari
+        'LUsuari
         '
-        Me.LabelUsuari.AutoSize = True
-        Me.LabelUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelUsuari.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.LabelUsuari.Location = New System.Drawing.Point(52, 32)
-        Me.LabelUsuari.Name = "LabelUsuari"
-        Me.LabelUsuari.Size = New System.Drawing.Size(51, 18)
-        Me.LabelUsuari.TabIndex = 5
-        Me.LabelUsuari.Text = "Usuari"
+        Me.LUsuari.AutoSize = True
+        Me.LUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LUsuari.ForeColor = System.Drawing.SystemColors.WindowText
+        Me.LUsuari.Location = New System.Drawing.Point(52, 32)
+        Me.LUsuari.Name = "LUsuari"
+        Me.LUsuari.Size = New System.Drawing.Size(51, 18)
+        Me.LUsuari.TabIndex = 5
+        Me.LUsuari.Text = "Usuari"
         '
-        'Label1
+        'LContrasenya
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label1.Location = New System.Drawing.Point(52, 115)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(92, 18)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Contrasenya"
+        Me.LContrasenya.AutoSize = True
+        Me.LContrasenya.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LContrasenya.ForeColor = System.Drawing.SystemColors.WindowText
+        Me.LContrasenya.Location = New System.Drawing.Point(52, 115)
+        Me.LContrasenya.Name = "LContrasenya"
+        Me.LContrasenya.Size = New System.Drawing.Size(92, 18)
+        Me.LContrasenya.TabIndex = 6
+        Me.LContrasenya.Text = "Contrasenya"
         '
         'TextBoxUsuari
         '
@@ -133,20 +135,20 @@ Partial Class Login
         Me.TextBoxContrasenya.Size = New System.Drawing.Size(377, 24)
         Me.TextBoxContrasenya.TabIndex = 8
         '
-        'CheckBoxRecordar
+        'CBRecordar
         '
-        Me.CheckBoxRecordar.AutoSize = True
-        Me.CheckBoxRecordar.BackColor = System.Drawing.Color.Silver
-        Me.CheckBoxRecordar.Cursor = System.Windows.Forms.Cursors.Default
-        Me.CheckBoxRecordar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CheckBoxRecordar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBoxRecordar.ForeColor = System.Drawing.Color.Black
-        Me.CheckBoxRecordar.Location = New System.Drawing.Point(189, 169)
-        Me.CheckBoxRecordar.Name = "CheckBoxRecordar"
-        Me.CheckBoxRecordar.Size = New System.Drawing.Size(133, 22)
-        Me.CheckBoxRecordar.TabIndex = 9
-        Me.CheckBoxRecordar.Text = "Recordar usuari"
-        Me.CheckBoxRecordar.UseVisualStyleBackColor = False
+        Me.CBRecordar.AutoSize = True
+        Me.CBRecordar.BackColor = System.Drawing.Color.Silver
+        Me.CBRecordar.Cursor = System.Windows.Forms.Cursors.Default
+        Me.CBRecordar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CBRecordar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CBRecordar.ForeColor = System.Drawing.Color.Black
+        Me.CBRecordar.Location = New System.Drawing.Point(189, 169)
+        Me.CBRecordar.Name = "CBRecordar"
+        Me.CBRecordar.Size = New System.Drawing.Size(133, 22)
+        Me.CBRecordar.TabIndex = 9
+        Me.CBRecordar.Text = "Recordar usuari"
+        Me.CBRecordar.UseVisualStyleBackColor = False
         '
         'ButtonLogin
         '
@@ -164,6 +166,8 @@ Partial Class Login
         'MenuSup
         '
         Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Controls.Add(Me.CBIdioma)
+        Me.MenuSup.Controls.Add(Me.Lidioma)
         Me.MenuSup.Controls.Add(Me.PictureBox1)
         Me.MenuSup.Controls.Add(Me.LabelLogo)
         Me.MenuSup.Controls.Add(Me.PictureBox2)
@@ -173,6 +177,24 @@ Partial Class Login
         Me.MenuSup.Size = New System.Drawing.Size(500, 33)
         Me.MenuSup.TabIndex = 11
         '
+        'CBIdioma
+        '
+        Me.CBIdioma.FormattingEnabled = True
+        Me.CBIdioma.Location = New System.Drawing.Point(307, 7)
+        Me.CBIdioma.Name = "CBIdioma"
+        Me.CBIdioma.Size = New System.Drawing.Size(121, 21)
+        Me.CBIdioma.TabIndex = 6
+        '
+        'Lidioma
+        '
+        Me.Lidioma.AutoSize = True
+        Me.Lidioma.ForeColor = System.Drawing.Color.White
+        Me.Lidioma.Location = New System.Drawing.Point(241, 11)
+        Me.Lidioma.Name = "Lidioma"
+        Me.Lidioma.Size = New System.Drawing.Size(38, 13)
+        Me.Lidioma.TabIndex = 5
+        Me.Lidioma.Text = "Idioma"
+        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Silver
@@ -180,10 +202,10 @@ Partial Class Login
         Me.Panel2.Controls.Add(Me.PictureBox5)
         Me.Panel2.Controls.Add(Me.PictureBox3)
         Me.Panel2.Controls.Add(Me.TextBoxContrasenya)
-        Me.Panel2.Controls.Add(Me.LabelUsuari)
+        Me.Panel2.Controls.Add(Me.LUsuari)
         Me.Panel2.Controls.Add(Me.ButtonLogin)
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Controls.Add(Me.CheckBoxRecordar)
+        Me.Panel2.Controls.Add(Me.LContrasenya)
+        Me.Panel2.Controls.Add(Me.CBRecordar)
         Me.Panel2.Controls.Add(Me.TextBoxUsuari)
         Me.Panel2.Location = New System.Drawing.Point(49, 75)
         Me.Panel2.Name = "Panel2"
@@ -239,14 +261,16 @@ Partial Class Login
     Friend WithEvents LabelLogo As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents LabelUsuari As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents LUsuari As Label
+    Friend WithEvents LContrasenya As Label
     Friend WithEvents TextBoxUsuari As TextBox
     Friend WithEvents TextBoxContrasenya As TextBox
-    Friend WithEvents CheckBoxRecordar As CheckBox
+    Friend WithEvents CBRecordar As CheckBox
     Friend WithEvents ButtonLogin As Button
     Friend WithEvents MenuSup As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents CBIdioma As ComboBox
+    Friend WithEvents Lidioma As Label
 End Class

@@ -1,0 +1,302 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class FPerfil
+    Inherits System.Windows.Forms.Form
+
+    'Form reemplaza a Dispose para limpiar la lista de componentes.
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Requerido por el Diseñador de Windows Forms
+    Private components As System.ComponentModel.IContainer
+
+    'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
+    'Se puede modificar usando el Diseñador de Windows Forms.  
+    'No lo modifique con el editor de código.
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        Me.TBTempMinExt = New System.Windows.Forms.TextBox()
+        Me.TBTempMaxEx = New System.Windows.Forms.TextBox()
+        Me.TBExtrusors = New System.Windows.Forms.TextBox()
+        Me.TBModel = New System.Windows.Forms.TextBox()
+        Me.LEmail = New System.Windows.Forms.Label()
+        Me.LCognom = New System.Windows.Forms.Label()
+        Me.LNom = New System.Windows.Forms.Label()
+        Me.LDni = New System.Windows.Forms.Label()
+        Me.CBModificar = New System.Windows.Forms.CheckBox()
+        Me.LCanvContr = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.LRContra = New System.Windows.Forms.Label()
+        Me.LNova = New System.Windows.Forms.Label()
+        Me.LActual = New System.Windows.Forms.Label()
+        Me.BTActualitzar = New System.Windows.Forms.Button()
+        Me.BTCanviarContra = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LDades = New System.Windows.Forms.Label()
+        Me.SuspendLayout()
+        '
+        'TBTempMinExt
+        '
+        Me.TBTempMinExt.Enabled = False
+        Me.TBTempMinExt.Location = New System.Drawing.Point(158, 222)
+        Me.TBTempMinExt.Name = "TBTempMinExt"
+        Me.TBTempMinExt.Size = New System.Drawing.Size(141, 20)
+        Me.TBTempMinExt.TabIndex = 55
+        '
+        'TBTempMaxEx
+        '
+        Me.TBTempMaxEx.Enabled = False
+        Me.TBTempMaxEx.Location = New System.Drawing.Point(158, 187)
+        Me.TBTempMaxEx.Name = "TBTempMaxEx"
+        Me.TBTempMaxEx.Size = New System.Drawing.Size(141, 20)
+        Me.TBTempMaxEx.TabIndex = 54
+        '
+        'TBExtrusors
+        '
+        Me.TBExtrusors.Enabled = False
+        Me.TBExtrusors.Location = New System.Drawing.Point(158, 152)
+        Me.TBExtrusors.Name = "TBExtrusors"
+        Me.TBExtrusors.Size = New System.Drawing.Size(141, 20)
+        Me.TBExtrusors.TabIndex = 53
+        '
+        'TBModel
+        '
+        Me.TBModel.Enabled = False
+        Me.TBModel.Location = New System.Drawing.Point(158, 117)
+        Me.TBModel.Name = "TBModel"
+        Me.TBModel.Size = New System.Drawing.Size(141, 20)
+        Me.TBModel.TabIndex = 52
+        '
+        'LEmail
+        '
+        Me.LEmail.AutoSize = True
+        Me.LEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LEmail.ForeColor = System.Drawing.Color.Black
+        Me.LEmail.Location = New System.Drawing.Point(44, 220)
+        Me.LEmail.Name = "LEmail"
+        Me.LEmail.Size = New System.Drawing.Size(48, 20)
+        Me.LEmail.TabIndex = 51
+        Me.LEmail.Text = "Email"
+        '
+        'LCognom
+        '
+        Me.LCognom.AutoSize = True
+        Me.LCognom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LCognom.ForeColor = System.Drawing.Color.Black
+        Me.LCognom.Location = New System.Drawing.Point(44, 185)
+        Me.LCognom.Name = "LCognom"
+        Me.LCognom.Size = New System.Drawing.Size(69, 20)
+        Me.LCognom.TabIndex = 50
+        Me.LCognom.Text = "Cognom"
+        '
+        'LNom
+        '
+        Me.LNom.AutoSize = True
+        Me.LNom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LNom.ForeColor = System.Drawing.Color.Black
+        Me.LNom.Location = New System.Drawing.Point(44, 150)
+        Me.LNom.Name = "LNom"
+        Me.LNom.Size = New System.Drawing.Size(42, 20)
+        Me.LNom.TabIndex = 49
+        Me.LNom.Text = "Nom"
+        '
+        'LDni
+        '
+        Me.LDni.AutoSize = True
+        Me.LDni.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LDni.ForeColor = System.Drawing.Color.Black
+        Me.LDni.Location = New System.Drawing.Point(44, 117)
+        Me.LDni.Name = "LDni"
+        Me.LDni.Size = New System.Drawing.Size(37, 20)
+        Me.LDni.TabIndex = 48
+        Me.LDni.Text = "DNI"
+        '
+        'CBModificar
+        '
+        Me.CBModificar.AutoSize = True
+        Me.CBModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CBModificar.Location = New System.Drawing.Point(48, 74)
+        Me.CBModificar.Name = "CBModificar"
+        Me.CBModificar.Size = New System.Drawing.Size(92, 24)
+        Me.CBModificar.TabIndex = 56
+        Me.CBModificar.Text = "Modificar"
+        Me.CBModificar.UseVisualStyleBackColor = True
+        '
+        'LCanvContr
+        '
+        Me.LCanvContr.AutoSize = True
+        Me.LCanvContr.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LCanvContr.ForeColor = System.Drawing.Color.Black
+        Me.LCanvContr.Location = New System.Drawing.Point(43, 328)
+        Me.LCanvContr.Name = "LCanvContr"
+        Me.LCanvContr.Size = New System.Drawing.Size(197, 25)
+        Me.LCanvContr.TabIndex = 57
+        Me.LCanvContr.Text = "Canviar Contrasenya"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(189, 462)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(141, 20)
+        Me.TextBox1.TabIndex = 63
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(189, 427)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(141, 20)
+        Me.TextBox2.TabIndex = 62
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(189, 392)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(141, 20)
+        Me.TextBox3.TabIndex = 61
+        '
+        'LRContra
+        '
+        Me.LRContra.AutoSize = True
+        Me.LRContra.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LRContra.ForeColor = System.Drawing.Color.Black
+        Me.LRContra.Location = New System.Drawing.Point(44, 458)
+        Me.LRContra.Name = "LRContra"
+        Me.LRContra.Size = New System.Drawing.Size(126, 20)
+        Me.LRContra.TabIndex = 60
+        Me.LRContra.Text = "Repeteix la nova"
+        '
+        'LNova
+        '
+        Me.LNova.AutoSize = True
+        Me.LNova.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LNova.ForeColor = System.Drawing.Color.Black
+        Me.LNova.Location = New System.Drawing.Point(44, 423)
+        Me.LNova.Name = "LNova"
+        Me.LNova.Size = New System.Drawing.Size(45, 20)
+        Me.LNova.TabIndex = 59
+        Me.LNova.Text = "Nova"
+        '
+        'LActual
+        '
+        Me.LActual.AutoSize = True
+        Me.LActual.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LActual.ForeColor = System.Drawing.Color.Black
+        Me.LActual.Location = New System.Drawing.Point(44, 390)
+        Me.LActual.Name = "LActual"
+        Me.LActual.Size = New System.Drawing.Size(54, 20)
+        Me.LActual.TabIndex = 58
+        Me.LActual.Text = "Actual"
+        '
+        'BTActualitzar
+        '
+        Me.BTActualitzar.BackColor = System.Drawing.Color.White
+        Me.BTActualitzar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTActualitzar.Enabled = False
+        Me.BTActualitzar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTActualitzar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTActualitzar.ForeColor = System.Drawing.Color.Black
+        Me.BTActualitzar.Location = New System.Drawing.Point(406, 145)
+        Me.BTActualitzar.Name = "BTActualitzar"
+        Me.BTActualitzar.Size = New System.Drawing.Size(190, 62)
+        Me.BTActualitzar.TabIndex = 64
+        Me.BTActualitzar.Text = "Actualitzar"
+        Me.BTActualitzar.UseVisualStyleBackColor = False
+        '
+        'BTCanviarContra
+        '
+        Me.BTCanviarContra.BackColor = System.Drawing.Color.White
+        Me.BTCanviarContra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTCanviarContra.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTCanviarContra.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTCanviarContra.ForeColor = System.Drawing.Color.Black
+        Me.BTCanviarContra.Location = New System.Drawing.Point(406, 404)
+        Me.BTCanviarContra.Name = "BTCanviarContra"
+        Me.BTCanviarContra.Size = New System.Drawing.Size(190, 62)
+        Me.BTCanviarContra.TabIndex = 65
+        Me.BTCanviarContra.Text = "Canviar"
+        Me.BTCanviarContra.UseVisualStyleBackColor = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Black
+        Me.Panel1.Location = New System.Drawing.Point(-1, 294)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(743, 10)
+        Me.Panel1.TabIndex = 66
+        '
+        'LDades
+        '
+        Me.LDades.AutoSize = True
+        Me.LDades.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LDades.ForeColor = System.Drawing.Color.Black
+        Me.LDades.Location = New System.Drawing.Point(43, 20)
+        Me.LDades.Name = "LDades"
+        Me.LDades.Size = New System.Drawing.Size(69, 25)
+        Me.LDades.TabIndex = 67
+        Me.LDades.Text = "Dades"
+        '
+        'FPerfil
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(826, 521)
+        Me.Controls.Add(Me.LDades)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.BTCanviarContra)
+        Me.Controls.Add(Me.BTActualitzar)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.LRContra)
+        Me.Controls.Add(Me.LNova)
+        Me.Controls.Add(Me.LActual)
+        Me.Controls.Add(Me.LCanvContr)
+        Me.Controls.Add(Me.CBModificar)
+        Me.Controls.Add(Me.TBTempMinExt)
+        Me.Controls.Add(Me.TBTempMaxEx)
+        Me.Controls.Add(Me.TBExtrusors)
+        Me.Controls.Add(Me.TBModel)
+        Me.Controls.Add(Me.LEmail)
+        Me.Controls.Add(Me.LCognom)
+        Me.Controls.Add(Me.LNom)
+        Me.Controls.Add(Me.LDni)
+        Me.ForeColor = System.Drawing.Color.Black
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "FPerfil"
+        Me.Text = "FPerfil"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+
+    Friend WithEvents TBTempMinExt As TextBox
+    Friend WithEvents TBTempMaxEx As TextBox
+    Friend WithEvents TBExtrusors As TextBox
+    Friend WithEvents TBModel As TextBox
+    Friend WithEvents LEmail As Label
+    Friend WithEvents LCognom As Label
+    Friend WithEvents LNom As Label
+    Friend WithEvents LDni As Label
+    Friend WithEvents CBModificar As CheckBox
+    Friend WithEvents LCanvContr As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents LRContra As Label
+    Friend WithEvents LNova As Label
+    Friend WithEvents LActual As Label
+    Friend WithEvents BTActualitzar As Button
+    Friend WithEvents BTCanviarContra As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents LDades As Label
+End Class

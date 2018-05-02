@@ -34,4 +34,37 @@
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CBIdioma.Items.Add("Català")
+        CBIdioma.Items.Add("English")
+        If globals.lang = "cat" Then
+            CBIdioma.Text = "Català"
+        Else
+            CBIdioma.Text = "English"
+        End If
+    End Sub
+
+    Private Sub CBIdioma_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CBIdioma.SelectedIndexChanged
+        If CBIdioma.SelectedIndex = 0 Then
+            globals.lang = "cat"
+            Lidioma.Text = My.Resources.cat.Lidioma
+            LUsuari.Text = My.Resources.cat.LUsuari
+            LContrasenya.Text = My.Resources.cat.LContrasenya
+            CBRecordar.Text = My.Resources.cat.CBRecordar
+            ButtonLogin.Text = My.Resources.cat.ButtonLogin
+        End If
+        If CBIdioma.SelectedIndex = 1 Then
+            globals.lang = "eng"
+            Lidioma.Text = My.Resources.eng.Lidioma
+            LUsuari.Text = My.Resources.eng.LUsuari
+            LContrasenya.Text = My.Resources.eng.LContrasenya
+            CBRecordar.Text = My.Resources.eng.CBRecordar
+            ButtonLogin.Text = My.Resources.eng.ButtonLogin
+        End If
+    End Sub
+
+    Private Sub CBIdioma_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles CBIdioma.KeyPress
+        e.Handled = True
+    End Sub
 End Class

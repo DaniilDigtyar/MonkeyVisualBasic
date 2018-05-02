@@ -118,166 +118,166 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BTAfegir" xml:space="preserve">
-    <value>Afegir</value>
+    <value>Ad</value>
   </data>
   <data name="BTCancelar" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>Cancel</value>
   </data>
   <data name="BTCanviar" xml:space="preserve">
-    <value>Canviar</value>
+    <value>Change</value>
   </data>
   <data name="BTCanviarBobina" xml:space="preserve">
-    <value>Canviar Bobina</value>
+    <value>Change Coil</value>
   </data>
   <data name="BTConnectar" xml:space="preserve">
-    <value>Connectar</value>
+    <value>Connect</value>
   </data>
   <data name="BTEliminarBobina" xml:space="preserve">
-    <value>Eliminar Bobina</value>
+    <value>Remove Coil</value>
   </data>
   <data name="BTEliminarColor" xml:space="preserve">
-    <value>Eliminar Color</value>
+    <value>Remove Color</value>
   </data>
   <data name="BTEliminarGcode" xml:space="preserve">
-    <value>Eliminar GCode</value>
+    <value>Remove GCode</value>
   </data>
   <data name="BTEliminarImpressora" xml:space="preserve">
-    <value>Eliminar Impressora</value>
+    <value>Remove Printer</value>
   </data>
   <data name="BTEliminarMarca" xml:space="preserve">
-    <value>Eliminar Marca</value>
+    <value>Remove Brand</value>
   </data>
   <data name="BTEliminarMaterial" xml:space="preserve">
-    <value>Eliminar Material</value>
+    <value>Remove Material</value>
   </data>
   <data name="BTEliminarModel" xml:space="preserve">
-    <value>Eliminar Model</value>
+    <value>Remove Model</value>
   </data>
   <data name="BTEliminarUsuari" xml:space="preserve">
-    <value>Eliminar Usuari</value>
+    <value>Remove User</value>
   </data>
   <data name="BTImpressionsPausar" xml:space="preserve">
-    <value>Pausar</value>
+    <value>Pause</value>
   </data>
   <data name="BTImpressionsPeçaRetirada" xml:space="preserve">
-    <value>Retirar Peça</value>
+    <value>Remove Piece</value>
   </data>
   <data name="BTImprimir" xml:space="preserve">
-    <value>Imprimir</value>
+    <value>Print</value>
   </data>
   <data name="BTImprimirG" xml:space="preserve">
-    <value>Imprimir Gcode</value>
+    <value>Print GCode</value>
   </data>
   <data name="BTLlista" xml:space="preserve">
-    <value>Llista</value>
+    <value>List</value>
   </data>
   <data name="BTModificarBobina" xml:space="preserve">
-    <value>Modificar Bobina</value>
+    <value>Change Coil</value>
   </data>
   <data name="BTModificarColor" xml:space="preserve">
-    <value>Modificar Color</value>
+    <value>Change Color</value>
   </data>
   <data name="BTModificarEliminar" xml:space="preserve">
-    <value>Modificar/Eliminar</value>
+    <value>Change/Remove</value>
   </data>
   <data name="BTModificarGcode" xml:space="preserve">
-    <value>Modificar GCode</value>
+    <value>Change GCode</value>
   </data>
   <data name="BTModificarImpressora" xml:space="preserve">
-    <value>Modificar Impressora</value>
+    <value>Change Printer</value>
   </data>
   <data name="BTModificarMarca" xml:space="preserve">
-    <value>Modificar Marca</value>
+    <value>Change Brand</value>
   </data>
   <data name="BTModificarMaterial" xml:space="preserve">
-    <value>Modificar Material</value>
+    <value>Change Material</value>
   </data>
   <data name="BTModificarModel" xml:space="preserve">
-    <value>Modificar Model</value>
+    <value>Chanhe Model</value>
   </data>
   <data name="BTModificarUsuari" xml:space="preserve">
-    <value>Modificar Usuari</value>
+    <value>Change User</value>
   </data>
   <data name="ButtonLogin" xml:space="preserve">
-    <value>Entrar</value>
+    <value>Login</value>
   </data>
   <data name="CanviarContrasenya" xml:space="preserve">
-    <value>Canviar Contrasenya</value>
+    <value>Change Password</value>
   </data>
   <data name="CBModificar" xml:space="preserve">
-    <value>Modificar</value>
+    <value>Change</value>
   </data>
   <data name="CBRecordar" xml:space="preserve">
-    <value>Recordar usuari</value>
+    <value>Remember User</value>
   </data>
   <data name="ErrorFitxer" xml:space="preserve">
-    <value>No s'ha pogut crear el fitxer</value>
+    <value>The file could not be created</value>
   </data>
   <data name="GenerarEstad" xml:space="preserve">
-    <value>Generar Estadistiques</value>
+    <value>Generate Statistics</value>
   </data>
   <data name="LActual" xml:space="preserve">
     <value>Actual</value>
   </data>
   <data name="LApliFun" xml:space="preserve">
-    <value>Aplicacions funcionals</value>
+    <value>Functional applications</value>
   </data>
   <data name="LAreaX" xml:space="preserve">
-    <value>Area d'impressió X</value>
+    <value>X printing area</value>
   </data>
   <data name="LAreaY" xml:space="preserve">
-    <value>Area d'impressió Y</value>
+    <value>Y printing area</value>
   </data>
   <data name="LAreaZ" xml:space="preserve">
-    <value>Area d'impressió Z</value>
+    <value>Z printing area</value>
   </data>
   <data name="LBControl" xml:space="preserve">
     <value>Control</value>
   </data>
   <data name="LBenvingut" xml:space="preserve">
-    <value>Benvingut</value>
+    <value>Welcome</value>
   </data>
   <data name="LBGestio" xml:space="preserve">
-    <value>Gestió</value>
+    <value>Management</value>
   </data>
   <data name="LBImpressions" xml:space="preserve">
-    <value>Impressions</value>
+    <value>Printings</value>
   </data>
   <data name="LBImpressores" xml:space="preserve">
-    <value>Impressores</value>
+    <value>Printers</value>
   </data>
   <data name="LBobina" xml:space="preserve">
-    <value>Bobina</value>
+    <value>Coil</value>
   </data>
   <data name="LBobines" xml:space="preserve">
-    <value>Bobines</value>
+    <value>Coils</value>
   </data>
   <data name="LCanvContr" xml:space="preserve">
-    <value>Canviar Contrasenya</value>
+    <value>Change Password</value>
   </data>
   <data name="LCognom" xml:space="preserve">
-    <value>Cognom</value>
+    <value>Surname</value>
   </data>
   <data name="LColor" xml:space="preserve">
     <value>Color</value>
   </data>
   <data name="LContrasenya" xml:space="preserve">
-    <value>Contrasenya</value>
+    <value>Password</value>
   </data>
   <data name="LControl" xml:space="preserve">
     <value>Control</value>
   </data>
   <data name="LCorreu" xml:space="preserve">
-    <value>Correu</value>
+    <value>Email</value>
   </data>
   <data name="LDades" xml:space="preserve">
-    <value>Dades</value>
+    <value>Details</value>
   </data>
   <data name="LDiametre" xml:space="preserve">
-    <value>Diàmetre</value>
+    <value>Diameter</value>
   </data>
   <data name="LDiametreFil" xml:space="preserve">
-    <value>Diàmetre de filament</value>
+    <value>Filament diameter</value>
   </data>
   <data name="LDni" xml:space="preserve">
     <value>Dni</value>
@@ -289,34 +289,31 @@
     <value>Gcode</value>
   </data>
   <data name="LGestio" xml:space="preserve">
-    <value>Gestió</value>
+    <value>Management</value>
   </data>
   <data name="LHex" xml:space="preserve">
-    <value>Codi HEX</value>
+    <value>HEX Code</value>
   </data>
   <data name="LImpressora" xml:space="preserve">
-    <value>Impressora</value>
+    <value>Printer</value>
   </data>
   <data name="LImpressores" xml:space="preserve">
-    <value>Impressores</value>
+    <value>Printing</value>
   </data>
   <data name="LInici" xml:space="preserve">
-    <value>Inici</value>
+    <value>Home</value>
   </data>
   <data name="LMarca" xml:space="preserve">
-    <value>Marca</value>
+    <value>Brand</value>
   </data>
   <data name="LMarcaProductora" xml:space="preserve">
-    <value>Marca productora</value>
+    <value>Producer brand</value>
   </data>
   <data name="LMaterial" xml:space="preserve">
     <value>Material</value>
   </data>
   <data name="LMaterialsSup" xml:space="preserve">
-    <value>Material suportat</value>
-  </data>
-  <data name="LMaterialSup" xml:space="preserve">
-    <value>Material Suportat</value>
+    <value>Supported material</value>
   </data>
   <data name="LModel" xml:space="preserve">
     <value>Model</value>
@@ -328,81 +325,78 @@
     <value>Nº Copies</value>
   </data>
   <data name="LNExtru" xml:space="preserve">
-    <value>Nº Extrusors</value>
+    <value>Nº Extruders</value>
   </data>
   <data name="LNom" xml:space="preserve">
-    <value>Nom</value>
+    <value>Name</value>
   </data>
   <data name="LNomGcode" xml:space="preserve">
-    <value>Nom del GCode</value>
+    <value>Name of the GCode</value>
   </data>
   <data name="LNomUsuari" xml:space="preserve">
-    <value>Nom d'usuari</value>
+    <value>User name</value>
   </data>
   <data name="LNova" xml:space="preserve">
-    <value>Nova</value>
+    <value>New</value>
   </data>
   <data name="Logout" xml:space="preserve">
-    <value>Sortir</value>
+    <value>Logout</value>
   </data>
   <data name="LRContra" xml:space="preserve">
-    <value>Repeteix la contrasenya</value>
-  </data>
-  <data name="LRepContrasenya" xml:space="preserve">
-    <value>Repeteix la contrasenya</value>
+    <value>Repeat the password</value>
   </data>
   <data name="LResMaxCapa" xml:space="preserve">
-    <value>Resolució máxima de capa</value>
+    <value>Maximum layer resolution</value>
   </data>
   <data name="LResMinCapa" xml:space="preserve">
-    <value>Resolució mínima de capa</value>
+    <value>Minimum layer resolution</value>
   </data>
   <data name="LRutaFich" xml:space="preserve">
-    <value>Ruta del ficher</value>
+    <value>File path</value>
   </data>
   <data name="LSelecionarIdioma" xml:space="preserve">
-    <value>Seleciona un Idioma</value>
+    <value>Select a language</value>
   </data>
   <data name="LTecnic" xml:space="preserve">
-    <value>Nom Tècnic</value>
+    <value>Technical Name</value>
   </data>
   <data name="LTempMaxExt" xml:space="preserve">
-    <value>Temperatura máxima del extrusor</value>
+    <value>Maximum extruder temperature</value>
   </data>
   <data name="LTempMaxLlit" xml:space="preserve">
-    <value>Temperatura máxima del llit</value>
+    <value>Maximum bed temperature</value>
   </data>
   <data name="LTempMinExt" xml:space="preserve">
-    <value>Temperatura mínima del extrusor</value>
+    <value>Minimum extruder temperature</value>
   </data>
   <data name="LTempMinLlit" xml:space="preserve">
-    <value>Temperatura mínima del llit</value>
+    <value>Minimum bed temperature</value>
   </data>
   <data name="LUsuari" xml:space="preserve">
-    <value>Usuari</value>
+    <value>User</value>
   </data>
   <data name="LUsuaris" xml:space="preserve">
-    <value>Usuaris</value>
+    <value>Users</value>
   </data>
   <data name="LVelMaxExt" xml:space="preserve">
-    <value>Velocitat máxima de l'extrusor</value>
+    <value>Maximum speed of the extruder</value>
   </data>
   <data name="opcioCambiarIdioma" xml:space="preserve">
-    <value>Cambiar Idioma</value>
+    <value>Change language</value>
   </data>
   <data name="opcioGenerarEstadistiques" xml:space="preserve">
-    <value>Generar Estadistiques</value>
+    <value>Generate Statistics</value>
   </data>
   <data name="opcioPerfil" xml:space="preserve">
-    <value>Perfil</value>
+    <value>Profile</value>
   </data>
   <data name="opcioSortir" xml:space="preserve">
-    <value>Tancar la sessió</value>
+    <value>Logout</value>
   </data>
   <data name="Perfil" xml:space="preserve">
-    <value>Perfil</value>
+    <value>Profile</value>
   </data>
   <data name="Lidioma" xml:space="preserve">
-    <value>Idioma</value>
+    <value>Language</value>
   </data>
 </root>

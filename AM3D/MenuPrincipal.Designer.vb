@@ -330,7 +330,7 @@ Partial Class MenuPrincipal
         Me.LBGestio.AutoSize = True
         Me.LBGestio.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBGestio.ForeColor = System.Drawing.Color.White
-        Me.LBGestio.Location = New System.Drawing.Point(3, 4)
+        Me.LBGestio.Location = New System.Drawing.Point(3, 6)
         Me.LBGestio.Name = "LBGestio"
         Me.LBGestio.Size = New System.Drawing.Size(74, 25)
         Me.LBGestio.TabIndex = 0

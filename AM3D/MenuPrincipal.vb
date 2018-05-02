@@ -93,6 +93,14 @@
 
     'Apartat menu Control
     Private Sub LBControl_Click(sender As Object, e As EventArgs) Handles LBControl.Click
+        If menu_desplegat = True Then
+            PCont.Width = PCont.Width + 97
+            PCont.Left = PCont.Left - 97
+        End If
+
+        LBControl.BackColor = Color.Gray
+        LBInici.BackColor = Color.Black
+        LBGestio.BackColor = Color.Black
         globals.menu = "control"
         desplegar.Image = My.Resources.arrows
         menu_desplegat = False
@@ -104,6 +112,15 @@
     End Sub
     'Apartat menu Inici
     Private Sub LBInici_Click(sender As Object, e As EventArgs) Handles LBInici.Click
+        Usuaris.BackColor = Color.DarkGray
+        Bobines.BackColor = Color.DarkGray
+        Gcode.BackColor = Color.DarkGray
+        Models.BackColor = Color.DarkGray
+        Impressions.BackColor = Color.DarkGray
+        Impressores.BackColor = Color.DarkGray
+        LBControl.BackColor = Color.Black
+        LBInici.BackColor = Color.Gray
+        LBGestio.BackColor = Color.Black
         PCont.Width = 826
         PCont.Left = 72
         FUsuaris.Hide()
@@ -126,6 +143,13 @@
 
     'Apartat menu Gestio
     Private Sub LBGestio_Click(sender As Object, e As EventArgs) Handles LBGestio.Click
+        If menu_desplegat = True Then
+            PCont.Width = PCont.Width + 97
+            PCont.Left = PCont.Left - 97
+        End If
+        LBControl.BackColor = Color.Black
+        LBGestio.BackColor = Color.Gray
+        LBInici.BackColor = Color.Black
         globals.menu = "gestio"
         desplegar2.Image = My.Resources.arrows
         menu_desplegat = False
@@ -196,6 +220,12 @@
 
     'Apartat GCODE
     Private Sub LBGCode_Click(sender As Object, e As EventArgs) Handles LBGCode.Click
+        Usuaris.BackColor = Color.DarkGray
+        Bobines.BackColor = Color.DarkGray
+        Gcode.BackColor = Color.Gray
+        Models.BackColor = Color.DarkGray
+        Impressions.BackColor = Color.DarkGray
+        Impressores.BackColor = Color.DarkGray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -213,6 +243,12 @@
 
     'Apartat MODELS
     Private Sub LBModelsCar_Click(sender As Object, e As EventArgs) Handles LBModelsCar.Click
+        Usuaris.BackColor = Color.DarkGray
+        Bobines.BackColor = Color.DarkGray
+        Gcode.BackColor = Color.DarkGray
+        Models.BackColor = Color.Gray
+        Impressions.BackColor = Color.DarkGray
+        Impressores.BackColor = Color.DarkGray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -230,6 +266,12 @@
 
     'Apartat Bobines
     Private Sub LBBobines_Click(sender As Object, e As EventArgs) Handles LBBobines.Click
+        Usuaris.BackColor = Color.DarkGray
+        Bobines.BackColor = Color.Gray
+        Gcode.BackColor = Color.DarkGray
+        Models.BackColor = Color.DarkGray
+        Impressions.BackColor = Color.DarkGray
+        Impressores.BackColor = Color.DarkGray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -247,6 +289,12 @@
 
     'Apartat USUARIS
     Private Sub LBUsuaris_Click(sender As Object, e As EventArgs) Handles LBUsuaris.Click
+        Usuaris.BackColor = Color.Gray
+        Bobines.BackColor = Color.DarkGray
+        Gcode.BackColor = Color.DarkGray
+        Models.BackColor = Color.DarkGray
+        Impressions.BackColor = Color.DarkGray
+        Impressores.BackColor = Color.DarkGray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -264,6 +312,12 @@
 
     'Apartat USUARIS
     Private Sub Usuaris_Click(sender As Object, e As EventArgs) Handles Usuaris.Click
+        Usuaris.BackColor = Color.Gray
+        Bobines.BackColor = Color.DarkGray
+        Gcode.BackColor = Color.DarkGray
+        Models.BackColor = Color.DarkGray
+        Impressions.BackColor = Color.DarkGray
+        Impressores.BackColor = Color.DarkGray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -281,6 +335,12 @@
 
     'Apartat BOBINES
     Private Sub Bobines_Click(sender As Object, e As EventArgs) Handles Bobines.Click
+        Usuaris.BackColor = Color.DarkGray
+        Bobines.BackColor = Color.Gray
+        Gcode.BackColor = Color.DarkGray
+        Models.BackColor = Color.DarkGray
+        Impressions.BackColor = Color.DarkGray
+        Impressores.BackColor = Color.DarkGray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -298,6 +358,12 @@
 
     'Apartat MODELS
     Private Sub Models_Click(sender As Object, e As EventArgs) Handles Models.Click
+        Usuaris.BackColor = Color.DarkGray
+        Bobines.BackColor = Color.DarkGray
+        Gcode.BackColor = Color.DarkGray
+        Models.BackColor = Color.Gray
+        Impressions.BackColor = Color.DarkGray
+        Impressores.BackColor = Color.DarkGray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -315,6 +381,12 @@
 
     'Apartat GCODE
     Private Sub Gcode_Click(sender As Object, e As EventArgs) Handles Gcode.Click
+        Usuaris.BackColor = Color.DarkGray
+        Bobines.BackColor = Color.DarkGray
+        Gcode.BackColor = Color.Gray
+        Models.BackColor = Color.DarkGray
+        Impressions.BackColor = Color.DarkGray
+        Impressores.BackColor = Color.DarkGray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -332,6 +404,12 @@
 
     'Apartat IMORESSIONS
     Private Sub LBImpressions_Click(sender As Object, e As EventArgs) Handles LBImpressions.Click
+        Usuaris.BackColor = Color.DarkGray
+        Bobines.BackColor = Color.DarkGray
+        Gcode.BackColor = Color.DarkGray
+        Models.BackColor = Color.DarkGray
+        Impressions.BackColor = Color.Gray
+        Impressores.BackColor = Color.DarkGray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -349,6 +427,12 @@
 
     'Apartat IMPRESSORES
     Private Sub LBImpressores_Click(sender As Object, e As EventArgs) Handles LBImpressores.Click
+        Usuaris.BackColor = Color.DarkGray
+        Bobines.BackColor = Color.DarkGray
+        Gcode.BackColor = Color.DarkGray
+        Models.BackColor = Color.DarkGray
+        Impressions.BackColor = Color.DarkGray
+        Impressores.BackColor = Color.Gray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -366,6 +450,12 @@
 
     'Apartat IMPRESSIONS
     Private Sub Impressions_Click(sender As Object, e As EventArgs) Handles Impressions.Click
+        Usuaris.BackColor = Color.DarkGray
+        Bobines.BackColor = Color.DarkGray
+        Gcode.BackColor = Color.DarkGray
+        Models.BackColor = Color.DarkGray
+        Impressions.BackColor = Color.Gray
+        Impressores.BackColor = Color.DarkGray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -383,6 +473,12 @@
 
     'Apartat IMPRESSORES
     Private Sub Impressores_Click(sender As Object, e As EventArgs) Handles Impressores.Click
+        Usuaris.BackColor = Color.DarkGray
+        Bobines.BackColor = Color.DarkGray
+        Gcode.BackColor = Color.DarkGray
+        Models.BackColor = Color.DarkGray
+        Impressions.BackColor = Color.DarkGray
+        Impressores.BackColor = Color.Gray
         FUsuaris.Hide()
         FBobines.Hide()
         FCambIdiom.Hide()
@@ -475,5 +571,6 @@
         Return False
 
     End Function
+
 
 End Class
