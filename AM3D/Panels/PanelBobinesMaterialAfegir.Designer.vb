@@ -32,7 +32,7 @@ Partial Class PanelBobinesMaterialAfegir
         '
         'TBTecnic
         '
-        Me.TBTecnic.Location = New System.Drawing.Point(146, 78)
+        Me.TBTecnic.Location = New System.Drawing.Point(210, 78)
         Me.TBTecnic.Name = "TBTecnic"
         Me.TBTecnic.Size = New System.Drawing.Size(141, 20)
         Me.TBTecnic.TabIndex = 61
@@ -78,7 +78,7 @@ Partial Class PanelBobinesMaterialAfegir
         '
         'TBMaterial
         '
-        Me.TBMaterial.Location = New System.Drawing.Point(146, 34)
+        Me.TBMaterial.Location = New System.Drawing.Point(210, 34)
         Me.TBMaterial.Name = "TBMaterial"
         Me.TBMaterial.Size = New System.Drawing.Size(141, 20)
         Me.TBMaterial.TabIndex = 57

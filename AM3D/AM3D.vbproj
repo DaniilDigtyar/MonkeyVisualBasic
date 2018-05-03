@@ -332,6 +332,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>cat.resx</DependentUpon>
     </Compile>
+    <Compile Include="Language.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Popups\CanviarBobina.resx">

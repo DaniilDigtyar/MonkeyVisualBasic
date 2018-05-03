@@ -52,8 +52,9 @@ Partial Class ModificarModel
         Me.LTempMinExt = New System.Windows.Forms.Label()
         Me.LTempMaxExt = New System.Windows.Forms.Label()
         Me.LNExtru = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.LMarca = New System.Windows.Forms.Label()
         Me.LModel = New System.Windows.Forms.Label()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'BTCancelar
@@ -106,7 +107,7 @@ Partial Class ModificarModel
         'CBMarca
         '
         Me.CBMarca.FormattingEnabled = True
-        Me.CBMarca.Location = New System.Drawing.Point(277, 22)
+        Me.CBMarca.Location = New System.Drawing.Point(277, 25)
         Me.CBMarca.Name = "CBMarca"
         Me.CBMarca.Size = New System.Drawing.Size(141, 21)
         Me.CBMarca.TabIndex = 75
@@ -120,21 +121,21 @@ Partial Class ModificarModel
         '
         'TBResMaxCap
         '
-        Me.TBResMaxCap.Location = New System.Drawing.Point(676, 91)
+        Me.TBResMaxCap.Location = New System.Drawing.Point(676, 93)
         Me.TBResMaxCap.Name = "TBResMaxCap"
         Me.TBResMaxCap.Size = New System.Drawing.Size(106, 20)
         Me.TBResMaxCap.TabIndex = 73
         '
         'TBResMinCap
         '
-        Me.TBResMinCap.Location = New System.Drawing.Point(676, 58)
+        Me.TBResMinCap.Location = New System.Drawing.Point(676, 60)
         Me.TBResMinCap.Name = "TBResMinCap"
         Me.TBResMinCap.Size = New System.Drawing.Size(106, 20)
         Me.TBResMinCap.TabIndex = 72
         '
         'TBVelMinExt
         '
-        Me.TBVelMinExt.Location = New System.Drawing.Point(676, 25)
+        Me.TBVelMinExt.Location = New System.Drawing.Point(676, 28)
         Me.TBVelMinExt.Name = "TBVelMinExt"
         Me.TBVelMinExt.Size = New System.Drawing.Size(106, 20)
         Me.TBVelMinExt.TabIndex = 71
@@ -190,14 +191,14 @@ Partial Class ModificarModel
         '
         'TBExtrusors
         '
-        Me.TBExtrusors.Location = New System.Drawing.Point(277, 91)
+        Me.TBExtrusors.Location = New System.Drawing.Point(277, 93)
         Me.TBExtrusors.Name = "TBExtrusors"
         Me.TBExtrusors.Size = New System.Drawing.Size(141, 20)
         Me.TBExtrusors.TabIndex = 63
         '
         'TBModel
         '
-        Me.TBModel.Location = New System.Drawing.Point(277, 56)
+        Me.TBModel.Location = New System.Drawing.Point(277, 58)
         Me.TBModel.Name = "TBModel"
         Me.TBModel.Size = New System.Drawing.Size(141, 20)
         Me.TBModel.TabIndex = 62
@@ -218,7 +219,7 @@ Partial Class ModificarModel
         Me.LResMaxCapa.AutoSize = True
         Me.LResMaxCapa.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LResMaxCapa.ForeColor = System.Drawing.Color.Black
-        Me.LResMaxCapa.Location = New System.Drawing.Point(438, 89)
+        Me.LResMaxCapa.Location = New System.Drawing.Point(438, 91)
         Me.LResMaxCapa.Name = "LResMaxCapa"
         Me.LResMaxCapa.Size = New System.Drawing.Size(198, 20)
         Me.LResMaxCapa.TabIndex = 60
@@ -229,7 +230,7 @@ Partial Class ModificarModel
         Me.LResMinCapa.AutoSize = True
         Me.LResMinCapa.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LResMinCapa.ForeColor = System.Drawing.Color.Black
-        Me.LResMinCapa.Location = New System.Drawing.Point(438, 56)
+        Me.LResMinCapa.Location = New System.Drawing.Point(438, 58)
         Me.LResMinCapa.Name = "LResMinCapa"
         Me.LResMinCapa.Size = New System.Drawing.Size(194, 20)
         Me.LResMinCapa.TabIndex = 59
@@ -240,7 +241,7 @@ Partial Class ModificarModel
         Me.LVelMaxExt.AutoSize = True
         Me.LVelMaxExt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LVelMaxExt.ForeColor = System.Drawing.Color.Black
-        Me.LVelMaxExt.Location = New System.Drawing.Point(438, 23)
+        Me.LVelMaxExt.Location = New System.Drawing.Point(438, 26)
         Me.LVelMaxExt.Name = "LVelMaxExt"
         Me.LVelMaxExt.Size = New System.Drawing.Size(218, 20)
         Me.LVelMaxExt.TabIndex = 58
@@ -328,33 +329,41 @@ Partial Class ModificarModel
         Me.LNExtru.AutoSize = True
         Me.LNExtru.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNExtru.ForeColor = System.Drawing.Color.Black
-        Me.LNExtru.Location = New System.Drawing.Point(22, 89)
+        Me.LNExtru.Location = New System.Drawing.Point(22, 91)
         Me.LNExtru.Name = "LNExtru"
         Me.LNExtru.Size = New System.Drawing.Size(97, 20)
         Me.LNExtru.TabIndex = 50
         Me.LNExtru.Text = "Nº Extrusors"
         '
-        'Label1
+        'LMarca
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(22, 23)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(53, 20)
-        Me.Label1.TabIndex = 49
-        Me.Label1.Text = "Marca"
+        Me.LMarca.AutoSize = True
+        Me.LMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LMarca.ForeColor = System.Drawing.Color.Black
+        Me.LMarca.Location = New System.Drawing.Point(22, 26)
+        Me.LMarca.Name = "LMarca"
+        Me.LMarca.Size = New System.Drawing.Size(53, 20)
+        Me.LMarca.TabIndex = 49
+        Me.LMarca.Text = "Marca"
         '
         'LModel
         '
         Me.LModel.AutoSize = True
         Me.LModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LModel.ForeColor = System.Drawing.Color.Black
-        Me.LModel.Location = New System.Drawing.Point(22, 56)
+        Me.LModel.Location = New System.Drawing.Point(22, 58)
         Me.LModel.Name = "LModel"
         Me.LModel.Size = New System.Drawing.Size(114, 20)
         Me.LModel.TabIndex = 48
         Me.LModel.Text = "Nom del model"
+        '
+        'MenuSup
+        '
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Location = New System.Drawing.Point(-2, 0)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(803, 19)
+        Me.MenuSup.TabIndex = 80
         '
         'ModificarModel
         '
@@ -362,6 +371,7 @@ Partial Class ModificarModel
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(801, 381)
+        Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.BTCancelar)
         Me.Controls.Add(Me.BTModificar)
         Me.Controls.Add(Me.LMaterialSup)
@@ -392,7 +402,7 @@ Partial Class ModificarModel
         Me.Controls.Add(Me.LTempMinExt)
         Me.Controls.Add(Me.LTempMaxExt)
         Me.Controls.Add(Me.LNExtru)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.LMarca)
         Me.Controls.Add(Me.LModel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ModificarModel"
@@ -432,6 +442,7 @@ Partial Class ModificarModel
     Friend WithEvents LTempMinExt As Label
     Friend WithEvents LTempMaxExt As Label
     Friend WithEvents LNExtru As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents LModel As Label
+    Friend WithEvents MenuSup As Panel
+    Public WithEvents LMarca As Label
 End Class

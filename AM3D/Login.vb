@@ -48,19 +48,13 @@
     Private Sub CBIdioma_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CBIdioma.SelectedIndexChanged
         If CBIdioma.SelectedIndex = 0 Then
             globals.lang = "cat"
-            Lidioma.Text = My.Resources.cat.Lidioma
-            LUsuari.Text = My.Resources.cat.LUsuari
-            LContrasenya.Text = My.Resources.cat.LContrasenya
-            CBRecordar.Text = My.Resources.cat.CBRecordar
-            ButtonLogin.Text = My.Resources.cat.ButtonLogin
+            Language.setLang()
+
         End If
         If CBIdioma.SelectedIndex = 1 Then
             globals.lang = "eng"
-            Lidioma.Text = My.Resources.eng.Lidioma
-            LUsuari.Text = My.Resources.eng.LUsuari
-            LContrasenya.Text = My.Resources.eng.LContrasenya
-            CBRecordar.Text = My.Resources.eng.CBRecordar
-            ButtonLogin.Text = My.Resources.eng.ButtonLogin
+            Language.setLang()
+
         End If
     End Sub
 

@@ -32,7 +32,7 @@ Partial Class PanelUsuarisAfegir
         Me.TBCongnom = New System.Windows.Forms.TextBox()
         Me.TBContrasenya = New System.Windows.Forms.TextBox()
         Me.TBRContrasenya = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.LPermisos = New System.Windows.Forms.Label()
         Me.CLBPermisos = New System.Windows.Forms.CheckedListBox()
         Me.BTEsborrar = New System.Windows.Forms.Button()
         Me.BTCrear = New System.Windows.Forms.Button()
@@ -130,16 +130,16 @@ Partial Class PanelUsuarisAfegir
         Me.TBRContrasenya.Size = New System.Drawing.Size(196, 20)
         Me.TBRContrasenya.TabIndex = 12
         '
-        'Label6
+        'LPermisos
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(575, 9)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(93, 25)
-        Me.Label6.TabIndex = 13
-        Me.Label6.Text = "Permisos"
+        Me.LPermisos.AutoSize = True
+        Me.LPermisos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LPermisos.ForeColor = System.Drawing.Color.Black
+        Me.LPermisos.Location = New System.Drawing.Point(575, 9)
+        Me.LPermisos.Name = "LPermisos"
+        Me.LPermisos.Size = New System.Drawing.Size(93, 25)
+        Me.LPermisos.TabIndex = 13
+        Me.LPermisos.Text = "Permisos"
         '
         'CLBPermisos
         '
@@ -206,7 +206,7 @@ Partial Class PanelUsuarisAfegir
         Me.Controls.Add(Me.BTEsborrar)
         Me.Controls.Add(Me.BTCrear)
         Me.Controls.Add(Me.CLBPermisos)
-        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.LPermisos)
         Me.Controls.Add(Me.TBRContrasenya)
         Me.Controls.Add(Me.TBContrasenya)
         Me.Controls.Add(Me.TBCongnom)
@@ -236,7 +236,7 @@ Partial Class PanelUsuarisAfegir
     Friend WithEvents TBCongnom As TextBox
     Friend WithEvents TBContrasenya As TextBox
     Friend WithEvents TBRContrasenya As TextBox
-    Friend WithEvents Label6 As Label
+    Friend WithEvents LPermisos As Label
     Friend WithEvents CLBPermisos As CheckedListBox
     Friend WithEvents BTEsborrar As Button
     Friend WithEvents BTCrear As Button

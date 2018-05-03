@@ -28,6 +28,7 @@ Partial Class CanviarBobina
         Me.BTCanviar = New System.Windows.Forms.Button()
         Me.CBBobina = New System.Windows.Forms.ComboBox()
         Me.LBobina = New System.Windows.Forms.Label()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'CBImpressora
@@ -96,12 +97,21 @@ Partial Class CanviarBobina
         Me.LBobina.TabIndex = 24
         Me.LBobina.Text = "Bobina"
         '
+        'MenuSup
+        '
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Location = New System.Drawing.Point(-1, -2)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(404, 23)
+        Me.MenuSup.TabIndex = 26
+        '
         'CanviarBobina
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(402, 282)
+        Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.CBBobina)
         Me.Controls.Add(Me.LBobina)
         Me.Controls.Add(Me.CBImpressora)
@@ -122,4 +132,5 @@ Partial Class CanviarBobina
     Friend WithEvents BTCanviar As Button
     Friend WithEvents CBBobina As ComboBox
     Friend WithEvents LBobina As Label
+    Friend WithEvents MenuSup As Panel
 End Class

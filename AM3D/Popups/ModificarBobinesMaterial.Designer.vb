@@ -28,11 +28,12 @@ Partial Class ModificarBobinesMaterial
         Me.BTModificar = New System.Windows.Forms.Button()
         Me.TBMaterial = New System.Windows.Forms.TextBox()
         Me.LMaterial = New System.Windows.Forms.Label()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'TBTecnic
         '
-        Me.TBTecnic.Location = New System.Drawing.Point(159, 64)
+        Me.TBTecnic.Location = New System.Drawing.Point(196, 78)
         Me.TBTecnic.Name = "TBTecnic"
         Me.TBTecnic.Size = New System.Drawing.Size(141, 20)
         Me.TBTecnic.TabIndex = 67
@@ -42,7 +43,7 @@ Partial Class ModificarBobinesMaterial
         Me.LTecnic.AutoSize = True
         Me.LTecnic.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LTecnic.ForeColor = System.Drawing.Color.Black
-        Me.LTecnic.Location = New System.Drawing.Point(51, 64)
+        Me.LTecnic.Location = New System.Drawing.Point(29, 78)
         Me.LTecnic.Name = "LTecnic"
         Me.LTecnic.Size = New System.Drawing.Size(92, 20)
         Me.LTecnic.TabIndex = 66
@@ -55,11 +56,11 @@ Partial Class ModificarBobinesMaterial
         Me.BTBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTBorrar.ForeColor = System.Drawing.Color.Black
-        Me.BTBorrar.Location = New System.Drawing.Point(55, 201)
+        Me.BTBorrar.Location = New System.Drawing.Point(55, 220)
         Me.BTBorrar.Name = "BTBorrar"
         Me.BTBorrar.Size = New System.Drawing.Size(245, 62)
         Me.BTBorrar.TabIndex = 65
-        Me.BTBorrar.Text = "Cancelar"
+        Me.BTBorrar.Text = "Borrar"
         Me.BTBorrar.UseVisualStyleBackColor = False
         '
         'BTModificar
@@ -69,7 +70,7 @@ Partial Class ModificarBobinesMaterial
         Me.BTModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificar.ForeColor = System.Drawing.Color.Black
-        Me.BTModificar.Location = New System.Drawing.Point(55, 126)
+        Me.BTModificar.Location = New System.Drawing.Point(55, 132)
         Me.BTModificar.Name = "BTModificar"
         Me.BTModificar.Size = New System.Drawing.Size(245, 62)
         Me.BTModificar.TabIndex = 64
@@ -78,7 +79,7 @@ Partial Class ModificarBobinesMaterial
         '
         'TBMaterial
         '
-        Me.TBMaterial.Location = New System.Drawing.Point(159, 20)
+        Me.TBMaterial.Location = New System.Drawing.Point(196, 36)
         Me.TBMaterial.Name = "TBMaterial"
         Me.TBMaterial.Size = New System.Drawing.Size(141, 20)
         Me.TBMaterial.TabIndex = 63
@@ -88,11 +89,19 @@ Partial Class ModificarBobinesMaterial
         Me.LMaterial.AutoSize = True
         Me.LMaterial.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMaterial.ForeColor = System.Drawing.Color.Black
-        Me.LMaterial.Location = New System.Drawing.Point(51, 20)
+        Me.LMaterial.Location = New System.Drawing.Point(29, 34)
         Me.LMaterial.Name = "LMaterial"
         Me.LMaterial.Size = New System.Drawing.Size(65, 20)
         Me.LMaterial.TabIndex = 62
         Me.LMaterial.Text = "Material"
+        '
+        'MenuSup
+        '
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Location = New System.Drawing.Point(0, 0)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(366, 19)
+        Me.MenuSup.TabIndex = 68
         '
         'ModificarBobinesMaterial
         '
@@ -100,6 +109,7 @@ Partial Class ModificarBobinesMaterial
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(364, 332)
+        Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.TBTecnic)
         Me.Controls.Add(Me.LTecnic)
         Me.Controls.Add(Me.BTBorrar)
@@ -121,4 +131,5 @@ Partial Class ModificarBobinesMaterial
     Friend WithEvents BTModificar As Button
     Friend WithEvents TBMaterial As TextBox
     Friend WithEvents LMaterial As Label
+    Friend WithEvents MenuSup As Panel
 End Class

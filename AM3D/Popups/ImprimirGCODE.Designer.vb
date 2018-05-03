@@ -30,6 +30,7 @@ Partial Class ImprimirGCODE
         Me.TBCopies = New System.Windows.Forms.TextBox()
         Me.CBGcode = New System.Windows.Forms.ComboBox()
         Me.CBImpriImpressora = New System.Windows.Forms.ComboBox()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'BTImprimirCancelar
@@ -65,7 +66,7 @@ Partial Class ImprimirGCODE
         Me.LNomGcode.AutoSize = True
         Me.LNomGcode.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNomGcode.ForeColor = System.Drawing.Color.Black
-        Me.LNomGcode.Location = New System.Drawing.Point(38, 23)
+        Me.LNomGcode.Location = New System.Drawing.Point(22, 32)
         Me.LNomGcode.Name = "LNomGcode"
         Me.LNomGcode.Size = New System.Drawing.Size(116, 25)
         Me.LNomGcode.TabIndex = 12
@@ -76,7 +77,7 @@ Partial Class ImprimirGCODE
         Me.LImpressora.AutoSize = True
         Me.LImpressora.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LImpressora.ForeColor = System.Drawing.Color.Black
-        Me.LImpressora.Location = New System.Drawing.Point(213, 23)
+        Me.LImpressora.Location = New System.Drawing.Point(236, 32)
         Me.LImpressora.Name = "LImpressora"
         Me.LImpressora.Size = New System.Drawing.Size(109, 25)
         Me.LImpressora.TabIndex = 14
@@ -87,7 +88,7 @@ Partial Class ImprimirGCODE
         Me.LNCopies.AutoSize = True
         Me.LNCopies.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNCopies.ForeColor = System.Drawing.Color.Black
-        Me.LNCopies.Location = New System.Drawing.Point(38, 119)
+        Me.LNCopies.Location = New System.Drawing.Point(25, 119)
         Me.LNCopies.Name = "LNCopies"
         Me.LNCopies.Size = New System.Drawing.Size(100, 25)
         Me.LNCopies.TabIndex = 16
@@ -95,7 +96,7 @@ Partial Class ImprimirGCODE
         '
         'TBCopies
         '
-        Me.TBCopies.Location = New System.Drawing.Point(33, 164)
+        Me.TBCopies.Location = New System.Drawing.Point(27, 165)
         Me.TBCopies.Name = "TBCopies"
         Me.TBCopies.Size = New System.Drawing.Size(121, 20)
         Me.TBCopies.TabIndex = 17
@@ -103,7 +104,7 @@ Partial Class ImprimirGCODE
         'CBGcode
         '
         Me.CBGcode.FormattingEnabled = True
-        Me.CBGcode.Location = New System.Drawing.Point(33, 64)
+        Me.CBGcode.Location = New System.Drawing.Point(27, 68)
         Me.CBGcode.Name = "CBGcode"
         Me.CBGcode.Size = New System.Drawing.Size(121, 21)
         Me.CBGcode.TabIndex = 18
@@ -111,10 +112,18 @@ Partial Class ImprimirGCODE
         'CBImpriImpressora
         '
         Me.CBImpriImpressora.FormattingEnabled = True
-        Me.CBImpriImpressora.Location = New System.Drawing.Point(204, 64)
+        Me.CBImpriImpressora.Location = New System.Drawing.Point(227, 68)
         Me.CBImpriImpressora.Name = "CBImpriImpressora"
         Me.CBImpriImpressora.Size = New System.Drawing.Size(121, 21)
         Me.CBImpriImpressora.TabIndex = 19
+        '
+        'MenuSup
+        '
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Location = New System.Drawing.Point(-1, 0)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(372, 19)
+        Me.MenuSup.TabIndex = 20
         '
         'ImprimirGCODE
         '
@@ -122,6 +131,7 @@ Partial Class ImprimirGCODE
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(370, 320)
+        Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.CBImpriImpressora)
         Me.Controls.Add(Me.CBGcode)
         Me.Controls.Add(Me.TBCopies)
@@ -147,4 +157,5 @@ Partial Class ImprimirGCODE
     Friend WithEvents TBCopies As TextBox
     Friend WithEvents CBGcode As ComboBox
     Friend WithEvents CBImpriImpressora As ComboBox
+    Friend WithEvents MenuSup As Panel
 End Class

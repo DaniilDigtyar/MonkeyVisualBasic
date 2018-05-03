@@ -72,7 +72,7 @@ Partial Class PanelGcodeAfegir
         Me.LNomGcode.AutoSize = True
         Me.LNomGcode.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNomGcode.ForeColor = System.Drawing.Color.Black
-        Me.LNomGcode.Location = New System.Drawing.Point(60, 44)
+        Me.LNomGcode.Location = New System.Drawing.Point(27, 44)
         Me.LNomGcode.Name = "LNomGcode"
         Me.LNomGcode.Size = New System.Drawing.Size(105, 20)
         Me.LNomGcode.TabIndex = 50
@@ -90,7 +90,7 @@ Partial Class PanelGcodeAfegir
         Me.LRuta.AutoSize = True
         Me.LRuta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LRuta.ForeColor = System.Drawing.Color.Black
-        Me.LRuta.Location = New System.Drawing.Point(60, 93)
+        Me.LRuta.Location = New System.Drawing.Point(27, 93)
         Me.LRuta.Name = "LRuta"
         Me.LRuta.Size = New System.Drawing.Size(107, 20)
         Me.LRuta.TabIndex = 54

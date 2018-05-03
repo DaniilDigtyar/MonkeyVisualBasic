@@ -48,9 +48,9 @@ Partial Class MenuPrincipal
         Me.LBGestio = New System.Windows.Forms.Label()
         Me.user = New System.Windows.Forms.ComboBox()
         Me.MenuSup = New System.Windows.Forms.Panel()
+        Me.LBControl = New System.Windows.Forms.Label()
         Me.LBUser = New System.Windows.Forms.Label()
         Me.PanelControl = New System.Windows.Forms.Panel()
-        Me.LBControl = New System.Windows.Forms.Label()
         Me.MSGBox1 = New System.Windows.Forms.Panel()
         Me.LBMSG1 = New System.Windows.Forms.Label()
         Me.MSGBox2 = New System.Windows.Forms.Panel()
@@ -74,7 +74,6 @@ Partial Class MenuPrincipal
         CType(Me.cerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.MenuSup.SuspendLayout()
-        Me.PanelControl.SuspendLayout()
         Me.MSGBox1.SuspendLayout()
         Me.MSGBox2.SuspendLayout()
         Me.MSGBox3.SuspendLayout()
@@ -281,9 +280,9 @@ Partial Class MenuPrincipal
         Me.LBInici.ForeColor = System.Drawing.Color.White
         Me.LBInici.Location = New System.Drawing.Point(33, 6)
         Me.LBInici.Name = "LBInici"
-        Me.LBInici.Size = New System.Drawing.Size(128, 25)
+        Me.LBInici.Size = New System.Drawing.Size(50, 25)
         Me.LBInici.TabIndex = 3
-        Me.LBInici.Text = "AM3D - Inici"
+        Me.LBInici.Text = "Inici"
         '
         'PictureBox1
         '
@@ -320,9 +319,9 @@ Partial Class MenuPrincipal
         '
         Me.Panel4.Controls.Add(Me.LBGestio)
         Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel4.Location = New System.Drawing.Point(300, 1)
+        Me.Panel4.Location = New System.Drawing.Point(223, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(82, 33)
+        Me.Panel4.Size = New System.Drawing.Size(170, 33)
         Me.Panel4.TabIndex = 8
         '
         'LBGestio
@@ -350,6 +349,7 @@ Partial Class MenuPrincipal
         'MenuSup
         '
         Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Controls.Add(Me.LBControl)
         Me.MenuSup.Controls.Add(Me.LBUser)
         Me.MenuSup.Controls.Add(Me.user)
         Me.MenuSup.Controls.Add(Me.Panel4)
@@ -362,6 +362,17 @@ Partial Class MenuPrincipal
         Me.MenuSup.Name = "MenuSup"
         Me.MenuSup.Size = New System.Drawing.Size(898, 36)
         Me.MenuSup.TabIndex = 0
+        '
+        'LBControl
+        '
+        Me.LBControl.AutoSize = True
+        Me.LBControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBControl.ForeColor = System.Drawing.Color.White
+        Me.LBControl.Location = New System.Drawing.Point(117, 6)
+        Me.LBControl.Name = "LBControl"
+        Me.LBControl.Size = New System.Drawing.Size(81, 25)
+        Me.LBControl.TabIndex = 0
+        Me.LBControl.Text = "Control"
         '
         'LBUser
         '
@@ -376,22 +387,10 @@ Partial Class MenuPrincipal
         '
         'PanelControl
         '
-        Me.PanelControl.Controls.Add(Me.LBControl)
-        Me.PanelControl.Location = New System.Drawing.Point(190, 1)
+        Me.PanelControl.Location = New System.Drawing.Point(117, 2)
         Me.PanelControl.Name = "PanelControl"
         Me.PanelControl.Size = New System.Drawing.Size(82, 33)
         Me.PanelControl.TabIndex = 7
-        '
-        'LBControl
-        '
-        Me.LBControl.AutoSize = True
-        Me.LBControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBControl.ForeColor = System.Drawing.Color.White
-        Me.LBControl.Location = New System.Drawing.Point(0, 6)
-        Me.LBControl.Name = "LBControl"
-        Me.LBControl.Size = New System.Drawing.Size(81, 25)
-        Me.LBControl.TabIndex = 0
-        Me.LBControl.Text = "Control"
         '
         'MSGBox1
         '
@@ -503,8 +502,6 @@ Partial Class MenuPrincipal
         Me.Panel4.PerformLayout()
         Me.MenuSup.ResumeLayout(False)
         Me.MenuSup.PerformLayout()
-        Me.PanelControl.ResumeLayout(False)
-        Me.PanelControl.PerformLayout()
         Me.MSGBox1.ResumeLayout(False)
         Me.MSGBox1.PerformLayout()
         Me.MSGBox2.ResumeLayout(False)

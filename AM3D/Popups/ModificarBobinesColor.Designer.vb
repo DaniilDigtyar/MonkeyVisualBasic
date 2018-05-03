@@ -28,11 +28,12 @@ Partial Class ModificarBobinesColor
         Me.BTModificar = New System.Windows.Forms.Button()
         Me.TBColor = New System.Windows.Forms.TextBox()
         Me.LColor = New System.Windows.Forms.Label()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'TBHex
         '
-        Me.TBHex.Location = New System.Drawing.Point(146, 66)
+        Me.TBHex.Location = New System.Drawing.Point(146, 86)
         Me.TBHex.Name = "TBHex"
         Me.TBHex.Size = New System.Drawing.Size(141, 20)
         Me.TBHex.TabIndex = 61
@@ -42,7 +43,7 @@ Partial Class ModificarBobinesColor
         Me.LHex.AutoSize = True
         Me.LHex.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LHex.ForeColor = System.Drawing.Color.Black
-        Me.LHex.Location = New System.Drawing.Point(38, 66)
+        Me.LHex.Location = New System.Drawing.Point(38, 86)
         Me.LHex.Name = "LHex"
         Me.LHex.Size = New System.Drawing.Size(79, 20)
         Me.LHex.TabIndex = 60
@@ -55,7 +56,7 @@ Partial Class ModificarBobinesColor
         Me.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTCancelar.ForeColor = System.Drawing.Color.Black
-        Me.BTCancelar.Location = New System.Drawing.Point(42, 203)
+        Me.BTCancelar.Location = New System.Drawing.Point(42, 233)
         Me.BTCancelar.Name = "BTCancelar"
         Me.BTCancelar.Size = New System.Drawing.Size(245, 62)
         Me.BTCancelar.TabIndex = 59
@@ -69,7 +70,7 @@ Partial Class ModificarBobinesColor
         Me.BTModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificar.ForeColor = System.Drawing.Color.Black
-        Me.BTModificar.Location = New System.Drawing.Point(42, 128)
+        Me.BTModificar.Location = New System.Drawing.Point(42, 158)
         Me.BTModificar.Name = "BTModificar"
         Me.BTModificar.Size = New System.Drawing.Size(245, 62)
         Me.BTModificar.TabIndex = 58
@@ -78,7 +79,7 @@ Partial Class ModificarBobinesColor
         '
         'TBColor
         '
-        Me.TBColor.Location = New System.Drawing.Point(146, 22)
+        Me.TBColor.Location = New System.Drawing.Point(146, 42)
         Me.TBColor.Name = "TBColor"
         Me.TBColor.Size = New System.Drawing.Size(141, 20)
         Me.TBColor.TabIndex = 57
@@ -88,11 +89,19 @@ Partial Class ModificarBobinesColor
         Me.LColor.AutoSize = True
         Me.LColor.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LColor.ForeColor = System.Drawing.Color.Black
-        Me.LColor.Location = New System.Drawing.Point(38, 22)
+        Me.LColor.Location = New System.Drawing.Point(38, 42)
         Me.LColor.Name = "LColor"
         Me.LColor.Size = New System.Drawing.Size(46, 20)
         Me.LColor.TabIndex = 56
         Me.LColor.Text = "Color"
+        '
+        'MenuSup
+        '
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Location = New System.Drawing.Point(-3, 0)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(345, 19)
+        Me.MenuSup.TabIndex = 62
         '
         'ModificarBobinesColor
         '
@@ -100,6 +109,7 @@ Partial Class ModificarBobinesColor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(341, 364)
+        Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.TBHex)
         Me.Controls.Add(Me.LHex)
         Me.Controls.Add(Me.BTCancelar)
@@ -121,4 +131,5 @@ Partial Class ModificarBobinesColor
     Friend WithEvents BTModificar As Button
     Friend WithEvents TBColor As TextBox
     Friend WithEvents LColor As Label
+    Friend WithEvents MenuSup As Panel
 End Class

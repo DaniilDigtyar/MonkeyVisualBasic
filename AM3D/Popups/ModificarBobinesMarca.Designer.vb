@@ -26,11 +26,12 @@ Partial Class ModificarBobinesMarca
         Me.LMarcaProductora = New System.Windows.Forms.Label()
         Me.BTCancelar = New System.Windows.Forms.Button()
         Me.BTModificar = New System.Windows.Forms.Button()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'TBMarca
         '
-        Me.TBMarca.Location = New System.Drawing.Point(178, 25)
+        Me.TBMarca.Location = New System.Drawing.Point(191, 39)
         Me.TBMarca.Name = "TBMarca"
         Me.TBMarca.Size = New System.Drawing.Size(141, 20)
         Me.TBMarca.TabIndex = 63
@@ -40,7 +41,7 @@ Partial Class ModificarBobinesMarca
         Me.LMarcaProductora.AutoSize = True
         Me.LMarcaProductora.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMarcaProductora.ForeColor = System.Drawing.Color.Black
-        Me.LMarcaProductora.Location = New System.Drawing.Point(23, 25)
+        Me.LMarcaProductora.Location = New System.Drawing.Point(36, 39)
         Me.LMarcaProductora.Name = "LMarcaProductora"
         Me.LMarcaProductora.Size = New System.Drawing.Size(134, 20)
         Me.LMarcaProductora.TabIndex = 62
@@ -53,7 +54,7 @@ Partial Class ModificarBobinesMarca
         Me.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTCancelar.ForeColor = System.Drawing.Color.Black
-        Me.BTCancelar.Location = New System.Drawing.Point(62, 153)
+        Me.BTCancelar.Location = New System.Drawing.Point(62, 177)
         Me.BTCancelar.Name = "BTCancelar"
         Me.BTCancelar.Size = New System.Drawing.Size(245, 62)
         Me.BTCancelar.TabIndex = 61
@@ -67,12 +68,20 @@ Partial Class ModificarBobinesMarca
         Me.BTModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificar.ForeColor = System.Drawing.Color.Black
-        Me.BTModificar.Location = New System.Drawing.Point(62, 78)
+        Me.BTModificar.Location = New System.Drawing.Point(62, 102)
         Me.BTModificar.Name = "BTModificar"
         Me.BTModificar.Size = New System.Drawing.Size(245, 62)
         Me.BTModificar.TabIndex = 60
         Me.BTModificar.Text = "Modificar"
         Me.BTModificar.UseVisualStyleBackColor = False
+        '
+        'MenuSup
+        '
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Location = New System.Drawing.Point(0, 0)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(391, 19)
+        Me.MenuSup.TabIndex = 64
         '
         'ModificarBobinesMarca
         '
@@ -80,6 +89,7 @@ Partial Class ModificarBobinesMarca
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(391, 286)
+        Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.TBMarca)
         Me.Controls.Add(Me.LMarcaProductora)
         Me.Controls.Add(Me.BTCancelar)
@@ -96,4 +106,5 @@ Partial Class ModificarBobinesMarca
     Friend WithEvents LMarcaProductora As Label
     Friend WithEvents BTCancelar As Button
     Friend WithEvents BTModificar As Button
+    Friend WithEvents MenuSup As Panel
 End Class

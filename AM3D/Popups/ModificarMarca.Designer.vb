@@ -26,11 +26,12 @@ Partial Class ModificarMarca
         Me.LMarca = New System.Windows.Forms.Label()
         Me.BTCancelar = New System.Windows.Forms.Button()
         Me.BTModificar = New System.Windows.Forms.Button()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'TBMarca
         '
-        Me.TBMarca.Location = New System.Drawing.Point(175, 25)
+        Me.TBMarca.Location = New System.Drawing.Point(175, 39)
         Me.TBMarca.Name = "TBMarca"
         Me.TBMarca.Size = New System.Drawing.Size(141, 20)
         Me.TBMarca.TabIndex = 34
@@ -40,7 +41,7 @@ Partial Class ModificarMarca
         Me.LMarca.AutoSize = True
         Me.LMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMarca.ForeColor = System.Drawing.Color.Black
-        Me.LMarca.Location = New System.Drawing.Point(47, 25)
+        Me.LMarca.Location = New System.Drawing.Point(47, 39)
         Me.LMarca.Name = "LMarca"
         Me.LMarca.Size = New System.Drawing.Size(53, 20)
         Me.LMarca.TabIndex = 33
@@ -53,7 +54,7 @@ Partial Class ModificarMarca
         Me.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTCancelar.ForeColor = System.Drawing.Color.Black
-        Me.BTCancelar.Location = New System.Drawing.Point(51, 155)
+        Me.BTCancelar.Location = New System.Drawing.Point(51, 201)
         Me.BTCancelar.Name = "BTCancelar"
         Me.BTCancelar.Size = New System.Drawing.Size(265, 62)
         Me.BTCancelar.TabIndex = 51
@@ -67,12 +68,20 @@ Partial Class ModificarMarca
         Me.BTModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificar.ForeColor = System.Drawing.Color.Black
-        Me.BTModificar.Location = New System.Drawing.Point(51, 80)
+        Me.BTModificar.Location = New System.Drawing.Point(51, 104)
         Me.BTModificar.Name = "BTModificar"
         Me.BTModificar.Size = New System.Drawing.Size(265, 62)
         Me.BTModificar.TabIndex = 50
         Me.BTModificar.Text = "Modificar"
         Me.BTModificar.UseVisualStyleBackColor = False
+        '
+        'MenuSup
+        '
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Location = New System.Drawing.Point(0, 0)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(361, 19)
+        Me.MenuSup.TabIndex = 67
         '
         'ModificarMarca
         '
@@ -80,6 +89,7 @@ Partial Class ModificarMarca
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(359, 303)
+        Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.BTCancelar)
         Me.Controls.Add(Me.BTModificar)
         Me.Controls.Add(Me.TBMarca)
@@ -96,4 +106,5 @@ Partial Class ModificarMarca
     Friend WithEvents LMarca As Label
     Friend WithEvents BTCancelar As Button
     Friend WithEvents BTModificar As Button
+    Friend WithEvents MenuSup As Panel
 End Class

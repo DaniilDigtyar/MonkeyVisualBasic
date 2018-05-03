@@ -112,7 +112,7 @@ Partial Class FInici
         '
         Me.LGestio.AutoSize = True
         Me.LGestio.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LGestio.Location = New System.Drawing.Point(594, 143)
+        Me.LGestio.Location = New System.Drawing.Point(571, 143)
         Me.LGestio.Name = "LGestio"
         Me.LGestio.Size = New System.Drawing.Size(93, 31)
         Me.LGestio.TabIndex = 11
@@ -152,7 +152,7 @@ Partial Class FInici
         '
         Me.LImpressores.AutoSize = True
         Me.LImpressores.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LImpressores.Location = New System.Drawing.Point(4, 306)
+        Me.LImpressores.Location = New System.Drawing.Point(11, 306)
         Me.LImpressores.Name = "LImpressores"
         Me.LImpressores.Size = New System.Drawing.Size(107, 22)
         Me.LImpressores.TabIndex = 15
@@ -162,7 +162,7 @@ Partial Class FInici
         '
         Me.LImpressions.AutoSize = True
         Me.LImpressions.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LImpressions.Location = New System.Drawing.Point(137, 306)
+        Me.LImpressions.Location = New System.Drawing.Point(147, 306)
         Me.LImpressions.Name = "LImpressions"
         Me.LImpressions.Size = New System.Drawing.Size(105, 22)
         Me.LImpressions.TabIndex = 16

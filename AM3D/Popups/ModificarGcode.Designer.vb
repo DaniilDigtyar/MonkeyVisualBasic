@@ -30,6 +30,7 @@ Partial Class ModificarGcode
         Me.BTModificar = New System.Windows.Forms.Button()
         Me.TBNomGcode = New System.Windows.Forms.TextBox()
         Me.LNomGcode = New System.Windows.Forms.Label()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'LMaterialsSup
@@ -48,14 +49,14 @@ Partial Class ModificarGcode
         Me.CLBMaterialsSup.FormattingEnabled = True
         Me.CLBMaterialsSup.Location = New System.Drawing.Point(189, 122)
         Me.CLBMaterialsSup.Name = "CLBMaterialsSup"
-        Me.CLBMaterialsSup.Size = New System.Drawing.Size(231, 289)
+        Me.CLBMaterialsSup.Size = New System.Drawing.Size(231, 319)
         Me.CLBMaterialsSup.TabIndex = 64
         '
         'TBRuta
         '
-        Me.TBRuta.Location = New System.Drawing.Point(157, 74)
+        Me.TBRuta.Location = New System.Drawing.Point(189, 74)
         Me.TBRuta.Name = "TBRuta"
-        Me.TBRuta.Size = New System.Drawing.Size(263, 20)
+        Me.TBRuta.Size = New System.Drawing.Size(231, 20)
         Me.TBRuta.TabIndex = 63
         '
         'LRutaFich
@@ -99,9 +100,9 @@ Partial Class ModificarGcode
         '
         'TBNomGcode
         '
-        Me.TBNomGcode.Location = New System.Drawing.Point(157, 25)
+        Me.TBNomGcode.Location = New System.Drawing.Point(189, 36)
         Me.TBNomGcode.Name = "TBNomGcode"
-        Me.TBNomGcode.Size = New System.Drawing.Size(263, 20)
+        Me.TBNomGcode.Size = New System.Drawing.Size(231, 20)
         Me.TBNomGcode.TabIndex = 59
         '
         'LNomGcode
@@ -109,11 +110,19 @@ Partial Class ModificarGcode
         Me.LNomGcode.AutoSize = True
         Me.LNomGcode.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNomGcode.ForeColor = System.Drawing.Color.Black
-        Me.LNomGcode.Location = New System.Drawing.Point(29, 25)
+        Me.LNomGcode.Location = New System.Drawing.Point(29, 36)
         Me.LNomGcode.Name = "LNomGcode"
         Me.LNomGcode.Size = New System.Drawing.Size(105, 20)
         Me.LNomGcode.TabIndex = 58
         Me.LNomGcode.Text = "Nom GCODE"
+        '
+        'MenuSup
+        '
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Location = New System.Drawing.Point(0, 0)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(443, 19)
+        Me.MenuSup.TabIndex = 66
         '
         'ModificarGcode
         '
@@ -121,6 +130,7 @@ Partial Class ModificarGcode
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(442, 656)
+        Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.LMaterialsSup)
         Me.Controls.Add(Me.CLBMaterialsSup)
         Me.Controls.Add(Me.TBRuta)
@@ -145,4 +155,5 @@ Partial Class ModificarGcode
     Friend WithEvents BTModificar As Button
     Friend WithEvents TBNomGcode As TextBox
     Friend WithEvents LNomGcode As Label
+    Friend WithEvents MenuSup As Panel
 End Class

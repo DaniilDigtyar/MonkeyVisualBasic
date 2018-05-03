@@ -65,11 +65,29 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Busca una cadena traducida similar a Update.
+        '''</summary>
+        Friend Shared ReadOnly Property BTActualitzar() As String
+            Get
+                Return ResourceManager.GetString("BTActualitzar", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Busca una cadena traducida similar a Ad.
         '''</summary>
         Friend Shared ReadOnly Property BTAfegir() As String
             Get
                 Return ResourceManager.GetString("BTAfegir", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca una cadena traducida similar a Erase.
+        '''</summary>
+        Friend Shared ReadOnly Property BTBorrar() As String
+            Get
+                Return ResourceManager.GetString("BTBorrar", resourceCulture)
             End Get
         End Property
         
@@ -106,6 +124,15 @@ Namespace My.Resources
         Friend Shared ReadOnly Property BTConnectar() As String
             Get
                 Return ResourceManager.GetString("BTConnectar", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca una cadena traducida similar a Create.
+        '''</summary>
+        Friend Shared ReadOnly Property BTCrear() As String
+            Get
+                Return ResourceManager.GetString("BTCrear", resourceCulture)
             End Get
         End Property
         
@@ -178,6 +205,15 @@ Namespace My.Resources
         Friend Shared ReadOnly Property BTEliminarUsuari() As String
             Get
                 Return ResourceManager.GetString("BTEliminarUsuari", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca una cadena traducida similar a Save.
+        '''</summary>
+        Friend Shared ReadOnly Property BTGuardar() As String
+            Get
+                Return ResourceManager.GetString("BTGuardar", resourceCulture)
             End Get
         End Property
         
@@ -745,6 +781,15 @@ Namespace My.Resources
         Friend Shared ReadOnly Property Logout() As String
             Get
                 Return ResourceManager.GetString("Logout", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca una cadena traducida similar a Permissions.
+        '''</summary>
+        Friend Shared ReadOnly Property LPermisos() As String
+            Get
+                Return ResourceManager.GetString("LPermisos", resourceCulture)
             End Get
         End Property
         

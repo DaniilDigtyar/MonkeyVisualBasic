@@ -399,4 +399,19 @@
   <data name="Lidioma" xml:space="preserve">
     <value>Language</value>
   </data>
+  <data name="BTActualitzar" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="BTBorrar" xml:space="preserve">
+    <value>Erase</value>
+  </data>
+  <data name="BTCrear" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="BTGuardar" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="LPermisos" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
 </root>

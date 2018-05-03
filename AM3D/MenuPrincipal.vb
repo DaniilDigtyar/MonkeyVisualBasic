@@ -6,7 +6,7 @@
     'Codi que s'executa quan es mostra per primer cop aquest form
     Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         globals.menu = "home"
-        setLang()
+        Language.setLang()
         menu_desplegat = False
         desplegar.Image = My.Resources.arrows
     End Sub
@@ -171,11 +171,33 @@
     Private Sub user_SelectedIndexChanged(sender As Object, e As EventArgs) Handles user.SelectedIndexChanged
         'LogOut
         If user.SelectedIndex = 2 Then
+            Usuaris.BackColor = Color.DarkGray
+            Bobines.BackColor = Color.DarkGray
+            Gcode.BackColor = Color.DarkGray
+            Models.BackColor = Color.DarkGray
+            Impressions.BackColor = Color.DarkGray
+            Impressores.BackColor = Color.DarkGray
+            LBControl.BackColor = Color.Black
+            LBInici.BackColor = Color.Black
+            LBGestio.BackColor = Color.Black
+            MenuVerticalGestio.Visible = False
+            MenuVerticalControl.Visible = False
             Me.Close()
             Login.Show()
         End If
         'Perfil
         If user.SelectedIndex = 0 Then
+            Usuaris.BackColor = Color.DarkGray
+            Bobines.BackColor = Color.DarkGray
+            Gcode.BackColor = Color.DarkGray
+            Models.BackColor = Color.DarkGray
+            Impressions.BackColor = Color.DarkGray
+            Impressores.BackColor = Color.DarkGray
+            LBControl.BackColor = Color.Black
+            LBInici.BackColor = Color.Black
+            LBGestio.BackColor = Color.Black
+            MenuVerticalGestio.Visible = False
+            MenuVerticalControl.Visible = False
             FUsuaris.Hide()
             FBobines.Hide()
             FCambIdiom.Hide()
@@ -192,6 +214,17 @@
         End If
         'Canviar idioma
         If user.SelectedIndex = 1 Then
+            Usuaris.BackColor = Color.DarkGray
+            Bobines.BackColor = Color.DarkGray
+            Gcode.BackColor = Color.DarkGray
+            Models.BackColor = Color.DarkGray
+            Impressions.BackColor = Color.DarkGray
+            Impressores.BackColor = Color.DarkGray
+            LBControl.BackColor = Color.Black
+            LBInici.BackColor = Color.Black
+            LBGestio.BackColor = Color.Black
+            MenuVerticalGestio.Visible = False
+            MenuVerticalControl.Visible = False
             FUsuaris.Hide()
             FBobines.Hide()
             FCambIdiom.Hide()
@@ -208,6 +241,17 @@
         End If
         'Generar Firxer
         If user.SelectedIndex = 3 Then
+            Usuaris.BackColor = Color.DarkGray
+            Bobines.BackColor = Color.DarkGray
+            Gcode.BackColor = Color.DarkGray
+            Models.BackColor = Color.DarkGray
+            Impressions.BackColor = Color.DarkGray
+            Impressores.BackColor = Color.DarkGray
+            LBControl.BackColor = Color.Black
+            LBInici.BackColor = Color.Black
+            LBGestio.BackColor = Color.Black
+            MenuVerticalGestio.Visible = False
+            MenuVerticalControl.Visible = False
             If generarFitxers() Then
 
             Else
@@ -534,27 +578,6 @@
             LBMSG3.Visible = False
         End If
     End Sub
-
-    'Funcio per a posar l'idioma que toca
-    Function setLang()
-        Dim opcio1 As String
-        Dim opcio2 As String
-        Dim opcio3 As String
-        Dim opcio4 As String
-        opcio1 = My.Resources.cat.opcioPerfil
-        opcio2 = My.Resources.cat.opcioCambiarIdioma
-        opcio3 = My.Resources.cat.opcioSortir
-        opcio4 = My.Resources.cat.opcioGenerarEstadistiques
-        LBControl.Text = My.Resources.cat.LBControl
-        LBGestio.Text = My.Resources.cat.LBGestio
-        LBUser.Text = globals.user
-        LBImpressions.Text = My.Resources.cat.LBImpressions
-        LBImpressores.Text = My.Resources.cat.LBImpressores
-        user.Items.Add(opcio1)
-        user.Items.Add(opcio2)
-        user.Items.Add(opcio3)
-        user.Items.Add(opcio4)
-    End Function
 
     'Funcio que mostrar un missatge de error depenent de la variable msg que li passem per parametre. Tambe activa el timer
     Function showMSG(msg As String)

@@ -36,6 +36,7 @@ Partial Class ModificarUsuari
         Me.BTCancelar = New System.Windows.Forms.Button()
         Me.TBCorreu = New System.Windows.Forms.TextBox()
         Me.LCorreu = New System.Windows.Forms.Label()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'BTModificar
@@ -54,35 +55,35 @@ Partial Class ModificarUsuari
         '
         'TBRContrasenya
         '
-        Me.TBRContrasenya.Location = New System.Drawing.Point(255, 238)
+        Me.TBRContrasenya.Location = New System.Drawing.Point(255, 250)
         Me.TBRContrasenya.Name = "TBRContrasenya"
         Me.TBRContrasenya.Size = New System.Drawing.Size(196, 20)
         Me.TBRContrasenya.TabIndex = 25
         '
         'TBContrasenya
         '
-        Me.TBContrasenya.Location = New System.Drawing.Point(255, 197)
+        Me.TBContrasenya.Location = New System.Drawing.Point(255, 209)
         Me.TBContrasenya.Name = "TBContrasenya"
         Me.TBContrasenya.Size = New System.Drawing.Size(196, 20)
         Me.TBContrasenya.TabIndex = 24
         '
         'TBCongnom
         '
-        Me.TBCongnom.Location = New System.Drawing.Point(255, 109)
+        Me.TBCongnom.Location = New System.Drawing.Point(255, 121)
         Me.TBCongnom.Name = "TBCongnom"
         Me.TBCongnom.Size = New System.Drawing.Size(196, 20)
         Me.TBCongnom.TabIndex = 23
         '
         'TBNom
         '
-        Me.TBNom.Location = New System.Drawing.Point(255, 66)
+        Me.TBNom.Location = New System.Drawing.Point(255, 78)
         Me.TBNom.Name = "TBNom"
         Me.TBNom.Size = New System.Drawing.Size(196, 20)
         Me.TBNom.TabIndex = 22
         '
         'TBNickname
         '
-        Me.TBNickname.Location = New System.Drawing.Point(255, 30)
+        Me.TBNickname.Location = New System.Drawing.Point(255, 42)
         Me.TBNickname.Name = "TBNickname"
         Me.TBNickname.Size = New System.Drawing.Size(196, 20)
         Me.TBNickname.TabIndex = 21
@@ -92,7 +93,7 @@ Partial Class ModificarUsuari
         Me.LRepeteixContra.AutoSize = True
         Me.LRepeteixContra.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LRepeteixContra.ForeColor = System.Drawing.Color.Black
-        Me.LRepeteixContra.Location = New System.Drawing.Point(23, 232)
+        Me.LRepeteixContra.Location = New System.Drawing.Point(23, 244)
         Me.LRepeteixContra.Name = "LRepeteixContra"
         Me.LRepeteixContra.Size = New System.Drawing.Size(220, 25)
         Me.LRepeteixContra.TabIndex = 20
@@ -103,7 +104,7 @@ Partial Class ModificarUsuari
         Me.LContrasenya.AutoSize = True
         Me.LContrasenya.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LContrasenya.ForeColor = System.Drawing.Color.Black
-        Me.LContrasenya.Location = New System.Drawing.Point(23, 192)
+        Me.LContrasenya.Location = New System.Drawing.Point(23, 204)
         Me.LContrasenya.Name = "LContrasenya"
         Me.LContrasenya.Size = New System.Drawing.Size(124, 25)
         Me.LContrasenya.TabIndex = 19
@@ -114,7 +115,7 @@ Partial Class ModificarUsuari
         Me.LCognom.AutoSize = True
         Me.LCognom.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LCognom.ForeColor = System.Drawing.Color.Black
-        Me.LCognom.Location = New System.Drawing.Point(21, 104)
+        Me.LCognom.Location = New System.Drawing.Point(21, 116)
         Me.LCognom.Name = "LCognom"
         Me.LCognom.Size = New System.Drawing.Size(97, 25)
         Me.LCognom.TabIndex = 18
@@ -125,7 +126,7 @@ Partial Class ModificarUsuari
         Me.LNom.AutoSize = True
         Me.LNom.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNom.ForeColor = System.Drawing.Color.Black
-        Me.LNom.Location = New System.Drawing.Point(21, 61)
+        Me.LNom.Location = New System.Drawing.Point(21, 73)
         Me.LNom.Name = "LNom"
         Me.LNom.Size = New System.Drawing.Size(53, 25)
         Me.LNom.TabIndex = 17
@@ -136,7 +137,7 @@ Partial Class ModificarUsuari
         Me.LNomUsuari.AutoSize = True
         Me.LNomUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNomUsuari.ForeColor = System.Drawing.Color.Black
-        Me.LNomUsuari.Location = New System.Drawing.Point(21, 24)
+        Me.LNomUsuari.Location = New System.Drawing.Point(21, 36)
         Me.LNomUsuari.Name = "LNomUsuari"
         Me.LNomUsuari.Size = New System.Drawing.Size(126, 25)
         Me.LNomUsuari.TabIndex = 16
@@ -158,7 +159,7 @@ Partial Class ModificarUsuari
         '
         'TBCorreu
         '
-        Me.TBCorreu.Location = New System.Drawing.Point(255, 154)
+        Me.TBCorreu.Location = New System.Drawing.Point(255, 166)
         Me.TBCorreu.Name = "TBCorreu"
         Me.TBCorreu.Size = New System.Drawing.Size(196, 20)
         Me.TBCorreu.TabIndex = 29
@@ -168,11 +169,19 @@ Partial Class ModificarUsuari
         Me.LCorreu.AutoSize = True
         Me.LCorreu.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LCorreu.ForeColor = System.Drawing.Color.Black
-        Me.LCorreu.Location = New System.Drawing.Point(21, 149)
+        Me.LCorreu.Location = New System.Drawing.Point(21, 161)
         Me.LCorreu.Name = "LCorreu"
         Me.LCorreu.Size = New System.Drawing.Size(72, 25)
         Me.LCorreu.TabIndex = 28
         Me.LCorreu.Text = "Correu"
+        '
+        'MenuSup
+        '
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Location = New System.Drawing.Point(0, 0)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(481, 19)
+        Me.MenuSup.TabIndex = 81
         '
         'ModificarUsuari
         '
@@ -180,6 +189,7 @@ Partial Class ModificarUsuari
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(480, 426)
+        Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.TBCorreu)
         Me.Controls.Add(Me.LCorreu)
         Me.Controls.Add(Me.BTCancelar)
@@ -217,4 +227,5 @@ Partial Class ModificarUsuari
     Friend WithEvents BTCancelar As Button
     Friend WithEvents TBCorreu As TextBox
     Friend WithEvents LCorreu As Label
+    Friend WithEvents MenuSup As Panel
 End Class

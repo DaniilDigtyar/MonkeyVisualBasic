@@ -22,7 +22,7 @@ Partial Class ModificarBobinesBobina
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BTCancelar = New System.Windows.Forms.Button()
         Me.BTActualitzar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.LColor = New System.Windows.Forms.Label()
@@ -33,21 +33,22 @@ Partial Class ModificarBobinesBobina
         Me.LVColor = New System.Windows.Forms.ListView()
         Me.LVMarca = New System.Windows.Forms.ListView()
         Me.LVMaterial = New System.Windows.Forms.ListView()
+        Me.MenuSup = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
-        'Button1
+        'BTCancelar
         '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(42, 248)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(155, 58)
-        Me.Button1.TabIndex = 77
-        Me.Button1.Text = "Cancelar"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.BTCancelar.BackColor = System.Drawing.Color.White
+        Me.BTCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BTCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTCancelar.ForeColor = System.Drawing.Color.Black
+        Me.BTCancelar.Location = New System.Drawing.Point(42, 248)
+        Me.BTCancelar.Name = "BTCancelar"
+        Me.BTCancelar.Size = New System.Drawing.Size(155, 58)
+        Me.BTCancelar.TabIndex = 77
+        Me.BTCancelar.Text = "Cancelar"
+        Me.BTCancelar.UseVisualStyleBackColor = False
         '
         'BTActualitzar
         '
@@ -146,13 +147,22 @@ Partial Class ModificarBobinesBobina
         Me.LVMaterial.TabIndex = 67
         Me.LVMaterial.UseCompatibleStateImageBehavior = False
         '
+        'MenuSup
+        '
+        Me.MenuSup.BackColor = System.Drawing.Color.Black
+        Me.MenuSup.Location = New System.Drawing.Point(-2, 0)
+        Me.MenuSup.Name = "MenuSup"
+        Me.MenuSup.Size = New System.Drawing.Size(800, 19)
+        Me.MenuSup.TabIndex = 78
+        '
         'ModificarBobinesBobina
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(798, 388)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.MenuSup)
+        Me.Controls.Add(Me.BTCancelar)
         Me.Controls.Add(Me.BTActualitzar)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.LColor)
@@ -172,7 +182,7 @@ Partial Class ModificarBobinesBobina
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BTCancelar As Button
     Friend WithEvents BTActualitzar As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents LColor As Label
@@ -183,4 +193,5 @@ Partial Class ModificarBobinesBobina
     Friend WithEvents LVColor As ListView
     Friend WithEvents LVMarca As ListView
     Friend WithEvents LVMaterial As ListView
+    Friend WithEvents MenuSup As Panel
 End Class
