@@ -32,12 +32,12 @@ Partial Class PanelConnectarNovaImpressora
         Me.BTImpressoraGuardar = New System.Windows.Forms.Button()
         Me.BTImpressoraBorrar = New System.Windows.Forms.Button()
         Me.DataGridViewBobina = New System.Windows.Forms.DataGridView()
-        Me.Labelnfo = New System.Windows.Forms.Label()
         Me.codi_bobina = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Bobina = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.color = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.marca_productora = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Diametre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Labelnfo = New System.Windows.Forms.Label()
         CType(Me.DataGridViewBobina, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -154,18 +154,6 @@ Partial Class PanelConnectarNovaImpressora
         Me.DataGridViewBobina.Size = New System.Drawing.Size(294, 350)
         Me.DataGridViewBobina.TabIndex = 10
         '
-        'Labelnfo
-        '
-        Me.Labelnfo.AutoSize = True
-        Me.Labelnfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
-        Me.Labelnfo.ForeColor = System.Drawing.Color.DarkRed
-        Me.Labelnfo.Location = New System.Drawing.Point(55, 233)
-        Me.Labelnfo.Name = "Labelnfo"
-        Me.Labelnfo.Size = New System.Drawing.Size(32, 18)
-        Me.Labelnfo.TabIndex = 16
-        Me.Labelnfo.Text = "aaa"
-        Me.Labelnfo.Visible = False
-        '
         'codi_bobina
         '
         Me.codi_bobina.HeaderText = "Codi Bobina"
@@ -196,6 +184,18 @@ Partial Class PanelConnectarNovaImpressora
         Me.Diametre.HeaderText = "Diametre"
         Me.Diametre.Name = "Diametre"
         Me.Diametre.ReadOnly = True
+        '
+        'Labelnfo
+        '
+        Me.Labelnfo.AutoSize = True
+        Me.Labelnfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
+        Me.Labelnfo.ForeColor = System.Drawing.Color.DarkRed
+        Me.Labelnfo.Location = New System.Drawing.Point(55, 233)
+        Me.Labelnfo.Name = "Labelnfo"
+        Me.Labelnfo.Size = New System.Drawing.Size(32, 18)
+        Me.Labelnfo.TabIndex = 16
+        Me.Labelnfo.Text = "aaa"
+        Me.Labelnfo.Visible = False
         '
         'PanelConnectarNovaImpressora
         '

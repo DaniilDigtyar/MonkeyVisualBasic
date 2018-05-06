@@ -104,4 +104,8 @@
             MsgBox(ex.ToString)
         End Try
     End Sub
+
+    Private Sub PanelConnectarNovaImpressora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

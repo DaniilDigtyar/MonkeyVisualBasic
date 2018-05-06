@@ -1,6 +1,7 @@
 ﻿Public Class PanelLlistaImpressores
     Dim SQLCommands As SQLCommands = New SQLCommands()
-
+    Public impresoraSeleccionada As String
+    Public bobinaSeleccionada As String
     Protected Overrides Sub OnLoad(e As EventArgs)
         Dim listaImpressores As HashSet(Of Impressores) = New HashSet(Of Impressores)
         Dim impressores As Impressores
@@ -13,6 +14,8 @@
     End Sub
 
     Private Sub BTCambiarBobina_Click(sender As Object, e As EventArgs) Handles BTCambiarBobina.Click
+        impresoraSeleccionada = DGImpressores.SelectedRows.Item(0).Cells(0).Value
+        bobinaSeleccionada = DGImpressores.SelectedRows.Item(0).Cells(5).Value
         CanviarBobina.Show()
     End Sub
 
