@@ -72,6 +72,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Globals.vb" />
     <Compile Include="Popups\CanviarBobina.Designer.vb">
       <DependentUpon>CanviarBobina.vb</DependentUpon>
     </Compile>
@@ -132,7 +133,6 @@
     <Compile Include="Forms\FUsuaris.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Globals.vb" />
     <Compile Include="Popups\ImprimirGCODE.Designer.vb">
       <DependentUpon>ImprimirGCODE.vb</DependentUpon>
     </Compile>
@@ -156,7 +156,6 @@
     <Compile Include="Clases\Usuaris.vb" />
     <Compile Include="Connection\SQLCommands.vb" />
     <Compile Include="Connection\Connection.vb" />
-    <Compile Include="Globals.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>

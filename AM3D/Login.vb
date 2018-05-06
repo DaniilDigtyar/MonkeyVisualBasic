@@ -1,18 +1,22 @@
 ﻿Public Class Login
-
-    Protected Overrides Sub OnLoad(e As EventArgs)
-        If My.Computer.FileSystem.FileExists(My.Computer.FileSystem.CurrentDirectory + "\nickname.txt") Then
-            TextBoxUsuari.Text = My.Computer.FileSystem.ReadAllText(My.Computer.FileSystem.CurrentDirectory + "\nickname.txt")
-            CheckBoxRecordar.Checked = True
-        End If
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBoxUsuari.TextChanged
-
     'Moviment de l'aplicacio amb el ratoli
     Dim allowCoolMove As Boolean = False
     Dim myCoolPoint As New Point
 
+    Protected Overrides Sub OnLoad(e As EventArgs)
+        CBIdioma.Items.Add("Català")
+        CBIdioma.Items.Add("English")
+        If Globals.lang = "cat" Then
+            CBIdioma.Text = "Català"
+        Else
+            CBIdioma.Text = "English"
+        End If
+
+        If My.Computer.FileSystem.FileExists(My.Computer.FileSystem.CurrentDirectory + "\nickname.txt") Then
+            TextBoxUsuari.Text = My.Computer.FileSystem.ReadAllText(My.Computer.FileSystem.CurrentDirectory + "\nickname.txt")
+            CBRecordar.Checked = True
+        End If
+    End Sub
 
     Private Sub MenuSup_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MenuSup.MouseDown
         allowCoolMove = True
@@ -41,17 +45,6 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-
-    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CBIdioma.Items.Add("Català")
-        CBIdioma.Items.Add("English")
-        If globals.lang = "cat" Then
-            CBIdioma.Text = "Català"
-        Else
-            CBIdioma.Text = "English"
-        End If
-    End Sub
-
     Private Sub CBIdioma_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CBIdioma.SelectedIndexChanged
         If CBIdioma.SelectedIndex = 0 Then
             globals.lang = "cat"
@@ -78,16 +71,20 @@
         If (SQLCommands.AuthenticateUser(TextBoxUsuari.Text, TextBoxContrasenya.Text)) Then
             'LOGUE CORRECTO
             Globals.userCredentials = SQLCommands.SelectUserInfo(TextBoxUsuari.Text)
-            If CheckBoxRecordar.Checked Then
+            If CBRecordar.Checked Then
                 Interaction.SaveUserNickname(Globals.userCredentials.GetSetNickname)
+            Else
+                TextBoxContrasenya.Text = ""
             End If
             TextBoxContrasenya.Text = ""
+            LabelErrorLogin.Visible = False
             TextBoxUsuari.Enabled = True
             TextBoxContrasenya.Enabled = True
             CBRecordar.Enabled = True
             MenuPrincipal.Show()
             Me.Hide()
         Else
+            LabelErrorLogin.Visible = True
             TextBoxUsuari.Enabled = True
             TextBoxContrasenya.Enabled = True
             CBRecordar.Enabled = True

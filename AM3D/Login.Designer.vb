@@ -39,6 +39,7 @@ Partial Class Login
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.LabelErrorLogin = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -199,6 +200,7 @@ Partial Class Login
         '
         Me.Panel2.BackColor = System.Drawing.Color.Silver
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.LabelErrorLogin)
         Me.Panel2.Controls.Add(Me.PictureBox5)
         Me.Panel2.Controls.Add(Me.PictureBox3)
         Me.Panel2.Controls.Add(Me.TextBoxContrasenya)
@@ -231,6 +233,18 @@ Partial Class Login
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 13
         Me.PictureBox3.TabStop = False
+        '
+        'LabelErrorLogin
+        '
+        Me.LabelErrorLogin.AutoSize = True
+        Me.LabelErrorLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
+        Me.LabelErrorLogin.ForeColor = System.Drawing.Color.DarkRed
+        Me.LabelErrorLogin.Location = New System.Drawing.Point(4, 203)
+        Me.LabelErrorLogin.Name = "LabelErrorLogin"
+        Me.LabelErrorLogin.Size = New System.Drawing.Size(293, 18)
+        Me.LabelErrorLogin.TabIndex = 15
+        Me.LabelErrorLogin.Text = "Error: L'usuari o contrasenya és incorrecte."
+        Me.LabelErrorLogin.Visible = False
         '
         'Login
         '
@@ -273,4 +287,5 @@ Partial Class Login
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents CBIdioma As ComboBox
     Friend WithEvents Lidioma As Label
+    Friend WithEvents LabelErrorLogin As Label
 End Class
