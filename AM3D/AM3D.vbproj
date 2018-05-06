@@ -156,6 +156,7 @@
     <Compile Include="Clases\Usuaris.vb" />
     <Compile Include="Connection\SQLCommands.vb" />
     <Compile Include="Connection\Connection.vb" />
+    <Compile Include="Globals.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -216,6 +217,7 @@
     <Compile Include="Popups\ModificarUsuari.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interaction.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

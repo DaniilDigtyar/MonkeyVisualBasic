@@ -1,7 +1,18 @@
 ﻿Public Class Login
+
+    Protected Overrides Sub OnLoad(e As EventArgs)
+        If My.Computer.FileSystem.FileExists(My.Computer.FileSystem.CurrentDirectory + "\nickname.txt") Then
+            TextBoxUsuari.Text = My.Computer.FileSystem.ReadAllText(My.Computer.FileSystem.CurrentDirectory + "\nickname.txt")
+            CheckBoxRecordar.Checked = True
+        End If
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBoxUsuari.TextChanged
+
     'Moviment de l'aplicacio amb el ratoli
     Dim allowCoolMove As Boolean = False
     Dim myCoolPoint As New Point
+
 
     Private Sub MenuSup_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MenuSup.MouseDown
         allowCoolMove = True
@@ -29,6 +40,7 @@
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CBIdioma.Items.Add("Català")
@@ -66,6 +78,9 @@
         If (SQLCommands.AuthenticateUser(TextBoxUsuari.Text, TextBoxContrasenya.Text)) Then
             'LOGUE CORRECTO
             Globals.userCredentials = SQLCommands.SelectUserInfo(TextBoxUsuari.Text)
+            If CheckBoxRecordar.Checked Then
+                Interaction.SaveUserNickname(Globals.userCredentials.GetSetNickname)
+            End If
             TextBoxContrasenya.Text = ""
             TextBoxUsuari.Enabled = True
             TextBoxContrasenya.Enabled = True
