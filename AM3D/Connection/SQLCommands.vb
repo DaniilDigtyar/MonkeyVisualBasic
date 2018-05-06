@@ -236,4 +236,188 @@ Public Class SQLCommands
             Me.disconnectDataBaseClient()
         End Try
     End Function
+
+    Public Function SelectAllModelsFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaModels As HashSet(Of Models) = New HashSet(Of Models)
+            Dim models As Models
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from models"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    models = New Models(dr(0), dr(1))
+                    listaModels.Add(models)
+                End While
+                Return listaModels
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function SelectAllModelsFromDatabaseWhere(ByVal dbToConnect As String, ByVal marca As String)
+        Try
+            Dim listaModels As HashSet(Of Models) = New HashSet(Of Models)
+            Dim models As Models
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from models
+                     where marca = '" + marca + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    models = New Models(dr(0), dr(1))
+                    listaModels.Add(models)
+                End While
+                Return listaModels
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function SelectAllMarquesFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaMarca As HashSet(Of Marca) = New HashSet(Of Marca)
+            Dim marca As Marca
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from models"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    marca = New Marca(dr(0))
+                    listaMarca.Add(marca)
+                End While
+                Return listaMarca
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function SelectAllBobinesFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaBobines As HashSet(Of Bobines) = New HashSet(Of Bobines)
+            Dim bobines As Bobines
+            Dim query As String
+            Dim dr As SqlDataReader
+            Dim color As String
+            Dim marcaProductora As String
+            Dim diametre As Double
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from bobines"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            dr.Read()
+            If dr.HasRows Then
+                While (dr.Read())
+                    If (dr(2) Is DBNull.Value) Then
+                        color = vbNull
+                    Else
+                        color = dr(2)
+                    End If
+
+                    If (dr(3) Is DBNull.Value) Then
+                        marcaProductora = vbNull
+                    Else
+                        marcaProductora = dr(3)
+                    End If
+
+                    If (dr(4) Is DBNull.Value) Then
+                        diametre = vbNull
+                    Else
+                        diametre = dr(4)
+                    End If
+                    bobines = New Bobines(dr(0), dr(1), color, marcaProductora, diametre)
+                    listaBobines.Add(bobines)
+                End While
+                Return listaBobines
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function SelectNewPrinterCode(ByVal dbToConnect As String)
+        Try
+            Dim query As String
+            Dim dr As SqlDataReader
+            Dim codi As String
+            Dim numero As Integer
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select top 1 codi_impresora 
+                     from impressores
+                     order by codi_impresora desc"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                dr.Read()
+                codi = dr(0)
+                numero = Integer.Parse(codi.Substring(4)) + 1
+                '6 numeros
+                codi = "IMPR" + Format(numero, "000000")
+                Return codi
+            End If
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+        Return vbNull
+    End Function
+
+    Public Function InsertPrinterIntoDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "INSERT INTO impressores 
+                    VALUES ('" + impressora.GetSetCodiImpressora + "','" + impressora.GetSetNomAssignat + "','" + impressora.GetSetEstat + "','" + impressora.GetSetMarca + "', '" + impressora.GetSetModel + "','" + impressora.GetSetBobinaCarregada + "');"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
 End Class

@@ -5,7 +5,8 @@
 
     'Codi que s'executa quan es mostra per primer cop aquest form
     Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        globals.menu = "home"
+        LBUser.Text = Globals.userCredentials.GetSetNickname
+        Globals.menu = "home"
         Language.setLang()
         menu_desplegat = False
         desplegar.Image = My.Resources.arrows

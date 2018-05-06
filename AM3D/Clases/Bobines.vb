@@ -8,9 +8,21 @@
     Sub New(ByVal codiBobina As String, ByVal tipusMaterial As String, ByVal color As String, ByVal marcaProductora As String, ByVal diametre As Double)
         Me.codiBobina = codiBobina
         Me.tipusMaterial = tipusMaterial
-        Me.color = color
-        Me.marcaProductora = marcaProductora
-        Me.diametre = diametre
+        If (color.Equals(vbNull)) Then
+            Me.color = ""
+        Else
+            Me.color = color
+        End If
+        If (marcaProductora.Equals(vbNull)) Then
+            Me.marcaProductora = ""
+        Else
+            Me.marcaProductora = marcaProductora
+        End If
+        If (diametre.Equals(vbNull)) Then
+            Me.diametre = 0
+        Else
+            Me.diametre = diametre
+        End If
     End Sub
 
     Public Overrides Function GetHashCode() As Integer

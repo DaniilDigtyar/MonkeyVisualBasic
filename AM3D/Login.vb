@@ -4,6 +4,8 @@
     Dim myCoolPoint As New Point
 
     Protected Overrides Sub OnLoad(e As EventArgs)
+        TextBoxContrasenya.Text = "12345dani" ' BORRAR
+
         CBIdioma.Items.Add("Català")
         CBIdioma.Items.Add("English")
         If Globals.lang = "cat" Then
@@ -64,30 +66,35 @@
   
     Private Sub ButtonLogin_Click(sender As Object, e As EventArgs) Handles ButtonLogin.Click
         Dim SQLCommands As New SQLCommands
-        TextBoxUsuari.Enabled = False
-        TextBoxContrasenya.Enabled = False
-        CBRecordar.Enabled = False
+        Try
+            TextBoxUsuari.Enabled = False
+            TextBoxContrasenya.Enabled = False
+            CBRecordar.Enabled = False
+            ButtonLogin.Enabled = False
 
-        If (SQLCommands.AuthenticateUser(TextBoxUsuari.Text, TextBoxContrasenya.Text)) Then
-            'LOGUE CORRECTO
-            Globals.userCredentials = SQLCommands.SelectUserInfo(TextBoxUsuari.Text)
-            If CBRecordar.Checked Then
-                Interaction.SaveUserNickname(Globals.userCredentials.GetSetNickname)
-            Else
+            If (SQLCommands.AuthenticateUser(TextBoxUsuari.Text, TextBoxContrasenya.Text)) Then
+                'LOGUE CORRECTO
+                Globals.userCredentials = SQLCommands.SelectUserInfo(TextBoxUsuari.Text)
+                If CBRecordar.Checked Then
+                    Interaction.SaveUserNickname(Globals.userCredentials.GetSetNickname)
+                Else
+                    TextBoxContrasenya.Text = ""
+                End If
                 TextBoxContrasenya.Text = ""
+                LabelErrorLogin.Visible = False
+                MenuPrincipal.Show()
+                Me.Hide()
+            Else
+                LabelErrorLogin.Visible = True
+
             End If
-            TextBoxContrasenya.Text = ""
-            LabelErrorLogin.Visible = False
-            TextBoxUsuari.Enabled = True
-            TextBoxContrasenya.Enabled = True
-            CBRecordar.Enabled = True
-            MenuPrincipal.Show()
-            Me.Hide()
-        Else
-            LabelErrorLogin.Visible = True
-            TextBoxUsuari.Enabled = True
-            TextBoxContrasenya.Enabled = True
-            CBRecordar.Enabled = True
-        End If
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+        TextBoxUsuari.Enabled = True
+        TextBoxContrasenya.Enabled = True
+        CBRecordar.Enabled = True
+        ButtonLogin.Enabled = True
+
     End Sub
 End Class

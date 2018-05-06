@@ -8,7 +8,16 @@
     End Sub
 
     Public Overrides Function GetHashCode() As Integer
-        Return Me.GetSetMarca.GetHashCode + Me.GetSetModel.GetHashCode
+        Dim cadena As String
+        Dim result As Integer
+
+        If Me.marca <> vbNullString Or Me.model <> vbNullString Then
+            cadena = marca.Concat(model)
+            result = cadena.GetHashCode()
+        Else
+            result = 0
+        End If
+        Return result
     End Function
 
     Public Overrides Function Equals(obj As Object) As Boolean

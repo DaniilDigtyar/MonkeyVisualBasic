@@ -32,7 +32,7 @@ Partial Class FInici
         Me.LGestio = New System.Windows.Forms.Label()
         Me.LControl = New System.Windows.Forms.Label()
         Me.LBenvingut = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.LabelNomUsuari = New System.Windows.Forms.Label()
         Me.LImpressores = New System.Windows.Forms.Label()
         Me.LImpressions = New System.Windows.Forms.Label()
         Me.LModels = New System.Windows.Forms.Label()
@@ -138,15 +138,15 @@ Partial Class FInici
         Me.LBenvingut.TabIndex = 13
         Me.LBenvingut.Text = "Benvingut"
         '
-        'Label4
+        'LabelNomUsuari
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(413, 25)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(150, 31)
-        Me.Label4.TabIndex = 14
-        Me.Label4.Text = "NomUsuari"
+        Me.LabelNomUsuari.AutoSize = True
+        Me.LabelNomUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelNomUsuari.Location = New System.Drawing.Point(413, 25)
+        Me.LabelNomUsuari.Name = "LabelNomUsuari"
+        Me.LabelNomUsuari.Size = New System.Drawing.Size(150, 31)
+        Me.LabelNomUsuari.TabIndex = 14
+        Me.LabelNomUsuari.Text = "NomUsuari"
         '
         'LImpressores
         '
@@ -231,7 +231,7 @@ Partial Class FInici
         Me.Controls.Add(Me.LModels)
         Me.Controls.Add(Me.LImpressions)
         Me.Controls.Add(Me.LImpressores)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.LabelNomUsuari)
         Me.Controls.Add(Me.LBenvingut)
         Me.Controls.Add(Me.LControl)
         Me.Controls.Add(Me.LGestio)
@@ -265,7 +265,7 @@ Partial Class FInici
     Friend WithEvents LGestio As Label
     Friend WithEvents LControl As Label
     Friend WithEvents LBenvingut As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents LabelNomUsuari As Label
     Friend WithEvents LImpressores As Label
     Friend WithEvents LImpressions As Label
     Friend WithEvents LModels As Label

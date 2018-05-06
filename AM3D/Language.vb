@@ -21,6 +21,7 @@
             Login.LContrasenya.Text = My.Resources.cat.LContrasenya
             Login.CBRecordar.Text = My.Resources.cat.CBRecordar
             Login.ButtonLogin.Text = My.Resources.cat.ButtonLogin
+            Login.LabelErrorLogin.Text = My.Resources.cat.LabelErrorLogin
 
             MenuPrincipal.LBUsuaris.Text = My.Resources.cat.LUsuaris
             MenuPrincipal.LBBobines.Text = My.Resources.cat.LBobines
@@ -234,6 +235,8 @@
             Login.LContrasenya.Text = My.Resources.eng.LContrasenya
             Login.CBRecordar.Text = My.Resources.eng.CBRecordar
             Login.ButtonLogin.Text = My.Resources.eng.ButtonLogin
+            Login.LabelErrorLogin.Text = My.Resources.eng.LabelErrorLogin
+
 
             FUsuaris.BTAfegir.Text = My.Resources.eng.BTAfegir
             FUsuaris.BTModificarEliminar.Text = My.Resources.eng.BTModificarEliminar

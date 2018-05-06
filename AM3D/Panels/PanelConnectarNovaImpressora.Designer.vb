@@ -25,13 +25,20 @@ Partial Class PanelConnectarNovaImpressora
         Me.LMarca = New System.Windows.Forms.Label()
         Me.LModel = New System.Windows.Forms.Label()
         Me.LNom = New System.Windows.Forms.Label()
-        Me.LVBobines = New System.Windows.Forms.ListView()
         Me.LBobina = New System.Windows.Forms.Label()
         Me.CBMarca = New System.Windows.Forms.ComboBox()
         Me.CBModel = New System.Windows.Forms.ComboBox()
         Me.TBNomImpressora = New System.Windows.Forms.TextBox()
         Me.BTImpressoraGuardar = New System.Windows.Forms.Button()
         Me.BTImpressoraBorrar = New System.Windows.Forms.Button()
+        Me.DataGridViewBobina = New System.Windows.Forms.DataGridView()
+        Me.codi_bobina = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Bobina = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.color = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.marca_productora = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Diametre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Labelnfo = New System.Windows.Forms.Label()
+        CType(Me.DataGridViewBobina, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LMarca
@@ -67,14 +74,6 @@ Partial Class PanelConnectarNovaImpressora
         Me.LNom.TabIndex = 2
         Me.LNom.Text = "Nom"
         '
-        'LVBobines
-        '
-        Me.LVBobines.Location = New System.Drawing.Point(496, 12)
-        Me.LVBobines.Name = "LVBobines"
-        Me.LVBobines.Size = New System.Drawing.Size(294, 350)
-        Me.LVBobines.TabIndex = 3
-        Me.LVBobines.UseCompatibleStateImageBehavior = False
-        '
         'LBobina
         '
         Me.LBobina.AutoSize = True
@@ -88,6 +87,7 @@ Partial Class PanelConnectarNovaImpressora
         '
         'CBMarca
         '
+        Me.CBMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBMarca.FormattingEnabled = True
         Me.CBMarca.Location = New System.Drawing.Point(163, 46)
         Me.CBMarca.Name = "CBMarca"
@@ -96,8 +96,11 @@ Partial Class PanelConnectarNovaImpressora
         '
         'CBModel
         '
+        Me.CBModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBModel.Enabled = False
         Me.CBModel.FormattingEnabled = True
         Me.CBModel.Location = New System.Drawing.Point(163, 120)
+        Me.CBModel.MaxDropDownItems = 10
         Me.CBModel.Name = "CBModel"
         Me.CBModel.Size = New System.Drawing.Size(169, 21)
         Me.CBModel.TabIndex = 6
@@ -137,19 +140,74 @@ Partial Class PanelConnectarNovaImpressora
         Me.BTImpressoraBorrar.Text = "Borrar"
         Me.BTImpressoraBorrar.UseVisualStyleBackColor = False
         '
+        'DataGridViewBobina
+        '
+        Me.DataGridViewBobina.AllowUserToAddRows = False
+        Me.DataGridViewBobina.AllowUserToDeleteRows = False
+        Me.DataGridViewBobina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridViewBobina.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codi_bobina, Me.Bobina, Me.color, Me.marca_productora, Me.Diametre})
+        Me.DataGridViewBobina.Location = New System.Drawing.Point(496, 12)
+        Me.DataGridViewBobina.MultiSelect = False
+        Me.DataGridViewBobina.Name = "DataGridViewBobina"
+        Me.DataGridViewBobina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridViewBobina.Size = New System.Drawing.Size(294, 350)
+        Me.DataGridViewBobina.TabIndex = 10
+        '
+        'codi_bobina
+        '
+        Me.codi_bobina.HeaderText = "Codi Bobina"
+        Me.codi_bobina.Name = "codi_bobina"
+        Me.codi_bobina.ReadOnly = True
+        Me.codi_bobina.Visible = False
+        '
+        'Bobina
+        '
+        Me.Bobina.HeaderText = "Bobina"
+        Me.Bobina.Name = "Bobina"
+        '
+        'color
+        '
+        Me.color.HeaderText = "Color"
+        Me.color.Name = "color"
+        Me.color.ReadOnly = True
+        '
+        'marca_productora
+        '
+        Me.marca_productora.HeaderText = "Marca"
+        Me.marca_productora.Name = "marca_productora"
+        Me.marca_productora.ReadOnly = True
+        '
+        'Diametre
+        '
+        Me.Diametre.HeaderText = "Diametre"
+        Me.Diametre.Name = "Diametre"
+        '
+        'Labelnfo
+        '
+        Me.Labelnfo.AutoSize = True
+        Me.Labelnfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
+        Me.Labelnfo.ForeColor = System.Drawing.Color.DarkRed
+        Me.Labelnfo.Location = New System.Drawing.Point(55, 233)
+        Me.Labelnfo.Name = "Labelnfo"
+        Me.Labelnfo.Size = New System.Drawing.Size(32, 18)
+        Me.Labelnfo.TabIndex = 16
+        Me.Labelnfo.Text = "aaa"
+        Me.Labelnfo.Visible = False
+        '
         'PanelConnectarNovaImpressora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(802, 374)
+        Me.Controls.Add(Me.Labelnfo)
+        Me.Controls.Add(Me.DataGridViewBobina)
         Me.Controls.Add(Me.BTImpressoraBorrar)
         Me.Controls.Add(Me.BTImpressoraGuardar)
         Me.Controls.Add(Me.TBNomImpressora)
         Me.Controls.Add(Me.CBModel)
         Me.Controls.Add(Me.CBMarca)
         Me.Controls.Add(Me.LBobina)
-        Me.Controls.Add(Me.LVBobines)
         Me.Controls.Add(Me.LNom)
         Me.Controls.Add(Me.LModel)
         Me.Controls.Add(Me.LMarca)
@@ -157,6 +215,7 @@ Partial Class PanelConnectarNovaImpressora
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PanelConnectarNovaImpressora"
         Me.Text = "PanelConnectarNovaImpressora"
+        CType(Me.DataGridViewBobina, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -165,11 +224,17 @@ Partial Class PanelConnectarNovaImpressora
     Friend WithEvents LMarca As Label
     Friend WithEvents LModel As Label
     Friend WithEvents LNom As Label
-    Friend WithEvents LVBobines As ListView
     Friend WithEvents LBobina As Label
     Friend WithEvents CBMarca As ComboBox
     Friend WithEvents CBModel As ComboBox
     Friend WithEvents TBNomImpressora As TextBox
     Friend WithEvents BTImpressoraGuardar As Button
     Friend WithEvents BTImpressoraBorrar As Button
+    Friend WithEvents DataGridViewBobina As DataGridView
+    Friend WithEvents codi_bobina As DataGridViewTextBoxColumn
+    Friend WithEvents Bobina As DataGridViewTextBoxColumn
+    Friend WithEvents color As DataGridViewTextBoxColumn
+    Friend WithEvents marca_productora As DataGridViewTextBoxColumn
+    Friend WithEvents Diametre As DataGridViewTextBoxColumn
+    Friend WithEvents Labelnfo As Label
 End Class
