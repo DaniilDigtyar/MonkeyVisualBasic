@@ -1,6 +1,10 @@
 ﻿Public Class PanelConnectarNovaImpressora
     Dim SQLCommands As SQLCommands = New SQLCommands()
 
+    ''' <summary>
+    ''' En cargar el panel cargara el combobox marca y el datagridview de bobina
+    ''' </summary>
+    ''' <param name="e"></param>
     Protected Overrides Sub OnLoad(e As EventArgs)
         Dim listaBobines As HashSet(Of Bobines) = New HashSet(Of Bobines)
         Dim listaMarca As HashSet(Of Marca) = New HashSet(Of Marca)
@@ -19,6 +23,11 @@
         Next bobina
     End Sub
 
+    ''' <summary>
+    ''' Reinicia el formulario a el estado original
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub BTImpressoraCancelar_Click(sender As Object, e As EventArgs) Handles BTImpressoraBorrar.Click
         TBNomImpressora.Text = ""
         CBMarca.SelectedIndex = -1
@@ -27,37 +36,52 @@
         Labelnfo.Visible = False
     End Sub
 
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub BTImpressoraGuardar_Click(sender As Object, e As EventArgs) Handles BTImpressoraGuardar.Click
         Dim impressora As Impressores
         Dim codi As String
         Dim bobina As String
         Dim afectat As Integer
-        Try
-            codi = SQLCommands.SelectNewPrinterCode(Globals.userCredentials.GetSetBaseDades)
-            bobina = DataGridViewBobina.SelectedRows.Item(0).Cells(0).Value
-            impressora = New Impressores(codi, TBNomImpressora.Text, "CONNECTED", CBMarca.SelectedItem.ToString, CBModel.SelectedItem.ToString, bobina)
-            afectat = SQLCommands.InsertPrinterIntoDatabase(Globals.userCredentials.GetSetBaseDades, impressora)
+        If CBModel.SelectedIndex <> -1 And CBMarca.SelectedIndex <> -1 And TBNomImpressora IsNot vbNullString Then
+            Try
+                codi = SQLCommands.SelectNewPrinterCode(Globals.userCredentials.GetSetBaseDades)
+                bobina = DataGridViewBobina.SelectedRows.Item(0).Cells(0).Value
+                impressora = New Impressores(codi, TBNomImpressora.Text, "CONNECTED", CBMarca.SelectedItem.ToString, CBModel.SelectedItem.ToString, bobina)
+                afectat = SQLCommands.InsertPrinterIntoDatabase(Globals.userCredentials.GetSetBaseDades, impressora)
+                Labelnfo.Visible = True
+                TBNomImpressora.Text = ""
+                CBMarca.SelectedIndex = -1
+                CBModel.SelectedIndex = -1
+                CBModel.Enabled = False
+                If afectat > 0 Then
+                    If Globals.lang = "cat" Then
+                        Labelnfo.Text = My.Resources.cat.LabelnfoCorrecte
+                    Else
+                        Labelnfo.Text = My.Resources.eng.LabelnfoCorrecte
+                    End If
+                Else
+                    If Globals.lang = "cat" Then
+                        Labelnfo.Text = My.Resources.cat.LabelnfoError
+                    Else
+                        Labelnfo.Text = My.Resources.eng.LabelnfoError
+                    End If
+                End If
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
+        Else
             Labelnfo.Visible = True
-            TBNomImpressora.Text = ""
-            CBMarca.SelectedIndex = -1
-            CBModel.SelectedIndex = -1
-            CBModel.Enabled = False
-            If afectat > 0 Then
-                If Globals.lang = "cat" Then
-                    Labelnfo.Text = My.Resources.cat.LabelnfoCorrecte
-                Else
-                    Labelnfo.Text = My.Resources.eng.LabelnfoCorrecte
-                End If
+            If Globals.lang = "cat" Then
+                Labelnfo.Text = My.Resources.cat.LabelnfoNoSelect
             Else
-                If Globals.lang = "cat" Then
-                    Labelnfo.Text = My.Resources.cat.LabelnfoError
-                Else
-                    Labelnfo.Text = My.Resources.eng.LabelnfoError
-                End If
+                Labelnfo.Text = My.Resources.eng.LabelnfoNoSelect
             End If
-        Catch ex As Exception
-            MsgBox(ex.ToString)
-        End Try
+        End If
+
     End Sub
 
     Private Sub CBMarca_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CBMarca.SelectedIndexChanged

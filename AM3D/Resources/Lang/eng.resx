@@ -418,9 +418,12 @@
     <value>Error: User or password is incorrect.</value>
   </data>
   <data name="LabelnfoCorrecte" xml:space="preserve">
-    <value>Impressora guardada correctament.</value>
+    <value>Printer saved successfully.</value>
   </data>
   <data name="LabelnfoError" xml:space="preserve">
-    <value>Error en guardar la impressora.</value>
+    <value>Error saving printer.</value>
+  </data>
+  <data name="LabelnfoNoSelect" xml:space="preserve">
+    <value>Fill in all fields.</value>
   </data>
 </root>

@@ -12,7 +12,6 @@
             opcio4 = My.Resources.cat.opcioGenerarEstadistiques
             MenuPrincipal.LBControl.Text = My.Resources.cat.LBControl
             MenuPrincipal.LBGestio.Text = My.Resources.cat.LBGestio
-            MenuPrincipal.LBUser.Text = globals.user
             MenuPrincipal.LBImpressions.Text = My.Resources.cat.LBImpressions
             MenuPrincipal.LBImpressores.Text = My.Resources.cat.LBImpressores
             MenuPrincipal.LBInici.Text = My.Resources.cat.LInici
@@ -226,7 +225,7 @@
             opcio4 = My.Resources.eng.opcioGenerarEstadistiques
             MenuPrincipal.LBControl.Text = My.Resources.eng.LBControl
             MenuPrincipal.LBGestio.Text = My.Resources.eng.LBGestio
-            MenuPrincipal.LBUser.Text = globals.user
+
             MenuPrincipal.LBImpressions.Text = My.Resources.eng.LBImpressions
             MenuPrincipal.LBImpressores.Text = My.Resources.eng.LBImpressores
             MenuPrincipal.LBInici.Text = My.Resources.eng.LInici

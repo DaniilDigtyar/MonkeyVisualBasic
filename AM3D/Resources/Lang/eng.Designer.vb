@@ -407,7 +407,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Impressora guardada correctament..
+        '''  Looks up a localized string similar to Printer saved successfully..
         '''</summary>
         Friend Shared ReadOnly Property LabelnfoCorrecte() As String
             Get
@@ -416,11 +416,20 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Error en guardar la impressora..
+        '''  Looks up a localized string similar to Error saving printer..
         '''</summary>
         Friend Shared ReadOnly Property LabelnfoError() As String
             Get
                 Return ResourceManager.GetString("LabelnfoError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Fill in all fields..
+        '''</summary>
+        Friend Shared ReadOnly Property LabelnfoNoSelect() As String
+            Get
+                Return ResourceManager.GetString("LabelnfoNoSelect", resourceCulture)
             End Get
         End Property
         

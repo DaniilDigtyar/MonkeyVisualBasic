@@ -22,20 +22,19 @@ Partial Class PanelLlistaImpressores
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.DGImpressores = New System.Windows.Forms.DataGridView()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BTCambiarBobina = New System.Windows.Forms.Button()
         Me.BTModificarImpressora = New System.Windows.Forms.Button()
         Me.BTEliminarImpressora = New System.Windows.Forms.Button()
+        Me.DGImpressores = New System.Windows.Forms.DataGridView()
+        Me.codi_impressora = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nom_assignat = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.estat = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Model = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.bobina = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DGImpressores, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'DGImpressores
-        '
-        Me.DGImpressores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGImpressores.Location = New System.Drawing.Point(37, 98)
-        Me.DGImpressores.Name = "DGImpressores"
-        Me.DGImpressores.Size = New System.Drawing.Size(729, 246)
-        Me.DGImpressores.TabIndex = 0
         '
         'BTCambiarBobina
         '
@@ -79,16 +78,74 @@ Partial Class PanelLlistaImpressores
         Me.BTEliminarImpressora.Text = "Eliminar impressora"
         Me.BTEliminarImpressora.UseVisualStyleBackColor = False
         '
+        'DGImpressores
+        '
+        Me.DGImpressores.AllowUserToAddRows = False
+        Me.DGImpressores.AllowUserToDeleteRows = False
+        Me.DGImpressores.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        Me.DGImpressores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGImpressores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codi_impressora, Me.nom_assignat, Me.estat, Me.marca, Me.Model, Me.bobina})
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.WindowFrame
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGImpressores.DefaultCellStyle = DataGridViewCellStyle1
+        Me.DGImpressores.Location = New System.Drawing.Point(37, 98)
+        Me.DGImpressores.MultiSelect = False
+        Me.DGImpressores.Name = "DGImpressores"
+        Me.DGImpressores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGImpressores.Size = New System.Drawing.Size(729, 246)
+        Me.DGImpressores.TabIndex = 11
+        '
+        'codi_impressora
+        '
+        Me.codi_impressora.HeaderText = "Codi"
+        Me.codi_impressora.Name = "codi_impressora"
+        Me.codi_impressora.ReadOnly = True
+        '
+        'nom_assignat
+        '
+        Me.nom_assignat.HeaderText = "Nom"
+        Me.nom_assignat.Name = "nom_assignat"
+        Me.nom_assignat.ReadOnly = True
+        '
+        'estat
+        '
+        Me.estat.HeaderText = "Estat"
+        Me.estat.Name = "estat"
+        Me.estat.ReadOnly = True
+        '
+        'marca
+        '
+        Me.marca.HeaderText = "Marca"
+        Me.marca.Name = "marca"
+        Me.marca.ReadOnly = True
+        '
+        'Model
+        '
+        Me.Model.HeaderText = "Model"
+        Me.Model.Name = "Model"
+        Me.Model.ReadOnly = True
+        '
+        'bobina
+        '
+        Me.bobina.HeaderText = "Bobina"
+        Me.bobina.Name = "bobina"
+        Me.bobina.ReadOnly = True
+        '
         'PanelLlistaImpressores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(802, 374)
+        Me.Controls.Add(Me.DGImpressores)
         Me.Controls.Add(Me.BTEliminarImpressora)
         Me.Controls.Add(Me.BTModificarImpressora)
         Me.Controls.Add(Me.BTCambiarBobina)
-        Me.Controls.Add(Me.DGImpressores)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PanelLlistaImpressores"
         Me.Text = "PanelLlistaImpressores"
@@ -96,9 +153,14 @@ Partial Class PanelLlistaImpressores
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents DGImpressores As DataGridView
     Friend WithEvents BTCambiarBobina As Button
     Friend WithEvents BTModificarImpressora As Button
     Friend WithEvents BTEliminarImpressora As Button
+    Friend WithEvents DGImpressores As DataGridView
+    Friend WithEvents codi_impressora As DataGridViewTextBoxColumn
+    Friend WithEvents nom_assignat As DataGridViewTextBoxColumn
+    Friend WithEvents estat As DataGridViewTextBoxColumn
+    Friend WithEvents marca As DataGridViewTextBoxColumn
+    Friend WithEvents Model As DataGridViewTextBoxColumn
+    Friend WithEvents bobina As DataGridViewTextBoxColumn
 End Class

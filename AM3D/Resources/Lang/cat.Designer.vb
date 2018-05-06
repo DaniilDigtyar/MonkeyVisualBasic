@@ -425,6 +425,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Ompliu tots els camps..
+        '''</summary>
+        Friend Shared ReadOnly Property LabelnfoNoSelect() As String
+            Get
+                Return ResourceManager.GetString("LabelnfoNoSelect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Actual.
         '''</summary>
         Friend Shared ReadOnly Property LActual() As String

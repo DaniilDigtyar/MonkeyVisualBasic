@@ -420,4 +420,23 @@ Public Class SQLCommands
             Me.disconnectDataBaseClient()
         End Try
     End Function
+
+    Public Function DeletePrinterIntoDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "DELETE FROM IMPRESSORES
+                     WHERE codi_impresora = '" + impressora.GetSetCodiImpressora + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
 End Class
