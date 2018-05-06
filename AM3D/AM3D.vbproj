@@ -132,7 +132,7 @@
     <Compile Include="Forms\FUsuaris.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="globals.vb" />
+    <Compile Include="Globals.vb" />
     <Compile Include="Popups\ImprimirGCODE.Designer.vb">
       <DependentUpon>ImprimirGCODE.vb</DependentUpon>
     </Compile>

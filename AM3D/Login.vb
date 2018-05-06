@@ -2,6 +2,7 @@
     'Moviment de l'aplicacio amb el ratoli
     Dim allowCoolMove As Boolean = False
     Dim myCoolPoint As New Point
+
     Private Sub MenuSup_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MenuSup.MouseDown
         allowCoolMove = True
         myCoolPoint = New Point(e.X, e.Y)
@@ -17,12 +18,6 @@
     Private Sub MenuSup_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MenuSup.MouseUp
         allowCoolMove = False
         Me.Cursor = Cursors.Default
-    End Sub
-
-    'Entrar a l'app
-    Private Sub ButtonLogin_Click(sender As Object, e As EventArgs) Handles ButtonLogin.Click
-        MenuPrincipal.Show()
-        Me.Hide()
     End Sub
 
     'Boto sortir
@@ -64,40 +59,23 @@
   
     Private Sub ButtonLogin_Click(sender As Object, e As EventArgs) Handles ButtonLogin.Click
         Dim SQLCommands As New SQLCommands
-        Dim userCredentials As Users
-        Dim listaUsuaris As HashSet(Of Tenen) = New HashSet(Of Tenen)
-        Dim listaPermisos As HashSet(Of Permisos)
+        TextBoxUsuari.Enabled = False
+        TextBoxContrasenya.Enabled = False
+        CBRecordar.Enabled = False
 
-        Dim Usuario As Tenen = New Tenen("dani", "a")
-        Dim Usuario2 As Tenen = New Tenen("dani", "a")
-
-        listaUsuaris.Add(Usuario2)
-
-        listaUsuaris.Add(Usuario)
-
-        If listaUsuaris(0).GetHashCode.Equals(Usuario.GetHashCode) Then
-            MsgBox("Iguales")
+        If (SQLCommands.AuthenticateUser(TextBoxUsuari.Text, TextBoxContrasenya.Text)) Then
+            'LOGUE CORRECTO
+            Globals.userCredentials = SQLCommands.SelectUserInfo(TextBoxUsuari.Text)
+            TextBoxContrasenya.Text = ""
+            TextBoxUsuari.Enabled = True
+            TextBoxContrasenya.Enabled = True
+            CBRecordar.Enabled = True
+            MenuPrincipal.Show()
+            Me.Hide()
         Else
-            MsgBox("Diferentes")
+            TextBoxUsuari.Enabled = True
+            TextBoxContrasenya.Enabled = True
+            CBRecordar.Enabled = True
         End If
-
-        'If (SQLCommands.AuthenticateUser(TextBoxUsuari.Text, TextBoxContrasenya.Text)) Then
-        '    'LOGUE CORRECTO
-        '    userCredentials = SQLCommands.SelectUserInfo(TextBoxUsuari.Text)
-        '    listaUsuaris = SQLCommands.SelectAllUsersFromDatabase(userCredentials.GetSetBaseDades)
-        '    listaPermisos = SQLCommands.SelectAllPermisosFromDatabase(userCredentials.GetSetBaseDades)
-        '    For i As Integer = 0 To listaUsuaris.Count() - 1
-        '        Console.WriteLine(listaUsuaris(i).GetSetNickname)
-        '    Next i
-
-        '    For i As Integer = 0 To listaPermisos.Count() - 1
-        '        Console.WriteLine(listaPermisos(i).GetSetCodiPermisos)
-        '    Next i
-        '    MsgBox("Correcto") 'Borrar
-
-        'Else
-        '    'LOGUE INCORRECTO
-        '    MsgBox("Incorrecto") 'Borrar
-        'End If
     End Sub
 End Class
