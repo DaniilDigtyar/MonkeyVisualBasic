@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BTAfegir" xml:space="preserve">
+    <value>Afegir</value>
+  </data>
+  <data name="BTCancelar" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="BTCanviar" xml:space="preserve">
+    <value>Canviar</value>
+  </data>
+  <data name="BTCanviarBobina" xml:space="preserve">
+    <value>Canviar Bobina</value>
+  </data>
+  <data name="BTConnectar" xml:space="preserve">
+    <value>Connectar</value>
+  </data>
+  <data name="BTEliminarBobina" xml:space="preserve">
+    <value>Eliminar Bobina</value>
+  </data>
+  <data name="BTEliminarColor" xml:space="preserve">
+    <value>Eliminar Color</value>
+  </data>
+  <data name="BTEliminarGcode" xml:space="preserve">
+    <value>Eliminar GCode</value>
+  </data>
+  <data name="BTEliminarImpressora" xml:space="preserve">
+    <value>Eliminar Impressora</value>
+  </data>
+  <data name="BTEliminarMarca" xml:space="preserve">
+    <value>Eliminar Marca</value>
+  </data>
+  <data name="BTEliminarMaterial" xml:space="preserve">
+    <value>Eliminar Material</value>
+  </data>
+  <data name="BTEliminarModel" xml:space="preserve">
+    <value>Eliminar Model</value>
+  </data>
+  <data name="BTEliminarUsuari" xml:space="preserve">
+    <value>Eliminar Usuari</value>
+  </data>
+  <data name="BTImpressionsPausar" xml:space="preserve">
+    <value>Pausar</value>
+  </data>
+  <data name="BTImpressionsPeçaRetirada" xml:space="preserve">
+    <value>Retirar Peça</value>
+  </data>
+  <data name="BTImprimir" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="BTImprimirG" xml:space="preserve">
+    <value>Imprimir Gcode</value>
+  </data>
+  <data name="BTLlista" xml:space="preserve">
+    <value>Llista</value>
+  </data>
+  <data name="BTModificarBobina" xml:space="preserve">
+    <value>Modificar Bobina</value>
+  </data>
+  <data name="BTModificarColor" xml:space="preserve">
+    <value>Modificar Color</value>
+  </data>
+  <data name="BTModificarEliminar" xml:space="preserve">
+    <value>Modificar/Eliminar</value>
+  </data>
+  <data name="BTModificarGcode" xml:space="preserve">
+    <value>Modificar GCode</value>
+  </data>
+  <data name="BTModificarImpressora" xml:space="preserve">
+    <value>Modificar Impressora</value>
+  </data>
+  <data name="BTModificarMarca" xml:space="preserve">
+    <value>Modificar Marca</value>
+  </data>
+  <data name="BTModificarMaterial" xml:space="preserve">
+    <value>Modificar Material</value>
+  </data>
+  <data name="BTModificarModel" xml:space="preserve">
+    <value>Modificar Model</value>
+  </data>
+  <data name="BTModificarUsuari" xml:space="preserve">
+    <value>Modificar Usuari</value>
+  </data>
+  <data name="ButtonLogin" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="CanviarContrasenya" xml:space="preserve">
+    <value>Canviar Contrasenya</value>
+  </data>
+  <data name="CBModificar" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="CBRecordar" xml:space="preserve">
+    <value>Recordar usuari</value>
+  </data>
+  <data name="ErrorFitxer" xml:space="preserve">
+    <value>No s'ha pogut crear el fitxer</value>
+  </data>
+  <data name="GenerarEstad" xml:space="preserve">
+    <value>Generar Estadistiques</value>
+  </data>
+  <data name="LActual" xml:space="preserve">
+    <value>Actual</value>
+  </data>
+  <data name="LApliFun" xml:space="preserve">
+    <value>Aplicacions funcionals</value>
+  </data>
+  <data name="LAreaX" xml:space="preserve">
+    <value>Area d'impressió X</value>
+  </data>
+  <data name="LAreaY" xml:space="preserve">
+    <value>Area d'impressió Y</value>
+  </data>
+  <data name="LAreaZ" xml:space="preserve">
+    <value>Area d'impressió Z</value>
+  </data>
+  <data name="LBControl" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="LBenvingut" xml:space="preserve">
+    <value>Benvingut</value>
+  </data>
+  <data name="LBGestio" xml:space="preserve">
+    <value>Gestió</value>
+  </data>
+  <data name="LBImpressions" xml:space="preserve">
+    <value>Impressions</value>
+  </data>
+  <data name="LBImpressores" xml:space="preserve">
+    <value>Impressores</value>
+  </data>
+  <data name="LBobina" xml:space="preserve">
+    <value>Bobina</value>
+  </data>
+  <data name="LBobines" xml:space="preserve">
+    <value>Bobines</value>
+  </data>
+  <data name="LCanvContr" xml:space="preserve">
+    <value>Canviar Contrasenya</value>
+  </data>
+  <data name="LCognom" xml:space="preserve">
+    <value>Cognom</value>
+  </data>
+  <data name="LColor" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="LContrasenya" xml:space="preserve">
+    <value>Contrasenya</value>
+  </data>
+  <data name="LControl" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="LCorreu" xml:space="preserve">
+    <value>Correu</value>
+  </data>
+  <data name="LDades" xml:space="preserve">
+    <value>Dades</value>
+  </data>
+  <data name="LDiametre" xml:space="preserve">
+    <value>Diàmetre</value>
+  </data>
+  <data name="LDiametreFil" xml:space="preserve">
+    <value>Diàmetre de filament</value>
+  </data>
+  <data name="LDni" xml:space="preserve">
+    <value>Dni</value>
+  </data>
+  <data name="LEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="LGcode" xml:space="preserve">
+    <value>Gcode</value>
+  </data>
+  <data name="LGestio" xml:space="preserve">
+    <value>Gestió</value>
+  </data>
+  <data name="LHex" xml:space="preserve">
+    <value>Codi HEX</value>
+  </data>
+  <data name="LImpressora" xml:space="preserve">
+    <value>Impressora</value>
+  </data>
+  <data name="LImpressores" xml:space="preserve">
+    <value>Impressores</value>
+  </data>
+  <data name="LInici" xml:space="preserve">
+    <value>Inici</value>
+  </data>
+  <data name="LMarca" xml:space="preserve">
+    <value>Marca</value>
+  </data>
+  <data name="LMarcaProductora" xml:space="preserve">
+    <value>Marca productora</value>
+  </data>
+  <data name="LMaterial" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="LMaterialsSup" xml:space="preserve">
+    <value>Material suportat</value>
+  </data>
+  <data name="LMaterialSup" xml:space="preserve">
+    <value>Material Suportat</value>
+  </data>
+  <data name="LModel" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="LModels" xml:space="preserve">
+    <value>Models</value>
+  </data>
+  <data name="LNCopies" xml:space="preserve">
+    <value>Nº Copies</value>
+  </data>
+  <data name="LNExtru" xml:space="preserve">
+    <value>Nº Extrusors</value>
+  </data>
+  <data name="LNom" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="LNomGcode" xml:space="preserve">
+    <value>Nom del GCode</value>
+  </data>
+  <data name="LNomUsuari" xml:space="preserve">
+    <value>Nom d'usuari</value>
+  </data>
+  <data name="LNova" xml:space="preserve">
+    <value>Nova</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Sortir</value>
+  </data>
+  <data name="LRContra" xml:space="preserve">
+    <value>Repeteix la contrasenya</value>
+  </data>
+  <data name="LRepContrasenya" xml:space="preserve">
+    <value>Repeteix la contrasenya</value>
+  </data>
+  <data name="LResMaxCapa" xml:space="preserve">
+    <value>Resolució máxima de capa</value>
+  </data>
+  <data name="LResMinCapa" xml:space="preserve">
+    <value>Resolució mínima de capa</value>
+  </data>
+  <data name="LRutaFich" xml:space="preserve">
+    <value>Ruta del ficher</value>
+  </data>
+  <data name="LSelecionarIdioma" xml:space="preserve">
+    <value>Seleciona un Idioma</value>
+  </data>
+  <data name="LTecnic" xml:space="preserve">
+    <value>Nom Tècnic</value>
+  </data>
+  <data name="LTempMaxExt" xml:space="preserve">
+    <value>Temperatura máxima del extrusor</value>
+  </data>
+  <data name="LTempMaxLlit" xml:space="preserve">
+    <value>Temperatura máxima del llit</value>
+  </data>
+  <data name="LTempMinExt" xml:space="preserve">
+    <value>Temperatura mínima del extrusor</value>
+  </data>
+  <data name="LTempMinLlit" xml:space="preserve">
+    <value>Temperatura mínima del llit</value>
+  </data>
+  <data name="LUsuari" xml:space="preserve">
+    <value>Usuari</value>
+  </data>
+  <data name="LUsuaris" xml:space="preserve">
+    <value>Usuaris</value>
+  </data>
+  <data name="LVelMaxExt" xml:space="preserve">
+    <value>Velocitat máxima de l'extrusor</value>
+  </data>
+  <data name="opcioCambiarIdioma" xml:space="preserve">
+    <value>Cambiar Idioma</value>
+  </data>
+  <data name="opcioGenerarEstadistiques" xml:space="preserve">
+    <value>Generar Estadistiques</value>
+  </data>
+  <data name="opcioPerfil" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="opcioSortir" xml:space="preserve">
+    <value>Tancar la sessió</value>
+  </data>
+  <data name="Perfil" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="Lidioma" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="BTActualitzar" xml:space="preserve">
+    <value>Actualitzar</value>
+  </data>
+  <data name="BTBorrar" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="BTCrear" xml:space="preserve">
+    <value>Crear</value>
+  </data>
+  <data name="BTGuardar" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="LPermisos" xml:space="preserve">
+    <value>Permisos</value>
+  </data>
+</root>
