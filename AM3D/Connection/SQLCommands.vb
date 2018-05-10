@@ -488,15 +488,16 @@ Public Class SQLCommands
     End Function
 
     Public Function SelectPrinterPrintList(ByVal dbToConnect As String, ByVal printerCode As String)
+        Dim listaImpressions As HashSet(Of Impressions) = New HashSet(Of Impressions)
         Try
-            Dim listaImpressions As HashSet(Of Impressions) = New HashSet(Of Impressions)
+
             Dim impressio As Impressions
             Dim query As String
             Dim dr As SqlDataReader
 
             Me.connectDataBaseClient(dbToConnect)
             query = "select * 
-                     from impressores
+                     from impressions
                      where codi_impresora = '" + printerCode + "'
                      order by ordre_impressio desc"
             cmd = New SqlCommand(query)
@@ -514,8 +515,9 @@ Public Class SQLCommands
             MsgBox(ex.Message)
         Finally
             Me.disconnectDataBaseClient()
+
         End Try
-        Return vbNull
+        Return listaImpressions
     End Function
 
     Public Function InsertPrinterIntoDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores)
@@ -543,8 +545,8 @@ Public Class SQLCommands
             Dim afectat As Integer = 0
 
             Me.connectDataBaseClient(dbToConnect)
-            query = "INSERT INTO IMPRESSIONS VALUES 
-            ('" + impresio.GetSetNomGcode + "'," + impresio.GetSetNumeroCopia + ",'" + impresio.GetSetCodiImpresora + "'," + impresio.GetSetNumeroCopia + ", '" + impresio.GetSetNumeroCopia + "','" + impresio.GetSetNickname + "');"
+            query = "INSERT INTO IMPRESSIONS
+            VALUES ('" + impresio.GetSetNomGcode + "'," + impresio.GetSetNumeroCopia.ToString + ",'" + impresio.GetSetCodiImpresora + "'," + impresio.GetSetOrdreImpressio.ToString + ", '" + impresio.GetSetEstat + "','" + impresio.GetSetNickname + "');"
             cmd = New SqlCommand(query)
             cmd.Connection = connectionClient
             afectat = cmd.ExecuteNonQuery()
