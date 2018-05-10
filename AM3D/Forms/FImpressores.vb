@@ -1,13 +1,13 @@
 ﻿Public Class FImpressores
     Private Sub BTConnectar_Click(sender As Object, e As EventArgs) Handles BTConnectar.Click
-        PanelLlistaImpressores.Close()
+        PanelLlistaImpressores.Hide()
         PanelConnectarNovaImpressora.TopLevel = False
         PImpressores.Controls.Add(PanelConnectarNovaImpressora)
         PanelConnectarNovaImpressora.Show()
     End Sub
 
     Private Sub BTLlista_Click(sender As Object, e As EventArgs) Handles BTLlista.Click
-        PanelConnectarNovaImpressora.Close()
+        PanelConnectarNovaImpressora.Hide()
         PanelLlistaImpressores.TopLevel = False
         PImpressores.Controls.Add(PanelLlistaImpressores)
         PanelLlistaImpressores.Show()

@@ -418,12 +418,18 @@
     <value>Error: User or password is incorrect.</value>
   </data>
   <data name="LabelnfoCorrecte" xml:space="preserve">
-    <value>Printer saved successfully.</value>
+    <value>Saved successfully.</value>
   </data>
   <data name="LabelnfoError" xml:space="preserve">
-    <value>Error saving printer.</value>
+    <value>Error saving.</value>
   </data>
   <data name="LabelnfoNoSelect" xml:space="preserve">
     <value>Fill in all fields.</value>
+  </data>
+  <data name="BResfrescar" xml:space="preserve">
+    <value>Refresh list</value>
+  </data>
+  <data name="ButtonLogin_Cargando" xml:space="preserve">
+    <value>Loading</value>
   </data>
 </root>

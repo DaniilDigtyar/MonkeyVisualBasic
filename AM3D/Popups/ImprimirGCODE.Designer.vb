@@ -27,10 +27,11 @@ Partial Class ImprimirGCODE
         Me.LNomGcode = New System.Windows.Forms.Label()
         Me.LImpressora = New System.Windows.Forms.Label()
         Me.LNCopies = New System.Windows.Forms.Label()
-        Me.TBCopies = New System.Windows.Forms.TextBox()
         Me.CBGcode = New System.Windows.Forms.ComboBox()
         Me.CBImpriImpressora = New System.Windows.Forms.ComboBox()
         Me.MenuSup = New System.Windows.Forms.Panel()
+        Me.TBCopies = New System.Windows.Forms.NumericUpDown()
+        CType(Me.TBCopies, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BTImprimirCancelar
@@ -94,15 +95,9 @@ Partial Class ImprimirGCODE
         Me.LNCopies.TabIndex = 16
         Me.LNCopies.Text = "Nº Copies"
         '
-        'TBCopies
-        '
-        Me.TBCopies.Location = New System.Drawing.Point(27, 165)
-        Me.TBCopies.Name = "TBCopies"
-        Me.TBCopies.Size = New System.Drawing.Size(121, 20)
-        Me.TBCopies.TabIndex = 17
-        '
         'CBGcode
         '
+        Me.CBGcode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBGcode.FormattingEnabled = True
         Me.CBGcode.Location = New System.Drawing.Point(27, 68)
         Me.CBGcode.Name = "CBGcode"
@@ -111,6 +106,7 @@ Partial Class ImprimirGCODE
         '
         'CBImpriImpressora
         '
+        Me.CBImpriImpressora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBImpriImpressora.FormattingEnabled = True
         Me.CBImpriImpressora.Location = New System.Drawing.Point(227, 68)
         Me.CBImpriImpressora.Name = "CBImpriImpressora"
@@ -125,16 +121,23 @@ Partial Class ImprimirGCODE
         Me.MenuSup.Size = New System.Drawing.Size(372, 19)
         Me.MenuSup.TabIndex = 20
         '
+        'TBCopies
+        '
+        Me.TBCopies.Location = New System.Drawing.Point(27, 159)
+        Me.TBCopies.Name = "TBCopies"
+        Me.TBCopies.Size = New System.Drawing.Size(120, 20)
+        Me.TBCopies.TabIndex = 21
+        '
         'ImprimirGCODE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(370, 320)
+        Me.Controls.Add(Me.TBCopies)
         Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.CBImpriImpressora)
         Me.Controls.Add(Me.CBGcode)
-        Me.Controls.Add(Me.TBCopies)
         Me.Controls.Add(Me.LNCopies)
         Me.Controls.Add(Me.LImpressora)
         Me.Controls.Add(Me.LNomGcode)
@@ -144,6 +147,7 @@ Partial Class ImprimirGCODE
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ImprimirGCODE"
         Me.Text = "ImprimirGCODE"
+        CType(Me.TBCopies, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -154,8 +158,8 @@ Partial Class ImprimirGCODE
     Friend WithEvents LNomGcode As Label
     Friend WithEvents LImpressora As Label
     Friend WithEvents LNCopies As Label
-    Friend WithEvents TBCopies As TextBox
     Friend WithEvents CBGcode As ComboBox
     Friend WithEvents CBImpriImpressora As ComboBox
     Friend WithEvents MenuSup As Panel
+    Friend WithEvents TBCopies As NumericUpDown
 End Class

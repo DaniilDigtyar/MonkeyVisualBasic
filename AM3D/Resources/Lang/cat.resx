@@ -432,4 +432,10 @@
   <data name="LabelnfoNoSelect" xml:space="preserve">
     <value>Ompliu tots els camps.</value>
   </data>
+  <data name="BResfrescar" xml:space="preserve">
+    <value>Refresca llista</value>
+  </data>
+  <data name="ButtonLogin_Cargando" xml:space="preserve">
+    <value>Carregant</value>
+  </data>
 </root>

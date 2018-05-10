@@ -143,6 +143,34 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function SelectAllImpressionsFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaImpressions As HashSet(Of Impressions) = New HashSet(Of Impressions)
+            Dim impression As Impressions
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from IMPRESSIONS"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    impression = New Impressions(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5))
+                    listaImpressions.Add(impression)
+                End While
+                Return listaImpressions
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     ''' <summary>
     ''' De la base de datos cliente recupera todos los permisos y devuelve un hashset de Permisos
     ''' </summary>
@@ -228,6 +256,63 @@ Public Class SQLCommands
                     listaImpressores.Add(impressores)
                 End While
                 Return listaImpressores
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function SelectAllPrintersLliureFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaImpressores As HashSet(Of Impressores) = New HashSet(Of Impressores)
+            Dim impressores As Impressores
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from impressores
+                     where estat = 'CONNECTED'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    impressores = New Impressores(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5))
+                    listaImpressores.Add(impressores)
+                End While
+                Return listaImpressores
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function SelectAllGcodesFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaGcode As HashSet(Of Gcode) = New HashSet(Of Gcode)
+            Dim gcode As Gcode
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from GCODE"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    gcode = New Gcode(dr(0), dr(2), dr(3))
+                    listaGcode.Add(gcode)
+                End While
+                Return listaGcode
             End If
 
         Catch ex As Exception
@@ -402,6 +487,37 @@ Public Class SQLCommands
         Return vbNull
     End Function
 
+    Public Function SelectPrinterPrintList(ByVal dbToConnect As String, ByVal printerCode As String)
+        Try
+            Dim listaImpressions As HashSet(Of Impressions) = New HashSet(Of Impressions)
+            Dim impressio As Impressions
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select * 
+                     from impressores
+                     where codi_impresora = '" + printerCode + "'
+                     order by ordre_impressio desc"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    impressio = New Impressions(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5))
+                    listaImpressions.Add(impressio)
+                End While
+                Return listaImpressions
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+        Return vbNull
+    End Function
+
     Public Function InsertPrinterIntoDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores)
         Try
             Dim query As String
@@ -421,6 +537,25 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function InsertPrintIntoDatabase(ByVal dbToConnect As String, ByVal impresio As Impressions)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "INSERT INTO IMPRESSIONS VALUES 
+            ('" + impresio.GetSetNomGcode + "'," + impresio.GetSetNumeroCopia + ",'" + impresio.GetSetCodiImpresora + "'," + impresio.GetSetNumeroCopia + ", '" + impresio.GetSetNumeroCopia + "','" + impresio.GetSetNickname + "');"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     Public Function UpdatePrinterCoilIntoDatabase(ByVal dbToConnect As String, ByVal bobina As String, ByVal codiImpressora As String)
         Try
             Dim query As String
@@ -429,6 +564,26 @@ Public Class SQLCommands
             Me.connectDataBaseClient(dbToConnect)
             query = "UPDATE impressores 
                     SET bobina_carregada = '" + bobina + "'
+                    WHERE codi_impresora = '" + codiImpressora + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function UpdatePrinterInfoIntoDatabase(ByVal dbToConnect As String, ByVal codiImpressora As String, ByVal marca As String, ByVal model As String, ByVal nom As String)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "UPDATE impressores 
+                    SET marca = '" + marca + "', model = '" + model + "', nom_assignat = '" + nom + "'
                     WHERE codi_impresora = '" + codiImpressora + "'"
             cmd = New SqlCommand(query)
             cmd.Connection = connectionClient

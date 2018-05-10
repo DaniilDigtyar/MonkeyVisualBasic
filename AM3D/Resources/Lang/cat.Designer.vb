@@ -65,6 +65,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Refresca llista.
+        '''</summary>
+        Friend Shared ReadOnly Property BResfrescar() As String
+            Get
+                Return ResourceManager.GetString("BResfrescar", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Actualitzar.
         '''</summary>
         Friend Shared ReadOnly Property BTActualitzar() As String
@@ -349,6 +358,15 @@ Namespace My.Resources
         Friend Shared ReadOnly Property ButtonLogin() As String
             Get
                 Return ResourceManager.GetString("ButtonLogin", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Carregant.
+        '''</summary>
+        Friend Shared ReadOnly Property ButtonLogin_Cargando() As String
+            Get
+                Return ResourceManager.GetString("ButtonLogin_Cargando", resourceCulture)
             End Get
         End Property
         

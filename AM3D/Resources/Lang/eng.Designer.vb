@@ -65,6 +65,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Refresh list.
+        '''</summary>
+        Friend Shared ReadOnly Property BResfrescar() As String
+            Get
+                Return ResourceManager.GetString("BResfrescar", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Update.
         '''</summary>
         Friend Shared ReadOnly Property BTActualitzar() As String
@@ -353,6 +362,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Loading.
+        '''</summary>
+        Friend Shared ReadOnly Property ButtonLogin_Cargando() As String
+            Get
+                Return ResourceManager.GetString("ButtonLogin_Cargando", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Change Password.
         '''</summary>
         Friend Shared ReadOnly Property CanviarContrasenya() As String
@@ -407,7 +425,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Printer saved successfully..
+        '''  Looks up a localized string similar to Saved successfully..
         '''</summary>
         Friend Shared ReadOnly Property LabelnfoCorrecte() As String
             Get
@@ -416,7 +434,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Error saving printer..
+        '''  Looks up a localized string similar to Error saving..
         '''</summary>
         Friend Shared ReadOnly Property LabelnfoError() As String
             Get

@@ -198,6 +198,12 @@
     <Compile Include="Popups\ModificarGcode.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Popups\ModificarImpressores.Designer.vb">
+      <DependentUpon>ModificarImpressores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\ModificarImpressores.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Popups\ModificarMarca.Designer.vb">
       <DependentUpon>ModificarMarca.vb</DependentUpon>
     </Compile>
@@ -406,6 +412,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Popups\ModificarGcode.resx">
       <DependentUpon>ModificarGcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ModificarImpressores.resx">
+      <DependentUpon>ModificarImpressores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Popups\ModificarMarca.resx">
       <DependentUpon>ModificarMarca.vb</DependentUpon>

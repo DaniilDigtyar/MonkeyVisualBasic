@@ -120,6 +120,7 @@
             PanelLlistaImpressores.BTCambiarBobina.Text = My.Resources.cat.BTCanviar
             PanelLlistaImpressores.BTModificarImpressora.Text = My.Resources.cat.BTModificarImpressora
             PanelLlistaImpressores.BTEliminarImpressora.Text = My.Resources.cat.BTEliminarImpressora
+            PanelLlistaImpressores.BResfrescar.Text = My.Resources.cat.BResfrescar
             PanelMarcaAfegir.LMarca.Text = My.Resources.cat.LMarca
             PanelMarcaAfegir.BTAfegir.Text = My.Resources.cat.BTAfegir
             PanelMarcaAfegir.BTBorrar.Text = My.Resources.cat.BTBorrar
@@ -335,6 +336,7 @@
             PanelLlistaImpressores.BTCambiarBobina.Text = My.Resources.eng.BTCanviar
             PanelLlistaImpressores.BTModificarImpressora.Text = My.Resources.eng.BTModificarImpressora
             PanelLlistaImpressores.BTEliminarImpressora.Text = My.Resources.eng.BTEliminarImpressora
+            PanelLlistaImpressores.BResfrescar.Text = My.Resources.eng.BResfrescar
             PanelMarcaAfegir.LMarca.Text = My.Resources.eng.LMarca
             PanelMarcaAfegir.BTAfegir.Text = My.Resources.eng.BTAfegir
             PanelMarcaAfegir.BTBorrar.Text = My.Resources.eng.BTBorrar

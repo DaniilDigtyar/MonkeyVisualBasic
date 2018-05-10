@@ -82,6 +82,7 @@
                 End If
                 TextBoxContrasenya.Text = ""
                 LabelErrorLogin.Visible = False
+
                 MenuPrincipal.Show()
                 Me.Hide()
             Else
