@@ -3,7 +3,6 @@
     Dim myCoolPoint As New Point
     Dim SQLCommands As New SQLCommands
 
-
     Private Sub BTImprimirCancelar_Click(sender As Object, e As EventArgs) Handles BTImprimirCancelar.Click
         Me.Close()
         CBGcode.Text = ""
@@ -47,52 +46,52 @@
         Me.Cursor = Cursors.Default
     End Sub
 
-    Private Sub BTImprimir_Click(sender As Object, e As EventArgs) Handles BTImprimir.Click
-        Dim listaImpressions As HashSet(Of Impressions) = New HashSet(Of Impressions)
-        Dim print As Impressions
-        Dim printInList As Impressions
-        Dim nomGcode As String
-        Dim numeroCopias As Integer
-        Dim codiImpressora As String
-        Dim ordreImpressio As Integer
-        Dim estat As String
-        Dim nickname As String
+    'Private Sub BTImprimir_Click(sender As Object, e As EventArgs) Handles BTImprimir.Click
+    '    Dim listaImpressions As HashSet(Of Impressions) = New HashSet(Of Impressions)
+    '    Dim print As Impressions
+    '    Dim printInList As Impressions
+    '    Dim nomGcode As String
+    '    Dim numeroCopias As Integer
+    '    Dim codiImpressora As String
+    '    Dim ordreImpressio As Integer
+    '    Dim estat As String
+    '    Dim nickname As String
 
-        Dim i As Integer
-        Try
-            nomGcode = CBGcode.SelectedItem.ToString
-            codiImpressora = CBImpriImpressora.SelectedItem.ToString
-            nickname = Globals.userCredentials.GetSetNickname
+    '    Dim i As Integer
+    '    Try
+    '        nomGcode = CBGcode.SelectedItem.ToString
+    '        codiImpressora = CBImpriImpressora.SelectedItem.ToString
+    '        nickname = Globals.userCredentials.GetSetNickname
 
-            listaImpressions = SQLCommands.SelectPrinterPrintList(Globals.userCredentials.GetSetBaseDades, codiImpressora)
-            If listaImpressions.Count > 0 Then
-                For Each printInList In listaImpressions
+    '        listaImpressions = SQLCommands.SelectPrinterPrintList(Globals.userCredentials.GetSetBaseDades, codiImpressora)
+    '        If listaImpressions.Count > 0 Then
+    '            For Each printInList In listaImpressions
 
-                Next printInList
-                'afegi a la llista
-            Else
-                ' No estaba fent res
-                i = 1
-                numeroCopias = i
-                ordreImpressio = i
-                estat = "PRINTING"
-                print = New Impressions(nomGcode, numeroCopias, codiImpressora, ordreImpressio, estat, nickname)
-                SQLCommands.InsertPrintIntoDatabase(Globals.userCredentials.GetSetBaseDades, print)
-                While i < numeroCopias
-                    i += 1
-                    estat = "WAITING"
-                    print = New Impressions(nomGcode, numeroCopias, codiImpressora, ordreImpressio, estat, nickname)
-                    SQLCommands.InsertPrintIntoDatabase(Globals.userCredentials.GetSetBaseDades, print)
-                End While
-            End If
+    '            Next printInList
+    '            'afegi a la llista
+    '        Else
+    '            ' No estaba fent res
+    '            i = 1
+    '            numeroCopias = i
+    '            ordreImpressio = i
+    '            estat = "PRINTING"
+    '            print = New Impressions(nomGcode, numeroCopias, codiImpressora, ordreImpressio, estat, nickname)
+    '            SQLCommands.InsertPrintIntoDatabase(Globals.userCredentials.GetSetBaseDades, print)
+    '            While i < numeroCopias
+    '                i += 1
+    '                estat = "WAITING"
+    '                print = New Impressions(nomGcode, numeroCopias, codiImpressora, ordreImpressio, estat, nickname)
+    '                SQLCommands.InsertPrintIntoDatabase(Globals.userCredentials.GetSetBaseDades, print)
+    '            End While
+    '        End If
 
 
 
-            TBCopies.Text = 0
-            print = New Impressions(nomGcode, numeroCopias, codiImpressora, ordreImpressio, estat, nickname)
-            SQLCommands.InsertPrintIntoDatabase(Globals.userCredentials.GetSetBaseDades, print)
-        Catch ex As Exception
-            MsgBox(ex.ToString)
-        End Try
-    End Sub
+    '        TBCopies.Text = 0
+    '        print = New Impressions(nomGcode, numeroCopias, codiImpressora, ordreImpressio, estat, nickname)
+    '        SQLCommands.InsertPrintIntoDatabase(Globals.userCredentials.GetSetBaseDades, print)
+    '    Catch ex As Exception
+    '        MsgBox(ex.ToString)
+    '    End Try
+    'End Sub
 End Class

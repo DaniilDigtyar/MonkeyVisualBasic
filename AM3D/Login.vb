@@ -4,8 +4,6 @@
     Dim myCoolPoint As New Point
 
     Protected Overrides Sub OnLoad(e As EventArgs)
-        TextBoxContrasenya.Text = "12345dani" ' BORRAR
-
         CBIdioma.Items.Add("Català")
         CBIdioma.Items.Add("English")
         If Globals.lang = "cat" Then
