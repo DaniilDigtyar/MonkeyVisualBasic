@@ -641,7 +641,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Dni.
+        '''  Looks up a localized string similar to DNI.
         '''</summary>
         Friend Shared ReadOnly Property LDni() As String
             Get
@@ -961,6 +961,87 @@ Namespace My.Resources
         Friend Shared ReadOnly Property LVelMaxExt() As String
             Get
                 Return ResourceManager.GetString("LVelMaxExt", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Successfully generated files..
+        '''</summary>
+        Friend Shared ReadOnly Property MFicheroCorrectos() As String
+            Get
+                Return ResourceManager.GetString("MFicheroCorrectos", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Error generating files..
+        '''</summary>
+        Friend Shared ReadOnly Property MFicheroError() As String
+            Get
+                Return ResourceManager.GetString("MFicheroError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Fill in all fields.
+        '''</summary>
+        Friend Shared ReadOnly Property MSGRellenarError() As String
+            Get
+                Return ResourceManager.GetString("MSGRellenarError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Your current password is not correct..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserContrasenyaError() As String
+            Get
+                Return ResourceManager.GetString("MSGUserContrasenyaError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Password updated correctly..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserPasswordUpdateCorrect() As String
+            Get
+                Return ResourceManager.GetString("MSGUserPasswordUpdateCorrect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Error updating the password..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserPasswordUpdateError() As String
+            Get
+                Return ResourceManager.GetString("MSGUserPasswordUpdateError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Passwords do not match..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserRepetirError() As String
+            Get
+                Return ResourceManager.GetString("MSGUserRepetirError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to User data saved correctly..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserUpdateCorrect() As String
+            Get
+                Return ResourceManager.GetString("MSGUserUpdateCorrect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Error saving user password.
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserUpdateError() As String
+            Get
+                Return ResourceManager.GetString("MSGUserUpdateError", resourceCulture)
             End Get
         End Property
         

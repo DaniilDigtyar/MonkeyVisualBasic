@@ -112,7 +112,7 @@
         MenuVerticalGestio.Hide()
     End Sub
     'Apartat menu Inici
-    Private Sub LBInici_Click(sender As Object, e As EventArgs) Handles LBInici.Click
+    Public Sub LBInici_Click(sender As Object, e As EventArgs) Handles LBInici.Click
         Usuaris.BackColor = Color.DarkGray
         Bobines.BackColor = Color.DarkGray
         Gcode.BackColor = Color.DarkGray
@@ -137,7 +137,7 @@
         FInici.TopLevel = False
         PCont.Controls.Add(FInici)
         FInici.Show()
-        globals.menu = "home"
+        Globals.menu = "home"
         MenuVerticalControl.Visible = False
         MenuVerticalGestio.Visible = False
     End Sub
@@ -253,10 +253,19 @@
             LBGestio.BackColor = Color.Black
             MenuVerticalGestio.Visible = False
             MenuVerticalControl.Visible = False
-            If generarFitxers() Then
+            If Interaction.GenerateStadisticsFiles() Then
+                If Globals.lang = "cat" Then
+                    showMSG(My.Resources.cat.MFicheroCorrectos.ToString)
+                Else
+                    showMSG(My.Resources.eng.MFicheroCorrectos)
+                End If
 
             Else
-                showMSG("error")
+                If Globals.lang = "cat" Then
+                    showMSG(My.Resources.cat.MFicheroError)
+                Else
+                    showMSG(My.Resources.eng.MFicheroError)
+                End If
 
             End If
         End If
@@ -582,19 +591,10 @@
 
     'Funcio que mostrar un missatge de error depenent de la variable msg que li passem per parametre. Tambe activa el timer
     Function showMSG(msg As String)
-        If msg = "error" Then
-            globals.msgError = My.Resources.cat.ErrorFitxer
-        End If
+        Globals.msgError = msg
         Timer1.Interval = 100
         segundos = 0
         Timer1.Enabled = True
     End Function
-
-    'Funcio per generar el fitxer que llegira java
-    Function generarFitxers() As Boolean
-        Return False
-
-    End Function
-
 
 End Class

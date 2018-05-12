@@ -280,7 +280,7 @@
     <value>Filament diameter</value>
   </data>
   <data name="LDni" xml:space="preserve">
-    <value>Dni</value>
+    <value>DNI</value>
   </data>
   <data name="LEmail" xml:space="preserve">
     <value>Email</value>
@@ -431,5 +431,32 @@
   </data>
   <data name="ButtonLogin_Cargando" xml:space="preserve">
     <value>Loading</value>
+  </data>
+  <data name="MFicheroCorrectos" xml:space="preserve">
+    <value>Successfully generated files.</value>
+  </data>
+  <data name="MFicheroError" xml:space="preserve">
+    <value>Error generating files.</value>
+  </data>
+  <data name="MSGRellenarError" xml:space="preserve">
+    <value>Fill in all fields</value>
+  </data>
+  <data name="MSGUserContrasenyaError" xml:space="preserve">
+    <value>Your current password is not correct.</value>
+  </data>
+  <data name="MSGUserPasswordUpdateCorrect" xml:space="preserve">
+    <value>Password updated correctly.</value>
+  </data>
+  <data name="MSGUserPasswordUpdateError" xml:space="preserve">
+    <value>Error updating the password.</value>
+  </data>
+  <data name="MSGUserRepetirError" xml:space="preserve">
+    <value>Passwords do not match.</value>
+  </data>
+  <data name="MSGUserUpdateCorrect" xml:space="preserve">
+    <value>User data saved correctly.</value>
+  </data>
+  <data name="MSGUserUpdateError" xml:space="preserve">
+    <value>Error saving user password</value>
   </data>
 </root>

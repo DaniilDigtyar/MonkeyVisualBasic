@@ -438,4 +438,31 @@
   <data name="ButtonLogin_Cargando" xml:space="preserve">
     <value>Carregant</value>
   </data>
+  <data name="MFicheroCorrectos" xml:space="preserve">
+    <value>Fitxers generats correctament.</value>
+  </data>
+  <data name="MFicheroError" xml:space="preserve">
+    <value>Error al generar els fitxers.</value>
+  </data>
+  <data name="MSGRellenarError" xml:space="preserve">
+    <value>Omple tots els camps.</value>
+  </data>
+  <data name="MSGUserContrasenyaError" xml:space="preserve">
+    <value>La contrasenya actual no és correcta.</value>
+  </data>
+  <data name="MSGUserPasswordUpdateCorrect" xml:space="preserve">
+    <value>Contrasenya actualitzada correctament.</value>
+  </data>
+  <data name="MSGUserPasswordUpdateError" xml:space="preserve">
+    <value>Error en desar la contrasenya de l'usuari.</value>
+  </data>
+  <data name="MSGUserRepetirError" xml:space="preserve">
+    <value>Les contrasenyes no coincideixen.</value>
+  </data>
+  <data name="MSGUserUpdateCorrect" xml:space="preserve">
+    <value>Dades d'usuari guardats correctament.</value>
+  </data>
+  <data name="MSGUserUpdateError" xml:space="preserve">
+    <value>Error en desar dades d'usuari.</value>
+  </data>
 </root>

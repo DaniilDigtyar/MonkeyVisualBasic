@@ -51,7 +51,7 @@ Partial Class FInici
         'Gcode
         '
         Me.Gcode.Image = CType(resources.GetObject("Gcode.Image"), System.Drawing.Image)
-        Me.Gcode.Location = New System.Drawing.Point(544, 357)
+        Me.Gcode.Location = New System.Drawing.Point(493, 327)
         Me.Gcode.Name = "Gcode"
         Me.Gcode.Size = New System.Drawing.Size(83, 87)
         Me.Gcode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -61,7 +61,7 @@ Partial Class FInici
         'Models
         '
         Me.Models.Image = CType(resources.GetObject("Models.Image"), System.Drawing.Image)
-        Me.Models.Location = New System.Drawing.Point(656, 205)
+        Me.Models.Location = New System.Drawing.Point(605, 203)
         Me.Models.Name = "Models"
         Me.Models.Size = New System.Drawing.Size(83, 87)
         Me.Models.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -71,7 +71,7 @@ Partial Class FInici
         'Bobines
         '
         Me.Bobines.Image = CType(resources.GetObject("Bobines.Image"), System.Drawing.Image)
-        Me.Bobines.Location = New System.Drawing.Point(656, 357)
+        Me.Bobines.Location = New System.Drawing.Point(605, 327)
         Me.Bobines.Name = "Bobines"
         Me.Bobines.Size = New System.Drawing.Size(83, 87)
         Me.Bobines.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -81,7 +81,7 @@ Partial Class FInici
         'Usuaris
         '
         Me.Usuaris.Image = CType(resources.GetObject("Usuaris.Image"), System.Drawing.Image)
-        Me.Usuaris.Location = New System.Drawing.Point(544, 205)
+        Me.Usuaris.Location = New System.Drawing.Point(493, 203)
         Me.Usuaris.Name = "Usuaris"
         Me.Usuaris.Size = New System.Drawing.Size(83, 87)
         Me.Usuaris.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -91,7 +91,7 @@ Partial Class FInici
         'Impressions
         '
         Me.Impressions.Image = CType(resources.GetObject("Impressions.Image"), System.Drawing.Image)
-        Me.Impressions.Location = New System.Drawing.Point(151, 205)
+        Me.Impressions.Location = New System.Drawing.Point(233, 203)
         Me.Impressions.Name = "Impressions"
         Me.Impressions.Size = New System.Drawing.Size(83, 87)
         Me.Impressions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -101,7 +101,7 @@ Partial Class FInici
         'Impressores
         '
         Me.Impressores.Image = CType(resources.GetObject("Impressores.Image"), System.Drawing.Image)
-        Me.Impressores.Location = New System.Drawing.Point(15, 205)
+        Me.Impressores.Location = New System.Drawing.Point(124, 203)
         Me.Impressores.Name = "Impressores"
         Me.Impressores.Size = New System.Drawing.Size(83, 87)
         Me.Impressores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -112,7 +112,7 @@ Partial Class FInici
         '
         Me.LGestio.AutoSize = True
         Me.LGestio.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LGestio.Location = New System.Drawing.Point(571, 143)
+        Me.LGestio.Location = New System.Drawing.Point(546, 155)
         Me.LGestio.Name = "LGestio"
         Me.LGestio.Size = New System.Drawing.Size(93, 31)
         Me.LGestio.TabIndex = 11
@@ -122,7 +122,7 @@ Partial Class FInici
         '
         Me.LControl.AutoSize = True
         Me.LControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LControl.Location = New System.Drawing.Point(75, 143)
+        Me.LControl.Location = New System.Drawing.Point(172, 155)
         Me.LControl.Name = "LControl"
         Me.LControl.Size = New System.Drawing.Size(102, 31)
         Me.LControl.TabIndex = 12
@@ -142,7 +142,7 @@ Partial Class FInici
         '
         Me.LabelNomUsuari.AutoSize = True
         Me.LabelNomUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNomUsuari.Location = New System.Drawing.Point(413, 25)
+        Me.LabelNomUsuari.Location = New System.Drawing.Point(400, 25)
         Me.LabelNomUsuari.Name = "LabelNomUsuari"
         Me.LabelNomUsuari.Size = New System.Drawing.Size(150, 31)
         Me.LabelNomUsuari.TabIndex = 14
@@ -152,7 +152,7 @@ Partial Class FInici
         '
         Me.LImpressores.AutoSize = True
         Me.LImpressores.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LImpressores.Location = New System.Drawing.Point(11, 306)
+        Me.LImpressores.Location = New System.Drawing.Point(110, 293)
         Me.LImpressores.Name = "LImpressores"
         Me.LImpressores.Size = New System.Drawing.Size(107, 22)
         Me.LImpressores.TabIndex = 15
@@ -162,7 +162,7 @@ Partial Class FInici
         '
         Me.LImpressions.AutoSize = True
         Me.LImpressions.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LImpressions.Location = New System.Drawing.Point(147, 306)
+        Me.LImpressions.Location = New System.Drawing.Point(223, 293)
         Me.LImpressions.Name = "LImpressions"
         Me.LImpressions.Size = New System.Drawing.Size(105, 22)
         Me.LImpressions.TabIndex = 16
@@ -172,7 +172,7 @@ Partial Class FInici
         '
         Me.LModels.AutoSize = True
         Me.LModels.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LModels.Location = New System.Drawing.Point(667, 311)
+        Me.LModels.Location = New System.Drawing.Point(614, 293)
         Me.LModels.Name = "LModels"
         Me.LModels.Size = New System.Drawing.Size(67, 22)
         Me.LModels.TabIndex = 17
@@ -182,7 +182,7 @@ Partial Class FInici
         '
         Me.LUsuaris.AutoSize = True
         Me.LUsuaris.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LUsuaris.Location = New System.Drawing.Point(552, 311)
+        Me.LUsuaris.Location = New System.Drawing.Point(500, 293)
         Me.LUsuaris.Name = "LUsuaris"
         Me.LUsuaris.Size = New System.Drawing.Size(71, 22)
         Me.LUsuaris.TabIndex = 18
@@ -192,7 +192,7 @@ Partial Class FInici
         '
         Me.LGcode.AutoSize = True
         Me.LGcode.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LGcode.Location = New System.Drawing.Point(552, 470)
+        Me.LGcode.Location = New System.Drawing.Point(503, 418)
         Me.LGcode.Name = "LGcode"
         Me.LGcode.Size = New System.Drawing.Size(63, 22)
         Me.LGcode.TabIndex = 19
@@ -202,7 +202,7 @@ Partial Class FInici
         '
         Me.LBobines.AutoSize = True
         Me.LBobines.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBobines.Location = New System.Drawing.Point(664, 470)
+        Me.LBobines.Location = New System.Drawing.Point(609, 418)
         Me.LBobines.Name = "LBobines"
         Me.LBobines.Size = New System.Drawing.Size(75, 22)
         Me.LBobines.TabIndex = 20
@@ -212,7 +212,7 @@ Partial Class FInici
         '
         Me.LApliFun.AutoSize = True
         Me.LApliFun.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LApliFun.Location = New System.Drawing.Point(272, 83)
+        Me.LApliFun.Location = New System.Drawing.Point(265, 70)
         Me.LApliFun.Name = "LApliFun"
         Me.LApliFun.Size = New System.Drawing.Size(290, 31)
         Me.LApliFun.TabIndex = 21

@@ -6,7 +6,7 @@
     Private contrasenya As String
     Private email As String
 
-    Sub New(ByVal nickname As String, ByVal dni As String, ByVal nom As String, ByVal cognom As String, ByVal contrasenya As String, ByVal email As String)
+    Sub New(ByVal nickname As String, ByVal contrasenya As String, ByVal dni As String, ByVal nom As String, ByVal cognom As String, ByVal email As String)
         Me.nickname = nickname
         Me.dni = dni
         Me.nom = nom

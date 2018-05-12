@@ -4,6 +4,7 @@
     Dim myCoolPoint As New Point
 
     Protected Overrides Sub OnLoad(e As EventArgs)
+        TextBoxContrasenya.Text = "12345dani"
         CBIdioma.Items.Add("Català")
         CBIdioma.Items.Add("English")
         If Globals.lang = "cat" Then
@@ -68,11 +69,19 @@
             TextBoxUsuari.Enabled = False
             TextBoxContrasenya.Enabled = False
             CBRecordar.Enabled = False
+            If Globals.lang = "cat" Then
+                ButtonLogin.Text = My.Resources.cat.ButtonLogin_Cargando
+            Else
+                ButtonLogin.Text = My.Resources.eng.ButtonLogin_Cargando
+            End If
             ButtonLogin.Enabled = False
+
 
             If (SQLCommands.AuthenticateUser(TextBoxUsuari.Text, TextBoxContrasenya.Text)) Then
                 'LOGUE CORRECTO
+
                 Globals.userCredentials = SQLCommands.SelectUserInfo(TextBoxUsuari.Text)
+
                 If CBRecordar.Checked Then
                     Interaction.SaveUserNickname(Globals.userCredentials.GetSetNickname)
                 Else
@@ -82,6 +91,7 @@
                 LabelErrorLogin.Visible = False
 
                 MenuPrincipal.Show()
+                MenuPrincipal.LBInici_Click(sender, e)
                 Me.Hide()
             Else
                 LabelErrorLogin.Visible = True
@@ -94,6 +104,11 @@
         TextBoxContrasenya.Enabled = True
         CBRecordar.Enabled = True
         ButtonLogin.Enabled = True
+        If Globals.lang = "cat" Then
+            ButtonLogin.Text = My.Resources.cat.ButtonLogin
+        Else
+            ButtonLogin.Text = My.Resources.eng.ButtonLogin
+        End If
 
     End Sub
 End Class

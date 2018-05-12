@@ -132,10 +132,60 @@ Public Class SQLCommands
                     listaUsuaris.Add(usuari)
                 End While
                 Return listaUsuaris
-            Else
-                'No users
             End If
 
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+
+    Public Function SelectUserFromDatabaseWhere(ByVal dbToConnect As String, ByVal nickname As String)
+        Try
+            Dim dni, nom, cognom, email As String
+            Dim usuari As Usuaris = New Usuaris(nickname, "", "", "", "", "")
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from usuaris
+                     where nickname = '" + nickname + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                dr.Read()
+                If dr.IsDBNull(0) Then
+                    nickname = ""
+                Else
+                    nickname = dr(0)
+                End If
+                If dr.IsDBNull(2) Then
+                    dni = ""
+                Else
+                    dni = dr(2)
+                End If
+                If dr.IsDBNull(3) Then
+                    nom = ""
+                Else
+                    nom = dr(3)
+                End If
+                If dr.IsDBNull(4) Then
+                    cognom = ""
+                Else
+                    cognom = dr(4)
+                End If
+                If dr.IsDBNull(5) Then
+                    email = ""
+                Else
+                    email = dr(5)
+                End If
+                usuari = New Usuaris(nickname, "", dni, nom, cognom, email)
+            End If
+            Return usuari
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
@@ -237,6 +287,11 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' De la base de datos cliente recupera todos las impressoras y devuelve un hashset de Impressores
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <returns>Hash set de la clase Permisos</returns>
     Public Function SelectAllPrintersFromDatabase(ByVal dbToConnect As String)
         Try
             Dim listaImpressores As HashSet(Of Impressores) = New HashSet(Of Impressores)
@@ -265,6 +320,11 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' De la base de datos cliente recupera todos las impressoras que tienen el estado conectado y devuelve un hashset de Impressores
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <returns>Hash set de la clase Impressores</returns>
     Public Function SelectAllPrintersLliureFromDatabase(ByVal dbToConnect As String)
         Try
             Dim listaImpressores As HashSet(Of Impressores) = New HashSet(Of Impressores)
@@ -294,6 +354,11 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' De la base de datos cliente recupera todos los Gcodes y devuelve un hashset de Gcode
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <returns>Hash set de la clase Gcode</returns>
     Public Function SelectAllGcodesFromDatabase(ByVal dbToConnect As String)
         Try
             Dim listaGcode As HashSet(Of Gcode) = New HashSet(Of Gcode)
@@ -322,6 +387,11 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' De la base de datos cliente recupera todos los modelos y devuelve un hashset de Models
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <returns>Hash set de la clase Models</returns>
     Public Function SelectAllModelsFromDatabase(ByVal dbToConnect As String)
         Try
             Dim listaModels As HashSet(Of Models) = New HashSet(Of Models)
@@ -350,6 +420,12 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' De la base de datos cliente recupera todos los modelos equivalentes de una marca y devuelve un hashset de Models
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <param name="marca">Marca que se quiere consultar</param>
+    ''' <returns>Hash set de la clase Models</returns>
     Public Function SelectAllModelsFromDatabaseWhere(ByVal dbToConnect As String, ByVal marca As String)
         Try
             Dim listaModels As HashSet(Of Models) = New HashSet(Of Models)
@@ -379,6 +455,11 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' De la base de datos cliente recupera todos las marcas y devuelve un hashset de Marca
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <returns>Hash set de la clase Marca</returns>
     Public Function SelectAllMarquesFromDatabase(ByVal dbToConnect As String)
         Try
             Dim listaMarca As HashSet(Of Marca) = New HashSet(Of Marca)
@@ -407,6 +488,11 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' De la base de datos cliente recupera todos las bobinas y devuelve un hashset de Bobines
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <returns>Hash set de la clase Bobines</returns>
     Public Function SelectAllBobinesFromDatabase(ByVal dbToConnect As String)
         Try
             Dim listaBobines As HashSet(Of Bobines) = New HashSet(Of Bobines)
@@ -447,7 +533,6 @@ Public Class SQLCommands
                 End While
                 Return listaBobines
             End If
-
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
@@ -455,6 +540,11 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' De la base de datos cliente busca el codigo de impressora mas grande y genera el siguente codigo.
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <returns>Codigo de impressora en String</returns>
     Public Function SelectNewPrinterCode(ByVal dbToConnect As String)
         Try
             Dim query As String
@@ -487,6 +577,12 @@ Public Class SQLCommands
         Return vbNull
     End Function
 
+    ''' <summary>
+    ''' De la base de datos cliente recupera todos las impressiones que ejecuta y tiene pendientes una impressora y devuelve un hashset de Impressions
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <param name="printerCode">Impressora a consultar</param>
+    ''' <returns>Hashset de Impressions</returns>
     Public Function SelectPrinterPrintList(ByVal dbToConnect As String, ByVal printerCode As String)
         Dim listaImpressions As HashSet(Of Impressions) = New HashSet(Of Impressions)
         Try
@@ -520,6 +616,74 @@ Public Class SQLCommands
         Return listaImpressions
     End Function
 
+
+
+    Public Function InsertUserIfExistsUpdate(ByVal dbToConnect As String, ByVal usuari As Usuaris)
+        Try
+            Dim querySelect, queryUpdate, queryInsert As String
+            Dim afectat As Integer = 0
+            Dim dr As SqlDataReader
+
+            querySelect = "SELECT count(*) FROM usuaris WHERE nickname='" + usuari.GetSetNickname + "'"
+            queryUpdate = "UPDATE usuaris 
+                     SET nickname = '" + usuari.GetSetNickname + "',contrasenya = null, dni = '" + usuari.GetSetDNI + "', nom = '" + usuari.GetSetNom + "', cognoms = '" + usuari.GetSetCognom + "', email = '" + usuari.GetSetEmail + "'
+                     WHERE nickname ='" + usuari.GetSetNickname + "'"
+            queryInsert = "INSERT INTO usuaris 
+                                VALUES('" + usuari.GetSetNickname + "', null, '" + usuari.GetSetDNI + "', '" + usuari.GetSetNom + "', '" + usuari.GetSetCognom + "', '" + usuari.GetSetEmail + "')"
+
+            Me.connectDataBaseClient(dbToConnect)
+            cmd = New SqlCommand(querySelect)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                dr.Read()
+                If dr(0) > 0 Then
+                    Me.connectDataBaseClient(dbToConnect)
+                    cmd = New SqlCommand(queryUpdate)
+                    cmd.Connection = connectionClient
+                    afectat = cmd.ExecuteNonQuery()
+                Else
+                    Me.connectDataBaseClient(dbToConnect)
+                    cmd = New SqlCommand(queryInsert)
+                    cmd.Connection = connectionClient
+                    afectat = cmd.ExecuteNonQuery()
+                End If
+            End If
+            Return afectat
+            'Catch ex As Exception
+            'MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function UpdateUserPassword(ByVal dbToConnect As String, ByVal contraseña As String, ByVal nickname As String)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectUsuaris()
+            query = "UPDATE USERS
+            SET contrasenya = EncryptByPassPhrase('Banana', '" + contraseña + "' )
+            WHERE nickname = '" + nickname + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionUsuaris
+
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectUsuaris()
+        End Try
+    End Function
+
+    ''' <summary>
+    ''' Inserta una nueva impressora en la base de datos.
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <param name="impressora">Objeto impressora a insertar.</param>
+    ''' <returns>Numero de filas afectadas</returns>
     Public Function InsertPrinterIntoDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores)
         Try
             Dim query As String
@@ -530,6 +694,8 @@ Public Class SQLCommands
                     VALUES ('" + impressora.GetSetCodiImpressora + "','" + impressora.GetSetNomAssignat + "','" + impressora.GetSetEstat + "','" + impressora.GetSetMarca + "', '" + impressora.GetSetModel + "','" + impressora.GetSetBobinaCarregada + "');"
             cmd = New SqlCommand(query)
             cmd.Connection = connectionClient
+
+
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
@@ -539,6 +705,12 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' Inserta una nueva impression en la base de datos.
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos del cliente</param>
+    ''' <param name="impressora">Objeto Impressio a insertar.</param>
+    ''' <returns>Numero de filas afectadas</returns>
     Public Function InsertPrintIntoDatabase(ByVal dbToConnect As String, ByVal impresio As Impressions)
         Try
             Dim query As String
@@ -558,6 +730,13 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' Actualiza la bobina de una impressora en la base de datos.
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos a conectarte</param>
+    ''' <param name="bobina">Codigo de bobina a assignar</param>
+    ''' <param name="codiImpressora">Codigo de impressora a la cual se cambia la bobina</param>
+    ''' <returns>Numero de filas afectadas.</returns>
     Public Function UpdatePrinterCoilIntoDatabase(ByVal dbToConnect As String, ByVal bobina As String, ByVal codiImpressora As String)
         Try
             Dim query As String
@@ -578,6 +757,15 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' Funcion para acutalizar la información de una impressora de la base de datos.
+    ''' </summary>
+    ''' <param name="dbToConnect"></param>
+    ''' <param name="codiImpressora"></param>
+    ''' <param name="marca"></param>
+    ''' <param name="model"></param>
+    ''' <param name="nom"></param>
+    ''' <returns></returns>
     Public Function UpdatePrinterInfoIntoDatabase(ByVal dbToConnect As String, ByVal codiImpressora As String, ByVal marca As String, ByVal model As String, ByVal nom As String)
         Try
             Dim query As String
@@ -585,7 +773,7 @@ Public Class SQLCommands
 
             Me.connectDataBaseClient(dbToConnect)
             query = "UPDATE impressores 
-                    SET marca = '" + marca + "', model = '" + model + "', nom_assignat = '" + nom + "'
+                    SET marca = '" + marca + "' model = '" + model + "', nom_assignat = '" + nom + "'
                     WHERE codi_impresora = '" + codiImpressora + "'"
             cmd = New SqlCommand(query)
             cmd.Connection = connectionClient
@@ -598,6 +786,12 @@ Public Class SQLCommands
         End Try
     End Function
 
+    ''' <summary>
+    ''' Eliminar una impressora de la base de datos
+    ''' </summary>
+    ''' <param name="dbToConnect">Base de datos a la cual se conecta el cliente</param>
+    ''' <param name="impressora">Impressora a eliminar</param>
+    ''' <returns></returns>
     Public Function DeletePrinterIntoDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores)
         Try
             Dim query As String

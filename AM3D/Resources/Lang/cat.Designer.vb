@@ -983,6 +983,87 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Fitxers generats correctament..
+        '''</summary>
+        Friend Shared ReadOnly Property MFicheroCorrectos() As String
+            Get
+                Return ResourceManager.GetString("MFicheroCorrectos", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Error al generar els fitxers..
+        '''</summary>
+        Friend Shared ReadOnly Property MFicheroError() As String
+            Get
+                Return ResourceManager.GetString("MFicheroError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Omple tots els camps..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGRellenarError() As String
+            Get
+                Return ResourceManager.GetString("MSGRellenarError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to La contrasenya actual no és correcta..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserContrasenyaError() As String
+            Get
+                Return ResourceManager.GetString("MSGUserContrasenyaError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Contrasenya actualitzada correctament..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserPasswordUpdateCorrect() As String
+            Get
+                Return ResourceManager.GetString("MSGUserPasswordUpdateCorrect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Error en desar la contrasenya de l&apos;usuari..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserPasswordUpdateError() As String
+            Get
+                Return ResourceManager.GetString("MSGUserPasswordUpdateError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Les contrasenyes no coincideixen..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserRepetirError() As String
+            Get
+                Return ResourceManager.GetString("MSGUserRepetirError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Dades d&apos;usuari guardats correctament..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserUpdateCorrect() As String
+            Get
+                Return ResourceManager.GetString("MSGUserUpdateCorrect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Error en desar dades d&apos;usuari..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserUpdateError() As String
+            Get
+                Return ResourceManager.GetString("MSGUserUpdateError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Cambiar Idioma.
         '''</summary>
         Friend Shared ReadOnly Property opcioCambiarIdioma() As String

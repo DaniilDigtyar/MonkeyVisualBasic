@@ -22,19 +22,19 @@ Partial Class FPerfil
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.TBTempMinExt = New System.Windows.Forms.TextBox()
-        Me.TBTempMaxEx = New System.Windows.Forms.TextBox()
-        Me.TBExtrusors = New System.Windows.Forms.TextBox()
-        Me.TBModel = New System.Windows.Forms.TextBox()
+        Me.TBEmail = New System.Windows.Forms.TextBox()
+        Me.TBCognom = New System.Windows.Forms.TextBox()
+        Me.TBNom = New System.Windows.Forms.TextBox()
+        Me.TBdni = New System.Windows.Forms.TextBox()
         Me.LEmail = New System.Windows.Forms.Label()
         Me.LCognom = New System.Windows.Forms.Label()
         Me.LNom = New System.Windows.Forms.Label()
         Me.LDni = New System.Windows.Forms.Label()
         Me.CBModificar = New System.Windows.Forms.CheckBox()
         Me.LCanvContr = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBoxRepeteix = New System.Windows.Forms.TextBox()
+        Me.TextBoxNova = New System.Windows.Forms.TextBox()
+        Me.TextBoxActual = New System.Windows.Forms.TextBox()
         Me.LRContra = New System.Windows.Forms.Label()
         Me.LNova = New System.Windows.Forms.Label()
         Me.LActual = New System.Windows.Forms.Label()
@@ -44,37 +44,37 @@ Partial Class FPerfil
         Me.LDades = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'TBTempMinExt
+        'TBEmail
         '
-        Me.TBTempMinExt.Enabled = False
-        Me.TBTempMinExt.Location = New System.Drawing.Point(158, 222)
-        Me.TBTempMinExt.Name = "TBTempMinExt"
-        Me.TBTempMinExt.Size = New System.Drawing.Size(141, 20)
-        Me.TBTempMinExt.TabIndex = 55
+        Me.TBEmail.Enabled = False
+        Me.TBEmail.Location = New System.Drawing.Point(228, 222)
+        Me.TBEmail.Name = "TBEmail"
+        Me.TBEmail.Size = New System.Drawing.Size(179, 20)
+        Me.TBEmail.TabIndex = 55
         '
-        'TBTempMaxEx
+        'TBCognom
         '
-        Me.TBTempMaxEx.Enabled = False
-        Me.TBTempMaxEx.Location = New System.Drawing.Point(158, 187)
-        Me.TBTempMaxEx.Name = "TBTempMaxEx"
-        Me.TBTempMaxEx.Size = New System.Drawing.Size(141, 20)
-        Me.TBTempMaxEx.TabIndex = 54
+        Me.TBCognom.Enabled = False
+        Me.TBCognom.Location = New System.Drawing.Point(228, 187)
+        Me.TBCognom.Name = "TBCognom"
+        Me.TBCognom.Size = New System.Drawing.Size(179, 20)
+        Me.TBCognom.TabIndex = 54
         '
-        'TBExtrusors
+        'TBNom
         '
-        Me.TBExtrusors.Enabled = False
-        Me.TBExtrusors.Location = New System.Drawing.Point(158, 152)
-        Me.TBExtrusors.Name = "TBExtrusors"
-        Me.TBExtrusors.Size = New System.Drawing.Size(141, 20)
-        Me.TBExtrusors.TabIndex = 53
+        Me.TBNom.Enabled = False
+        Me.TBNom.Location = New System.Drawing.Point(228, 152)
+        Me.TBNom.Name = "TBNom"
+        Me.TBNom.Size = New System.Drawing.Size(179, 20)
+        Me.TBNom.TabIndex = 53
         '
-        'TBModel
+        'TBdni
         '
-        Me.TBModel.Enabled = False
-        Me.TBModel.Location = New System.Drawing.Point(158, 117)
-        Me.TBModel.Name = "TBModel"
-        Me.TBModel.Size = New System.Drawing.Size(141, 20)
-        Me.TBModel.TabIndex = 52
+        Me.TBdni.Enabled = False
+        Me.TBdni.Location = New System.Drawing.Point(228, 119)
+        Me.TBdni.Name = "TBdni"
+        Me.TBdni.Size = New System.Drawing.Size(179, 20)
+        Me.TBdni.TabIndex = 52
         '
         'LEmail
         '
@@ -142,26 +142,29 @@ Partial Class FPerfil
         Me.LCanvContr.TabIndex = 57
         Me.LCanvContr.Text = "Canviar Contrasenya"
         '
-        'TextBox1
+        'TextBoxRepeteix
         '
-        Me.TextBox1.Location = New System.Drawing.Point(189, 462)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(141, 20)
-        Me.TextBox1.TabIndex = 63
+        Me.TextBoxRepeteix.Location = New System.Drawing.Point(228, 460)
+        Me.TextBoxRepeteix.Name = "TextBoxRepeteix"
+        Me.TextBoxRepeteix.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBoxRepeteix.Size = New System.Drawing.Size(179, 20)
+        Me.TextBoxRepeteix.TabIndex = 63
         '
-        'TextBox2
+        'TextBoxNova
         '
-        Me.TextBox2.Location = New System.Drawing.Point(189, 427)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(141, 20)
-        Me.TextBox2.TabIndex = 62
+        Me.TextBoxNova.Location = New System.Drawing.Point(228, 425)
+        Me.TextBoxNova.Name = "TextBoxNova"
+        Me.TextBoxNova.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBoxNova.Size = New System.Drawing.Size(179, 20)
+        Me.TextBoxNova.TabIndex = 62
         '
-        'TextBox3
+        'TextBoxActual
         '
-        Me.TextBox3.Location = New System.Drawing.Point(189, 392)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(141, 20)
-        Me.TextBox3.TabIndex = 61
+        Me.TextBoxActual.Location = New System.Drawing.Point(228, 392)
+        Me.TextBoxActual.Name = "TextBoxActual"
+        Me.TextBoxActual.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBoxActual.Size = New System.Drawing.Size(179, 20)
+        Me.TextBoxActual.TabIndex = 61
         '
         'LRContra
         '
@@ -170,9 +173,9 @@ Partial Class FPerfil
         Me.LRContra.ForeColor = System.Drawing.Color.Black
         Me.LRContra.Location = New System.Drawing.Point(44, 458)
         Me.LRContra.Name = "LRContra"
-        Me.LRContra.Size = New System.Drawing.Size(126, 20)
+        Me.LRContra.Size = New System.Drawing.Size(179, 20)
         Me.LRContra.TabIndex = 60
-        Me.LRContra.Text = "Repeteix la nova"
+        Me.LRContra.Text = "Repeteix la contrasenya"
         '
         'LNova
         '
@@ -204,7 +207,7 @@ Partial Class FPerfil
         Me.BTActualitzar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTActualitzar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTActualitzar.ForeColor = System.Drawing.Color.Black
-        Me.BTActualitzar.Location = New System.Drawing.Point(406, 145)
+        Me.BTActualitzar.Location = New System.Drawing.Point(535, 117)
         Me.BTActualitzar.Name = "BTActualitzar"
         Me.BTActualitzar.Size = New System.Drawing.Size(190, 62)
         Me.BTActualitzar.TabIndex = 64
@@ -218,7 +221,7 @@ Partial Class FPerfil
         Me.BTCanviarContra.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTCanviarContra.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTCanviarContra.ForeColor = System.Drawing.Color.Black
-        Me.BTCanviarContra.Location = New System.Drawing.Point(406, 404)
+        Me.BTCanviarContra.Location = New System.Drawing.Point(535, 390)
         Me.BTCanviarContra.Name = "BTCanviarContra"
         Me.BTCanviarContra.Size = New System.Drawing.Size(190, 62)
         Me.BTCanviarContra.TabIndex = 65
@@ -254,18 +257,18 @@ Partial Class FPerfil
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.BTCanviarContra)
         Me.Controls.Add(Me.BTActualitzar)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBoxRepeteix)
+        Me.Controls.Add(Me.TextBoxNova)
+        Me.Controls.Add(Me.TextBoxActual)
         Me.Controls.Add(Me.LRContra)
         Me.Controls.Add(Me.LNova)
         Me.Controls.Add(Me.LActual)
         Me.Controls.Add(Me.LCanvContr)
         Me.Controls.Add(Me.CBModificar)
-        Me.Controls.Add(Me.TBTempMinExt)
-        Me.Controls.Add(Me.TBTempMaxEx)
-        Me.Controls.Add(Me.TBExtrusors)
-        Me.Controls.Add(Me.TBModel)
+        Me.Controls.Add(Me.TBEmail)
+        Me.Controls.Add(Me.TBCognom)
+        Me.Controls.Add(Me.TBNom)
+        Me.Controls.Add(Me.TBdni)
         Me.Controls.Add(Me.LEmail)
         Me.Controls.Add(Me.LCognom)
         Me.Controls.Add(Me.LNom)
@@ -279,19 +282,19 @@ Partial Class FPerfil
 
     End Sub
 
-    Friend WithEvents TBTempMinExt As TextBox
-    Friend WithEvents TBTempMaxEx As TextBox
-    Friend WithEvents TBExtrusors As TextBox
-    Friend WithEvents TBModel As TextBox
+    Friend WithEvents TBEmail As TextBox
+    Friend WithEvents TBCognom As TextBox
+    Friend WithEvents TBNom As TextBox
+    Friend WithEvents TBdni As TextBox
     Friend WithEvents LEmail As Label
     Friend WithEvents LCognom As Label
     Friend WithEvents LNom As Label
     Friend WithEvents LDni As Label
     Friend WithEvents CBModificar As CheckBox
     Friend WithEvents LCanvContr As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBoxRepeteix As TextBox
+    Friend WithEvents TextBoxNova As TextBox
+    Friend WithEvents TextBoxActual As TextBox
     Friend WithEvents LRContra As Label
     Friend WithEvents LNova As Label
     Friend WithEvents LActual As Label

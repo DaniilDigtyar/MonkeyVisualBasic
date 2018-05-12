@@ -49,9 +49,8 @@ Partial Class ModificarImpressores
         Me.Labelnfo.ForeColor = System.Drawing.Color.DarkRed
         Me.Labelnfo.Location = New System.Drawing.Point(16, 221)
         Me.Labelnfo.Name = "Labelnfo"
-        Me.Labelnfo.Size = New System.Drawing.Size(32, 18)
+        Me.Labelnfo.Size = New System.Drawing.Size(0, 18)
         Me.Labelnfo.TabIndex = 79
-        Me.Labelnfo.Text = "aaa"
         Me.Labelnfo.Visible = False
         '
         'BTCancelar

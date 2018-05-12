@@ -37,7 +37,6 @@ Partial Class PanelConnectarNovaImpressora
         Me.color = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.marca_productora = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Diametre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Labelnfo = New System.Windows.Forms.Label()
         CType(Me.DataGridViewBobina, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -185,25 +184,12 @@ Partial Class PanelConnectarNovaImpressora
         Me.Diametre.Name = "Diametre"
         Me.Diametre.ReadOnly = True
         '
-        'Labelnfo
-        '
-        Me.Labelnfo.AutoSize = True
-        Me.Labelnfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
-        Me.Labelnfo.ForeColor = System.Drawing.Color.DarkRed
-        Me.Labelnfo.Location = New System.Drawing.Point(55, 233)
-        Me.Labelnfo.Name = "Labelnfo"
-        Me.Labelnfo.Size = New System.Drawing.Size(32, 18)
-        Me.Labelnfo.TabIndex = 16
-        Me.Labelnfo.Text = "aaa"
-        Me.Labelnfo.Visible = False
-        '
         'PanelConnectarNovaImpressora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(802, 374)
-        Me.Controls.Add(Me.Labelnfo)
         Me.Controls.Add(Me.DataGridViewBobina)
         Me.Controls.Add(Me.BTImpressoraBorrar)
         Me.Controls.Add(Me.BTImpressoraGuardar)
@@ -234,7 +220,6 @@ Partial Class PanelConnectarNovaImpressora
     Friend WithEvents BTImpressoraGuardar As Button
     Friend WithEvents BTImpressoraBorrar As Button
     Friend WithEvents DataGridViewBobina As DataGridView
-    Friend WithEvents Labelnfo As Label
     Friend WithEvents codi_bobina As DataGridViewTextBoxColumn
     Friend WithEvents Bobina As DataGridViewTextBoxColumn
     Friend WithEvents color As DataGridViewTextBoxColumn

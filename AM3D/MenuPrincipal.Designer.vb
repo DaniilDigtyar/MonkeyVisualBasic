@@ -321,7 +321,7 @@ Partial Class MenuPrincipal
         Me.Panel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel4.Location = New System.Drawing.Point(223, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(170, 33)
+        Me.Panel4.Size = New System.Drawing.Size(139, 33)
         Me.Panel4.TabIndex = 8
         '
         'LBGestio
@@ -341,9 +341,9 @@ Partial Class MenuPrincipal
         Me.user.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.user.FormattingEnabled = True
         Me.user.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.user.Location = New System.Drawing.Point(648, 9)
+        Me.user.Location = New System.Drawing.Point(641, 9)
         Me.user.Name = "user"
-        Me.user.Size = New System.Drawing.Size(142, 21)
+        Me.user.Size = New System.Drawing.Size(114, 21)
         Me.user.TabIndex = 9
         '
         'MenuSup
@@ -379,7 +379,7 @@ Partial Class MenuPrincipal
         Me.LBUser.AutoSize = True
         Me.LBUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBUser.ForeColor = System.Drawing.Color.White
-        Me.LBUser.Location = New System.Drawing.Point(581, 12)
+        Me.LBUser.Location = New System.Drawing.Point(576, 10)
         Me.LBUser.Name = "LBUser"
         Me.LBUser.Size = New System.Drawing.Size(41, 15)
         Me.LBUser.TabIndex = 1

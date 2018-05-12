@@ -37,9 +37,9 @@ Partial Class Login
         Me.CBIdioma = New System.Windows.Forms.ComboBox()
         Me.Lidioma = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.LabelErrorLogin = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.LabelErrorLogin = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -153,10 +153,10 @@ Partial Class Login
         '
         'ButtonLogin
         '
-        Me.ButtonLogin.BackColor = System.Drawing.Color.Black
+        Me.ButtonLogin.BackColor = System.Drawing.Color.Gainsboro
         Me.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonLogin.ForeColor = System.Drawing.Color.White
+        Me.ButtonLogin.ForeColor = System.Drawing.Color.Black
         Me.ButtonLogin.Location = New System.Drawing.Point(6, 237)
         Me.ButtonLogin.Name = "ButtonLogin"
         Me.ButtonLogin.Size = New System.Drawing.Size(378, 40)
@@ -180,6 +180,8 @@ Partial Class Login
         '
         'CBIdioma
         '
+        Me.CBIdioma.BackColor = System.Drawing.SystemColors.Window
+        Me.CBIdioma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBIdioma.FormattingEnabled = True
         Me.CBIdioma.Location = New System.Drawing.Point(307, 7)
         Me.CBIdioma.Name = "CBIdioma"
@@ -214,6 +216,18 @@ Partial Class Login
         Me.Panel2.Size = New System.Drawing.Size(400, 290)
         Me.Panel2.TabIndex = 12
         '
+        'LabelErrorLogin
+        '
+        Me.LabelErrorLogin.AutoSize = True
+        Me.LabelErrorLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
+        Me.LabelErrorLogin.ForeColor = System.Drawing.Color.DarkRed
+        Me.LabelErrorLogin.Location = New System.Drawing.Point(4, 203)
+        Me.LabelErrorLogin.Name = "LabelErrorLogin"
+        Me.LabelErrorLogin.Size = New System.Drawing.Size(293, 18)
+        Me.LabelErrorLogin.TabIndex = 15
+        Me.LabelErrorLogin.Text = "Error: L'usuari o contrasenya és incorrecte."
+        Me.LabelErrorLogin.Visible = False
+        '
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
@@ -233,18 +247,6 @@ Partial Class Login
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 13
         Me.PictureBox3.TabStop = False
-        '
-        'LabelErrorLogin
-        '
-        Me.LabelErrorLogin.AutoSize = True
-        Me.LabelErrorLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
-        Me.LabelErrorLogin.ForeColor = System.Drawing.Color.DarkRed
-        Me.LabelErrorLogin.Location = New System.Drawing.Point(4, 203)
-        Me.LabelErrorLogin.Name = "LabelErrorLogin"
-        Me.LabelErrorLogin.Size = New System.Drawing.Size(293, 18)
-        Me.LabelErrorLogin.TabIndex = 15
-        Me.LabelErrorLogin.Text = "Error: L'usuari o contrasenya és incorrecte."
-        Me.LabelErrorLogin.Visible = False
         '
         'Login
         '

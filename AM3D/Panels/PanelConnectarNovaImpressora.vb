@@ -33,11 +33,10 @@
         CBMarca.SelectedIndex = -1
         CBModel.SelectedIndex = -1
         CBModel.Enabled = False
-        Labelnfo.Visible = False
     End Sub
 
     ''' <summary>
-    ''' 
+    ''' Añade una nueva impressora a la base de datos y reinicia el formulario.
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
@@ -46,44 +45,47 @@
         Dim codi As String
         Dim bobina As String
         Dim afectat As Integer
-        If CBModel.SelectedIndex <> -1 And CBMarca.SelectedIndex <> -1 And TBNomImpressora IsNot vbNullString Then
+        If CBModel.SelectedIndex <> -1 And CBMarca.SelectedIndex <> -1 And TBNomImpressora.Text IsNot "" Then
             Try
                 codi = SQLCommands.SelectNewPrinterCode(Globals.userCredentials.GetSetBaseDades)
                 bobina = DataGridViewBobina.SelectedRows.Item(0).Cells(0).Value
                 impressora = New Impressores(codi, TBNomImpressora.Text, "CONNECTED", CBMarca.SelectedItem.ToString, CBModel.SelectedItem.ToString, bobina)
                 afectat = SQLCommands.InsertPrinterIntoDatabase(Globals.userCredentials.GetSetBaseDades, impressora)
-                Labelnfo.Visible = True
                 TBNomImpressora.Text = ""
                 CBMarca.SelectedIndex = -1
                 CBModel.SelectedIndex = -1
                 CBModel.Enabled = False
                 If afectat > 0 Then
                     If Globals.lang = "cat" Then
-                        Labelnfo.Text = My.Resources.cat.LabelnfoCorrecte
+                        MenuPrincipal.showMSG(My.Resources.cat.LabelnfoCorrecte)
                     Else
-                        Labelnfo.Text = My.Resources.eng.LabelnfoCorrecte
+                        MenuPrincipal.showMSG(My.Resources.eng.LabelnfoCorrecte)
                     End If
                 Else
                     If Globals.lang = "cat" Then
-                        Labelnfo.Text = My.Resources.cat.LabelnfoError
+                        MenuPrincipal.showMSG(My.Resources.cat.LabelnfoError)
                     Else
-                        Labelnfo.Text = My.Resources.eng.LabelnfoError
+                        MenuPrincipal.showMSG(My.Resources.eng.LabelnfoError)
                     End If
                 End If
             Catch ex As Exception
                 MsgBox(ex.ToString)
             End Try
         Else
-            Labelnfo.Visible = True
             If Globals.lang = "cat" Then
-                Labelnfo.Text = My.Resources.cat.LabelnfoNoSelect
+                MenuPrincipal.showMSG(My.Resources.cat.LabelnfoNoSelect)
             Else
-                Labelnfo.Text = My.Resources.eng.LabelnfoNoSelect
+                MenuPrincipal.showMSG(My.Resources.eng.LabelnfoNoSelect)
             End If
         End If
 
     End Sub
 
+    ''' <summary>
+    ''' Rellena automaticamente el cobobox de modelos dependiendo de la marca de impresora selecionada.
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub CBMarca_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CBMarca.SelectedIndexChanged
         Dim model As Models
         Dim marca As Object
@@ -104,10 +106,4 @@
             MsgBox(ex.ToString)
         End Try
     End Sub
-
-    Private Sub PanelConnectarNovaImpressora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-
 End Class
