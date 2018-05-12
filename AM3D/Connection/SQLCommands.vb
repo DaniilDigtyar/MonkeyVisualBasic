@@ -616,7 +616,47 @@ Public Class SQLCommands
         Return listaImpressions
     End Function
 
+    Public Function InsertUserClient(ByVal dbToConnect As String, ByVal usuari As Usuaris)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
 
+            query = "INSERT INTO usuaris 
+                                VALUES('" + usuari.GetSetNickname + "', null, '" + usuari.GetSetDNI + "', '" + usuari.GetSetNom + "', '" + usuari.GetSetCognom + "', '" + usuari.GetSetEmail + "')"
+
+            Me.connectDataBaseClient(dbToConnect)
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery
+
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function InsertPermisoDeUsuario(ByVal dbToConnect As String, ByVal usuari As Usuaris, ByVal permiso As Permisos)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            query = "INSERT INTO tenen 
+                                VALUES('" + permiso.GetSetCodiPermisos + "' , '" + usuari.GetSetNickname + "')"
+
+            Me.connectDataBaseClient(dbToConnect)
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery
+
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
 
     Public Function InsertUserIfExistsUpdate(ByVal dbToConnect As String, ByVal usuari As Usuaris)
         Try
@@ -650,8 +690,8 @@ Public Class SQLCommands
                 End If
             End If
             Return afectat
-            'Catch ex As Exception
-            'MsgBox(ex.Message)
+        Catch ex As Exception
+            MsgBox(ex.Message)
         Finally
             Me.disconnectDataBaseClient()
         End Try

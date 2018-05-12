@@ -33,11 +33,16 @@ Partial Class PanelUsuarisAfegir
         Me.TBContrasenya = New System.Windows.Forms.TextBox()
         Me.TBRContrasenya = New System.Windows.Forms.TextBox()
         Me.LPermisos = New System.Windows.Forms.Label()
-        Me.CLBPermisos = New System.Windows.Forms.CheckedListBox()
         Me.BTEsborrar = New System.Windows.Forms.Button()
         Me.BTCrear = New System.Windows.Forms.Button()
         Me.TBCorreu = New System.Windows.Forms.TextBox()
         Me.LCorreu = New System.Windows.Forms.Label()
+        Me.DataGridViewPermisos = New System.Windows.Forms.DataGridView()
+        Me.codi_permis = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.descripcio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TBDNI = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        CType(Me.DataGridViewPermisos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LNomUsuari
@@ -47,9 +52,9 @@ Partial Class PanelUsuarisAfegir
         Me.LNomUsuari.ForeColor = System.Drawing.Color.Black
         Me.LNomUsuari.Location = New System.Drawing.Point(12, 54)
         Me.LNomUsuari.Name = "LNomUsuari"
-        Me.LNomUsuari.Size = New System.Drawing.Size(126, 25)
+        Me.LNomUsuari.Size = New System.Drawing.Size(139, 25)
         Me.LNomUsuari.TabIndex = 1
-        Me.LNomUsuari.Text = "Nom d'usuari"
+        Me.LNomUsuari.Text = "Nom d'usuari *"
         '
         'LNom
         '
@@ -78,11 +83,11 @@ Partial Class PanelUsuarisAfegir
         Me.LContrasenya.AutoSize = True
         Me.LContrasenya.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LContrasenya.ForeColor = System.Drawing.Color.Black
-        Me.LContrasenya.Location = New System.Drawing.Point(12, 233)
+        Me.LContrasenya.Location = New System.Drawing.Point(12, 260)
         Me.LContrasenya.Name = "LContrasenya"
-        Me.LContrasenya.Size = New System.Drawing.Size(124, 25)
+        Me.LContrasenya.Size = New System.Drawing.Size(137, 25)
         Me.LContrasenya.TabIndex = 4
-        Me.LContrasenya.Text = "Contrasenya"
+        Me.LContrasenya.Text = "Contrasenya *"
         '
         'LRContrasenya
         '
@@ -91,9 +96,9 @@ Partial Class PanelUsuarisAfegir
         Me.LRContrasenya.ForeColor = System.Drawing.Color.Black
         Me.LRContrasenya.Location = New System.Drawing.Point(12, 281)
         Me.LRContrasenya.Name = "LRContrasenya"
-        Me.LRContrasenya.Size = New System.Drawing.Size(220, 25)
+        Me.LRContrasenya.Size = New System.Drawing.Size(233, 25)
         Me.LRContrasenya.TabIndex = 5
-        Me.LRContrasenya.Text = "Repeteix la contrasenya"
+        Me.LRContrasenya.Text = "Repeteix la contrasenya *"
         '
         'TBNickname
         '
@@ -118,8 +123,9 @@ Partial Class PanelUsuarisAfegir
         '
         'TBContrasenya
         '
-        Me.TBContrasenya.Location = New System.Drawing.Point(256, 233)
+        Me.TBContrasenya.Location = New System.Drawing.Point(256, 260)
         Me.TBContrasenya.Name = "TBContrasenya"
+        Me.TBContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBContrasenya.Size = New System.Drawing.Size(196, 20)
         Me.TBContrasenya.TabIndex = 11
         '
@@ -127,6 +133,7 @@ Partial Class PanelUsuarisAfegir
         '
         Me.TBRContrasenya.Location = New System.Drawing.Point(256, 286)
         Me.TBRContrasenya.Name = "TBRContrasenya"
+        Me.TBRContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBRContrasenya.Size = New System.Drawing.Size(196, 20)
         Me.TBRContrasenya.TabIndex = 12
         '
@@ -141,14 +148,6 @@ Partial Class PanelUsuarisAfegir
         Me.LPermisos.TabIndex = 13
         Me.LPermisos.Text = "Permisos"
         '
-        'CLBPermisos
-        '
-        Me.CLBPermisos.FormattingEnabled = True
-        Me.CLBPermisos.Location = New System.Drawing.Point(481, 60)
-        Me.CLBPermisos.Name = "CLBPermisos"
-        Me.CLBPermisos.Size = New System.Drawing.Size(275, 214)
-        Me.CLBPermisos.TabIndex = 14
-        '
         'BTEsborrar
         '
         Me.BTEsborrar.BackColor = System.Drawing.Color.White
@@ -156,9 +155,9 @@ Partial Class PanelUsuarisAfegir
         Me.BTEsborrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTEsborrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTEsborrar.ForeColor = System.Drawing.Color.Black
-        Me.BTEsborrar.Location = New System.Drawing.Point(664, 294)
+        Me.BTEsborrar.Location = New System.Drawing.Point(360, 324)
         Me.BTEsborrar.Name = "BTEsborrar"
-        Me.BTEsborrar.Size = New System.Drawing.Size(92, 62)
+        Me.BTEsborrar.Size = New System.Drawing.Size(92, 32)
         Me.BTEsborrar.TabIndex = 16
         Me.BTEsborrar.Text = "Esborrar"
         Me.BTEsborrar.UseVisualStyleBackColor = False
@@ -170,9 +169,9 @@ Partial Class PanelUsuarisAfegir
         Me.BTCrear.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTCrear.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTCrear.ForeColor = System.Drawing.Color.Black
-        Me.BTCrear.Location = New System.Drawing.Point(481, 294)
+        Me.BTCrear.Location = New System.Drawing.Point(17, 324)
         Me.BTCrear.Name = "BTCrear"
-        Me.BTCrear.Size = New System.Drawing.Size(92, 62)
+        Me.BTCrear.Size = New System.Drawing.Size(92, 32)
         Me.BTCrear.TabIndex = 15
         Me.BTCrear.Text = "Crear"
         Me.BTCrear.UseVisualStyleBackColor = False
@@ -195,17 +194,63 @@ Partial Class PanelUsuarisAfegir
         Me.LCorreu.TabIndex = 17
         Me.LCorreu.Text = "Correu"
         '
+        'DataGridViewPermisos
+        '
+        Me.DataGridViewPermisos.AllowUserToAddRows = False
+        Me.DataGridViewPermisos.AllowUserToDeleteRows = False
+        Me.DataGridViewPermisos.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        Me.DataGridViewPermisos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridViewPermisos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codi_permis, Me.descripcio})
+        Me.DataGridViewPermisos.Location = New System.Drawing.Point(458, 54)
+        Me.DataGridViewPermisos.Name = "DataGridViewPermisos"
+        Me.DataGridViewPermisos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridViewPermisos.Size = New System.Drawing.Size(300, 302)
+        Me.DataGridViewPermisos.TabIndex = 28
+        '
+        'codi_permis
+        '
+        Me.codi_permis.HeaderText = "Codi Permis"
+        Me.codi_permis.Name = "codi_permis"
+        Me.codi_permis.ReadOnly = True
+        '
+        'descripcio
+        '
+        Me.descripcio.HeaderText = "Descripció"
+        Me.descripcio.Name = "descripcio"
+        Me.descripcio.ReadOnly = True
+        Me.descripcio.Width = 150
+        '
+        'TBDNI
+        '
+        Me.TBDNI.Location = New System.Drawing.Point(256, 221)
+        Me.TBDNI.Name = "TBDNI"
+        Me.TBDNI.Size = New System.Drawing.Size(196, 20)
+        Me.TBDNI.TabIndex = 30
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(12, 221)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(45, 25)
+        Me.Label1.TabIndex = 29
+        Me.Label1.Text = "DNI"
+        '
         'PanelUsuarisAfegir
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(780, 380)
+        Me.Controls.Add(Me.TBDNI)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.DataGridViewPermisos)
         Me.Controls.Add(Me.TBCorreu)
         Me.Controls.Add(Me.LCorreu)
         Me.Controls.Add(Me.BTEsborrar)
         Me.Controls.Add(Me.BTCrear)
-        Me.Controls.Add(Me.CLBPermisos)
         Me.Controls.Add(Me.LPermisos)
         Me.Controls.Add(Me.TBRContrasenya)
         Me.Controls.Add(Me.TBContrasenya)
@@ -221,6 +266,7 @@ Partial Class PanelUsuarisAfegir
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PanelUsuarisAfegir"
         Me.Text = "PanelUsuarisAfegir"
+        CType(Me.DataGridViewPermisos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -237,9 +283,13 @@ Partial Class PanelUsuarisAfegir
     Friend WithEvents TBContrasenya As TextBox
     Friend WithEvents TBRContrasenya As TextBox
     Friend WithEvents LPermisos As Label
-    Friend WithEvents CLBPermisos As CheckedListBox
     Friend WithEvents BTEsborrar As Button
     Friend WithEvents BTCrear As Button
     Friend WithEvents TBCorreu As TextBox
     Friend WithEvents LCorreu As Label
+    Friend WithEvents DataGridViewPermisos As DataGridView
+    Friend WithEvents codi_permis As DataGridViewTextBoxColumn
+    Friend WithEvents descripcio As DataGridViewTextBoxColumn
+    Friend WithEvents TBDNI As TextBox
+    Friend WithEvents Label1 As Label
 End Class

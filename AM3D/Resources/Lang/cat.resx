@@ -262,7 +262,7 @@
     <value>Color</value>
   </data>
   <data name="LContrasenya" xml:space="preserve">
-    <value>Contrasenya</value>
+    <value>Contrasenya *</value>
   </data>
   <data name="LControl" xml:space="preserve">
     <value>Control</value>
@@ -337,7 +337,7 @@
     <value>Nom del GCode</value>
   </data>
   <data name="LNomUsuari" xml:space="preserve">
-    <value>Nom d'usuari</value>
+    <value>Nom d'usuari *</value>
   </data>
   <data name="LNova" xml:space="preserve">
     <value>Nova</value>
@@ -346,7 +346,7 @@
     <value>Sortir</value>
   </data>
   <data name="LRContra" xml:space="preserve">
-    <value>Repeteix la contrasenya</value>
+    <value>Repeteix la contrasenya *</value>
   </data>
   <data name="LRepContrasenya" xml:space="preserve">
     <value>Repeteix la contrasenya</value>

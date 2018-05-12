@@ -262,7 +262,7 @@
     <value>Color</value>
   </data>
   <data name="LContrasenya" xml:space="preserve">
-    <value>Password</value>
+    <value>Password *</value>
   </data>
   <data name="LControl" xml:space="preserve">
     <value>Control</value>
@@ -334,7 +334,7 @@
     <value>Name of the GCode</value>
   </data>
   <data name="LNomUsuari" xml:space="preserve">
-    <value>User name</value>
+    <value>User name *</value>
   </data>
   <data name="LNova" xml:space="preserve">
     <value>New</value>
@@ -343,7 +343,7 @@
     <value>Logout</value>
   </data>
   <data name="LRContra" xml:space="preserve">
-    <value>Repeat the password</value>
+    <value>Repeat the password *</value>
   </data>
   <data name="LResMaxCapa" xml:space="preserve">
     <value>Maximum layer resolution</value>
@@ -457,6 +457,6 @@
     <value>User data saved correctly.</value>
   </data>
   <data name="MSGUserUpdateError" xml:space="preserve">
-    <value>Error saving user password</value>
+    <value>Error saving user data.</value>
   </data>
 </root>

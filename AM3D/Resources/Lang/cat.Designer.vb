@@ -587,7 +587,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Contrasenya.
+        '''  Looks up a localized string similar to Contrasenya *.
         '''</summary>
         Friend Shared ReadOnly Property LContrasenya() As String
             Get
@@ -821,7 +821,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Nom d&apos;usuari.
+        '''  Looks up a localized string similar to Nom d&apos;usuari *.
         '''</summary>
         Friend Shared ReadOnly Property LNomUsuari() As String
             Get
@@ -857,7 +857,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Repeteix la contrasenya.
+        '''  Looks up a localized string similar to Repeteix la contrasenya *.
         '''</summary>
         Friend Shared ReadOnly Property LRContra() As String
             Get
