@@ -1,7 +1,16 @@
 ﻿Public Class PanelModificarEliminarUsuaris
     Dim SQLCommands As SQLCommands = New SQLCommands()
+    Public usuariSeleccionat As Usuaris = New Usuaris("", "", "", "", "", "")
 
     Private Sub BTModificarUsuari_Click(sender As Object, e As EventArgs) Handles BTModificarUsuari.Click
+        Dim nickname, contraseña, dni, nom, cognom, email As String
+        nickname = DGUsuaris.SelectedRows.Item(0).Cells(0).Value
+        contraseña = ""
+        dni = DGUsuaris.SelectedRows.Item(0).Cells(1).Value
+        nom = DGUsuaris.SelectedRows.Item(0).Cells(2).Value
+        cognom = DGUsuaris.SelectedRows.Item(0).Cells(3).Value
+        email = DGUsuaris.SelectedRows.Item(0).Cells(4).Value
+        usuariSeleccionat = New Usuaris(nickname, contraseña, dni, nom, cognom, email)
         ModificarUsuari.Show()
     End Sub
 
@@ -56,4 +65,5 @@
         End If
 
     End Sub
+
 End Class

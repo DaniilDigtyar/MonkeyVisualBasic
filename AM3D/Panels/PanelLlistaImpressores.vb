@@ -34,7 +34,7 @@
         indice = DGImpressores.SelectedRows.Item(0).Index
         DGImpressores.Rows.RemoveAt(indice)
         impressora = New Impressores(codiImpressora, "", "", "", "", "")
-        afectat = SQLCommands.DeletePrinterFromDatabase(Globals.userCredentials.GetSetBaseDades, impressora)
+        afectat = SQLCommands.DeleteImpressoresFromDatabaseWhereImpressora(Globals.userCredentials.GetSetBaseDades, impressora)
         If afectat > 0 Then
             If Globals.lang = "cat" Then
                 MenuPrincipal.showMSG(My.Resources.cat.MSGDeleteCorrect)

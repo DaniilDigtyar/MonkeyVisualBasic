@@ -32,7 +32,7 @@
     End Sub
 
     Public Overrides Function GetHashCode() As Integer
-        Return Me.GetSetMarca.GetHashCode + Me.GetSetModel.GetHashCode
+        Return (Me.GetSetMarca + Me.GetSetModel).GetHashCode
     End Function
 
     Public Overrides Function Equals(obj As Object) As Boolean
@@ -75,6 +75,15 @@
         End Get
         Set(value)
             Me.temperaturaMinimaExtrusor = value
+        End Set
+    End Property
+
+    Property GetSetTemperaturaMaximaExtrusor
+        Get
+            Return Me.temperaturaMaximaExtrusor
+        End Get
+        Set(value)
+            Me.temperaturaMaximaExtrusor = value
         End Set
     End Property
 

@@ -25,6 +25,9 @@ Partial Class PanelBobinesMaterialModificarEliminar
         Me.BTEliminarMaterial = New System.Windows.Forms.Button()
         Me.BTModificarMaterial = New System.Windows.Forms.Button()
         Me.DGMaterial = New System.Windows.Forms.DataGridView()
+        Me.material = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.descripcio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BResfrescar = New System.Windows.Forms.Button()
         CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -35,7 +38,7 @@ Partial Class PanelBobinesMaterialModificarEliminar
         Me.BTEliminarMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTEliminarMaterial.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTEliminarMaterial.ForeColor = System.Drawing.Color.Black
-        Me.BTEliminarMaterial.Location = New System.Drawing.Point(558, 16)
+        Me.BTEliminarMaterial.Location = New System.Drawing.Point(189, 16)
         Me.BTEliminarMaterial.Name = "BTEliminarMaterial"
         Me.BTEliminarMaterial.Size = New System.Drawing.Size(154, 62)
         Me.BTEliminarMaterial.TabIndex = 12
@@ -49,7 +52,7 @@ Partial Class PanelBobinesMaterialModificarEliminar
         Me.BTModificarMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificarMaterial.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificarMaterial.ForeColor = System.Drawing.Color.Black
-        Me.BTModificarMaterial.Location = New System.Drawing.Point(109, 16)
+        Me.BTModificarMaterial.Location = New System.Drawing.Point(29, 16)
         Me.BTModificarMaterial.Name = "BTModificarMaterial"
         Me.BTModificarMaterial.Size = New System.Drawing.Size(154, 62)
         Me.BTModificarMaterial.TabIndex = 11
@@ -58,11 +61,43 @@ Partial Class PanelBobinesMaterialModificarEliminar
         '
         'DGMaterial
         '
+        Me.DGMaterial.AllowUserToAddRows = False
+        Me.DGMaterial.AllowUserToDeleteRows = False
+        Me.DGMaterial.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DGMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGMaterial.Location = New System.Drawing.Point(31, 93)
+        Me.DGMaterial.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.material, Me.descripcio})
+        Me.DGMaterial.Location = New System.Drawing.Point(29, 84)
         Me.DGMaterial.Name = "DGMaterial"
+        Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMaterial.Size = New System.Drawing.Size(739, 268)
-        Me.DGMaterial.TabIndex = 10
+        Me.DGMaterial.TabIndex = 31
+        '
+        'material
+        '
+        Me.material.HeaderText = "Material"
+        Me.material.Name = "material"
+        Me.material.ReadOnly = True
+        '
+        'descripcio
+        '
+        Me.descripcio.HeaderText = "Descripció"
+        Me.descripcio.Name = "descripcio"
+        Me.descripcio.ReadOnly = True
+        Me.descripcio.Width = 200
+        '
+        'BResfrescar
+        '
+        Me.BResfrescar.BackColor = System.Drawing.Color.White
+        Me.BResfrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BResfrescar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BResfrescar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BResfrescar.ForeColor = System.Drawing.Color.Black
+        Me.BResfrescar.Location = New System.Drawing.Point(614, 16)
+        Me.BResfrescar.Name = "BResfrescar"
+        Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
+        Me.BResfrescar.TabIndex = 33
+        Me.BResfrescar.Text = "Refresca llista"
+        Me.BResfrescar.UseVisualStyleBackColor = False
         '
         'PanelBobinesMaterialModificarEliminar
         '
@@ -70,9 +105,10 @@ Partial Class PanelBobinesMaterialModificarEliminar
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(801, 376)
+        Me.Controls.Add(Me.BResfrescar)
+        Me.Controls.Add(Me.DGMaterial)
         Me.Controls.Add(Me.BTEliminarMaterial)
         Me.Controls.Add(Me.BTModificarMaterial)
-        Me.Controls.Add(Me.DGMaterial)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PanelBobinesMaterialModificarEliminar"
@@ -85,4 +121,7 @@ Partial Class PanelBobinesMaterialModificarEliminar
     Friend WithEvents BTEliminarMaterial As Button
     Friend WithEvents BTModificarMaterial As Button
     Friend WithEvents DGMaterial As DataGridView
+    Friend WithEvents material As DataGridViewTextBoxColumn
+    Friend WithEvents descripcio As DataGridViewTextBoxColumn
+    Friend WithEvents BResfrescar As Button
 End Class

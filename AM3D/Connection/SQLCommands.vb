@@ -255,6 +255,62 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function SelectAllMaterialsFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaMaterials As HashSet(Of Materials) = New HashSet(Of Materials)
+            Dim material As Materials
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from materials"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    material = New Materials(dr(0), dr(1))
+                    listaMaterials.Add(material)
+                End While
+                Return listaMaterials
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function SelectAllMarcasBobinasFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaMarcasBobinas As HashSet(Of MarquesBobines) = New HashSet(Of MarquesBobines)
+            Dim marquesBobines As MarquesBobines
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from marques_bobines"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    marquesBobines = New MarquesBobines(dr(0))
+                    listaMarcasBobinas.Add(marquesBobines)
+                End While
+                Return listaMarcasBobinas
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     ''' <summary>
     ''' De la base de datos cliente recupera todos los permisos y devuelve un hashset de Permisos
     ''' </summary>
@@ -421,6 +477,34 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function SelectAllCaracteristiquesFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaCaracteristiques As HashSet(Of Caracteristiques) = New HashSet(Of Caracteristiques)
+            Dim caracteristica As Caracteristiques
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from caracteristiques"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    caracteristica = New Caracteristiques(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5), dr(6), dr(7), dr(8), dr(9), dr(10), dr(11), dr(12), dr(13))
+                    listaCaracteristiques.Add(caracteristica)
+                End While
+                Return listaCaracteristiques
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     ''' <summary>
     ''' De la base de datos cliente recupera todos los modelos equivalentes de una marca y devuelve un hashset de Models
     ''' </summary>
@@ -470,7 +554,7 @@ Public Class SQLCommands
 
             Me.connectDataBaseClient(dbToConnect)
             query = "select *
-                     from models"
+                     from marques"
             cmd = New SqlCommand(query)
             cmd.Connection = connectionClient
             dr = cmd.ExecuteReader
@@ -745,6 +829,72 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function InsertMarcaIntoDatabase(ByVal dbToConnect As String, ByVal marcas As Marca)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "INSERT INTO marques 
+                    VALUES ('" + marcas.GetSetMarca + "');"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+
+
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function InsertMaterialIntoDatabase(ByVal dbToConnect As String, ByVal material As Materials)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "INSERT INTO materials 
+                    VALUES ('" + material.GetSetTipusMaterial + "', '" + material.GetSetDescripcio + "');"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+
+
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function InsertMarcaBobinaIntoDatabase(ByVal dbToConnect As String, ByVal marcaBobina As MarquesBobines)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "INSERT INTO marques_bobines 
+                    VALUES ('" + marcaBobina.GetSetMarcaProductora + "');"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+
+
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     ''' <summary>
     ''' Inserta una nueva impressora en la base de datos.
     ''' </summary>
@@ -824,6 +974,46 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function UpdateMaterialIntoDatabase(ByVal dbToConnect As String, ByVal material As Materials, ByVal tipoMaterial As String)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "UPDATE materials 
+                    SET tipus_material = '" + material.GetSetTipusMaterial + "', descripcio = '" + material.GetSetDescripcio + "'
+                    WHERE tipus_material = '" + tipoMaterial + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function UpdateMarcaBobinaIntoDatabase(ByVal dbToConnect As String, ByVal marcaBobina As MarquesBobines, ByVal marcaBobinaModificar As String)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "UPDATE marques_bobines 
+                    SET marca_productora = '" + marcaBobina.GetSetMarcaProductora + "'
+                    WHERE marca_productora = '" + marcaBobinaModificar + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     ''' <summary>
     ''' Funcion para acutalizar la información de una impressora de la base de datos.
     ''' </summary>
@@ -859,12 +1049,12 @@ Public Class SQLCommands
     ''' <param name="dbToConnect">Base de datos a la cual se conecta el cliente</param>
     ''' <param name="impressora">Impressora a eliminar</param>
     ''' <returns></returns>
-    Public Function DeletePrinterFromDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores)
+    Public Function DeleteImpressoresFromDatabaseWhereImpressora(ByVal dbToConnect As String, ByVal impressora As Impressores)
         Try
             Dim query As String
             Dim afectat As Integer = 0
 
-            DeletePrintsFromDatabase(dbToConnect, impressora)
+            DeleteImpressionsFromDatabaseWhereImpressora(dbToConnect, impressora)
             Me.connectDataBaseClient(dbToConnect)
             query = "DELETE FROM IMPRESSORES
                      WHERE codi_impresora = '" + impressora.GetSetCodiImpressora + "'"
@@ -879,7 +1069,7 @@ Public Class SQLCommands
         End Try
     End Function
 
-    Public Function DeletePrintsFromDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores)
+    Public Function DeleteImpressionsFromDatabaseWhereImpressora(ByVal dbToConnect As String, ByVal impressora As Impressores)
         Try
             Dim query As String
             Dim afectat As Integer = 0
@@ -898,7 +1088,65 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function DeleteMarcaFromDatabaseWhereMarca(ByVal dbToConnect As String, ByVal marca As Marca)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Me.connectDataBaseClient(dbToConnect)
 
+            query = "DELETE 
+                     FROM marques
+                     WHERE marca = '" + marca.GetSetMarca + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function DeleteMaterialFromDatabaseWhereMaterial(ByVal dbToConnect As String, ByVal material As Materials)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Me.connectDataBaseClient(dbToConnect)
+
+            query = "DELETE 
+                     FROM materials
+                     WHERE tipus_material = '" + material.GetSetTipusMaterial + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function DeleteMarcaBobinaFromDatabaseWhereMarcaBobina(ByVal dbToConnect As String, ByVal marcaBobina As MarquesBobines)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Me.connectDataBaseClient(dbToConnect)
+
+            query = "DELETE 
+                     FROM marques_bobines
+                     WHERE marca_productora = '" + marcaBobina.GetSetMarcaProductora + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
 
     Public Function DeleteUserFromDataBase(ByVal dbToConnect As String, ByVal usuari As Usuaris)
         Try
@@ -952,6 +1200,138 @@ Public Class SQLCommands
             Me.connectDataBaseClient(dbToConnect)
             query = "DELETE FROM TENEN
                      WHERE nickname = '" + usuari.GetSetNickname + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function DeleteModelFromDatabaseWhereModel(ByVal dbToConnect As String, ByVal model As Models)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            DeleteCaracteristiquesFromDatabaseWhereModel(dbToConnect, model)
+            Me.connectDataBaseClient(dbToConnect)
+            query = "DELETE FROM models
+                     WHERE marca  = '" + model.GetSetMarca + "' and model = '" + model.GetSetModel + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function DeleteImpressoresFromDatabaseWhereModel(ByVal dbToConnect As String, ByVal model As Models)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            DeleteImpressionsFromDatabaseWhereModel(dbToConnect, model)
+            Me.connectDataBaseClient(dbToConnect)
+            query = "DELETE FROM impressores
+                     WHERE marca  = '" + model.GetSetMarca + "' and model = '" + model.GetSetModel + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function DeleteImpressionsFromDatabaseWhereModel(ByVal dbToConnect As String, ByVal model As Models)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Dim listaImpressions As HashSet(Of Impressions) = New HashSet(Of Impressions)
+            Dim impression As Impressions
+
+            listaImpressions = SelectImpressionFromDatabaseWhereModel(dbToConnect, model)
+            Me.connectDataBaseClient(dbToConnect)
+
+            For Each impression In listaImpressions
+                query = "DELETE FROM impressions
+                     WHERE codi_impresora = '" + impression.GetSetCodiImpresora + "'"
+                cmd = New SqlCommand(query)
+                cmd.Connection = connectionClient
+                afectat = cmd.ExecuteNonQuery()
+                Me.disconnectDataBaseClient()
+            Next impression
+
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+
+        End Try
+    End Function
+
+    Public Function SelectImpressionFromDatabaseWhereModel(ByVal dbToConnect As String, ByVal model As Models)
+        Try
+            Dim listaImpressions As HashSet(Of Impressions) = New HashSet(Of Impressions)
+            Dim impression As Impressions
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from IMPRESSIONS
+                     where marca  = '" + model.GetSetMarca + "' and model = '" + model.GetSetModel + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    impression = New Impressions(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5))
+                    listaImpressions.Add(impression)
+                End While
+            End If
+            Return listaImpressions
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function DeleteCaracteristiquesFromDatabaseWhereModel(ByVal dbToConnect As String, ByVal model As Models)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            DeleteSuportaFromDatabaseWhereModel(dbToConnect, model)
+            Me.connectDataBaseClient(dbToConnect)
+            query = "DELETE FROM caracteristiques
+                     WHERE marca  = '" + model.GetSetMarca + "' and model = '" + model.GetSetModel + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function DeleteSuportaFromDatabaseWhereModel(ByVal dbToConnect As String, ByVal model As Models)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "DELETE FROM suporta
+                     WHERE marca  = '" + model.GetSetMarca + "' and model = '" + model.GetSetModel + "'"
             cmd = New SqlCommand(query)
             cmd.Connection = connectionClient
             afectat = cmd.ExecuteNonQuery()

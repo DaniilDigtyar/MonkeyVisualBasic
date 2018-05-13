@@ -468,4 +468,10 @@
   <data name="MSGUserExist" xml:space="preserve">
     <value>The nickname is used.</value>
   </data>
+  <data name="MSGInsertCorrecto" xml:space="preserve">
+    <value>The insert has been correct.</value>
+  </data>
+  <data name="MSGInsertIncorrecto" xml:space="preserve">
+    <value>Insertion failed.</value>
+  </data>
 </root>

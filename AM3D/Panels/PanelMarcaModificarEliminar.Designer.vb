@@ -25,6 +25,8 @@ Partial Class PanelMarcaModificarEliminar
         Me.BTEliminarMarca = New System.Windows.Forms.Button()
         Me.BTModificarMarca = New System.Windows.Forms.Button()
         Me.DGMarca = New System.Windows.Forms.DataGridView()
+        Me.marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BResfrescar = New System.Windows.Forms.Button()
         CType(Me.DGMarca, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -35,7 +37,7 @@ Partial Class PanelMarcaModificarEliminar
         Me.BTEliminarMarca.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTEliminarMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTEliminarMarca.ForeColor = System.Drawing.Color.Black
-        Me.BTEliminarMarca.Location = New System.Drawing.Point(558, 16)
+        Me.BTEliminarMarca.Location = New System.Drawing.Point(195, 16)
         Me.BTEliminarMarca.Name = "BTEliminarMarca"
         Me.BTEliminarMarca.Size = New System.Drawing.Size(154, 62)
         Me.BTEliminarMarca.TabIndex = 9
@@ -49,7 +51,7 @@ Partial Class PanelMarcaModificarEliminar
         Me.BTModificarMarca.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificarMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificarMarca.ForeColor = System.Drawing.Color.Black
-        Me.BTModificarMarca.Location = New System.Drawing.Point(109, 16)
+        Me.BTModificarMarca.Location = New System.Drawing.Point(35, 16)
         Me.BTModificarMarca.Name = "BTModificarMarca"
         Me.BTModificarMarca.Size = New System.Drawing.Size(154, 62)
         Me.BTModificarMarca.TabIndex = 8
@@ -58,11 +60,36 @@ Partial Class PanelMarcaModificarEliminar
         '
         'DGMarca
         '
+        Me.DGMarca.AllowUserToAddRows = False
+        Me.DGMarca.AllowUserToDeleteRows = False
+        Me.DGMarca.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DGMarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGMarca.Location = New System.Drawing.Point(31, 93)
+        Me.DGMarca.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.marca})
+        Me.DGMarca.Location = New System.Drawing.Point(35, 84)
         Me.DGMarca.Name = "DGMarca"
+        Me.DGMarca.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMarca.Size = New System.Drawing.Size(739, 268)
-        Me.DGMarca.TabIndex = 7
+        Me.DGMarca.TabIndex = 30
+        '
+        'marca
+        '
+        Me.marca.HeaderText = "Marca"
+        Me.marca.Name = "marca"
+        Me.marca.ReadOnly = True
+        '
+        'BResfrescar
+        '
+        Me.BResfrescar.BackColor = System.Drawing.Color.White
+        Me.BResfrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BResfrescar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BResfrescar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BResfrescar.ForeColor = System.Drawing.Color.Black
+        Me.BResfrescar.Location = New System.Drawing.Point(620, 12)
+        Me.BResfrescar.Name = "BResfrescar"
+        Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
+        Me.BResfrescar.TabIndex = 33
+        Me.BResfrescar.Text = "Refresca llista"
+        Me.BResfrescar.UseVisualStyleBackColor = False
         '
         'PanelMarcaModificarEliminar
         '
@@ -70,9 +97,10 @@ Partial Class PanelMarcaModificarEliminar
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(801, 376)
+        Me.Controls.Add(Me.BResfrescar)
+        Me.Controls.Add(Me.DGMarca)
         Me.Controls.Add(Me.BTEliminarMarca)
         Me.Controls.Add(Me.BTModificarMarca)
-        Me.Controls.Add(Me.DGMarca)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PanelMarcaModificarEliminar"
         Me.Text = "PanelMarcaModificarEliminar"
@@ -84,4 +112,6 @@ Partial Class PanelMarcaModificarEliminar
     Friend WithEvents BTEliminarMarca As Button
     Friend WithEvents BTModificarMarca As Button
     Friend WithEvents DGMarca As DataGridView
+    Friend WithEvents marca As DataGridViewTextBoxColumn
+    Friend WithEvents BResfrescar As Button
 End Class

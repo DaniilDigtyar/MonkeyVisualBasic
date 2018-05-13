@@ -21,4 +21,8 @@
         allowCoolMove = False
         Me.Cursor = Cursors.Default
     End Sub
+
+    Private Sub BTModificar_Click(sender As Object, e As EventArgs) Handles BTModificar.Click
+
+    End Sub
 End Class

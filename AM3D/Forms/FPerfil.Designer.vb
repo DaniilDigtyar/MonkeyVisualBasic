@@ -22,6 +22,7 @@ Partial Class FPerfil
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.TBEmail = New System.Windows.Forms.TextBox()
         Me.TBCognom = New System.Windows.Forms.TextBox()
         Me.TBNom = New System.Windows.Forms.TextBox()
@@ -42,6 +43,8 @@ Partial Class FPerfil
         Me.BTCanviarContra = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.LDades = New System.Windows.Forms.Label()
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TBEmail
@@ -277,6 +280,7 @@ Partial Class FPerfil
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FPerfil"
         Me.Text = "FPerfil"
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -302,4 +306,5 @@ Partial Class FPerfil
     Friend WithEvents BTCanviarContra As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents LDades As Label
+    Friend WithEvents BindingSource1 As BindingSource
 End Class

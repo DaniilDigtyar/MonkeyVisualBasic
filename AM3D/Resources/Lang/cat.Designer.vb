@@ -1019,6 +1019,24 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to La inserció ha estat correcta..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGInsertCorrecto() As String
+            Get
+                Return ResourceManager.GetString("MSGInsertCorrecto", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Error en la inserció..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGInsertIncorrecto() As String
+            Get
+                Return ResourceManager.GetString("MSGInsertIncorrecto", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Omple tots els camps..
         '''</summary>
         Friend Shared ReadOnly Property MSGRellenarError() As String

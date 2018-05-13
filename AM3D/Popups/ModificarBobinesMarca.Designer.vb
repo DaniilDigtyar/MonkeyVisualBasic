@@ -27,6 +27,7 @@ Partial Class ModificarBobinesMarca
         Me.BTCancelar = New System.Windows.Forms.Button()
         Me.BTModificar = New System.Windows.Forms.Button()
         Me.MenuSup = New System.Windows.Forms.Panel()
+        Me.LabelInfo = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TBMarca
@@ -83,12 +84,23 @@ Partial Class ModificarBobinesMarca
         Me.MenuSup.Size = New System.Drawing.Size(391, 19)
         Me.MenuSup.TabIndex = 64
         '
+        'LabelInfo
+        '
+        Me.LabelInfo.AutoSize = True
+        Me.LabelInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
+        Me.LabelInfo.ForeColor = System.Drawing.Color.DarkRed
+        Me.LabelInfo.Location = New System.Drawing.Point(37, 70)
+        Me.LabelInfo.Name = "LabelInfo"
+        Me.LabelInfo.Size = New System.Drawing.Size(0, 18)
+        Me.LabelInfo.TabIndex = 70
+        '
         'ModificarBobinesMarca
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(391, 286)
+        Me.Controls.Add(Me.LabelInfo)
         Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.TBMarca)
         Me.Controls.Add(Me.LMarcaProductora)
@@ -107,4 +119,5 @@ Partial Class ModificarBobinesMarca
     Friend WithEvents BTCancelar As Button
     Friend WithEvents BTModificar As Button
     Friend WithEvents MenuSup As Panel
+    Friend WithEvents LabelInfo As Label
 End Class

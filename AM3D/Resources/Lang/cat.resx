@@ -474,4 +474,10 @@
   <data name="MSGUserExist" xml:space="preserve">
     <value>L'nickname és usat.</value>
   </data>
+  <data name="MSGInsertCorrecto" xml:space="preserve">
+    <value>La inserció ha estat correcta.</value>
+  </data>
+  <data name="MSGInsertIncorrecto" xml:space="preserve">
+    <value>Error en la inserció.</value>
+  </data>
 </root>
