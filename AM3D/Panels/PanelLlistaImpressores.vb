@@ -29,11 +29,25 @@
         Dim codiImpressora As String
         Dim impressora As Impressores
         Dim indice As Integer
+        Dim afectat As Integer = 0
         codiImpressora = DGImpressores.SelectedRows.Item(0).Cells(0).Value
         indice = DGImpressores.SelectedRows.Item(0).Index
         DGImpressores.Rows.RemoveAt(indice)
         impressora = New Impressores(codiImpressora, "", "", "", "", "")
-        SQLCommands.DeletePrinterIntoDatabase(Globals.userCredentials.GetSetBaseDades, impressora)
+        afectat = SQLCommands.DeletePrinterFromDatabase(Globals.userCredentials.GetSetBaseDades, impressora)
+        If afectat > 0 Then
+            If Globals.lang = "cat" Then
+                MenuPrincipal.showMSG(My.Resources.cat.MSGDeleteCorrect)
+            Else
+                MenuPrincipal.showMSG(My.Resources.eng.MSGDeleteCorrect)
+            End If
+        Else
+            If Globals.lang = "cat" Then
+                MenuPrincipal.showMSG(My.Resources.cat.MSGDeleteError)
+            Else
+                MenuPrincipal.showMSG(My.Resources.eng.MSGDeleteError)
+            End If
+        End If
     End Sub
 
     Private Sub BResfrescar_Click(sender As Object, e As EventArgs) Handles BResfrescar.Click

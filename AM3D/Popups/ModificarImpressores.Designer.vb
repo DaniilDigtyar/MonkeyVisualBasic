@@ -51,7 +51,6 @@ Partial Class ModificarImpressores
         Me.Labelnfo.Name = "Labelnfo"
         Me.Labelnfo.Size = New System.Drawing.Size(0, 18)
         Me.Labelnfo.TabIndex = 79
-        Me.Labelnfo.Visible = False
         '
         'BTCancelar
         '

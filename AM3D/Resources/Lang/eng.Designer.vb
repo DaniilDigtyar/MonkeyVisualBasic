@@ -983,6 +983,24 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Elimination done correctly..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGDeleteCorrect() As String
+            Get
+                Return ResourceManager.GetString("MSGDeleteCorrect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Error removing..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGDeleteError() As String
+            Get
+                Return ResourceManager.GetString("MSGDeleteError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Fill in all fields.
         '''</summary>
         Friend Shared ReadOnly Property MSGRellenarError() As String
@@ -997,6 +1015,15 @@ Namespace My.Resources
         Friend Shared ReadOnly Property MSGUserContrasenyaError() As String
             Get
                 Return ResourceManager.GetString("MSGUserContrasenyaError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to The nickname is used..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGUserExist() As String
+            Get
+                Return ResourceManager.GetString("MSGUserExist", resourceCulture)
             End Get
         End Property
         

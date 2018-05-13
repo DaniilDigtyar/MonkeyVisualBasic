@@ -62,7 +62,9 @@
         If CBModel.SelectedIndex <> -1 And CBMarca.SelectedIndex <> -1 And TBNomImpressora IsNot vbNullString Then
             Try
                 codi = PanelLlistaImpressores.impresoraSeleccionada
-
+                marca = CBMarca.SelectedItem.ToString
+                model = CBModel.SelectedItem.ToString
+                nom = TBNomImpressora.Text.ToString
 
                 afectat = SQLCommands.UpdatePrinterInfoIntoDatabase(Globals.userCredentials.GetSetBaseDades, codi, marca, model, nom)
                 If afectat > 0 Then
@@ -71,6 +73,7 @@
                     Else
                         Labelnfo.Text = My.Resources.eng.LabelnfoCorrecte
                     End If
+                    Me.Close()
                 Else
                     If Globals.lang = "cat" Then
                         Labelnfo.Text = My.Resources.cat.LabelnfoError

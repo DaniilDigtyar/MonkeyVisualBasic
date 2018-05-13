@@ -459,4 +459,13 @@
   <data name="MSGUserUpdateError" xml:space="preserve">
     <value>Error saving user data.</value>
   </data>
+  <data name="MSGDeleteCorrect" xml:space="preserve">
+    <value>Elimination done correctly.</value>
+  </data>
+  <data name="MSGDeleteError" xml:space="preserve">
+    <value>Error removing.</value>
+  </data>
+  <data name="MSGUserExist" xml:space="preserve">
+    <value>The nickname is used.</value>
+  </data>
 </root>

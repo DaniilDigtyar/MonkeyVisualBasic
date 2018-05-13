@@ -116,6 +116,7 @@ Public Class SQLCommands
     Public Function SelectAllUsersFromDatabase(ByVal dbToConnect As String)
         Try
             Dim listaUsuaris As HashSet(Of Usuaris) = New HashSet(Of Usuaris)
+            Dim nickname, nom, cognom, email As String
             Dim usuari As Usuaris
             Dim query As String
             Dim dr As SqlDataReader
@@ -128,7 +129,7 @@ Public Class SQLCommands
             dr = cmd.ExecuteReader
             If dr.HasRows Then
                 While (dr.Read())
-                    usuari = New Usuaris(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5))
+                    usuari = New Usuaris(dr(0), "", dr(2), dr(3), dr(4), dr(5))
                     listaUsuaris.Add(usuari)
                 End While
                 Return listaUsuaris
@@ -637,6 +638,32 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function InsertUserLogin(ByVal usuari As Usuaris)
+        Try
+            Dim baseDades As String
+            Dim afectat As Integer = 0
+
+            baseDades = Globals.userCredentials.GetSetBaseDades
+            baseDades = baseDades.Substring(15)
+
+            Me.connectUsuaris()
+            cmd = New SqlCommand("SP_InsertUser")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = connectionUsuaris
+            cmd.Parameters.AddWithValue("@nickname", usuari.GetSetNickname)
+            cmd.Parameters.AddWithValue("@password", usuari.GetSetContrasenya)
+            cmd.Parameters.AddWithValue("@database", baseDades)
+
+            afectat = cmd.ExecuteNonQuery
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Me.disconnectUsuaris()
+        End Try
+    End Function
+
     Public Function InsertPermisoDeUsuario(ByVal dbToConnect As String, ByVal usuari As Usuaris, ByVal permiso As Permisos)
         Try
             Dim query As String
@@ -813,7 +840,7 @@ Public Class SQLCommands
 
             Me.connectDataBaseClient(dbToConnect)
             query = "UPDATE impressores 
-                    SET marca = '" + marca + "' model = '" + model + "', nom_assignat = '" + nom + "'
+                    SET marca = '" + marca + "' ,  model = '" + model + "', nom_assignat = '" + nom + "'
                     WHERE codi_impresora = '" + codiImpressora + "'"
             cmd = New SqlCommand(query)
             cmd.Connection = connectionClient
@@ -832,14 +859,99 @@ Public Class SQLCommands
     ''' <param name="dbToConnect">Base de datos a la cual se conecta el cliente</param>
     ''' <param name="impressora">Impressora a eliminar</param>
     ''' <returns></returns>
-    Public Function DeletePrinterIntoDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores)
+    Public Function DeletePrinterFromDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            DeletePrintsFromDatabase(dbToConnect, impressora)
+            Me.connectDataBaseClient(dbToConnect)
+            query = "DELETE FROM IMPRESSORES
+                     WHERE codi_impresora = '" + impressora.GetSetCodiImpressora + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function DeletePrintsFromDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores)
         Try
             Dim query As String
             Dim afectat As Integer = 0
 
             Me.connectDataBaseClient(dbToConnect)
-            query = "DELETE FROM IMPRESSORES
+            query = "DELETE FROM impressions
                      WHERE codi_impresora = '" + impressora.GetSetCodiImpressora + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+
+
+    Public Function DeleteUserFromDataBase(ByVal dbToConnect As String, ByVal usuari As Usuaris)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            DeleteAllPermitsFromDatabase(dbToConnect, usuari)
+            DeleteUserLoginFromDatabase(usuari.GetSetNickname)
+            Me.connectDataBaseClient(dbToConnect)
+
+            query = "DELETE FROM USUARIS
+                     WHERE nickname = '" + usuari.GetSetNickname + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+
+
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function DeleteUserLoginFromDatabase(ByVal nickname As String)
+        Try
+            Dim afectat As Integer = 0
+            Dim query As String
+            Me.connectUsuaris()
+
+            query = "DELETE FROM USERS
+                     WHERE nickname = '" + nickname + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionUsuaris
+
+            afectat = cmd.ExecuteNonQuery
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            Me.disconnectUsuaris()
+        End Try
+    End Function
+
+    Public Function DeleteAllPermitsFromDatabase(ByVal dbToConnect As String, ByVal usuari As Usuaris)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "DELETE FROM TENEN
+                     WHERE nickname = '" + usuari.GetSetNickname + "'"
             cmd = New SqlCommand(query)
             cmd.Connection = connectionClient
             afectat = cmd.ExecuteNonQuery()

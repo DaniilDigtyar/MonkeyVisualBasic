@@ -465,4 +465,13 @@
   <data name="MSGUserUpdateError" xml:space="preserve">
     <value>Error en desar dades d'usuari.</value>
   </data>
+  <data name="MSGDeleteCorrect" xml:space="preserve">
+    <value>Eliminació feta correctament.</value>
+  </data>
+  <data name="MSGDeleteError" xml:space="preserve">
+    <value>Error en l'eliminació.</value>
+  </data>
+  <data name="MSGUserExist" xml:space="preserve">
+    <value>L'nickname és usat.</value>
+  </data>
 </root>
