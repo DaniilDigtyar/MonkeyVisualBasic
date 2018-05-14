@@ -22,10 +22,15 @@ Partial Class PanelBobinesColorModificarEliminar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BTEliminarColor = New System.Windows.Forms.Button()
         Me.BTModificarColor = New System.Windows.Forms.Button()
-        Me.DGColor = New System.Windows.Forms.DataGridView()
-        CType(Me.DGColor, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BResfrescar = New System.Windows.Forms.Button()
+        Me.DGMarcaProductora = New System.Windows.Forms.DataGridView()
+        Me.color = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Hex = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColorBackground = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.DGMarcaProductora, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BTEliminarColor
@@ -35,7 +40,7 @@ Partial Class PanelBobinesColorModificarEliminar
         Me.BTEliminarColor.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTEliminarColor.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTEliminarColor.ForeColor = System.Drawing.Color.Black
-        Me.BTEliminarColor.Location = New System.Drawing.Point(558, 16)
+        Me.BTEliminarColor.Location = New System.Drawing.Point(191, 25)
         Me.BTEliminarColor.Name = "BTEliminarColor"
         Me.BTEliminarColor.Size = New System.Drawing.Size(154, 62)
         Me.BTEliminarColor.TabIndex = 9
@@ -49,20 +54,66 @@ Partial Class PanelBobinesColorModificarEliminar
         Me.BTModificarColor.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificarColor.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificarColor.ForeColor = System.Drawing.Color.Black
-        Me.BTModificarColor.Location = New System.Drawing.Point(109, 16)
+        Me.BTModificarColor.Location = New System.Drawing.Point(31, 25)
         Me.BTModificarColor.Name = "BTModificarColor"
         Me.BTModificarColor.Size = New System.Drawing.Size(154, 62)
         Me.BTModificarColor.TabIndex = 8
         Me.BTModificarColor.Text = "Modificar Color"
         Me.BTModificarColor.UseVisualStyleBackColor = False
         '
-        'DGColor
+        'BResfrescar
         '
-        Me.DGColor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGColor.Location = New System.Drawing.Point(31, 93)
-        Me.DGColor.Name = "DGColor"
-        Me.DGColor.Size = New System.Drawing.Size(739, 268)
-        Me.DGColor.TabIndex = 7
+        Me.BResfrescar.BackColor = System.Drawing.Color.White
+        Me.BResfrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BResfrescar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BResfrescar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BResfrescar.ForeColor = System.Drawing.Color.Black
+        Me.BResfrescar.Location = New System.Drawing.Point(616, 25)
+        Me.BResfrescar.Name = "BResfrescar"
+        Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
+        Me.BResfrescar.TabIndex = 35
+        Me.BResfrescar.Text = "Refresca llista"
+        Me.BResfrescar.UseVisualStyleBackColor = False
+        '
+        'DGMarcaProductora
+        '
+        Me.DGMarcaProductora.AllowUserToAddRows = False
+        Me.DGMarcaProductora.AllowUserToDeleteRows = False
+        Me.DGMarcaProductora.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        Me.DGMarcaProductora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGMarcaProductora.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.color, Me.Hex, Me.ColorBackground})
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGMarcaProductora.DefaultCellStyle = DataGridViewCellStyle1
+        Me.DGMarcaProductora.Location = New System.Drawing.Point(31, 93)
+        Me.DGMarcaProductora.MultiSelect = False
+        Me.DGMarcaProductora.Name = "DGMarcaProductora"
+        Me.DGMarcaProductora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGMarcaProductora.Size = New System.Drawing.Size(739, 268)
+        Me.DGMarcaProductora.TabIndex = 36
+        '
+        'color
+        '
+        Me.color.HeaderText = "Nombre"
+        Me.color.Name = "color"
+        Me.color.ReadOnly = True
+        '
+        'Hex
+        '
+        Me.Hex.HeaderText = "Hex"
+        Me.Hex.Name = "Hex"
+        Me.Hex.ReadOnly = True
+        '
+        'ColorBackground
+        '
+        Me.ColorBackground.HeaderText = "Color"
+        Me.ColorBackground.Name = "ColorBackground"
+        Me.ColorBackground.ReadOnly = True
         '
         'PanelBobinesColorModificarEliminar
         '
@@ -70,19 +121,24 @@ Partial Class PanelBobinesColorModificarEliminar
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(801, 376)
+        Me.Controls.Add(Me.DGMarcaProductora)
+        Me.Controls.Add(Me.BResfrescar)
         Me.Controls.Add(Me.BTEliminarColor)
         Me.Controls.Add(Me.BTModificarColor)
-        Me.Controls.Add(Me.DGColor)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PanelBobinesColorModificarEliminar"
         Me.Text = "PanelBobinesColorModificarEliminar"
-        CType(Me.DGColor, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGMarcaProductora, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents BTEliminarColor As Button
     Friend WithEvents BTModificarColor As Button
-    Friend WithEvents DGColor As DataGridView
+    Friend WithEvents BResfrescar As Button
+    Friend WithEvents DGMarcaProductora As DataGridView
+    Friend WithEvents color As DataGridViewTextBoxColumn
+    Friend WithEvents Hex As DataGridViewTextBoxColumn
+    Friend WithEvents ColorBackground As DataGridViewTextBoxColumn
 End Class

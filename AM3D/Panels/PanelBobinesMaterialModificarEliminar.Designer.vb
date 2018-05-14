@@ -67,6 +67,7 @@ Partial Class PanelBobinesMaterialModificarEliminar
         Me.DGMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGMaterial.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.material, Me.descripcio})
         Me.DGMaterial.Location = New System.Drawing.Point(29, 84)
+        Me.DGMaterial.MultiSelect = False
         Me.DGMaterial.Name = "DGMaterial"
         Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMaterial.Size = New System.Drawing.Size(739, 268)

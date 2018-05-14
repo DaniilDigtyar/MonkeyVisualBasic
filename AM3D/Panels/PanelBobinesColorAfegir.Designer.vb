@@ -28,6 +28,7 @@ Partial Class PanelBobinesColorAfegir
         Me.LColor = New System.Windows.Forms.Label()
         Me.TBHex = New System.Windows.Forms.TextBox()
         Me.LHex = New System.Windows.Forms.Label()
+        Me.PanelColor = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'BTBorrar
@@ -79,6 +80,7 @@ Partial Class PanelBobinesColorAfegir
         'TBHex
         '
         Me.TBHex.Location = New System.Drawing.Point(150, 75)
+        Me.TBHex.MaxLength = 7
         Me.TBHex.Name = "TBHex"
         Me.TBHex.Size = New System.Drawing.Size(141, 20)
         Me.TBHex.TabIndex = 55
@@ -94,12 +96,21 @@ Partial Class PanelBobinesColorAfegir
         Me.LHex.TabIndex = 54
         Me.LHex.Text = "Codi HEX"
         '
+        'PanelColor
+        '
+        Me.PanelColor.BackColor = System.Drawing.Color.Transparent
+        Me.PanelColor.Location = New System.Drawing.Point(297, 75)
+        Me.PanelColor.Name = "PanelColor"
+        Me.PanelColor.Size = New System.Drawing.Size(51, 20)
+        Me.PanelColor.TabIndex = 56
+        '
         'PanelBobinesColorAfegir
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(801, 376)
+        Me.Controls.Add(Me.PanelColor)
         Me.Controls.Add(Me.TBHex)
         Me.Controls.Add(Me.LHex)
         Me.Controls.Add(Me.BTBorrar)
@@ -121,4 +132,5 @@ Partial Class PanelBobinesColorAfegir
     Friend WithEvents LColor As Label
     Friend WithEvents TBHex As TextBox
     Friend WithEvents LHex As Label
+    Friend WithEvents PanelColor As Panel
 End Class

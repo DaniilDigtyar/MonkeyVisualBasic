@@ -66,6 +66,7 @@ Partial Class PanelBobinesMarcaModificarEliminar
         Me.DGMarcaProductora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGMarcaProductora.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.marca})
         Me.DGMarcaProductora.Location = New System.Drawing.Point(36, 84)
+        Me.DGMarcaProductora.MultiSelect = False
         Me.DGMarcaProductora.Name = "DGMarcaProductora"
         Me.DGMarcaProductora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMarcaProductora.Size = New System.Drawing.Size(739, 268)

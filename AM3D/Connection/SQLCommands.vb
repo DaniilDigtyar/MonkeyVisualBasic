@@ -311,6 +311,45 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function SelectAllColorsFromDatabase(ByVal dbToConnect As String)
+        Try
+            Dim listaColores As HashSet(Of Colors) = New HashSet(Of Colors)
+            Dim colores As Colors
+            Dim nombreColor, hex As String
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select *
+                     from colors"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read())
+                    If Not dr.IsDBNull(0) Then
+                        nombreColor = dr(0)
+                    Else
+                        nombreColor = ""
+                    End If
+
+                    If Not dr.IsDBNull(1) Then
+                        hex = dr(1)
+                    Else
+                        hex = ""
+                    End If
+                    colores = New Colors(nombreColor, hex)
+                    listaColores.Add(colores)
+                End While
+            End If
+            Return listaColores
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     ''' <summary>
     ''' De la base de datos cliente recupera todos los permisos y devuelve un hashset de Permisos
     ''' </summary>
@@ -662,6 +701,58 @@ Public Class SQLCommands
         Return vbNull
     End Function
 
+    Public Function SelectNewBobinaCode(ByVal dbToConnect As String, ByVal material As String)
+        Try
+            Dim query As String
+            Dim dr As SqlDataReader
+            Dim codi As String
+            Dim numero As Integer
+            Dim tipoMaterial As String
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select top 1 codi_bobina tipus_material
+                     from bobines
+                     where tipus_material = '" + material + "'
+                     order by codi_bobina desc"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                dr.Read()
+                codi = dr(0)
+                If material.Length >= 3 Then
+                    tipoMaterial = material.Substring(0, 3)
+                ElseIf material.Length.Equals(2) Then
+                    tipoMaterial = material.Substring(0, 2) + "0"
+                Else
+                    tipoMaterial = "000"
+                End If
+
+                numero = Integer.Parse(codi.Substring(4)) + 1
+                '6 numeros
+                codi = "B" + tipoMaterial + Format(numero, "000000")
+
+            Else
+                If material.Length >= 3 Then
+                    tipoMaterial = material.Substring(0, 3)
+                ElseIf material.Length.Equals(2) Then
+                    tipoMaterial = material.Substring(0, 2) + "0"
+                Else
+                    tipoMaterial = "000"
+                End If
+                codi = "B" + tipoMaterial + "000000"
+            End If
+            Return codi
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+        Return vbNull
+    End Function
+
     ''' <summary>
     ''' De la base de datos cliente recupera todos las impressiones que ejecuta y tiene pendientes una impressora y devuelve un hashset de Impressions
     ''' </summary>
@@ -895,6 +986,44 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function InsertColorIntoDatabase(ByVal dbToConnect As String, ByVal color As Colors)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Me.connectDataBaseClient(dbToConnect)
+            query = "INSERT INTO colors 
+                    VALUES ('" + color.GetSetColor + "', '" + color.GetSetHex + "');"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+
+
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function InsertBobinaIntoDatabase(ByVal dbToConnect As String, ByVal bobina As Bobines)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Me.connectDataBaseClient(dbToConnect)
+            query = "INSERT INTO bobines 
+                    VALUES ('" + bobina.GetSetCodiBobina + "', '" + bobina.GetSetTipusMaterial + "', '" + bobina.GetSetColor + "', '" + bobina.GetSetMarcaProductora + "', " + Replace(Format(bobina.GetSetDiametre, "0.00"), ",", ".") + ");"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     ''' <summary>
     ''' Inserta una nueva impressora en la base de datos.
     ''' </summary>
@@ -1003,6 +1132,46 @@ Public Class SQLCommands
             query = "UPDATE marques_bobines 
                     SET marca_productora = '" + marcaBobina.GetSetMarcaProductora + "'
                     WHERE marca_productora = '" + marcaBobinaModificar + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function UpdateColorIntoDatabase(ByVal dbToConnect As String, ByVal colorObjeto As Colors, ByVal colorNombreModificar As String)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "UPDATE colors 
+                    SET color  = '" + colorObjeto.GetSetColor + "' , hex = '" + colorObjeto.GetSetHex + "'
+                    WHERE color = '" + colorNombreModificar + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function UpdateBobinaIntoDatabase(ByVal dbToConnect As String, ByVal bobina As Bobines)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "UPDATE bobines 
+                    SET tipus_material   = '" + bobina.GetSetTipusMaterial + "' , color = '" + bobina.GetSetColor + "', marca_productora = '" + bobina.GetSetMarcaProductora + "', diametre = " + Replace(Format(bobina.GetSetDiametre, "0.00"), ",", ".") + "
+                    WHERE codi_bobina  = '" + bobina.GetSetCodiBobina + "'"
             cmd = New SqlCommand(query)
             cmd.Connection = connectionClient
             afectat = cmd.ExecuteNonQuery()
@@ -1128,6 +1297,27 @@ Public Class SQLCommands
         End Try
     End Function
 
+
+    Public Function DeleteBobinaFromDatabaseWhereBobina(ByVal dbToConnect As String, ByVal bobina As Bobines)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Me.connectDataBaseClient(dbToConnect)
+
+            query = "DELETE 
+                     FROM bobines
+                     WHERE codi_bobina = '" + bobina.GetSetCodiBobina + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     Public Function DeleteMarcaBobinaFromDatabaseWhereMarcaBobina(ByVal dbToConnect As String, ByVal marcaBobina As MarquesBobines)
         Try
             Dim query As String
@@ -1137,6 +1327,26 @@ Public Class SQLCommands
             query = "DELETE 
                      FROM marques_bobines
                      WHERE marca_productora = '" + marcaBobina.GetSetMarcaProductora + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function DeleteColorFromDatabaseWhereColor(ByVal dbToConnect As String, ByVal colorObjeto As Colors)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Me.connectDataBaseClient(dbToConnect)
+
+            query = "DELETE 
+                     FROM colors
+                     WHERE color  = '" + colorObjeto.GetSetColor + "'"
             cmd = New SqlCommand(query)
             cmd.Connection = connectionClient
             afectat = cmd.ExecuteNonQuery()

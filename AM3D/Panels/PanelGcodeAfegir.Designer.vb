@@ -28,8 +28,11 @@ Partial Class PanelGcodeAfegir
         Me.LNomGcode = New System.Windows.Forms.Label()
         Me.TBRuta = New System.Windows.Forms.TextBox()
         Me.LRuta = New System.Windows.Forms.Label()
-        Me.CLBMaterialsSup = New System.Windows.Forms.CheckedListBox()
         Me.LMaterialsSup = New System.Windows.Forms.Label()
+        Me.DGMaterial = New System.Windows.Forms.DataGridView()
+        Me.material = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.descripcio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BTBorrar
@@ -39,9 +42,9 @@ Partial Class PanelGcodeAfegir
         Me.BTBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTBorrar.ForeColor = System.Drawing.Color.Black
-        Me.BTBorrar.Location = New System.Drawing.Point(64, 229)
+        Me.BTBorrar.Location = New System.Drawing.Point(31, 285)
         Me.BTBorrar.Name = "BTBorrar"
-        Me.BTBorrar.Size = New System.Drawing.Size(265, 62)
+        Me.BTBorrar.Size = New System.Drawing.Size(298, 62)
         Me.BTBorrar.TabIndex = 53
         Me.BTBorrar.Text = "Borrar"
         Me.BTBorrar.UseVisualStyleBackColor = False
@@ -53,18 +56,18 @@ Partial Class PanelGcodeAfegir
         Me.BTAfegir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTAfegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTAfegir.ForeColor = System.Drawing.Color.Black
-        Me.BTAfegir.Location = New System.Drawing.Point(64, 154)
+        Me.BTAfegir.Location = New System.Drawing.Point(31, 210)
         Me.BTAfegir.Name = "BTAfegir"
-        Me.BTAfegir.Size = New System.Drawing.Size(265, 62)
+        Me.BTAfegir.Size = New System.Drawing.Size(298, 62)
         Me.BTAfegir.TabIndex = 52
         Me.BTAfegir.Text = "Afegir"
         Me.BTAfegir.UseVisualStyleBackColor = False
         '
         'TBNomGcode
         '
-        Me.TBNomGcode.Location = New System.Drawing.Point(188, 44)
+        Me.TBNomGcode.Location = New System.Drawing.Point(165, 83)
         Me.TBNomGcode.Name = "TBNomGcode"
-        Me.TBNomGcode.Size = New System.Drawing.Size(141, 20)
+        Me.TBNomGcode.Size = New System.Drawing.Size(164, 20)
         Me.TBNomGcode.TabIndex = 51
         '
         'LNomGcode
@@ -72,7 +75,7 @@ Partial Class PanelGcodeAfegir
         Me.LNomGcode.AutoSize = True
         Me.LNomGcode.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNomGcode.ForeColor = System.Drawing.Color.Black
-        Me.LNomGcode.Location = New System.Drawing.Point(27, 44)
+        Me.LNomGcode.Location = New System.Drawing.Point(27, 83)
         Me.LNomGcode.Name = "LNomGcode"
         Me.LNomGcode.Size = New System.Drawing.Size(105, 20)
         Me.LNomGcode.TabIndex = 50
@@ -80,9 +83,9 @@ Partial Class PanelGcodeAfegir
         '
         'TBRuta
         '
-        Me.TBRuta.Location = New System.Drawing.Point(188, 93)
+        Me.TBRuta.Location = New System.Drawing.Point(165, 44)
         Me.TBRuta.Name = "TBRuta"
-        Me.TBRuta.Size = New System.Drawing.Size(141, 20)
+        Me.TBRuta.Size = New System.Drawing.Size(164, 20)
         Me.TBRuta.TabIndex = 55
         '
         'LRuta
@@ -90,30 +93,49 @@ Partial Class PanelGcodeAfegir
         Me.LRuta.AutoSize = True
         Me.LRuta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LRuta.ForeColor = System.Drawing.Color.Black
-        Me.LRuta.Location = New System.Drawing.Point(27, 93)
+        Me.LRuta.Location = New System.Drawing.Point(27, 44)
         Me.LRuta.Name = "LRuta"
         Me.LRuta.Size = New System.Drawing.Size(107, 20)
         Me.LRuta.TabIndex = 54
         Me.LRuta.Text = "Ruta del fitxer"
-        '
-        'CLBMaterialsSup
-        '
-        Me.CLBMaterialsSup.FormattingEnabled = True
-        Me.CLBMaterialsSup.Location = New System.Drawing.Point(525, 44)
-        Me.CLBMaterialsSup.Name = "CLBMaterialsSup"
-        Me.CLBMaterialsSup.Size = New System.Drawing.Size(231, 289)
-        Me.CLBMaterialsSup.TabIndex = 56
         '
         'LMaterialsSup
         '
         Me.LMaterialsSup.AutoSize = True
         Me.LMaterialsSup.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMaterialsSup.ForeColor = System.Drawing.Color.Black
-        Me.LMaterialsSup.Location = New System.Drawing.Point(364, 44)
+        Me.LMaterialsSup.Location = New System.Drawing.Point(364, 21)
         Me.LMaterialsSup.Name = "LMaterialsSup"
         Me.LMaterialsSup.Size = New System.Drawing.Size(144, 20)
         Me.LMaterialsSup.TabIndex = 57
         Me.LMaterialsSup.Text = "Materials suportats"
+        '
+        'DGMaterial
+        '
+        Me.DGMaterial.AllowUserToAddRows = False
+        Me.DGMaterial.AllowUserToDeleteRows = False
+        Me.DGMaterial.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        Me.DGMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGMaterial.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.material, Me.descripcio})
+        Me.DGMaterial.Location = New System.Drawing.Point(368, 44)
+        Me.DGMaterial.MultiSelect = False
+        Me.DGMaterial.Name = "DGMaterial"
+        Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGMaterial.Size = New System.Drawing.Size(337, 303)
+        Me.DGMaterial.TabIndex = 58
+        '
+        'material
+        '
+        Me.material.HeaderText = "Material"
+        Me.material.Name = "material"
+        Me.material.ReadOnly = True
+        '
+        'descripcio
+        '
+        Me.descripcio.HeaderText = "Descripció"
+        Me.descripcio.Name = "descripcio"
+        Me.descripcio.ReadOnly = True
+        Me.descripcio.Width = 200
         '
         'PanelGcodeAfegir
         '
@@ -121,8 +143,8 @@ Partial Class PanelGcodeAfegir
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(780, 380)
+        Me.Controls.Add(Me.DGMaterial)
         Me.Controls.Add(Me.LMaterialsSup)
-        Me.Controls.Add(Me.CLBMaterialsSup)
         Me.Controls.Add(Me.TBRuta)
         Me.Controls.Add(Me.LRuta)
         Me.Controls.Add(Me.BTBorrar)
@@ -132,6 +154,7 @@ Partial Class PanelGcodeAfegir
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PanelGcodeAfegir"
         Me.Text = "PanelGcodeAfegir"
+        CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -143,6 +166,8 @@ Partial Class PanelGcodeAfegir
     Friend WithEvents LNomGcode As Label
     Friend WithEvents TBRuta As TextBox
     Friend WithEvents LRuta As Label
-    Friend WithEvents CLBMaterialsSup As CheckedListBox
     Friend WithEvents LMaterialsSup As Label
+    Friend WithEvents DGMaterial As DataGridView
+    Friend WithEvents material As DataGridViewTextBoxColumn
+    Friend WithEvents descripcio As DataGridViewTextBoxColumn
 End Class

@@ -165,10 +165,7 @@
             ImprimirGCODE.LNCopies.Text = My.Resources.cat.LNCopies
             ModificarBobinesBobina.LDiametre.Text = My.Resources.cat.LDiametre
             ModificarBobinesBobina.LMaterial.Text = My.Resources.cat.LMaterial
-            ModificarBobinesBobina.LFabricant.Text = My.Resources.cat.LMarcaProductora
             ModificarBobinesBobina.LColor.Text = My.Resources.cat.LColor
-            ModificarBobinesBobina.BTActualitzar.Text = My.Resources.cat.BTActualitzar
-            ModificarBobinesBobina.BTCancelar.Text = My.Resources.cat.BTCancelar
             ModificarBobinesColor.LColor.Text = My.Resources.cat.LColor
             ModificarBobinesColor.LHex.Text = My.Resources.cat.LHex
             ModificarBobinesColor.BTModificar.Text = My.Resources.cat.CBModificar
@@ -381,10 +378,7 @@
             ImprimirGCODE.LNCopies.Text = My.Resources.eng.LNCopies
             ModificarBobinesBobina.LDiametre.Text = My.Resources.eng.LDiametre
             ModificarBobinesBobina.LMaterial.Text = My.Resources.eng.LMaterial
-            ModificarBobinesBobina.LFabricant.Text = My.Resources.eng.LMarcaProductora
             ModificarBobinesBobina.LColor.Text = My.Resources.eng.LColor
-            ModificarBobinesBobina.BTActualitzar.Text = My.Resources.eng.BTActualitzar
-            ModificarBobinesBobina.BTCancelar.Text = My.Resources.eng.BTCancelar
             ModificarBobinesColor.LColor.Text = My.Resources.eng.LColor
             ModificarBobinesColor.LHex.Text = My.Resources.eng.LHex
             ModificarBobinesColor.BTModificar.Text = My.Resources.eng.CBModificar
