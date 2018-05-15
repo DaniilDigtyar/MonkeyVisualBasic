@@ -22,6 +22,7 @@ Partial Class PanelMarcaModificarEliminar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BTEliminarMarca = New System.Windows.Forms.Button()
         Me.BTModificarMarca = New System.Windows.Forms.Button()
         Me.DGMarca = New System.Windows.Forms.DataGridView()
@@ -67,6 +68,8 @@ Partial Class PanelMarcaModificarEliminar
         Me.DGMarca.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.marca})
         Me.DGMarca.Location = New System.Drawing.Point(35, 84)
         Me.DGMarca.Name = "DGMarca"
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        Me.DGMarca.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGMarca.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMarca.Size = New System.Drawing.Size(739, 268)
         Me.DGMarca.TabIndex = 30

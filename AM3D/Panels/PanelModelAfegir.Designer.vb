@@ -22,6 +22,7 @@ Partial Class PanelModelAfegir
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.LModel = New System.Windows.Forms.Label()
         Me.LMarca = New System.Windows.Forms.Label()
         Me.LNExtrusors = New System.Windows.Forms.Label()
@@ -45,15 +46,18 @@ Partial Class PanelModelAfegir
         Me.TBAImpX = New System.Windows.Forms.TextBox()
         Me.TBAImpY = New System.Windows.Forms.TextBox()
         Me.TBImpZ = New System.Windows.Forms.TextBox()
-        Me.TBVelMinExt = New System.Windows.Forms.TextBox()
+        Me.TBVelMaxExt = New System.Windows.Forms.TextBox()
         Me.TBResMinCap = New System.Windows.Forms.TextBox()
         Me.TBResMaxCap = New System.Windows.Forms.TextBox()
         Me.TBDiametre = New System.Windows.Forms.TextBox()
-        Me.CBMarca = New System.Windows.Forms.ComboBox()
-        Me.CBLMaterialSup = New System.Windows.Forms.CheckedListBox()
         Me.LMaterialSup = New System.Windows.Forms.Label()
         Me.BTAfegir = New System.Windows.Forms.Button()
         Me.BTBorrar = New System.Windows.Forms.Button()
+        Me.DGMaterial = New System.Windows.Forms.DataGridView()
+        Me.material = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.descripcio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CBMarca = New System.Windows.Forms.ComboBox()
+        CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LModel
@@ -171,7 +175,7 @@ Partial Class PanelModelAfegir
         Me.LVelMaxExt.AutoSize = True
         Me.LVelMaxExt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LVelMaxExt.ForeColor = System.Drawing.Color.Black
-        Me.LVelMaxExt.Location = New System.Drawing.Point(437, 26)
+        Me.LVelMaxExt.Location = New System.Drawing.Point(419, 26)
         Me.LVelMaxExt.Name = "LVelMaxExt"
         Me.LVelMaxExt.Size = New System.Drawing.Size(218, 20)
         Me.LVelMaxExt.TabIndex = 26
@@ -182,7 +186,7 @@ Partial Class PanelModelAfegir
         Me.LResMinCapa.AutoSize = True
         Me.LResMinCapa.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LResMinCapa.ForeColor = System.Drawing.Color.Black
-        Me.LResMinCapa.Location = New System.Drawing.Point(437, 59)
+        Me.LResMinCapa.Location = New System.Drawing.Point(419, 59)
         Me.LResMinCapa.Name = "LResMinCapa"
         Me.LResMinCapa.Size = New System.Drawing.Size(194, 20)
         Me.LResMinCapa.TabIndex = 27
@@ -193,7 +197,7 @@ Partial Class PanelModelAfegir
         Me.LResMaxCapa.AutoSize = True
         Me.LResMaxCapa.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LResMaxCapa.ForeColor = System.Drawing.Color.Black
-        Me.LResMaxCapa.Location = New System.Drawing.Point(437, 92)
+        Me.LResMaxCapa.Location = New System.Drawing.Point(419, 92)
         Me.LResMaxCapa.Name = "LResMaxCapa"
         Me.LResMaxCapa.Size = New System.Drawing.Size(198, 20)
         Me.LResMaxCapa.TabIndex = 28
@@ -204,7 +208,7 @@ Partial Class PanelModelAfegir
         Me.LDiametreFil.AutoSize = True
         Me.LDiametreFil.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LDiametreFil.ForeColor = System.Drawing.Color.Black
-        Me.LDiametreFil.Location = New System.Drawing.Point(437, 127)
+        Me.LDiametreFil.Location = New System.Drawing.Point(419, 127)
         Me.LDiametreFil.Name = "LDiametreFil"
         Me.LDiametreFil.Size = New System.Drawing.Size(156, 20)
         Me.LDiametreFil.TabIndex = 29
@@ -273,56 +277,40 @@ Partial Class PanelModelAfegir
         Me.TBImpZ.Size = New System.Drawing.Size(141, 20)
         Me.TBImpZ.TabIndex = 38
         '
-        'TBVelMinExt
+        'TBVelMaxExt
         '
-        Me.TBVelMinExt.Location = New System.Drawing.Point(675, 28)
-        Me.TBVelMinExt.Name = "TBVelMinExt"
-        Me.TBVelMinExt.Size = New System.Drawing.Size(106, 20)
-        Me.TBVelMinExt.TabIndex = 39
+        Me.TBVelMaxExt.Location = New System.Drawing.Point(637, 28)
+        Me.TBVelMaxExt.Name = "TBVelMaxExt"
+        Me.TBVelMaxExt.Size = New System.Drawing.Size(144, 20)
+        Me.TBVelMaxExt.TabIndex = 39
         '
         'TBResMinCap
         '
-        Me.TBResMinCap.Location = New System.Drawing.Point(675, 61)
+        Me.TBResMinCap.Location = New System.Drawing.Point(637, 61)
         Me.TBResMinCap.Name = "TBResMinCap"
-        Me.TBResMinCap.Size = New System.Drawing.Size(106, 20)
+        Me.TBResMinCap.Size = New System.Drawing.Size(144, 20)
         Me.TBResMinCap.TabIndex = 40
         '
         'TBResMaxCap
         '
-        Me.TBResMaxCap.Location = New System.Drawing.Point(675, 94)
+        Me.TBResMaxCap.Location = New System.Drawing.Point(637, 94)
         Me.TBResMaxCap.Name = "TBResMaxCap"
-        Me.TBResMaxCap.Size = New System.Drawing.Size(106, 20)
+        Me.TBResMaxCap.Size = New System.Drawing.Size(144, 20)
         Me.TBResMaxCap.TabIndex = 41
         '
         'TBDiametre
         '
-        Me.TBDiametre.Location = New System.Drawing.Point(675, 127)
+        Me.TBDiametre.Location = New System.Drawing.Point(637, 127)
         Me.TBDiametre.Name = "TBDiametre"
-        Me.TBDiametre.Size = New System.Drawing.Size(106, 20)
+        Me.TBDiametre.Size = New System.Drawing.Size(144, 20)
         Me.TBDiametre.TabIndex = 42
-        '
-        'CBMarca
-        '
-        Me.CBMarca.FormattingEnabled = True
-        Me.CBMarca.Location = New System.Drawing.Point(276, 25)
-        Me.CBMarca.Name = "CBMarca"
-        Me.CBMarca.Size = New System.Drawing.Size(141, 21)
-        Me.CBMarca.TabIndex = 43
-        '
-        'CBLMaterialSup
-        '
-        Me.CBLMaterialSup.FormattingEnabled = True
-        Me.CBLMaterialSup.Location = New System.Drawing.Point(675, 164)
-        Me.CBLMaterialSup.Name = "CBLMaterialSup"
-        Me.CBLMaterialSup.Size = New System.Drawing.Size(106, 199)
-        Me.CBLMaterialSup.TabIndex = 44
         '
         'LMaterialSup
         '
         Me.LMaterialSup.AutoSize = True
         Me.LMaterialSup.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMaterialSup.ForeColor = System.Drawing.Color.Black
-        Me.LMaterialSup.Location = New System.Drawing.Point(438, 162)
+        Me.LMaterialSup.Location = New System.Drawing.Point(500, 164)
         Me.LMaterialSup.Name = "LMaterialSup"
         Me.LMaterialSup.Size = New System.Drawing.Size(131, 20)
         Me.LMaterialSup.TabIndex = 45
@@ -335,9 +323,9 @@ Partial Class PanelModelAfegir
         Me.BTAfegir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTAfegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTAfegir.ForeColor = System.Drawing.Color.Black
-        Me.BTAfegir.Location = New System.Drawing.Point(442, 209)
+        Me.BTAfegir.Location = New System.Drawing.Point(424, 216)
         Me.BTAfegir.Name = "BTAfegir"
-        Me.BTAfegir.Size = New System.Drawing.Size(213, 62)
+        Me.BTAfegir.Size = New System.Drawing.Size(194, 62)
         Me.BTAfegir.TabIndex = 46
         Me.BTAfegir.Text = "Afegir"
         Me.BTAfegir.UseVisualStyleBackColor = False
@@ -349,12 +337,50 @@ Partial Class PanelModelAfegir
         Me.BTBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTBorrar.ForeColor = System.Drawing.Color.Black
-        Me.BTBorrar.Location = New System.Drawing.Point(442, 284)
+        Me.BTBorrar.Location = New System.Drawing.Point(424, 284)
         Me.BTBorrar.Name = "BTBorrar"
-        Me.BTBorrar.Size = New System.Drawing.Size(213, 62)
+        Me.BTBorrar.Size = New System.Drawing.Size(194, 62)
         Me.BTBorrar.TabIndex = 47
         Me.BTBorrar.Text = "Borrar"
         Me.BTBorrar.UseVisualStyleBackColor = False
+        '
+        'DGMaterial
+        '
+        Me.DGMaterial.AllowUserToAddRows = False
+        Me.DGMaterial.AllowUserToDeleteRows = False
+        Me.DGMaterial.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        Me.DGMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGMaterial.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.material, Me.descripcio})
+        Me.DGMaterial.Location = New System.Drawing.Point(637, 164)
+        Me.DGMaterial.MultiSelect = False
+        Me.DGMaterial.Name = "DGMaterial"
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGMaterial.Size = New System.Drawing.Size(144, 193)
+        Me.DGMaterial.TabIndex = 68
+        '
+        'material
+        '
+        Me.material.HeaderText = "Material"
+        Me.material.Name = "material"
+        Me.material.ReadOnly = True
+        '
+        'descripcio
+        '
+        Me.descripcio.HeaderText = "Descripció"
+        Me.descripcio.Name = "descripcio"
+        Me.descripcio.ReadOnly = True
+        Me.descripcio.Width = 200
+        '
+        'CBMarca
+        '
+        Me.CBMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBMarca.FormattingEnabled = True
+        Me.CBMarca.Location = New System.Drawing.Point(276, 25)
+        Me.CBMarca.Name = "CBMarca"
+        Me.CBMarca.Size = New System.Drawing.Size(141, 21)
+        Me.CBMarca.TabIndex = 69
         '
         'PanelModelAfegir
         '
@@ -362,15 +388,15 @@ Partial Class PanelModelAfegir
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(801, 376)
+        Me.Controls.Add(Me.CBMarca)
+        Me.Controls.Add(Me.DGMaterial)
         Me.Controls.Add(Me.BTBorrar)
         Me.Controls.Add(Me.BTAfegir)
         Me.Controls.Add(Me.LMaterialSup)
-        Me.Controls.Add(Me.CBLMaterialSup)
-        Me.Controls.Add(Me.CBMarca)
         Me.Controls.Add(Me.TBDiametre)
         Me.Controls.Add(Me.TBResMaxCap)
         Me.Controls.Add(Me.TBResMinCap)
-        Me.Controls.Add(Me.TBVelMinExt)
+        Me.Controls.Add(Me.TBVelMaxExt)
         Me.Controls.Add(Me.TBImpZ)
         Me.Controls.Add(Me.TBAImpY)
         Me.Controls.Add(Me.TBAImpX)
@@ -398,6 +424,7 @@ Partial Class PanelModelAfegir
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PanelModelAfegir"
         Me.Text = "PanelModelAfegir"
+        CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -426,13 +453,15 @@ Partial Class PanelModelAfegir
     Friend WithEvents TBAImpX As TextBox
     Friend WithEvents TBAImpY As TextBox
     Friend WithEvents TBImpZ As TextBox
-    Friend WithEvents TBVelMinExt As TextBox
+    Friend WithEvents TBVelMaxExt As TextBox
     Friend WithEvents TBResMinCap As TextBox
     Friend WithEvents TBResMaxCap As TextBox
     Friend WithEvents TBDiametre As TextBox
-    Friend WithEvents CBMarca As ComboBox
-    Friend WithEvents CBLMaterialSup As CheckedListBox
     Friend WithEvents LMaterialSup As Label
     Friend WithEvents BTAfegir As Button
     Friend WithEvents BTBorrar As Button
+    Friend WithEvents DGMaterial As DataGridView
+    Friend WithEvents material As DataGridViewTextBoxColumn
+    Friend WithEvents descripcio As DataGridViewTextBoxColumn
+    Friend WithEvents CBMarca As ComboBox
 End Class

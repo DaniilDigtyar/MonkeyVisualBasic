@@ -1,11 +1,14 @@
 ﻿Public Class ModificarGcode
+    Dim allowCoolMove As Boolean = False
+    Dim myCoolPoint As New Point
+    Dim SQLCommands As New SQLCommands()
+
     Private Sub BTCancelar_Click(sender As Object, e As EventArgs) Handles BTCancelar.Click
-        Me.Hide()
+        Me.Close()
         TBNomGcode.Text = ""
         TBRuta.Text = ""
     End Sub
-    Dim allowCoolMove As Boolean = False
-    Dim myCoolPoint As New Point
+
     Private Sub MenuSup_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MenuSup.MouseDown
         allowCoolMove = True
         myCoolPoint = New Point(e.X, e.Y)
@@ -23,7 +26,66 @@
         Me.Cursor = Cursors.Default
     End Sub
 
-    Private Sub BTModificar_Click(sender As Object, e As EventArgs) Handles BTModificar.Click
+    Private Sub TBRuta_Click(sender As Object, e As EventArgs) Handles TBRuta.Click
+        Dim openFileDialog As OpenFileDialog = New OpenFileDialog()
+        Dim path As String
+        openFileDialog.Filter = "Gcode file|*.gcode"
+        openFileDialog.Title = "Obrir Gcode."
+        openFileDialog.ShowDialog()
+        path = openFileDialog.FileName
+        TBRuta.Text = path
+        TBNomGcode.Text = openFileDialog.SafeFileName.Substring(0, openFileDialog.SafeFileName.Length - 6)
+    End Sub
 
+    Private Sub ModificarGcode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim listaMaterial As HashSet(Of Materials) = New HashSet(Of Materials)
+        Dim material As Materials
+        Dim indice As Integer
+
+        TBNomGcode.Text = PanelGcodeModificarEliminar.gcodeSeleccionat.GetSetNomGcode
+
+        listaMaterial = SQLCommands.SelectAllMaterialsFromDatabase(Globals.userCredentials.GetSetBaseDades)
+
+        For Each material In listaMaterial
+            DGMaterial.Rows.Add(material.GetSetTipusMaterial, material.GetSetDescripcio)
+        Next material
+
+        For i As Integer = 0 To DGMaterial.Rows.Count - 1
+            If (DGMaterial.Rows(i).Cells(0).Value.ToString.Equals(PanelGcodeModificarEliminar.gcodeSeleccionat.GetSetTipusMaterialSuportat)) Then
+                indice = DGMaterial.Rows(i).Index
+            End If
+        Next i
+
+        DGMaterial.Rows(indice).Selected = True
+    End Sub
+
+    Private Sub BTModificar_Click(sender As Object, e As EventArgs) Handles BTModificar.Click
+        Dim gcodeNombre As String
+        Dim gcodeObjeto As Gcode
+        Dim afectat As Integer
+        If TBNomGcode.Text <> "" Then
+            gcodeObjeto = New Gcode(TBNomGcode.Text, DGMaterial.SelectedRows.Item(0).Cells(0).Value, Globals.userCredentials.GetSetNickname)
+            afectat = SQLCommands.UpdateGcodeIntoDatabase(Globals.userCredentials.GetSetBaseDades, gcodeObjeto, PanelGcodeModificarEliminar.gcodeSeleccionat.GetSetNomGcode)
+            If afectat > 0 Then
+                If Globals.lang = "cat" Then
+                    LabelInfo.Text = My.Resources.cat.LabelnfoCorrecte
+                Else
+                    LabelInfo.Text = My.Resources.eng.LabelnfoCorrecte
+                End If
+                Me.Close()
+            Else
+                If Globals.lang = "cat" Then
+                    LabelInfo.Text = My.Resources.cat.LabelnfoError
+                Else
+                    LabelInfo.Text = My.Resources.eng.LabelnfoError
+                End If
+            End If
+        Else
+            If Globals.lang = "cat" Then
+                LabelInfo.Text = My.Resources.cat.MSGRellenarError
+            Else
+                LabelInfo.Text = My.Resources.eng.MSGRellenarError
+            End If
+        End If
     End Sub
 End Class

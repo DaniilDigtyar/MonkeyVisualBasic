@@ -1006,6 +1006,60 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function InsertGcodeIntoDatabase(ByVal dbToConnect As String, ByVal gcode As Gcode)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Me.connectDataBaseClient(dbToConnect)
+            query = "INSERT INTO gcode 
+                    VALUES ('" + gcode.GetSetNomGcode + "', null ,'" + gcode.GetSetTipusMaterialSuportat + "' , '" + gcode.GetSetNicknameCreador + "');"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function InsertModelIntoDatabase(ByVal dbToConnect As String, ByVal model As Models)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Me.connectDataBaseClient(dbToConnect)
+            query = "INSERT INTO models 
+                    VALUES ('" + model.GetSetMarca + "', '" + model.GetSetModel + "');"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function InsertCaracteristiquesIntoDatabase(ByVal dbToConnect As String, ByVal caracteristiques As Caracteristiques)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Me.connectDataBaseClient(dbToConnect)
+            query = "INSERT INTO caracteristiques  
+                    VALUES ('" + caracteristiques.GetSetMarca + "', '" + caracteristiques.GetSetModel + "' , '" + caracteristiques.GetSetNumeroExtrusors + "', " + caracteristiques.GetSetTemperaturaMinimaExtrusor.ToString + ", " + caracteristiques.GetSetTemperaturaMaximaExtrusor.ToString + ", " + caracteristiques.GetSetTemperaturaMinimaLlit.ToString + ", " + caracteristiques.GetSetTemperaturaMaximaLlit.ToString + ", " + caracteristiques.GetSetAreaImpresioX.ToString + " , " + caracteristiques.GetSetAreaImpresioY.ToString + " , " + caracteristiques.GetSetAreaImpresioZ.ToString + ", " + caracteristiques.GetSetVelocitatMaximaCapcal.ToString + ", " + caracteristiques.GetSetResolucioCapaMaxima.ToString + ", " + caracteristiques.GetSetResolucioCapaMinima.ToString + " ," + caracteristiques.GetSetDiametreFilamentAcceptat.ToString + ");"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     Public Function InsertBobinaIntoDatabase(ByVal dbToConnect As String, ByVal bobina As Bobines)
         Try
             Dim query As String
@@ -1158,6 +1212,26 @@ Public Class SQLCommands
             Return afectat
         Catch ex As Exception
             MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function UpdateGcodeIntoDatabase(ByVal dbToConnect As String, ByVal gcodeObject As Gcode, ByVal gcodeNomModificar As String)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "UPDATE gcode 
+                    SET nom_gcode = '" + gcodeObject.GetSetNomGcode + "' , tipus_material = '" + gcodeObject.GetSetTipusMaterialSuportat + "' , nickname = '" + gcodeObject.GetSetNicknameCreador + "'
+                    WHERE nom_gcode = '" + gcodeNomModificar + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+            'Catch ex As Exception
+            'MsgBox(ex.Message)
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1358,6 +1432,25 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function DeleteGcodeFromDatabaseWhereGcode(ByVal dbToConnect As String, ByVal gcode As Gcode)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+            Me.connectDataBaseClient(dbToConnect)
+            query = "DELETE 
+                     FROM gcode
+                     WHERE nom_gcode   = '" + gcode.GetSetNomGcode + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     Public Function DeleteUserFromDataBase(ByVal dbToConnect As String, ByVal usuari As Usuaris)
         Try
             Dim query As String
@@ -1426,7 +1519,6 @@ Public Class SQLCommands
             Dim query As String
             Dim afectat As Integer = 0
 
-            DeleteCaracteristiquesFromDatabaseWhereModel(dbToConnect, model)
             Me.connectDataBaseClient(dbToConnect)
             query = "DELETE FROM models
                      WHERE marca  = '" + model.GetSetMarca + "' and model = '" + model.GetSetModel + "'"

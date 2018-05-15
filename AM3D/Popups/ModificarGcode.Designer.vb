@@ -22,8 +22,8 @@ Partial Class ModificarGcode
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.LMaterialsSup = New System.Windows.Forms.Label()
-        Me.CLBMaterialsSup = New System.Windows.Forms.CheckedListBox()
         Me.TBRuta = New System.Windows.Forms.TextBox()
         Me.LRutaFich = New System.Windows.Forms.Label()
         Me.BTCancelar = New System.Windows.Forms.Button()
@@ -31,6 +31,11 @@ Partial Class ModificarGcode
         Me.TBNomGcode = New System.Windows.Forms.TextBox()
         Me.LNomGcode = New System.Windows.Forms.Label()
         Me.MenuSup = New System.Windows.Forms.Panel()
+        Me.DGMaterial = New System.Windows.Forms.DataGridView()
+        Me.material = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.descripcio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LabelInfo = New System.Windows.Forms.Label()
+        CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LMaterialsSup
@@ -38,23 +43,15 @@ Partial Class ModificarGcode
         Me.LMaterialsSup.AutoSize = True
         Me.LMaterialsSup.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMaterialsSup.ForeColor = System.Drawing.Color.Black
-        Me.LMaterialsSup.Location = New System.Drawing.Point(29, 122)
+        Me.LMaterialsSup.Location = New System.Drawing.Point(29, 107)
         Me.LMaterialsSup.Name = "LMaterialsSup"
         Me.LMaterialsSup.Size = New System.Drawing.Size(144, 20)
         Me.LMaterialsSup.TabIndex = 65
         Me.LMaterialsSup.Text = "Materials suportats"
         '
-        'CLBMaterialsSup
-        '
-        Me.CLBMaterialsSup.FormattingEnabled = True
-        Me.CLBMaterialsSup.Location = New System.Drawing.Point(189, 122)
-        Me.CLBMaterialsSup.Name = "CLBMaterialsSup"
-        Me.CLBMaterialsSup.Size = New System.Drawing.Size(231, 319)
-        Me.CLBMaterialsSup.TabIndex = 64
-        '
         'TBRuta
         '
-        Me.TBRuta.Location = New System.Drawing.Point(189, 74)
+        Me.TBRuta.Location = New System.Drawing.Point(189, 37)
         Me.TBRuta.Name = "TBRuta"
         Me.TBRuta.Size = New System.Drawing.Size(231, 20)
         Me.TBRuta.TabIndex = 63
@@ -64,7 +61,7 @@ Partial Class ModificarGcode
         Me.LRutaFich.AutoSize = True
         Me.LRutaFich.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LRutaFich.ForeColor = System.Drawing.Color.Black
-        Me.LRutaFich.Location = New System.Drawing.Point(29, 74)
+        Me.LRutaFich.Location = New System.Drawing.Point(29, 37)
         Me.LRutaFich.Name = "LRutaFich"
         Me.LRutaFich.Size = New System.Drawing.Size(107, 20)
         Me.LRutaFich.TabIndex = 62
@@ -77,7 +74,7 @@ Partial Class ModificarGcode
         Me.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTCancelar.ForeColor = System.Drawing.Color.Black
-        Me.BTCancelar.Location = New System.Drawing.Point(33, 544)
+        Me.BTCancelar.Location = New System.Drawing.Point(33, 530)
         Me.BTCancelar.Name = "BTCancelar"
         Me.BTCancelar.Size = New System.Drawing.Size(387, 62)
         Me.BTCancelar.TabIndex = 61
@@ -91,7 +88,7 @@ Partial Class ModificarGcode
         Me.BTModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificar.ForeColor = System.Drawing.Color.Black
-        Me.BTModificar.Location = New System.Drawing.Point(33, 469)
+        Me.BTModificar.Location = New System.Drawing.Point(33, 462)
         Me.BTModificar.Name = "BTModificar"
         Me.BTModificar.Size = New System.Drawing.Size(387, 62)
         Me.BTModificar.TabIndex = 60
@@ -100,7 +97,7 @@ Partial Class ModificarGcode
         '
         'TBNomGcode
         '
-        Me.TBNomGcode.Location = New System.Drawing.Point(189, 36)
+        Me.TBNomGcode.Location = New System.Drawing.Point(189, 72)
         Me.TBNomGcode.Name = "TBNomGcode"
         Me.TBNomGcode.Size = New System.Drawing.Size(231, 20)
         Me.TBNomGcode.TabIndex = 59
@@ -110,7 +107,7 @@ Partial Class ModificarGcode
         Me.LNomGcode.AutoSize = True
         Me.LNomGcode.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNomGcode.ForeColor = System.Drawing.Color.Black
-        Me.LNomGcode.Location = New System.Drawing.Point(29, 36)
+        Me.LNomGcode.Location = New System.Drawing.Point(29, 72)
         Me.LNomGcode.Name = "LNomGcode"
         Me.LNomGcode.Size = New System.Drawing.Size(105, 20)
         Me.LNomGcode.TabIndex = 58
@@ -124,17 +121,57 @@ Partial Class ModificarGcode
         Me.MenuSup.Size = New System.Drawing.Size(443, 19)
         Me.MenuSup.TabIndex = 66
         '
+        'DGMaterial
+        '
+        Me.DGMaterial.AllowUserToAddRows = False
+        Me.DGMaterial.AllowUserToDeleteRows = False
+        Me.DGMaterial.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        Me.DGMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGMaterial.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.material, Me.descripcio})
+        Me.DGMaterial.Location = New System.Drawing.Point(33, 130)
+        Me.DGMaterial.MultiSelect = False
+        Me.DGMaterial.Name = "DGMaterial"
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGMaterial.Size = New System.Drawing.Size(387, 303)
+        Me.DGMaterial.TabIndex = 67
+        '
+        'material
+        '
+        Me.material.HeaderText = "Material"
+        Me.material.Name = "material"
+        Me.material.ReadOnly = True
+        '
+        'descripcio
+        '
+        Me.descripcio.HeaderText = "Descripció"
+        Me.descripcio.Name = "descripcio"
+        Me.descripcio.ReadOnly = True
+        Me.descripcio.Width = 200
+        '
+        'LabelInfo
+        '
+        Me.LabelInfo.AutoSize = True
+        Me.LabelInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
+        Me.LabelInfo.ForeColor = System.Drawing.Color.DarkRed
+        Me.LabelInfo.Location = New System.Drawing.Point(30, 436)
+        Me.LabelInfo.Name = "LabelInfo"
+        Me.LabelInfo.Size = New System.Drawing.Size(0, 18)
+        Me.LabelInfo.TabIndex = 68
+        '
         'ModificarGcode
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(442, 656)
+        Me.ClientSize = New System.Drawing.Size(442, 604)
+        Me.Controls.Add(Me.LabelInfo)
+        Me.Controls.Add(Me.TBRuta)
+        Me.Controls.Add(Me.DGMaterial)
+        Me.Controls.Add(Me.LRutaFich)
         Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.LMaterialsSup)
-        Me.Controls.Add(Me.CLBMaterialsSup)
-        Me.Controls.Add(Me.TBRuta)
-        Me.Controls.Add(Me.LRutaFich)
         Me.Controls.Add(Me.BTCancelar)
         Me.Controls.Add(Me.BTModificar)
         Me.Controls.Add(Me.TBNomGcode)
@@ -142,13 +179,13 @@ Partial Class ModificarGcode
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ModificarGcode"
         Me.Text = "ModificarGcode"
+        CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents LMaterialsSup As Label
-    Friend WithEvents CLBMaterialsSup As CheckedListBox
     Friend WithEvents TBRuta As TextBox
     Friend WithEvents LRutaFich As Label
     Friend WithEvents BTCancelar As Button
@@ -156,4 +193,8 @@ Partial Class ModificarGcode
     Friend WithEvents TBNomGcode As TextBox
     Friend WithEvents LNomGcode As Label
     Friend WithEvents MenuSup As Panel
+    Friend WithEvents DGMaterial As DataGridView
+    Friend WithEvents material As DataGridViewTextBoxColumn
+    Friend WithEvents descripcio As DataGridViewTextBoxColumn
+    Friend WithEvents LabelInfo As Label
 End Class

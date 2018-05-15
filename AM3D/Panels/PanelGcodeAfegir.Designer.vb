@@ -22,6 +22,7 @@ Partial Class PanelGcodeAfegir
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BTBorrar = New System.Windows.Forms.Button()
         Me.BTAfegir = New System.Windows.Forms.Button()
         Me.TBNomGcode = New System.Windows.Forms.TextBox()
@@ -106,9 +107,9 @@ Partial Class PanelGcodeAfegir
         Me.LMaterialsSup.ForeColor = System.Drawing.Color.Black
         Me.LMaterialsSup.Location = New System.Drawing.Point(364, 21)
         Me.LMaterialsSup.Name = "LMaterialsSup"
-        Me.LMaterialsSup.Size = New System.Drawing.Size(144, 20)
+        Me.LMaterialsSup.Size = New System.Drawing.Size(128, 20)
         Me.LMaterialsSup.TabIndex = 57
-        Me.LMaterialsSup.Text = "Materials suportats"
+        Me.LMaterialsSup.Text = "Material suportat"
         '
         'DGMaterial
         '
@@ -120,6 +121,8 @@ Partial Class PanelGcodeAfegir
         Me.DGMaterial.Location = New System.Drawing.Point(368, 44)
         Me.DGMaterial.MultiSelect = False
         Me.DGMaterial.Name = "DGMaterial"
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMaterial.Size = New System.Drawing.Size(337, 303)
         Me.DGMaterial.TabIndex = 58

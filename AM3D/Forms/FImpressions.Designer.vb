@@ -116,7 +116,7 @@ Partial Class FImpressions
         Me.BTImprimirGCODE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BTImprimirGCODE.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nom_gcode, Me.numero_copia, Me.codiImpressora, Me.ordreImpressio, Me.estat, Me.nickname})
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.WindowFrame
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight

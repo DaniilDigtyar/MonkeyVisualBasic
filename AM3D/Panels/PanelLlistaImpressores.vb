@@ -69,4 +69,8 @@
         nomSeleccionada = DGImpressores.SelectedRows.Item(0).Cells(1).Value
         ModificarImpressores.Show()
     End Sub
+
+    Private Sub PanelLlistaImpressores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
