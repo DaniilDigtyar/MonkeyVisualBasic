@@ -193,7 +193,7 @@
     <value>Change Material</value>
   </data>
   <data name="BTModificarModel" xml:space="preserve">
-    <value>Chanhe Model</value>
+    <value>Change Model</value>
   </data>
   <data name="BTModificarUsuari" xml:space="preserve">
     <value>Change User</value>
@@ -439,7 +439,7 @@
     <value>Error generating files.</value>
   </data>
   <data name="MSGRellenarError" xml:space="preserve">
-    <value>Fill in all fields</value>
+    <value>Fill in all fields.</value>
   </data>
   <data name="MSGUserContrasenyaError" xml:space="preserve">
     <value>Your current password is not correct.</value>
