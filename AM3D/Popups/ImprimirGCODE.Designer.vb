@@ -22,6 +22,7 @@ Partial Class ImprimirGCODE
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ImprimirGCODE))
         Me.BTImprimirCancelar = New System.Windows.Forms.Button()
         Me.BTImprimir = New System.Windows.Forms.Button()
         Me.LNomGcode = New System.Windows.Forms.Label()
@@ -145,6 +146,7 @@ Partial Class ImprimirGCODE
         Me.Controls.Add(Me.BTImprimir)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ImprimirGCODE"
         Me.Text = "ImprimirGCODE"
         CType(Me.TBCopies, System.ComponentModel.ISupportInitialize).EndInit()

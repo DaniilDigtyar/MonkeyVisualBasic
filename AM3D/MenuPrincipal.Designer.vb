@@ -481,6 +481,7 @@ Partial Class MenuPrincipal
         Me.Controls.Add(Me.PCont)
         Me.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MenuPrincipal"
         Me.Text = "Menu"
         Me.MenuVerticalControl.ResumeLayout(False)

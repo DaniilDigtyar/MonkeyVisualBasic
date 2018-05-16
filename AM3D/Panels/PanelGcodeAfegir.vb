@@ -8,12 +8,16 @@
     Private Sub TBRuta_Click(sender As Object, e As EventArgs) Handles TBRuta.Click
         Dim openFileDialog As OpenFileDialog = New OpenFileDialog()
         Dim path As String
-        openFileDialog.Filter = "Gcode file|*.gcode"
-        openFileDialog.Title = "Obrir Gcode."
-        openFileDialog.ShowDialog()
-        path = openFileDialog.FileName
-        TBRuta.Text = path
-        TBNomGcode.Text = openFileDialog.SafeFileName.Substring(0, openFileDialog.SafeFileName.Length - 6)
+        Try
+            OpenFileDialog.Filter = "Gcode file|*.gcode"
+            OpenFileDialog.Title = "Obrir Gcode."
+            OpenFileDialog.ShowDialog()
+            path = OpenFileDialog.FileName
+            TBRuta.Text = path
+            TBNomGcode.Text = OpenFileDialog.SafeFileName.Substring(0, OpenFileDialog.SafeFileName.Length - 6)
+        Catch ex As Exception
+
+        End Try
     End Sub
 
     Private Sub BTAfegir_Click(sender As Object, e As EventArgs) Handles BTAfegir.Click

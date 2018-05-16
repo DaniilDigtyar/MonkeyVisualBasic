@@ -258,6 +258,7 @@ Partial Class Login
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.MenuSup)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

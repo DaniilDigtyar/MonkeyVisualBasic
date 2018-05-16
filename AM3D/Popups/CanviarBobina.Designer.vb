@@ -22,6 +22,7 @@ Partial Class CanviarBobina
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CanviarBobina))
         Me.CBImpressora = New System.Windows.Forms.ComboBox()
         Me.LImpressora = New System.Windows.Forms.Label()
         Me.BTCancelar = New System.Windows.Forms.Button()
@@ -163,6 +164,7 @@ Partial Class CanviarBobina
         Me.Controls.Add(Me.BTCancelar)
         Me.Controls.Add(Me.BTCanviar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "CanviarBobina"
         Me.Text = "CanviarBobina"
         CType(Me.DataGridViewBobina, System.ComponentModel.ISupportInitialize).EndInit()

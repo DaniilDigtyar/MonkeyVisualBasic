@@ -23,6 +23,7 @@ Partial Class ModificarBobinesBobina
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarBobinesBobina))
         Me.MenuSup = New System.Windows.Forms.Panel()
         Me.DGColor = New System.Windows.Forms.DataGridView()
         Me.color = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -252,6 +253,7 @@ Partial Class ModificarBobinesBobina
         Me.Controls.Add(Me.MenuSup)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModificarBobinesBobina"
         Me.Text = "ModificarBobinesBobina"
         CType(Me.DGColor, System.ComponentModel.ISupportInitialize).EndInit()

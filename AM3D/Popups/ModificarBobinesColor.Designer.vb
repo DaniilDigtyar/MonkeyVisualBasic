@@ -22,6 +22,7 @@ Partial Class ModificarBobinesColor
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarBobinesColor))
         Me.TBHex = New System.Windows.Forms.TextBox()
         Me.LHex = New System.Windows.Forms.Label()
         Me.BTCancelar = New System.Windows.Forms.Button()
@@ -141,6 +142,7 @@ Partial Class ModificarBobinesColor
         Me.Controls.Add(Me.LColor)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModificarBobinesColor"
         Me.Text = "L"
         Me.ResumeLayout(False)

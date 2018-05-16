@@ -25,7 +25,6 @@ Partial Class FImpressions
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BTCancelar = New System.Windows.Forms.Button()
         Me.BTImpressionsPeçaRetirada = New System.Windows.Forms.Button()
-        Me.BTImpressionsPausar = New System.Windows.Forms.Button()
         Me.BTImprimirG = New System.Windows.Forms.Button()
         Me.BResfrescar = New System.Windows.Forms.Button()
         Me.BTImprimirGCODE = New System.Windows.Forms.DataGridView()
@@ -65,20 +64,6 @@ Partial Class FImpressions
         Me.BTImpressionsPeçaRetirada.TabIndex = 11
         Me.BTImpressionsPeçaRetirada.Text = "Peça retirada"
         Me.BTImpressionsPeçaRetirada.UseVisualStyleBackColor = False
-        '
-        'BTImpressionsPausar
-        '
-        Me.BTImpressionsPausar.BackColor = System.Drawing.Color.White
-        Me.BTImpressionsPausar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTImpressionsPausar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BTImpressionsPausar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTImpressionsPausar.ForeColor = System.Drawing.Color.Black
-        Me.BTImpressionsPausar.Location = New System.Drawing.Point(337, 23)
-        Me.BTImpressionsPausar.Name = "BTImpressionsPausar"
-        Me.BTImpressionsPausar.Size = New System.Drawing.Size(154, 62)
-        Me.BTImpressionsPausar.TabIndex = 12
-        Me.BTImpressionsPausar.Text = "Pausar"
-        Me.BTImpressionsPausar.UseVisualStyleBackColor = False
         '
         'BTImprimirG
         '
@@ -175,7 +160,6 @@ Partial Class FImpressions
         Me.Controls.Add(Me.BTImprimirGCODE)
         Me.Controls.Add(Me.BResfrescar)
         Me.Controls.Add(Me.BTImprimirG)
-        Me.Controls.Add(Me.BTImpressionsPausar)
         Me.Controls.Add(Me.BTImpressionsPeçaRetirada)
         Me.Controls.Add(Me.BTCancelar)
         Me.ForeColor = System.Drawing.Color.Black
@@ -188,7 +172,6 @@ Partial Class FImpressions
     End Sub
     Friend WithEvents BTCancelar As Button
     Friend WithEvents BTImpressionsPeçaRetirada As Button
-    Friend WithEvents BTImpressionsPausar As Button
     Friend WithEvents BTImprimirG As Button
     Friend WithEvents BResfrescar As Button
     Friend WithEvents BTImprimirGCODE As DataGridView

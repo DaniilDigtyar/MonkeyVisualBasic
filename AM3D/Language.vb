@@ -47,7 +47,6 @@
             FGcode.BTModificarEliminar.Text = My.Resources.cat.BTModificarEliminar
             FImpressions.BTCancelar.Text = My.Resources.cat.BTCancelar
             FImpressions.BTImpressionsPeçaRetirada.Text = My.Resources.cat.BTImpressionsPeçaRetirada
-            FImpressions.BTImpressionsPausar.Text = My.Resources.cat.BTImpressionsPausar
             FImpressions.BTImprimirG.Text = My.Resources.cat.BTImprimirG
             FImpressores.BTConnectar.Text = My.Resources.cat.BTConnectar
             FImpressores.BTLlista.Text = My.Resources.cat.BTLlista
@@ -260,7 +259,6 @@
             FGcode.BTModificarEliminar.Text = My.Resources.eng.BTModificarEliminar
             FImpressions.BTCancelar.Text = My.Resources.eng.BTCancelar
             FImpressions.BTImpressionsPeçaRetirada.Text = My.Resources.eng.BTImpressionsPeçaRetirada
-            FImpressions.BTImpressionsPausar.Text = My.Resources.eng.BTImpressionsPausar
             FImpressions.BTImprimirG.Text = My.Resources.eng.BTImprimirG
             FImpressores.BTConnectar.Text = My.Resources.eng.BTConnectar
             FImpressores.BTLlista.Text = My.Resources.eng.BTLlista

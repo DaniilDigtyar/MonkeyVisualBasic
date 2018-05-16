@@ -22,7 +22,8 @@ Partial Class ModificarGcode
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarGcode))
         Me.LMaterialsSup = New System.Windows.Forms.Label()
         Me.TBRuta = New System.Windows.Forms.TextBox()
         Me.LRutaFich = New System.Windows.Forms.Label()
@@ -131,8 +132,8 @@ Partial Class ModificarGcode
         Me.DGMaterial.Location = New System.Drawing.Point(33, 130)
         Me.DGMaterial.MultiSelect = False
         Me.DGMaterial.Name = "DGMaterial"
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMaterial.Size = New System.Drawing.Size(387, 303)
         Me.DGMaterial.TabIndex = 67
@@ -177,6 +178,7 @@ Partial Class ModificarGcode
         Me.Controls.Add(Me.TBNomGcode)
         Me.Controls.Add(Me.LNomGcode)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModificarGcode"
         Me.Text = "ModificarGcode"
         CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).EndInit()

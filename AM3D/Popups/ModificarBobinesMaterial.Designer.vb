@@ -22,6 +22,7 @@ Partial Class ModificarBobinesMaterial
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarBobinesMaterial))
         Me.TBTecnic = New System.Windows.Forms.TextBox()
         Me.LTecnic = New System.Windows.Forms.Label()
         Me.BTBorrar = New System.Windows.Forms.Button()
@@ -130,6 +131,7 @@ Partial Class ModificarBobinesMaterial
         Me.Controls.Add(Me.LMaterial)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModificarBobinesMaterial"
         Me.Text = "ModificarBobinesMaterial"
         Me.ResumeLayout(False)

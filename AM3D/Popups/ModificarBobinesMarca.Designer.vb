@@ -22,6 +22,7 @@ Partial Class ModificarBobinesMarca
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarBobinesMarca))
         Me.TBMarca = New System.Windows.Forms.TextBox()
         Me.LMarcaProductora = New System.Windows.Forms.Label()
         Me.BTCancelar = New System.Windows.Forms.Button()
@@ -107,6 +108,7 @@ Partial Class ModificarBobinesMarca
         Me.Controls.Add(Me.BTCancelar)
         Me.Controls.Add(Me.BTModificar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModificarBobinesMarca"
         Me.Text = "ModificarBobinesMarca"
         Me.ResumeLayout(False)

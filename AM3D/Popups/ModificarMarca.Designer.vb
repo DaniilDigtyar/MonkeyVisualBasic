@@ -22,6 +22,7 @@ Partial Class ModificarMarca
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarMarca))
         Me.TBMarca = New System.Windows.Forms.TextBox()
         Me.LMarca = New System.Windows.Forms.Label()
         Me.BTCancelar = New System.Windows.Forms.Button()
@@ -95,6 +96,7 @@ Partial Class ModificarMarca
         Me.Controls.Add(Me.TBMarca)
         Me.Controls.Add(Me.LMarca)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModificarMarca"
         Me.Text = "ModificarMarca"
         Me.ResumeLayout(False)

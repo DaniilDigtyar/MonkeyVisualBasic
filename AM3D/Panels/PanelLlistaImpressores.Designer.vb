@@ -172,6 +172,7 @@ Partial Class PanelLlistaImpressores
         Me.Controls.Add(Me.BTEliminarImpressora)
         Me.Controls.Add(Me.BTModificarImpressora)
         Me.Controls.Add(Me.BTCambiarBobina)
+        Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "PanelLlistaImpressores"
         Me.Text = "PanelLlistaImpressores"

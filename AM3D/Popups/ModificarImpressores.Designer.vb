@@ -22,6 +22,7 @@ Partial Class ModificarImpressores
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarImpressores))
         Me.MenuSup = New System.Windows.Forms.Panel()
         Me.Labelnfo = New System.Windows.Forms.Label()
         Me.BTCancelar = New System.Windows.Forms.Button()
@@ -155,6 +156,7 @@ Partial Class ModificarImpressores
         Me.Controls.Add(Me.LMarca)
         Me.Controls.Add(Me.MenuSup)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModificarImpressores"
         Me.Text = "ModificarImpressores"
         Me.ResumeLayout(False)
