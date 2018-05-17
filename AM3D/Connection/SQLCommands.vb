@@ -1314,6 +1314,70 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function UpdateMarcaIntoDatabase(ByVal dbToConnect As String, ByVal marca As Marca, ByRef marcaMoficar As String)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "UPDATE marques 
+                    SET marca    = '" + marca.GetSetMarca + "'
+                    WHERE marca  = '" + marcaMoficar + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function UpdateModelIntoDatabase(ByVal dbToConnect As String, ByVal model As Models, ByRef modelModificar As Models)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "UPDATE models 
+                    SET marca    = '" + model.GetSetMarca + "' and model = '" + model.GetSetModel + "'
+                    WHERE marca  = '" + modelModificar.GetSetMarca + "'  and model = '" + modelModificar.GetSetModel +
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function UpdateCaracteristiquesIntoDatabase(ByVal dbToConnect As String, ByVal caracteristiques As Caracteristiques, ByRef modelModificar As Models)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "UPDATE caracteristiques  
+                    SET marca    = '" + caracteristiques.GetSetMarca + "' and model = '" + caracteristiques.GetSetModel + "' and numero_extrusors = '" + caracteristiques.GetSetNumeroExtrusors + "' and temperatura_minima_extrusor = '" + Replace(Format(caracteristiques.GetSetTemperaturaMinimaExtrusor.ToString, "0.00"), ",", ".") + "' and numero_extrusors = '" + caracteristiques.GetSetNumeroExtrusors + "'
+                     and temperatura_maxima_extrusor = '" + Replace(Format(caracteristiques.GetSetTemperaturaMaximaExtrusor.ToString, "0.00"), ",", ".") + " and temperatura_minima_llit = " + Replace(Format(caracteristiques.GetSetTemperaturaMinimaLlit.ToString, "0.00"), ",", ".") + " and temperatura_maxima_llit = " + Replace(Format(caracteristiques.GetSetTemperaturaMaximaLlit.ToString, "0.00"), ",", ".") + "
+                     and area_impressio_x = '" + Replace(Format(caracteristiques.GetSetAreaImpresioX.ToString, "0.00"), ",", ".") + " and area_impressio_y  = '" + Replace(Format(caracteristiques.GetSetAreaImpresioY.ToString, "0.00"), ",", ".") + " and area_impressio_z   = '" + Replace(Format(caracteristiques.GetSetAreaImpresioZ.ToString, "0.00"), ",", ".") + " 
+                     and velocitat_maxima_capcal = '" + Replace(Format(caracteristiques.GetSetVelocitatMaximaCapcal.ToString, "0.00"), ",", ".") + "  and resolucio_capa_maxima  = '" + Replace(Format(caracteristiques.GetSetResolucioCapaMaxima.ToString, "0.00"), ",", ".") + " 
+                     and resolucio_capa_minima = '" + Replace(Format(caracteristiques.GetSetResolucioCapaMinima.ToString, "0.00"), ",", ".") + "  and diametre_filament_acceptat = '" + Replace(Format(caracteristiques.GetSetDiametreFilamentAcceptat.ToString, "0.00"), ",", ".") + " 
+                    WHERE marca  = '" + modelModificar.GetSetMarca + "'  and model = '" + modelModificar.GetSetModel +
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     Public Function UpdateImpressionsEstatIntoDatabase(ByVal dbToConnect As String, ByVal impressions As Impressions, ByVal estat As String)
         Try
             Dim query As String

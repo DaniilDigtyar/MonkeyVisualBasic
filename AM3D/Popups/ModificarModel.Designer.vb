@@ -22,12 +22,11 @@ Partial Class ModificarModel
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarModel))
         Me.BTCancelar = New System.Windows.Forms.Button()
         Me.BTModificar = New System.Windows.Forms.Button()
         Me.LMaterialSup = New System.Windows.Forms.Label()
-        Me.CBLMaterialSup = New System.Windows.Forms.CheckedListBox()
-        Me.CBMarca = New System.Windows.Forms.ComboBox()
         Me.TBDiametre = New System.Windows.Forms.TextBox()
         Me.TBResMaxCap = New System.Windows.Forms.TextBox()
         Me.TBResMinCap = New System.Windows.Forms.TextBox()
@@ -56,6 +55,12 @@ Partial Class ModificarModel
         Me.LMarca = New System.Windows.Forms.Label()
         Me.LModel = New System.Windows.Forms.Label()
         Me.MenuSup = New System.Windows.Forms.Panel()
+        Me.LabelInfo = New System.Windows.Forms.Label()
+        Me.DGMaterial = New System.Windows.Forms.DataGridView()
+        Me.material = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.descripcio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CBMarca = New System.Windows.Forms.ComboBox()
+        CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BTCancelar
@@ -67,7 +72,7 @@ Partial Class ModificarModel
         Me.BTCancelar.ForeColor = System.Drawing.Color.Black
         Me.BTCancelar.Location = New System.Drawing.Point(443, 281)
         Me.BTCancelar.Name = "BTCancelar"
-        Me.BTCancelar.Size = New System.Drawing.Size(213, 62)
+        Me.BTCancelar.Size = New System.Drawing.Size(189, 62)
         Me.BTCancelar.TabIndex = 79
         Me.BTCancelar.Text = "Cancelar"
         Me.BTCancelar.UseVisualStyleBackColor = False
@@ -81,7 +86,7 @@ Partial Class ModificarModel
         Me.BTModificar.ForeColor = System.Drawing.Color.Black
         Me.BTModificar.Location = New System.Drawing.Point(443, 206)
         Me.BTModificar.Name = "BTModificar"
-        Me.BTModificar.Size = New System.Drawing.Size(213, 62)
+        Me.BTModificar.Size = New System.Drawing.Size(189, 62)
         Me.BTModificar.TabIndex = 78
         Me.BTModificar.Text = "Modificar"
         Me.BTModificar.UseVisualStyleBackColor = False
@@ -96,22 +101,6 @@ Partial Class ModificarModel
         Me.LMaterialSup.Size = New System.Drawing.Size(131, 20)
         Me.LMaterialSup.TabIndex = 77
         Me.LMaterialSup.Text = "Material Suportat"
-        '
-        'CBLMaterialSup
-        '
-        Me.CBLMaterialSup.FormattingEnabled = True
-        Me.CBLMaterialSup.Location = New System.Drawing.Point(676, 161)
-        Me.CBLMaterialSup.Name = "CBLMaterialSup"
-        Me.CBLMaterialSup.Size = New System.Drawing.Size(106, 199)
-        Me.CBLMaterialSup.TabIndex = 76
-        '
-        'CBMarca
-        '
-        Me.CBMarca.FormattingEnabled = True
-        Me.CBMarca.Location = New System.Drawing.Point(277, 25)
-        Me.CBMarca.Name = "CBMarca"
-        Me.CBMarca.Size = New System.Drawing.Size(141, 21)
-        Me.CBMarca.TabIndex = 75
         '
         'TBDiametre
         '
@@ -366,18 +355,67 @@ Partial Class ModificarModel
         Me.MenuSup.Size = New System.Drawing.Size(803, 19)
         Me.MenuSup.TabIndex = 80
         '
+        'LabelInfo
+        '
+        Me.LabelInfo.AutoSize = True
+        Me.LabelInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
+        Me.LabelInfo.ForeColor = System.Drawing.Color.DarkRed
+        Me.LabelInfo.Location = New System.Drawing.Point(441, 182)
+        Me.LabelInfo.Name = "LabelInfo"
+        Me.LabelInfo.Size = New System.Drawing.Size(0, 18)
+        Me.LabelInfo.TabIndex = 81
+        '
+        'DGMaterial
+        '
+        Me.DGMaterial.AllowUserToAddRows = False
+        Me.DGMaterial.AllowUserToDeleteRows = False
+        Me.DGMaterial.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        Me.DGMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGMaterial.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.material, Me.descripcio})
+        Me.DGMaterial.Location = New System.Drawing.Point(638, 150)
+        Me.DGMaterial.MultiSelect = False
+        Me.DGMaterial.Name = "DGMaterial"
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGMaterial.Size = New System.Drawing.Size(144, 193)
+        Me.DGMaterial.TabIndex = 82
+        '
+        'material
+        '
+        Me.material.HeaderText = "Material"
+        Me.material.Name = "material"
+        Me.material.ReadOnly = True
+        '
+        'descripcio
+        '
+        Me.descripcio.HeaderText = "Descripció"
+        Me.descripcio.Name = "descripcio"
+        Me.descripcio.ReadOnly = True
+        Me.descripcio.Width = 200
+        '
+        'CBMarca
+        '
+        Me.CBMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBMarca.FormattingEnabled = True
+        Me.CBMarca.Location = New System.Drawing.Point(277, 26)
+        Me.CBMarca.Name = "CBMarca"
+        Me.CBMarca.Size = New System.Drawing.Size(141, 21)
+        Me.CBMarca.TabIndex = 83
+        '
         'ModificarModel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(801, 381)
+        Me.Controls.Add(Me.CBMarca)
+        Me.Controls.Add(Me.DGMaterial)
+        Me.Controls.Add(Me.LabelInfo)
         Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.BTCancelar)
         Me.Controls.Add(Me.BTModificar)
         Me.Controls.Add(Me.LMaterialSup)
-        Me.Controls.Add(Me.CBLMaterialSup)
-        Me.Controls.Add(Me.CBMarca)
         Me.Controls.Add(Me.TBDiametre)
         Me.Controls.Add(Me.TBResMaxCap)
         Me.Controls.Add(Me.TBResMinCap)
@@ -409,6 +447,7 @@ Partial Class ModificarModel
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModificarModel"
         Me.Text = "ModificarModel"
+        CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -417,8 +456,6 @@ Partial Class ModificarModel
     Friend WithEvents BTCancelar As Button
     Friend WithEvents BTModificar As Button
     Friend WithEvents LMaterialSup As Label
-    Friend WithEvents CBLMaterialSup As CheckedListBox
-    Friend WithEvents CBMarca As ComboBox
     Friend WithEvents TBDiametre As TextBox
     Friend WithEvents TBResMaxCap As TextBox
     Friend WithEvents TBResMinCap As TextBox
@@ -447,4 +484,9 @@ Partial Class ModificarModel
     Friend WithEvents LModel As Label
     Friend WithEvents MenuSup As Panel
     Public WithEvents LMarca As Label
+    Friend WithEvents LabelInfo As Label
+    Friend WithEvents DGMaterial As DataGridView
+    Friend WithEvents material As DataGridViewTextBoxColumn
+    Friend WithEvents descripcio As DataGridViewTextBoxColumn
+    Friend WithEvents CBMarca As ComboBox
 End Class

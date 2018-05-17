@@ -1,6 +1,8 @@
 ﻿Public Class PanelMarcaModificarEliminar
     Dim SQLCommands As SQLCommands = New SQLCommands()
+    Public marcaSeleccionada As Marca = New Marca("")
     Private Sub BTModificarMarca_Click(sender As Object, e As EventArgs) Handles BTModificarMarca.Click
+        marcaSeleccionada = New Marca(DGMarca.SelectedRows.Item(0).Cells(0).Value)
         ModificarMarca.Show()
 
     End Sub

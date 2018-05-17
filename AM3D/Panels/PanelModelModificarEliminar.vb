@@ -1,6 +1,42 @@
 ﻿Public Class PanelModelModificarEliminar
     Dim SQLCommands As SQLCommands = New SQLCommands()
+    Public caracteristicaSeleccionada As New Caracteristiques("", "", "", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+
     Private Sub BTModificarModel_Click(sender As Object, e As EventArgs) Handles BTModificarModel.Click
+        Dim listaMaterials As HashSet(Of Materials) = New HashSet(Of Materials)
+        Dim listaMarca As HashSet(Of Marca) = New HashSet(Of Marca)
+        Dim material As Materials
+        Dim marca As Marca
+        caracteristicaSeleccionada = New Caracteristiques(DGMarca.SelectedRows.Item(0).Cells(0).Value, DGMarca.SelectedRows.Item(0).Cells(1).Value, DGMarca.SelectedRows.Item(0).Cells(2).Value, DGMarca.SelectedRows.Item(0).Cells(3).Value, DGMarca.SelectedRows.Item(0).Cells(4).Value, DGMarca.SelectedRows.Item(0).Cells(5).Value, DGMarca.SelectedRows.Item(0).Cells(6).Value, DGMarca.SelectedRows.Item(0).Cells(7).Value, DGMarca.SelectedRows.Item(0).Cells(8).Value, DGMarca.SelectedRows.Item(0).Cells(9).Value, DGMarca.SelectedRows.Item(0).Cells(10).Value, DGMarca.SelectedRows.Item(0).Cells(11).Value, DGMarca.SelectedRows.Item(0).Cells(12).Value, DGMarca.SelectedRows.Item(0).Cells(13).Value)
+
+        ModificarModel.TBModel.Text = caracteristicaSeleccionada.GetSetModel
+        ModificarModel.CBMarca.Text = caracteristicaSeleccionada.GetSetMarca
+        ModificarModel.TBExtrusors.Text = caracteristicaSeleccionada.GetSetNumeroExtrusors
+        ModificarModel.TBTempMaxEx.Text = caracteristicaSeleccionada.GetSetTemperaturaMaximaExtrusor
+        ModificarModel.TBTempMinExt.Text = caracteristicaSeleccionada.GetSetTemperaturaMinimaExtrusor
+        ModificarModel.TBTempMaxLlit.Text = caracteristicaSeleccionada.GetSetTemperaturaMaximaLlit
+        ModificarModel.TBTempMinLlit.Text = caracteristicaSeleccionada.GetSetTemperaturaMinimaLlit
+        ModificarModel.TBImpZ.Text = caracteristicaSeleccionada.GetSetAreaImpresioZ
+        ModificarModel.TBAImpY.Text = caracteristicaSeleccionada.GetSetAreaImpresioY
+        ModificarModel.TBAImpX.Text = caracteristicaSeleccionada.GetSetAreaImpresioX
+        ModificarModel.TBVelMinExt.Text = caracteristicaSeleccionada.GetSetVelocitatMaximaCapcal
+        ModificarModel.TBResMinCap.Text = caracteristicaSeleccionada.GetSetResolucioCapaMinima
+        ModificarModel.TBResMaxCap.Text = caracteristicaSeleccionada.GetSetResolucioCapaMaxima
+        ModificarModel.TBDiametre.Text = caracteristicaSeleccionada.GetSetDiametreFilamentAcceptat
+
+
+
+        listaMarca = SQLCommands.SelectAllMarquesFromDatabase(Globals.userCredentials.GetSetBaseDades)
+        listaMaterials = SQLCommands.SelectAllMaterialsFromDatabase(Globals.userCredentials.GetSetBaseDades)
+
+        For Each marca In listaMarca
+            ModificarModel.CBMarca.Items.Add(marca.GetSetMarca)
+        Next marca
+
+        For Each material In listaMaterials
+            ModificarModel.DGMaterial.Rows.Add(material.GetSetTipusMaterial, material.GetSetDescripcio)
+        Next material
+
         ModificarModel.Show()
     End Sub
 
