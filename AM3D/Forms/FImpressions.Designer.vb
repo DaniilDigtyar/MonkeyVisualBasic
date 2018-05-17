@@ -112,7 +112,7 @@ Partial Class FImpressions
         Me.BTImprimirGCODE.MultiSelect = False
         Me.BTImprimirGCODE.Name = "BTImprimirGCODE"
         Me.BTImprimirGCODE.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.BTImprimirGCODE.Size = New System.Drawing.Size(802, 406)
+        Me.BTImprimirGCODE.Size = New System.Drawing.Size(802, 375)
         Me.BTImprimirGCODE.TabIndex = 15
         '
         'nom_gcode

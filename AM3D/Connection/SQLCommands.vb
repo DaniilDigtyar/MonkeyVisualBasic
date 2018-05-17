@@ -792,6 +792,63 @@ Public Class SQLCommands
         Return listaImpressions
     End Function
 
+    Public Function SelectCodiCopiaFromImpressionsWhereImpressio(ByVal dbToConnect As String, ByVal impressio As Impressions)
+        Try
+            Dim numeroCopia As Integer = -1
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select numero_copia
+                     from impressions
+                     WHERE nom_gcode = '" + impressio.GetSetNomGcode + "' and codi_impresora = '" + impressio.GetSetCodiImpresora + "'
+                     order by numero_copia  desc"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                dr.Read()
+                numeroCopia = dr(0)
+            End If
+            Return numeroCopia
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+
+        End Try
+    End Function
+
+
+    Public Function SelectOrdreImpressioFromImpressionsWhereImpressio(ByVal dbToConnect As String, ByVal impressio As Impressions)
+        Try
+            Dim ordre_impressio As Integer = -1
+            Dim query As String
+            Dim dr As SqlDataReader
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "select ordre_impressio
+                     from impressions
+                     WHERE nom_gcode = '" + impressio.GetSetNomGcode + "' and codi_impresora = '" + impressio.GetSetCodiImpresora + "'
+                     order by ordre_impressio desc"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                dr.Read()
+                ordre_impressio = dr(0)
+            End If
+            Return ordre_impressio
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+
+        End Try
+    End Function
+
     Public Function InsertUserClient(ByVal dbToConnect As String, ByVal usuari As Usuaris)
         Try
             Dim query As String
@@ -1257,6 +1314,46 @@ Public Class SQLCommands
         End Try
     End Function
 
+    Public Function UpdateImpressionsEstatIntoDatabase(ByVal dbToConnect As String, ByVal impressions As Impressions, ByVal estat As String)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "UPDATE impressions 
+                    SET estat = '" + estat + "'
+                    WHERE nom_gcode = '" + impressions.GetSetNomGcode + "' and numero_copia = " + impressions.GetSetNumeroCopia.ToString + " and codi_impresora = '" + impressions.GetSetCodiImpresora + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function UpdateImpressoraEstatIntoDatabase(ByVal dbToConnect As String, ByVal impressora As Impressores, ByVal estat As String)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "UPDATE impressores 
+                    SET estat = '" + estat + "'
+                    WHERE codi_impresora = '" + impressora.GetSetCodiImpressora + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
     ''' <summary>
     ''' Funcion para acutalizar la información de una impressora de la base de datos.
     ''' </summary>
@@ -1324,6 +1421,52 @@ Public Class SQLCommands
             cmd.Connection = connectionClient
             afectat = cmd.ExecuteNonQuery()
             Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function DeleteImpressionsFromDatabaseWhereImpressio(ByVal dbToConnect As String, ByVal impressio As Impressions)
+        Try
+            Dim query As String
+            Dim afectat As Integer = 0
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "DELETE FROM impressions
+                     WHERE nom_gcode = '" + impressio.GetSetNomGcode + "' and numero_copia = " + impressio.GetSetNumeroCopia.ToString + " and codi_impresora = '" + impressio.GetSetCodiImpresora + "'"
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            afectat = cmd.ExecuteNonQuery()
+            Return afectat
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Me.disconnectDataBaseClient()
+        End Try
+    End Function
+
+    Public Function SelectNextImpressioFromDatabaseWhereImpressio(ByVal dbToConnect As String, ByVal impressio As Impressions, ByRef siguente As Boolean)
+        Try
+            Dim query As String = ""
+            Dim dr As SqlDataReader
+            Dim impressioReturn As New Impressions("", 0, "", 0, "", "")
+
+            Me.connectDataBaseClient(dbToConnect)
+            query = "SELECT top 1 *
+                     FROM impressions
+                     WHERE codi_impresora = '" + impressio.GetSetCodiImpresora + "' and ordre_impressio = " + (impressio.GetSetOrdreImpressio + 1).ToString
+            cmd = New SqlCommand(query)
+            cmd.Connection = connectionClient
+            dr = cmd.ExecuteReader
+            siguente = False
+            If dr.HasRows Then
+                siguente = True
+                dr.Read()
+                impressioReturn = New Impressions(dr(0), dr(1), dr(2), dr(3), dr(4), dr(5))
+            End If
+            Return impressioReturn
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

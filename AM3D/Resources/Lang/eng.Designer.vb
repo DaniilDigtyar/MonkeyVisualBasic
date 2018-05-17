@@ -1001,6 +1001,60 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Impressora canceled correctly..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGImpressionsCancelarCorrect() As String
+            Get
+                Return ResourceManager.GetString("MSGImpressionsCancelarCorrect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Error canceling the printer..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGImpressionsCancelarError() As String
+            Get
+                Return ResourceManager.GetString("MSGImpressionsCancelarError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Aquesta Impressora no es pot cancel·lar..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGImpressionsCancelarErrorSelect() As String
+            Get
+                Return ResourceManager.GetString("MSGImpressionsCancelarErrorSelect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Status updated correctly..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGImpressionsRetirarCorrect() As String
+            Get
+                Return ResourceManager.GetString("MSGImpressionsRetirarCorrect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Failed to update status..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGImpressionsRetirarError() As String
+            Get
+                Return ResourceManager.GetString("MSGImpressionsRetirarError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to An unfinished print can not be removed..
+        '''</summary>
+        Friend Shared ReadOnly Property MSGImpressionsRetirarErrorSelect() As String
+            Get
+                Return ResourceManager.GetString("MSGImpressionsRetirarErrorSelect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to The insert has been correct..
         '''</summary>
         Friend Shared ReadOnly Property MSGInsertCorrecto() As String

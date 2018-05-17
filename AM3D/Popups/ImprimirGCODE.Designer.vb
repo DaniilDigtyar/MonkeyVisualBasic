@@ -32,6 +32,7 @@ Partial Class ImprimirGCODE
         Me.CBImpriImpressora = New System.Windows.Forms.ComboBox()
         Me.MenuSup = New System.Windows.Forms.Panel()
         Me.TBCopies = New System.Windows.Forms.NumericUpDown()
+        Me.LabelInfo = New System.Windows.Forms.Label()
         CType(Me.TBCopies, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -90,7 +91,7 @@ Partial Class ImprimirGCODE
         Me.LNCopies.AutoSize = True
         Me.LNCopies.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNCopies.ForeColor = System.Drawing.Color.Black
-        Me.LNCopies.Location = New System.Drawing.Point(25, 119)
+        Me.LNCopies.Location = New System.Drawing.Point(22, 109)
         Me.LNCopies.Name = "LNCopies"
         Me.LNCopies.Size = New System.Drawing.Size(100, 25)
         Me.LNCopies.TabIndex = 16
@@ -124,10 +125,20 @@ Partial Class ImprimirGCODE
         '
         'TBCopies
         '
-        Me.TBCopies.Location = New System.Drawing.Point(27, 159)
+        Me.TBCopies.Location = New System.Drawing.Point(24, 149)
         Me.TBCopies.Name = "TBCopies"
         Me.TBCopies.Size = New System.Drawing.Size(120, 20)
         Me.TBCopies.TabIndex = 21
+        '
+        'LabelInfo
+        '
+        Me.LabelInfo.AutoSize = True
+        Me.LabelInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
+        Me.LabelInfo.ForeColor = System.Drawing.Color.DarkRed
+        Me.LabelInfo.Location = New System.Drawing.Point(24, 189)
+        Me.LabelInfo.Name = "LabelInfo"
+        Me.LabelInfo.Size = New System.Drawing.Size(0, 18)
+        Me.LabelInfo.TabIndex = 22
         '
         'ImprimirGCODE
         '
@@ -135,6 +146,7 @@ Partial Class ImprimirGCODE
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(370, 320)
+        Me.Controls.Add(Me.LabelInfo)
         Me.Controls.Add(Me.TBCopies)
         Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.CBImpriImpressora)
@@ -164,4 +176,5 @@ Partial Class ImprimirGCODE
     Friend WithEvents CBImpriImpressora As ComboBox
     Friend WithEvents MenuSup As Panel
     Friend WithEvents TBCopies As NumericUpDown
+    Friend WithEvents LabelInfo As Label
 End Class

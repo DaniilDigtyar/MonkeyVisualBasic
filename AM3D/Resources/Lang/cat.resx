@@ -480,4 +480,22 @@
   <data name="MSGInsertIncorrecto" xml:space="preserve">
     <value>Error en la inserció.</value>
   </data>
+  <data name="MSGImpressionsCancelarCorrect" xml:space="preserve">
+    <value>Impressora cancel·lada correctament.</value>
+  </data>
+  <data name="MSGImpressionsCancelarError" xml:space="preserve">
+    <value>No s'ha pogut cancel·lar la impressora.</value>
+  </data>
+  <data name="MSGImpressionsCancelarErrorSelect" xml:space="preserve">
+    <value>Aquesta Impressora no es pot cancel·lar.</value>
+  </data>
+  <data name="MSGImpressionsRetirarCorrect" xml:space="preserve">
+    <value>Estat actualitzat correctament.</value>
+  </data>
+  <data name="MSGImpressionsRetirarError" xml:space="preserve">
+    <value>No s'ha pogut actualitzar l'estat.</value>
+  </data>
+  <data name="MSGImpressionsRetirarErrorSelect" xml:space="preserve">
+    <value>No es pot retirar una impressió no finalitzada.</value>
+  </data>
 </root>

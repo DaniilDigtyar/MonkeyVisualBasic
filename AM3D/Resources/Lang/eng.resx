@@ -474,4 +474,22 @@
   <data name="MSGInsertIncorrecto" xml:space="preserve">
     <value>Insertion failed.</value>
   </data>
+  <data name="MSGImpressionsCancelarCorrect" xml:space="preserve">
+    <value>Impressora canceled correctly.</value>
+  </data>
+  <data name="MSGImpressionsCancelarError" xml:space="preserve">
+    <value>Error canceling the printer.</value>
+  </data>
+  <data name="MSGImpressionsCancelarErrorSelect" xml:space="preserve">
+    <value>Aquesta Impressora no es pot cancel·lar.</value>
+  </data>
+  <data name="MSGImpressionsRetirarCorrect" xml:space="preserve">
+    <value>Status updated correctly.</value>
+  </data>
+  <data name="MSGImpressionsRetirarError" xml:space="preserve">
+    <value>Failed to update status.</value>
+  </data>
+  <data name="MSGImpressionsRetirarErrorSelect" xml:space="preserve">
+    <value>An unfinished print can not be removed.</value>
+  </data>
 </root>
