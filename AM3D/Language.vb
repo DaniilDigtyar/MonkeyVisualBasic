@@ -116,7 +116,7 @@
             PanelGcodeAfegir.BTBorrar.Text = My.Resources.cat.BTBorrar
             PanelGcodeModificarEliminar.BTModificarGcode.Text = My.Resources.cat.BTModificarGcode
             PanelGcodeModificarEliminar.BTEliminarGcode.Text = My.Resources.cat.BTEliminarGcode
-            PanelLlistaImpressores.BTCambiarBobina.Text = My.Resources.cat.BTCanviar
+            PanelLlistaImpressores.BTCambiarBobina.Text = My.Resources.cat.BTCambiarBobina
             PanelLlistaImpressores.BTModificarImpressora.Text = My.Resources.cat.BTModificarImpressora
             PanelLlistaImpressores.BTEliminarImpressora.Text = My.Resources.cat.BTEliminarImpressora
             PanelLlistaImpressores.BResfrescar.Text = My.Resources.cat.BResfrescar
@@ -157,7 +157,7 @@
             PanelUsuarisAfegir.BTEsborrar.Text = My.Resources.cat.BTBorrar
             CanviarBobina.LImpressora.Text = My.Resources.cat.LImpressora
             CanviarBobina.LBobina.Text = My.Resources.cat.LBobina
-            CanviarBobina.BTCanviar.Text = My.Resources.cat.BTCanviarBobina
+            CanviarBobina.BTCanviar.Text = My.Resources.cat.BTCambiarBobina
             CanviarBobina.BTCancelar.Text = My.Resources.cat.BTCancelar
             ImprimirGCODE.LNomGcode.Text = My.Resources.cat.LNomGcode
             ImprimirGCODE.LImpressora.Text = My.Resources.cat.LImpressora
@@ -328,7 +328,7 @@
             PanelGcodeAfegir.BTBorrar.Text = My.Resources.eng.BTBorrar
             PanelGcodeModificarEliminar.BTModificarGcode.Text = My.Resources.eng.BTModificarGcode
             PanelGcodeModificarEliminar.BTEliminarGcode.Text = My.Resources.eng.BTEliminarGcode
-            PanelLlistaImpressores.BTCambiarBobina.Text = My.Resources.eng.BTCanviar
+            PanelLlistaImpressores.BTCambiarBobina.Text = My.Resources.eng.BTCambiarBobina
             PanelLlistaImpressores.BTModificarImpressora.Text = My.Resources.eng.BTModificarImpressora
             PanelLlistaImpressores.BTEliminarImpressora.Text = My.Resources.eng.BTEliminarImpressora
             PanelLlistaImpressores.BResfrescar.Text = My.Resources.eng.BResfrescar

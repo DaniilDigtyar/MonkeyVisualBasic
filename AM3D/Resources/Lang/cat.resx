@@ -121,12 +121,12 @@
     <value>Afegir</value>
   </data>
   <data name="BTCancelar" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>Cancel·lar</value>
   </data>
   <data name="BTCanviar" xml:space="preserve">
     <value>Canviar</value>
   </data>
-  <data name="BTCanviarBobina" xml:space="preserve">
+  <data name="BTCambiarBobina" xml:space="preserve">
     <value>Canviar Bobina</value>
   </data>
   <data name="BTConnectar" xml:space="preserve">
@@ -160,7 +160,7 @@
     <value>Pausar</value>
   </data>
   <data name="BTImpressionsPeçaRetirada" xml:space="preserve">
-    <value>Retirar Peça</value>
+    <value>Retirar peça</value>
   </data>
   <data name="BTImprimir" xml:space="preserve">
     <value>Imprimir</value>
@@ -178,7 +178,7 @@
     <value>Modificar Color</value>
   </data>
   <data name="BTModificarEliminar" xml:space="preserve">
-    <value>Modificar/Eliminar</value>
+    <value>Llista</value>
   </data>
   <data name="BTModificarGcode" xml:space="preserve">
     <value>Modificar GCode</value>
@@ -202,7 +202,7 @@
     <value>Entrar</value>
   </data>
   <data name="CanviarContrasenya" xml:space="preserve">
-    <value>Canviar Contrasenya</value>
+    <value>Canviar contrasenya</value>
   </data>
   <data name="CBModificar" xml:space="preserve">
     <value>Modificar</value>
@@ -217,7 +217,7 @@
     <value>Generar Estadistiques</value>
   </data>
   <data name="LActual" xml:space="preserve">
-    <value>Actual</value>
+    <value>Contrasenya actual</value>
   </data>
   <data name="LApliFun" xml:space="preserve">
     <value>Aplicacions funcionals</value>
@@ -253,7 +253,7 @@
     <value>Bobines</value>
   </data>
   <data name="LCanvContr" xml:space="preserve">
-    <value>Canviar Contrasenya</value>
+    <value>Canviar contrasenya.</value>
   </data>
   <data name="LCognom" xml:space="preserve">
     <value>Cognom</value>
@@ -262,16 +262,16 @@
     <value>Color</value>
   </data>
   <data name="LContrasenya" xml:space="preserve">
-    <value>Contrasenya *</value>
+    <value>Contrasenya</value>
   </data>
   <data name="LControl" xml:space="preserve">
     <value>Control</value>
   </data>
   <data name="LCorreu" xml:space="preserve">
-    <value>Correu</value>
+    <value>E-mail</value>
   </data>
   <data name="LDades" xml:space="preserve">
-    <value>Dades</value>
+    <value>Dades d'usuari.</value>
   </data>
   <data name="LDiametre" xml:space="preserve">
     <value>Diàmetre</value>
@@ -280,10 +280,10 @@
     <value>Diàmetre de filament</value>
   </data>
   <data name="LDni" xml:space="preserve">
-    <value>Dni</value>
+    <value>DNI</value>
   </data>
   <data name="LEmail" xml:space="preserve">
-    <value>Email</value>
+    <value>E-mail</value>
   </data>
   <data name="LGcode" xml:space="preserve">
     <value>Gcode</value>
@@ -337,16 +337,16 @@
     <value>Nom del GCode</value>
   </data>
   <data name="LNomUsuari" xml:space="preserve">
-    <value>Nom d'usuari *</value>
+    <value>Nom d'usuari</value>
   </data>
   <data name="LNova" xml:space="preserve">
-    <value>Nova</value>
+    <value>Nova contrasenya</value>
   </data>
   <data name="Logout" xml:space="preserve">
     <value>Sortir</value>
   </data>
   <data name="LRContra" xml:space="preserve">
-    <value>Repeteix la contrasenya *</value>
+    <value>Repeteix la contrasenya</value>
   </data>
   <data name="LRepContrasenya" xml:space="preserve">
     <value>Repeteix la contrasenya</value>
@@ -358,10 +358,10 @@
     <value>Resolució mínima de capa</value>
   </data>
   <data name="LRutaFich" xml:space="preserve">
-    <value>Ruta del ficher</value>
+    <value>Ruta del fitxer</value>
   </data>
   <data name="LSelecionarIdioma" xml:space="preserve">
-    <value>Seleciona un Idioma</value>
+    <value>Seleciona un idioma.</value>
   </data>
   <data name="LTecnic" xml:space="preserve">
     <value>Nom Tècnic</value>
@@ -388,10 +388,10 @@
     <value>Velocitat máxima de l'extrusor</value>
   </data>
   <data name="opcioCambiarIdioma" xml:space="preserve">
-    <value>Cambiar Idioma</value>
+    <value>Canviar idioma</value>
   </data>
   <data name="opcioGenerarEstadistiques" xml:space="preserve">
-    <value>Generar Estadistiques</value>
+    <value>Generar estadístiques</value>
   </data>
   <data name="opcioPerfil" xml:space="preserve">
     <value>Perfil</value>

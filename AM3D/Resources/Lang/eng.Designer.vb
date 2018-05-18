@@ -101,6 +101,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Change Coil.
+        '''</summary>
+        Friend Shared ReadOnly Property BTCambiarBobina() As String
+            Get
+                Return ResourceManager.GetString("BTCambiarBobina", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Cancel.
         '''</summary>
         Friend Shared ReadOnly Property BTCancelar() As String
@@ -587,7 +596,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Password *.
+        '''  Looks up a localized string similar to Password.
         '''</summary>
         Friend Shared ReadOnly Property LContrasenya() As String
             Get
@@ -605,7 +614,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Email.
+        '''  Looks up a localized string similar to E-mail.
         '''</summary>
         Friend Shared ReadOnly Property LCorreu() As String
             Get
@@ -614,7 +623,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Details.
+        '''  Looks up a localized string similar to User info..
         '''</summary>
         Friend Shared ReadOnly Property LDades() As String
             Get
@@ -650,7 +659,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Email.
+        '''  Looks up a localized string similar to E-mail.
         '''</summary>
         Friend Shared ReadOnly Property LEmail() As String
             Get
@@ -812,7 +821,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to User name *.
+        '''  Looks up a localized string similar to User name.
         '''</summary>
         Friend Shared ReadOnly Property LNomUsuari() As String
             Get
@@ -848,7 +857,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Repeat the password *.
+        '''  Looks up a localized string similar to Repeat the password.
         '''</summary>
         Friend Shared ReadOnly Property LRContra() As String
             Get

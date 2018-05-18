@@ -55,7 +55,7 @@ Partial Class ModificarUsuari
         Me.BTModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificar.ForeColor = System.Drawing.Color.Black
-        Me.BTModificar.Location = New System.Drawing.Point(26, 198)
+        Me.BTModificar.Location = New System.Drawing.Point(26, 195)
         Me.BTModificar.Name = "BTModificar"
         Me.BTModificar.Size = New System.Drawing.Size(196, 62)
         Me.BTModificar.TabIndex = 26
@@ -64,7 +64,7 @@ Partial Class ModificarUsuari
         '
         'TBRContrasenya
         '
-        Me.TBRContrasenya.Location = New System.Drawing.Point(255, 342)
+        Me.TBRContrasenya.Location = New System.Drawing.Point(255, 343)
         Me.TBRContrasenya.Name = "TBRContrasenya"
         Me.TBRContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBRContrasenya.Size = New System.Drawing.Size(196, 20)
@@ -72,7 +72,7 @@ Partial Class ModificarUsuari
         '
         'TBContrasenya
         '
-        Me.TBContrasenya.Location = New System.Drawing.Point(255, 290)
+        Me.TBContrasenya.Location = New System.Drawing.Point(255, 291)
         Me.TBContrasenya.Name = "TBContrasenya"
         Me.TBContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBContrasenya.Size = New System.Drawing.Size(196, 20)
@@ -105,7 +105,7 @@ Partial Class ModificarUsuari
         Me.LRepeteixContra.AutoSize = True
         Me.LRepeteixContra.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LRepeteixContra.ForeColor = System.Drawing.Color.Black
-        Me.LRepeteixContra.Location = New System.Drawing.Point(23, 342)
+        Me.LRepeteixContra.Location = New System.Drawing.Point(21, 337)
         Me.LRepeteixContra.Name = "LRepeteixContra"
         Me.LRepeteixContra.Size = New System.Drawing.Size(220, 25)
         Me.LRepeteixContra.TabIndex = 20
@@ -181,7 +181,7 @@ Partial Class ModificarUsuari
         Me.LCorreu.AutoSize = True
         Me.LCorreu.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LCorreu.ForeColor = System.Drawing.Color.Black
-        Me.LCorreu.Location = New System.Drawing.Point(23, 141)
+        Me.LCorreu.Location = New System.Drawing.Point(21, 141)
         Me.LCorreu.Name = "LCorreu"
         Me.LCorreu.Size = New System.Drawing.Size(72, 25)
         Me.LCorreu.TabIndex = 28
@@ -208,7 +208,7 @@ Partial Class ModificarUsuari
         Me.LabelNovaContraseña.AutoSize = True
         Me.LabelNovaContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelNovaContraseña.ForeColor = System.Drawing.Color.Black
-        Me.LabelNovaContraseña.Location = New System.Drawing.Point(23, 316)
+        Me.LabelNovaContraseña.Location = New System.Drawing.Point(23, 310)
         Me.LabelNovaContraseña.Name = "LabelNovaContraseña"
         Me.LabelNovaContraseña.Size = New System.Drawing.Size(160, 25)
         Me.LabelNovaContraseña.TabIndex = 82
@@ -269,9 +269,9 @@ Partial Class ModificarUsuari
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Black
-        Me.Panel1.Location = New System.Drawing.Point(26, 274)
+        Me.Panel1.Location = New System.Drawing.Point(12, 263)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(425, 10)
+        Me.Panel1.Size = New System.Drawing.Size(456, 10)
         Me.Panel1.TabIndex = 90
         '
         'ModificarUsuari

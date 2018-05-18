@@ -50,7 +50,7 @@ Partial Class PanelUsuarisAfegir
         Me.LNomUsuari.AutoSize = True
         Me.LNomUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNomUsuari.ForeColor = System.Drawing.Color.Black
-        Me.LNomUsuari.Location = New System.Drawing.Point(12, 54)
+        Me.LNomUsuari.Location = New System.Drawing.Point(12, 47)
         Me.LNomUsuari.Name = "LNomUsuari"
         Me.LNomUsuari.Size = New System.Drawing.Size(139, 25)
         Me.LNomUsuari.TabIndex = 1
@@ -61,7 +61,7 @@ Partial Class PanelUsuarisAfegir
         Me.LNom.AutoSize = True
         Me.LNom.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNom.ForeColor = System.Drawing.Color.Black
-        Me.LNom.Location = New System.Drawing.Point(12, 98)
+        Me.LNom.Location = New System.Drawing.Point(12, 80)
         Me.LNom.Name = "LNom"
         Me.LNom.Size = New System.Drawing.Size(53, 25)
         Me.LNom.TabIndex = 2
@@ -72,7 +72,7 @@ Partial Class PanelUsuarisAfegir
         Me.LCognom.AutoSize = True
         Me.LCognom.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LCognom.ForeColor = System.Drawing.Color.Black
-        Me.LCognom.Location = New System.Drawing.Point(12, 138)
+        Me.LCognom.Location = New System.Drawing.Point(12, 113)
         Me.LCognom.Name = "LCognom"
         Me.LCognom.Size = New System.Drawing.Size(97, 25)
         Me.LCognom.TabIndex = 3
@@ -83,7 +83,7 @@ Partial Class PanelUsuarisAfegir
         Me.LContrasenya.AutoSize = True
         Me.LContrasenya.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LContrasenya.ForeColor = System.Drawing.Color.Black
-        Me.LContrasenya.Location = New System.Drawing.Point(12, 260)
+        Me.LContrasenya.Location = New System.Drawing.Point(12, 213)
         Me.LContrasenya.Name = "LContrasenya"
         Me.LContrasenya.Size = New System.Drawing.Size(137, 25)
         Me.LContrasenya.TabIndex = 4
@@ -94,7 +94,7 @@ Partial Class PanelUsuarisAfegir
         Me.LRContrasenya.AutoSize = True
         Me.LRContrasenya.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LRContrasenya.ForeColor = System.Drawing.Color.Black
-        Me.LRContrasenya.Location = New System.Drawing.Point(12, 281)
+        Me.LRContrasenya.Location = New System.Drawing.Point(12, 248)
         Me.LRContrasenya.Name = "LRContrasenya"
         Me.LRContrasenya.Size = New System.Drawing.Size(233, 25)
         Me.LRContrasenya.TabIndex = 5
@@ -102,28 +102,28 @@ Partial Class PanelUsuarisAfegir
         '
         'TBNickname
         '
-        Me.TBNickname.Location = New System.Drawing.Point(256, 59)
+        Me.TBNickname.Location = New System.Drawing.Point(256, 53)
         Me.TBNickname.Name = "TBNickname"
         Me.TBNickname.Size = New System.Drawing.Size(196, 20)
         Me.TBNickname.TabIndex = 8
         '
         'TBNom
         '
-        Me.TBNom.Location = New System.Drawing.Point(256, 101)
+        Me.TBNom.Location = New System.Drawing.Point(256, 86)
         Me.TBNom.Name = "TBNom"
         Me.TBNom.Size = New System.Drawing.Size(196, 20)
         Me.TBNom.TabIndex = 9
         '
         'TBCongnom
         '
-        Me.TBCongnom.Location = New System.Drawing.Point(256, 141)
+        Me.TBCongnom.Location = New System.Drawing.Point(256, 119)
         Me.TBCongnom.Name = "TBCongnom"
         Me.TBCongnom.Size = New System.Drawing.Size(196, 20)
         Me.TBCongnom.TabIndex = 10
         '
         'TBContrasenya
         '
-        Me.TBContrasenya.Location = New System.Drawing.Point(256, 260)
+        Me.TBContrasenya.Location = New System.Drawing.Point(256, 219)
         Me.TBContrasenya.Name = "TBContrasenya"
         Me.TBContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBContrasenya.Size = New System.Drawing.Size(196, 20)
@@ -131,7 +131,7 @@ Partial Class PanelUsuarisAfegir
         '
         'TBRContrasenya
         '
-        Me.TBRContrasenya.Location = New System.Drawing.Point(256, 286)
+        Me.TBRContrasenya.Location = New System.Drawing.Point(256, 254)
         Me.TBRContrasenya.Name = "TBRContrasenya"
         Me.TBRContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBRContrasenya.Size = New System.Drawing.Size(196, 20)
@@ -142,7 +142,7 @@ Partial Class PanelUsuarisAfegir
         Me.LPermisos.AutoSize = True
         Me.LPermisos.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LPermisos.ForeColor = System.Drawing.Color.Black
-        Me.LPermisos.Location = New System.Drawing.Point(575, 9)
+        Me.LPermisos.Location = New System.Drawing.Point(453, 25)
         Me.LPermisos.Name = "LPermisos"
         Me.LPermisos.Size = New System.Drawing.Size(93, 25)
         Me.LPermisos.TabIndex = 13
@@ -155,9 +155,9 @@ Partial Class PanelUsuarisAfegir
         Me.BTEsborrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTEsborrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTEsborrar.ForeColor = System.Drawing.Color.Black
-        Me.BTEsborrar.Location = New System.Drawing.Point(360, 324)
+        Me.BTEsborrar.Location = New System.Drawing.Point(282, 295)
         Me.BTEsborrar.Name = "BTEsborrar"
-        Me.BTEsborrar.Size = New System.Drawing.Size(92, 32)
+        Me.BTEsborrar.Size = New System.Drawing.Size(170, 61)
         Me.BTEsborrar.TabIndex = 16
         Me.BTEsborrar.Text = "Esborrar"
         Me.BTEsborrar.UseVisualStyleBackColor = False
@@ -169,16 +169,16 @@ Partial Class PanelUsuarisAfegir
         Me.BTCrear.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTCrear.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTCrear.ForeColor = System.Drawing.Color.Black
-        Me.BTCrear.Location = New System.Drawing.Point(17, 324)
+        Me.BTCrear.Location = New System.Drawing.Point(17, 295)
         Me.BTCrear.Name = "BTCrear"
-        Me.BTCrear.Size = New System.Drawing.Size(92, 32)
+        Me.BTCrear.Size = New System.Drawing.Size(170, 61)
         Me.BTCrear.TabIndex = 15
         Me.BTCrear.Text = "Crear"
         Me.BTCrear.UseVisualStyleBackColor = False
         '
         'TBCorreu
         '
-        Me.TBCorreu.Location = New System.Drawing.Point(256, 186)
+        Me.TBCorreu.Location = New System.Drawing.Point(256, 152)
         Me.TBCorreu.Name = "TBCorreu"
         Me.TBCorreu.Size = New System.Drawing.Size(196, 20)
         Me.TBCorreu.TabIndex = 18
@@ -188,7 +188,7 @@ Partial Class PanelUsuarisAfegir
         Me.LCorreu.AutoSize = True
         Me.LCorreu.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LCorreu.ForeColor = System.Drawing.Color.Black
-        Me.LCorreu.Location = New System.Drawing.Point(12, 183)
+        Me.LCorreu.Location = New System.Drawing.Point(12, 146)
         Me.LCorreu.Name = "LCorreu"
         Me.LCorreu.Size = New System.Drawing.Size(72, 25)
         Me.LCorreu.TabIndex = 17
@@ -222,7 +222,7 @@ Partial Class PanelUsuarisAfegir
         '
         'TBDNI
         '
-        Me.TBDNI.Location = New System.Drawing.Point(256, 221)
+        Me.TBDNI.Location = New System.Drawing.Point(256, 185)
         Me.TBDNI.Name = "TBDNI"
         Me.TBDNI.Size = New System.Drawing.Size(196, 20)
         Me.TBDNI.TabIndex = 30
@@ -232,7 +232,7 @@ Partial Class PanelUsuarisAfegir
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(12, 221)
+        Me.Label1.Location = New System.Drawing.Point(12, 179)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(45, 25)
         Me.Label1.TabIndex = 29

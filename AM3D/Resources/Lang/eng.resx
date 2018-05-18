@@ -262,16 +262,16 @@
     <value>Color</value>
   </data>
   <data name="LContrasenya" xml:space="preserve">
-    <value>Password *</value>
+    <value>Password</value>
   </data>
   <data name="LControl" xml:space="preserve">
     <value>Control</value>
   </data>
   <data name="LCorreu" xml:space="preserve">
-    <value>Email</value>
+    <value>E-mail</value>
   </data>
   <data name="LDades" xml:space="preserve">
-    <value>Details</value>
+    <value>User info.</value>
   </data>
   <data name="LDiametre" xml:space="preserve">
     <value>Diameter</value>
@@ -283,7 +283,7 @@
     <value>DNI</value>
   </data>
   <data name="LEmail" xml:space="preserve">
-    <value>Email</value>
+    <value>E-mail</value>
   </data>
   <data name="LGcode" xml:space="preserve">
     <value>Gcode</value>
@@ -334,7 +334,7 @@
     <value>Name of the GCode</value>
   </data>
   <data name="LNomUsuari" xml:space="preserve">
-    <value>User name *</value>
+    <value>User name</value>
   </data>
   <data name="LNova" xml:space="preserve">
     <value>New</value>
@@ -343,7 +343,7 @@
     <value>Logout</value>
   </data>
   <data name="LRContra" xml:space="preserve">
-    <value>Repeat the password *</value>
+    <value>Repeat the password</value>
   </data>
   <data name="LResMaxCapa" xml:space="preserve">
     <value>Maximum layer resolution</value>
@@ -491,5 +491,8 @@
   </data>
   <data name="MSGImpressionsRetirarErrorSelect" xml:space="preserve">
     <value>An unfinished print can not be removed.</value>
+  </data>
+  <data name="BTCambiarBobina" xml:space="preserve">
+    <value>Change Coil</value>
   </data>
 </root>

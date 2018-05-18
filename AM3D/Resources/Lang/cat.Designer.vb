@@ -101,7 +101,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Cancelar.
+        '''  Looks up a localized string similar to Canviar Bobina.
+        '''</summary>
+        Friend Shared ReadOnly Property BTCambiarBobina() As String
+            Get
+                Return ResourceManager.GetString("BTCambiarBobina", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Cancel·lar.
         '''</summary>
         Friend Shared ReadOnly Property BTCancelar() As String
             Get
@@ -115,15 +124,6 @@ Namespace My.Resources
         Friend Shared ReadOnly Property BTCanviar() As String
             Get
                 Return ResourceManager.GetString("BTCanviar", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Canviar Bobina.
-        '''</summary>
-        Friend Shared ReadOnly Property BTCanviarBobina() As String
-            Get
-                Return ResourceManager.GetString("BTCanviarBobina", resourceCulture)
             End Get
         End Property
         
@@ -236,7 +236,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Retirar Peça.
+        '''  Looks up a localized string similar to Retirar peça.
         '''</summary>
         Friend Shared ReadOnly Property BTImpressionsPeçaRetirada() As String
             Get
@@ -290,7 +290,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Modificar/Eliminar.
+        '''  Looks up a localized string similar to Llista.
         '''</summary>
         Friend Shared ReadOnly Property BTModificarEliminar() As String
             Get
@@ -371,7 +371,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Canviar Contrasenya.
+        '''  Looks up a localized string similar to Canviar contrasenya.
         '''</summary>
         Friend Shared ReadOnly Property CanviarContrasenya() As String
             Get
@@ -452,7 +452,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Actual.
+        '''  Looks up a localized string similar to Contrasenya actual.
         '''</summary>
         Friend Shared ReadOnly Property LActual() As String
             Get
@@ -560,7 +560,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Canviar Contrasenya.
+        '''  Looks up a localized string similar to Canviar contrasenya..
         '''</summary>
         Friend Shared ReadOnly Property LCanvContr() As String
             Get
@@ -587,7 +587,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Contrasenya *.
+        '''  Looks up a localized string similar to Contrasenya.
         '''</summary>
         Friend Shared ReadOnly Property LContrasenya() As String
             Get
@@ -605,7 +605,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Correu.
+        '''  Looks up a localized string similar to E-mail.
         '''</summary>
         Friend Shared ReadOnly Property LCorreu() As String
             Get
@@ -614,7 +614,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Dades.
+        '''  Looks up a localized string similar to Dades d&apos;usuari..
         '''</summary>
         Friend Shared ReadOnly Property LDades() As String
             Get
@@ -641,7 +641,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Dni.
+        '''  Looks up a localized string similar to DNI.
         '''</summary>
         Friend Shared ReadOnly Property LDni() As String
             Get
@@ -650,7 +650,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Email.
+        '''  Looks up a localized string similar to E-mail.
         '''</summary>
         Friend Shared ReadOnly Property LEmail() As String
             Get
@@ -821,7 +821,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Nom d&apos;usuari *.
+        '''  Looks up a localized string similar to Nom d&apos;usuari.
         '''</summary>
         Friend Shared ReadOnly Property LNomUsuari() As String
             Get
@@ -830,7 +830,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Nova.
+        '''  Looks up a localized string similar to Nova contrasenya.
         '''</summary>
         Friend Shared ReadOnly Property LNova() As String
             Get
@@ -857,7 +857,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Repeteix la contrasenya *.
+        '''  Looks up a localized string similar to Repeteix la contrasenya.
         '''</summary>
         Friend Shared ReadOnly Property LRContra() As String
             Get
@@ -893,7 +893,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Ruta del ficher.
+        '''  Looks up a localized string similar to Ruta del fitxer.
         '''</summary>
         Friend Shared ReadOnly Property LRutaFich() As String
             Get
@@ -902,7 +902,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Seleciona un Idioma.
+        '''  Looks up a localized string similar to Seleciona un idioma..
         '''</summary>
         Friend Shared ReadOnly Property LSelecionarIdioma() As String
             Get
@@ -1163,7 +1163,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Cambiar Idioma.
+        '''  Looks up a localized string similar to Canviar idioma.
         '''</summary>
         Friend Shared ReadOnly Property opcioCambiarIdioma() As String
             Get
@@ -1172,7 +1172,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Generar Estadistiques.
+        '''  Looks up a localized string similar to Generar estadístiques.
         '''</summary>
         Friend Shared ReadOnly Property opcioGenerarEstadistiques() As String
             Get
