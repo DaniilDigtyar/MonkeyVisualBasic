@@ -33,9 +33,10 @@ Partial Class PanelBobinesMaterialAfegir
         'TBTecnic
         '
         Me.TBTecnic.Location = New System.Drawing.Point(210, 78)
+        Me.TBTecnic.MaxLength = 40
         Me.TBTecnic.Name = "TBTecnic"
         Me.TBTecnic.Size = New System.Drawing.Size(141, 20)
-        Me.TBTecnic.TabIndex = 61
+        Me.TBTecnic.TabIndex = 2
         '
         'LTecnic
         '
@@ -58,7 +59,7 @@ Partial Class PanelBobinesMaterialAfegir
         Me.BTBorrar.Location = New System.Drawing.Point(42, 215)
         Me.BTBorrar.Name = "BTBorrar"
         Me.BTBorrar.Size = New System.Drawing.Size(245, 62)
-        Me.BTBorrar.TabIndex = 59
+        Me.BTBorrar.TabIndex = 4
         Me.BTBorrar.Text = "Borrar"
         Me.BTBorrar.UseVisualStyleBackColor = False
         '
@@ -72,16 +73,17 @@ Partial Class PanelBobinesMaterialAfegir
         Me.BTAfegir.Location = New System.Drawing.Point(42, 140)
         Me.BTAfegir.Name = "BTAfegir"
         Me.BTAfegir.Size = New System.Drawing.Size(245, 62)
-        Me.BTAfegir.TabIndex = 58
+        Me.BTAfegir.TabIndex = 3
         Me.BTAfegir.Text = "Afegir"
         Me.BTAfegir.UseVisualStyleBackColor = False
         '
         'TBMaterial
         '
         Me.TBMaterial.Location = New System.Drawing.Point(210, 34)
+        Me.TBMaterial.MaxLength = 20
         Me.TBMaterial.Name = "TBMaterial"
         Me.TBMaterial.Size = New System.Drawing.Size(141, 20)
-        Me.TBMaterial.TabIndex = 57
+        Me.TBMaterial.TabIndex = 1
         '
         'LMaterial
         '

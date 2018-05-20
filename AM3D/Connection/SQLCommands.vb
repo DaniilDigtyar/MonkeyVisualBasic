@@ -29,7 +29,7 @@ Public Class SQLCommands
                 Return False
             End If
         Catch ex As Exception
-            MsgBox(ex.Message)
+
             Return False
         Finally
             Me.disconnectUsuaris()
@@ -69,7 +69,7 @@ Public Class SQLCommands
 
             Return ""
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectUsuaris()
         End Try
@@ -86,7 +86,6 @@ Public Class SQLCommands
             Dim i As Integer
             Dim dr As SqlDataReader
             Dim query As String
-
             Me.connectDataBaseClient(dbToConnect)
             query = "select * from " + table
             cmd = New SqlCommand(query)
@@ -99,9 +98,8 @@ Public Class SQLCommands
                     Next i
                 End While
             End If
-
         Catch ex As Exception
-            MsgBox(ex.Message)
+
 
         Finally
             Me.disconnectDataBaseClient()
@@ -136,7 +134,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -188,7 +186,7 @@ Public Class SQLCommands
             End If
             Return usuari
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -216,7 +214,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -249,7 +247,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -277,7 +275,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -305,7 +303,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -344,7 +342,7 @@ Public Class SQLCommands
             End If
             Return listaColores
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -377,7 +375,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -410,7 +408,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -444,7 +442,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -477,7 +475,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -510,7 +508,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -538,7 +536,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -573,7 +571,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -606,7 +604,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -658,7 +656,7 @@ Public Class SQLCommands
                 Return listaBobines
             End If
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -694,7 +692,7 @@ Public Class SQLCommands
 
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -746,7 +744,7 @@ Public Class SQLCommands
 
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -784,7 +782,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
 
@@ -813,7 +811,7 @@ Public Class SQLCommands
             Return numeroCopia
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
 
@@ -842,7 +840,7 @@ Public Class SQLCommands
             Return ordre_impressio
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
 
@@ -864,7 +862,7 @@ Public Class SQLCommands
 
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -889,7 +887,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
             Return False
         Finally
             Me.disconnectUsuaris()
@@ -911,7 +909,7 @@ Public Class SQLCommands
 
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -950,7 +948,7 @@ Public Class SQLCommands
             End If
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -971,7 +969,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectUsuaris()
         End Try
@@ -993,7 +991,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1015,7 +1013,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1037,7 +1035,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1057,7 +1055,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1075,7 +1073,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1093,7 +1091,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1111,7 +1109,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1129,7 +1127,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1156,7 +1154,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1181,7 +1179,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1208,7 +1206,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1228,7 +1226,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1248,7 +1246,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1268,7 +1266,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1288,7 +1286,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
             'Catch ex As Exception
-            'MsgBox(ex.Message)
+            '
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1308,7 +1306,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1328,7 +1326,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1348,7 +1346,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1372,7 +1370,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1392,7 +1390,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1412,7 +1410,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1441,7 +1439,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1467,7 +1465,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1486,7 +1484,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1505,7 +1503,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1532,7 +1530,7 @@ Public Class SQLCommands
             End If
             Return impressioReturn
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1552,7 +1550,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1572,7 +1570,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1593,7 +1591,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1613,7 +1611,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1633,7 +1631,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1652,7 +1650,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1675,7 +1673,7 @@ Public Class SQLCommands
 
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1695,7 +1693,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
             Return False
         Finally
             Me.disconnectUsuaris()
@@ -1715,7 +1713,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1734,7 +1732,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1753,7 +1751,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1780,7 +1778,7 @@ Public Class SQLCommands
 
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
 
         End Try
@@ -1808,7 +1806,7 @@ Public Class SQLCommands
             End If
             Return listaImpressions
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1827,7 +1825,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
@@ -1846,7 +1844,7 @@ Public Class SQLCommands
             afectat = cmd.ExecuteNonQuery()
             Return afectat
         Catch ex As Exception
-            MsgBox(ex.Message)
+
         Finally
             Me.disconnectDataBaseClient()
         End Try

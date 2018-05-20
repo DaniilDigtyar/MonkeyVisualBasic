@@ -44,7 +44,7 @@ Partial Class FGcode
         Me.BTAfegir.Location = New System.Drawing.Point(84, 27)
         Me.BTAfegir.Name = "BTAfegir"
         Me.BTAfegir.Size = New System.Drawing.Size(190, 62)
-        Me.BTAfegir.TabIndex = 7
+        Me.BTAfegir.TabIndex = 1
         Me.BTAfegir.Text = "Afegir"
         Me.BTAfegir.UseVisualStyleBackColor = False
         '
@@ -58,7 +58,7 @@ Partial Class FGcode
         Me.BTModificarEliminar.Location = New System.Drawing.Point(571, 27)
         Me.BTModificarEliminar.Name = "BTModificarEliminar"
         Me.BTModificarEliminar.Size = New System.Drawing.Size(190, 62)
-        Me.BTModificarEliminar.TabIndex = 6
+        Me.BTModificarEliminar.TabIndex = 2
         Me.BTModificarEliminar.Text = "Modificar/Eliminar"
         Me.BTModificarEliminar.UseVisualStyleBackColor = False
         '

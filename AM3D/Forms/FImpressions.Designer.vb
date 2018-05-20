@@ -47,7 +47,7 @@ Partial Class FImpressions
         Me.BTCancelar.Location = New System.Drawing.Point(17, 23)
         Me.BTCancelar.Name = "BTCancelar"
         Me.BTCancelar.Size = New System.Drawing.Size(154, 62)
-        Me.BTCancelar.TabIndex = 10
+        Me.BTCancelar.TabIndex = 1
         Me.BTCancelar.Text = "Cancelar"
         Me.BTCancelar.UseVisualStyleBackColor = False
         '
@@ -61,7 +61,7 @@ Partial Class FImpressions
         Me.BTImpressionsPeçaRetirada.Location = New System.Drawing.Point(177, 23)
         Me.BTImpressionsPeçaRetirada.Name = "BTImpressionsPeçaRetirada"
         Me.BTImpressionsPeçaRetirada.Size = New System.Drawing.Size(154, 62)
-        Me.BTImpressionsPeçaRetirada.TabIndex = 11
+        Me.BTImpressionsPeçaRetirada.TabIndex = 2
         Me.BTImpressionsPeçaRetirada.Text = "Peça retirada"
         Me.BTImpressionsPeçaRetirada.UseVisualStyleBackColor = False
         '
@@ -72,10 +72,10 @@ Partial Class FImpressions
         Me.BTImprimirG.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTImprimirG.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTImprimirG.ForeColor = System.Drawing.Color.Black
-        Me.BTImprimirG.Location = New System.Drawing.Point(497, 23)
+        Me.BTImprimirG.Location = New System.Drawing.Point(337, 23)
         Me.BTImprimirG.Name = "BTImprimirG"
         Me.BTImprimirG.Size = New System.Drawing.Size(154, 62)
-        Me.BTImprimirG.TabIndex = 13
+        Me.BTImprimirG.TabIndex = 3
         Me.BTImprimirG.Text = "Imprimir GCODE"
         Me.BTImprimirG.UseVisualStyleBackColor = False
         '
@@ -89,7 +89,7 @@ Partial Class FImpressions
         Me.BResfrescar.Location = New System.Drawing.Point(657, 23)
         Me.BResfrescar.Name = "BResfrescar"
         Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
-        Me.BResfrescar.TabIndex = 14
+        Me.BResfrescar.TabIndex = 4
         Me.BResfrescar.Text = "Refresca llista"
         Me.BResfrescar.UseVisualStyleBackColor = False
         '
@@ -113,7 +113,7 @@ Partial Class FImpressions
         Me.BTImprimirGCODE.Name = "BTImprimirGCODE"
         Me.BTImprimirGCODE.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.BTImprimirGCODE.Size = New System.Drawing.Size(802, 375)
-        Me.BTImprimirGCODE.TabIndex = 15
+        Me.BTImprimirGCODE.TabIndex = 5
         '
         'nom_gcode
         '
@@ -123,7 +123,7 @@ Partial Class FImpressions
         '
         'numero_copia
         '
-        Me.numero_copia.HeaderText = "Numero copia"
+        Me.numero_copia.HeaderText = "Número copia"
         Me.numero_copia.Name = "numero_copia"
         Me.numero_copia.ReadOnly = True
         '
@@ -135,7 +135,7 @@ Partial Class FImpressions
         '
         'ordreImpressio
         '
-        Me.ordreImpressio.HeaderText = "Ordre impressio"
+        Me.ordreImpressio.HeaderText = "Ordre Impressió"
         Me.ordreImpressio.Name = "ordreImpressio"
         Me.ordreImpressio.ReadOnly = True
         '
@@ -147,7 +147,7 @@ Partial Class FImpressions
         '
         'nickname
         '
-        Me.nickname.HeaderText = "Nickname"
+        Me.nickname.HeaderText = "Usuari"
         Me.nickname.Name = "nickname"
         Me.nickname.ReadOnly = True
         '

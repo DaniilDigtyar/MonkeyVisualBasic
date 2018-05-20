@@ -40,7 +40,7 @@ Partial Class ModificarBobinesColor
         Me.TBHex.MaxLength = 7
         Me.TBHex.Name = "TBHex"
         Me.TBHex.Size = New System.Drawing.Size(141, 20)
-        Me.TBHex.TabIndex = 61
+        Me.TBHex.TabIndex = 2
         '
         'LHex
         '
@@ -60,10 +60,10 @@ Partial Class ModificarBobinesColor
         Me.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTCancelar.ForeColor = System.Drawing.Color.Black
-        Me.BTCancelar.Location = New System.Drawing.Point(42, 233)
+        Me.BTCancelar.Location = New System.Drawing.Point(21, 233)
         Me.BTCancelar.Name = "BTCancelar"
-        Me.BTCancelar.Size = New System.Drawing.Size(245, 62)
-        Me.BTCancelar.TabIndex = 59
+        Me.BTCancelar.Size = New System.Drawing.Size(266, 62)
+        Me.BTCancelar.TabIndex = 4
         Me.BTCancelar.Text = "Cancelar"
         Me.BTCancelar.UseVisualStyleBackColor = False
         '
@@ -74,19 +74,20 @@ Partial Class ModificarBobinesColor
         Me.BTModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificar.ForeColor = System.Drawing.Color.Black
-        Me.BTModificar.Location = New System.Drawing.Point(42, 158)
+        Me.BTModificar.Location = New System.Drawing.Point(21, 158)
         Me.BTModificar.Name = "BTModificar"
-        Me.BTModificar.Size = New System.Drawing.Size(245, 62)
-        Me.BTModificar.TabIndex = 58
+        Me.BTModificar.Size = New System.Drawing.Size(266, 62)
+        Me.BTModificar.TabIndex = 3
         Me.BTModificar.Text = "Modificar"
         Me.BTModificar.UseVisualStyleBackColor = False
         '
         'TBColor
         '
         Me.TBColor.Location = New System.Drawing.Point(109, 42)
+        Me.TBColor.MaxLength = 20
         Me.TBColor.Name = "TBColor"
         Me.TBColor.Size = New System.Drawing.Size(178, 20)
-        Me.TBColor.TabIndex = 57
+        Me.TBColor.TabIndex = 1
         '
         'LColor
         '
@@ -104,7 +105,7 @@ Partial Class ModificarBobinesColor
         Me.MenuSup.BackColor = System.Drawing.Color.Black
         Me.MenuSup.Location = New System.Drawing.Point(-3, 0)
         Me.MenuSup.Name = "MenuSup"
-        Me.MenuSup.Size = New System.Drawing.Size(345, 19)
+        Me.MenuSup.Size = New System.Drawing.Size(305, 19)
         Me.MenuSup.TabIndex = 62
         '
         'PanelColor
@@ -130,7 +131,7 @@ Partial Class ModificarBobinesColor
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(341, 364)
+        Me.ClientSize = New System.Drawing.Size(301, 309)
         Me.Controls.Add(Me.LabelInfo)
         Me.Controls.Add(Me.PanelColor)
         Me.Controls.Add(Me.MenuSup)

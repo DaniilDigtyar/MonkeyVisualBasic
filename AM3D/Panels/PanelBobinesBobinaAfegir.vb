@@ -64,4 +64,10 @@
             End If
         End If
     End Sub
+
+    Private Sub TBDiametre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBDiametre.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
 End Class

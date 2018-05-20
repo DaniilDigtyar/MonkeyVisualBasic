@@ -25,6 +25,7 @@ Partial Class PanelModelModificarEliminar
         Me.BTEliminarModel = New System.Windows.Forms.Button()
         Me.BTModificarModel = New System.Windows.Forms.Button()
         Me.DGMarca = New System.Windows.Forms.DataGridView()
+        Me.BResfrescar = New System.Windows.Forms.Button()
         Me.marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Model = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.num_extrusors = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -39,7 +40,6 @@ Partial Class PanelModelModificarEliminar
         Me.resolucio_capa_maxima = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.resolucio_capa_minima = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.diametre_filament_acceptat = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BResfrescar = New System.Windows.Forms.Button()
         CType(Me.DGMarca, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -53,7 +53,7 @@ Partial Class PanelModelModificarEliminar
         Me.BTEliminarModel.Location = New System.Drawing.Point(172, 16)
         Me.BTEliminarModel.Name = "BTEliminarModel"
         Me.BTEliminarModel.Size = New System.Drawing.Size(154, 62)
-        Me.BTEliminarModel.TabIndex = 9
+        Me.BTEliminarModel.TabIndex = 2
         Me.BTEliminarModel.Text = "Eliminar Model"
         Me.BTEliminarModel.UseVisualStyleBackColor = False
         '
@@ -67,7 +67,7 @@ Partial Class PanelModelModificarEliminar
         Me.BTModificarModel.Location = New System.Drawing.Point(12, 16)
         Me.BTModificarModel.Name = "BTModificarModel"
         Me.BTModificarModel.Size = New System.Drawing.Size(154, 62)
-        Me.BTModificarModel.TabIndex = 8
+        Me.BTModificarModel.TabIndex = 1
         Me.BTModificarModel.Text = "Modificar Model"
         Me.BTModificarModel.UseVisualStyleBackColor = False
         '
@@ -82,7 +82,21 @@ Partial Class PanelModelModificarEliminar
         Me.DGMarca.Name = "DGMarca"
         Me.DGMarca.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMarca.Size = New System.Drawing.Size(777, 268)
-        Me.DGMarca.TabIndex = 31
+        Me.DGMarca.TabIndex = 4
+        '
+        'BResfrescar
+        '
+        Me.BResfrescar.BackColor = System.Drawing.Color.White
+        Me.BResfrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BResfrescar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BResfrescar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BResfrescar.ForeColor = System.Drawing.Color.Black
+        Me.BResfrescar.Location = New System.Drawing.Point(635, 16)
+        Me.BResfrescar.Name = "BResfrescar"
+        Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
+        Me.BResfrescar.TabIndex = 3
+        Me.BResfrescar.Text = "Refresca llista"
+        Me.BResfrescar.UseVisualStyleBackColor = False
         '
         'marca
         '
@@ -98,89 +112,75 @@ Partial Class PanelModelModificarEliminar
         '
         'num_extrusors
         '
-        Me.num_extrusors.HeaderText = "Numero extrusors"
+        Me.num_extrusors.HeaderText = "Nº extrusors"
         Me.num_extrusors.Name = "num_extrusors"
         Me.num_extrusors.ReadOnly = True
         '
         'temperatura_minima_extrusor
         '
-        Me.temperatura_minima_extrusor.HeaderText = "Tª Min Extrusor"
+        Me.temperatura_minima_extrusor.HeaderText = "Tª Mín. Extrusor"
         Me.temperatura_minima_extrusor.Name = "temperatura_minima_extrusor"
         Me.temperatura_minima_extrusor.ReadOnly = True
         '
         'temperatura_maxima_extrusor
         '
-        Me.temperatura_maxima_extrusor.HeaderText = "Tª Max Extrusor"
+        Me.temperatura_maxima_extrusor.HeaderText = "Tª Màx. Extrusor"
         Me.temperatura_maxima_extrusor.Name = "temperatura_maxima_extrusor"
         Me.temperatura_maxima_extrusor.ReadOnly = True
         '
         'temperatura_minima_llit
         '
-        Me.temperatura_minima_llit.HeaderText = "Tª Min Llit"
+        Me.temperatura_minima_llit.HeaderText = "Tª Mín. Llit"
         Me.temperatura_minima_llit.Name = "temperatura_minima_llit"
         Me.temperatura_minima_llit.ReadOnly = True
         '
         'temperatura_maxima_llit
         '
-        Me.temperatura_maxima_llit.HeaderText = "Tª Max Llit"
+        Me.temperatura_maxima_llit.HeaderText = "Tª Màx. Llit"
         Me.temperatura_maxima_llit.Name = "temperatura_maxima_llit"
         Me.temperatura_maxima_llit.ReadOnly = True
         '
         'area_impressio_x
         '
-        Me.area_impressio_x.HeaderText = "Area Impressio X"
+        Me.area_impressio_x.HeaderText = "Àrea X"
         Me.area_impressio_x.Name = "area_impressio_x"
         Me.area_impressio_x.ReadOnly = True
         '
         'area_impressio_y
         '
-        Me.area_impressio_y.HeaderText = "Area Impressio Y"
+        Me.area_impressio_y.HeaderText = "Àrea Y"
         Me.area_impressio_y.Name = "area_impressio_y"
         Me.area_impressio_y.ReadOnly = True
         '
         'area_impressio_z
         '
-        Me.area_impressio_z.HeaderText = "Area Impressio Z"
+        Me.area_impressio_z.HeaderText = "Àrea Z"
         Me.area_impressio_z.Name = "area_impressio_z"
         Me.area_impressio_z.ReadOnly = True
         '
         'velocitat_maxima_capcal
         '
-        Me.velocitat_maxima_capcal.HeaderText = "Vel. Max capçal"
+        Me.velocitat_maxima_capcal.HeaderText = "Vel. Capçal"
         Me.velocitat_maxima_capcal.Name = "velocitat_maxima_capcal"
         Me.velocitat_maxima_capcal.ReadOnly = True
         '
         'resolucio_capa_maxima
         '
-        Me.resolucio_capa_maxima.HeaderText = "Res. capa Max"
+        Me.resolucio_capa_maxima.HeaderText = "Res. Capa Màx."
         Me.resolucio_capa_maxima.Name = "resolucio_capa_maxima"
         Me.resolucio_capa_maxima.ReadOnly = True
         '
         'resolucio_capa_minima
         '
-        Me.resolucio_capa_minima.HeaderText = "Res. capa Min"
+        Me.resolucio_capa_minima.HeaderText = "Res. Capa Mín."
         Me.resolucio_capa_minima.Name = "resolucio_capa_minima"
         Me.resolucio_capa_minima.ReadOnly = True
         '
         'diametre_filament_acceptat
         '
-        Me.diametre_filament_acceptat.HeaderText = "Diametre Filament"
+        Me.diametre_filament_acceptat.HeaderText = "Diàmetre Filament"
         Me.diametre_filament_acceptat.Name = "diametre_filament_acceptat"
         Me.diametre_filament_acceptat.ReadOnly = True
-        '
-        'BResfrescar
-        '
-        Me.BResfrescar.BackColor = System.Drawing.Color.White
-        Me.BResfrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BResfrescar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BResfrescar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BResfrescar.ForeColor = System.Drawing.Color.Black
-        Me.BResfrescar.Location = New System.Drawing.Point(635, 16)
-        Me.BResfrescar.Name = "BResfrescar"
-        Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
-        Me.BResfrescar.TabIndex = 32
-        Me.BResfrescar.Text = "Refresca llista"
-        Me.BResfrescar.UseVisualStyleBackColor = False
         '
         'PanelModelModificarEliminar
         '
@@ -204,6 +204,7 @@ Partial Class PanelModelModificarEliminar
     Friend WithEvents BTEliminarModel As Button
     Friend WithEvents BTModificarModel As Button
     Friend WithEvents DGMarca As DataGridView
+    Friend WithEvents BResfrescar As Button
     Friend WithEvents marca As DataGridViewTextBoxColumn
     Friend WithEvents Model As DataGridViewTextBoxColumn
     Friend WithEvents num_extrusors As DataGridViewTextBoxColumn
@@ -218,5 +219,4 @@ Partial Class PanelModelModificarEliminar
     Friend WithEvents resolucio_capa_maxima As DataGridViewTextBoxColumn
     Friend WithEvents resolucio_capa_minima As DataGridViewTextBoxColumn
     Friend WithEvents diametre_filament_acceptat As DataGridViewTextBoxColumn
-    Friend WithEvents BResfrescar As Button
 End Class

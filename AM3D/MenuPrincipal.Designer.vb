@@ -281,7 +281,7 @@ Partial Class MenuPrincipal
         Me.LBInici.Location = New System.Drawing.Point(33, 6)
         Me.LBInici.Name = "LBInici"
         Me.LBInici.Size = New System.Drawing.Size(50, 25)
-        Me.LBInici.TabIndex = 3
+        Me.LBInici.TabIndex = 0
         Me.LBInici.Text = "Inici"
         '
         'PictureBox1
@@ -332,7 +332,7 @@ Partial Class MenuPrincipal
         Me.LBGestio.Location = New System.Drawing.Point(3, 6)
         Me.LBGestio.Name = "LBGestio"
         Me.LBGestio.Size = New System.Drawing.Size(74, 25)
-        Me.LBGestio.TabIndex = 0
+        Me.LBGestio.TabIndex = 2
         Me.LBGestio.Text = "Gestió"
         '
         'user
@@ -344,7 +344,7 @@ Partial Class MenuPrincipal
         Me.user.Location = New System.Drawing.Point(641, 9)
         Me.user.Name = "user"
         Me.user.Size = New System.Drawing.Size(114, 21)
-        Me.user.TabIndex = 9
+        Me.user.TabIndex = 3
         '
         'MenuSup
         '
@@ -371,7 +371,7 @@ Partial Class MenuPrincipal
         Me.LBControl.Location = New System.Drawing.Point(117, 6)
         Me.LBControl.Name = "LBControl"
         Me.LBControl.Size = New System.Drawing.Size(81, 25)
-        Me.LBControl.TabIndex = 0
+        Me.LBControl.TabIndex = 1
         Me.LBControl.Text = "Control"
         '
         'LBUser

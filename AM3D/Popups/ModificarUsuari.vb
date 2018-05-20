@@ -4,19 +4,11 @@
     Dim SQLcommands As SQLCommands = New SQLCommands()
 
     Private Sub ModificarUsuari_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Try
-            TBNickname.Text = PanelModificarEliminarUsuaris.usuariSeleccionat.GetSetNickname
-            TBDni.Text = PanelModificarEliminarUsuaris.usuariSeleccionat.GetSetDNI
-            TBNom.Text = PanelModificarEliminarUsuaris.usuariSeleccionat.GetSetNom
-            TBCongnom.Text = PanelModificarEliminarUsuaris.usuariSeleccionat.GetSetCognom
-            TBCorreu.Text = PanelModificarEliminarUsuaris.usuariSeleccionat.GetSetEmail
-        Catch ex As Exception
 
-        End Try
     End Sub
 
     Private Sub BTCancelar_Click(sender As Object, e As EventArgs) Handles BTCancelar.Click
-        Me.Close()
+        Me.Hide()
         TBNickname.Text = ""
         TBNom.Text = ""
         TBCongnom.Text = ""

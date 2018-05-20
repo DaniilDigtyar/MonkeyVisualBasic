@@ -4,8 +4,8 @@
 
     Private Sub BTModificarMarca_Click(sender As Object, e As EventArgs) Handles BTModificarMarca.Click
         marcaBobinaSeleccionada = New MarquesBobines(DGMarcaProductora.SelectedRows.Item(0).Cells(0).Value)
+        ModificarBobinesMarca.TBMarca.Text = marcaBobinaSeleccionada.GetSetMarcaProductora
         ModificarBobinesMarca.Show()
-
     End Sub
 
     Private Sub PanelBobinesMarcaModificarEliminar_Load(sender As Object, e As EventArgs) Handles MyBase.Load

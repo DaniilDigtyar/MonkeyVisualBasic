@@ -25,12 +25,12 @@ Partial Class PanelModificarEliminarUsuaris
         Me.BTEliminarUsuari = New System.Windows.Forms.Button()
         Me.BTModificarUsuari = New System.Windows.Forms.Button()
         Me.DGUsuaris = New System.Windows.Forms.DataGridView()
+        Me.BResfrescar = New System.Windows.Forms.Button()
         Me.Nickname = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DNI = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nom = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Cognoms = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BResfrescar = New System.Windows.Forms.Button()
         CType(Me.DGUsuaris, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,10 +41,10 @@ Partial Class PanelModificarEliminarUsuaris
         Me.BTEliminarUsuari.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTEliminarUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTEliminarUsuari.ForeColor = System.Drawing.Color.Black
-        Me.BTEliminarUsuari.Location = New System.Drawing.Point(181, 12)
+        Me.BTEliminarUsuari.Location = New System.Drawing.Point(181, 21)
         Me.BTEliminarUsuari.Name = "BTEliminarUsuari"
         Me.BTEliminarUsuari.Size = New System.Drawing.Size(154, 62)
-        Me.BTEliminarUsuari.TabIndex = 6
+        Me.BTEliminarUsuari.TabIndex = 2
         Me.BTEliminarUsuari.Text = "Eliminar Usuari"
         Me.BTEliminarUsuari.UseVisualStyleBackColor = False
         '
@@ -55,10 +55,10 @@ Partial Class PanelModificarEliminarUsuaris
         Me.BTModificarUsuari.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificarUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificarUsuari.ForeColor = System.Drawing.Color.Black
-        Me.BTModificarUsuari.Location = New System.Drawing.Point(21, 12)
+        Me.BTModificarUsuari.Location = New System.Drawing.Point(21, 21)
         Me.BTModificarUsuari.Name = "BTModificarUsuari"
         Me.BTModificarUsuari.Size = New System.Drawing.Size(154, 62)
-        Me.BTModificarUsuari.TabIndex = 5
+        Me.BTModificarUsuari.TabIndex = 1
         Me.BTModificarUsuari.Text = "Modificar Usuari"
         Me.BTModificarUsuari.UseVisualStyleBackColor = False
         '
@@ -75,9 +75,23 @@ Partial Class PanelModificarEliminarUsuaris
         Me.DGUsuaris.Size = New System.Drawing.Size(739, 268)
         Me.DGUsuaris.TabIndex = 29
         '
+        'BResfrescar
+        '
+        Me.BResfrescar.BackColor = System.Drawing.Color.White
+        Me.BResfrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BResfrescar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BResfrescar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BResfrescar.ForeColor = System.Drawing.Color.Black
+        Me.BResfrescar.Location = New System.Drawing.Point(606, 21)
+        Me.BResfrescar.Name = "BResfrescar"
+        Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
+        Me.BResfrescar.TabIndex = 3
+        Me.BResfrescar.Text = "Refresca llista"
+        Me.BResfrescar.UseVisualStyleBackColor = False
+        '
         'Nickname
         '
-        Me.Nickname.HeaderText = "Nickname"
+        Me.Nickname.HeaderText = "Usuari"
         Me.Nickname.Name = "Nickname"
         Me.Nickname.ReadOnly = True
         '
@@ -101,23 +115,9 @@ Partial Class PanelModificarEliminarUsuaris
         '
         'Email
         '
-        Me.Email.HeaderText = "Email"
+        Me.Email.HeaderText = "E-mail"
         Me.Email.Name = "Email"
         Me.Email.ReadOnly = True
-        '
-        'BResfrescar
-        '
-        Me.BResfrescar.BackColor = System.Drawing.Color.White
-        Me.BResfrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BResfrescar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BResfrescar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BResfrescar.ForeColor = System.Drawing.Color.Black
-        Me.BResfrescar.Location = New System.Drawing.Point(606, 12)
-        Me.BResfrescar.Name = "BResfrescar"
-        Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
-        Me.BResfrescar.TabIndex = 30
-        Me.BResfrescar.Text = "Refresca llista"
-        Me.BResfrescar.UseVisualStyleBackColor = False
         '
         'PanelModificarEliminarUsuaris
         '
@@ -140,10 +140,10 @@ Partial Class PanelModificarEliminarUsuaris
     Friend WithEvents BTEliminarUsuari As Button
     Friend WithEvents BTModificarUsuari As Button
     Friend WithEvents DGUsuaris As DataGridView
+    Friend WithEvents BResfrescar As Button
     Friend WithEvents Nickname As DataGridViewTextBoxColumn
     Friend WithEvents DNI As DataGridViewTextBoxColumn
     Friend WithEvents Nom As DataGridViewTextBoxColumn
     Friend WithEvents Cognoms As DataGridViewTextBoxColumn
     Friend WithEvents Email As DataGridViewTextBoxColumn
-    Friend WithEvents BResfrescar As Button
 End Class

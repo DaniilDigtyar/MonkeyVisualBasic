@@ -37,7 +37,7 @@
                 Else
                     LabelInfo.Text = My.Resources.eng.LabelnfoCorrecte
                 End If
-                Me.Close()
+                Me.Hide()
             Else
                 If Globals.lang = "cat" Then
                     LabelInfo.Text = My.Resources.cat.LabelnfoError
@@ -55,6 +55,6 @@
     End Sub
 
     Private Sub ModificarMarca_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TBMarca.Text = PanelMarcaModificarEliminar.marcaSeleccionada.GetSetMarca
+
     End Sub
 End Class

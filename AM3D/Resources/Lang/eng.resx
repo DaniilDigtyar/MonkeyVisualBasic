@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BTAfegir" xml:space="preserve">
-    <value>Ad</value>
+    <value>Add</value>
   </data>
   <data name="BTCancelar" xml:space="preserve">
     <value>Cancel</value>
@@ -211,13 +211,13 @@
     <value>Remember User</value>
   </data>
   <data name="ErrorFitxer" xml:space="preserve">
-    <value>The file could not be created</value>
+    <value>The files could not be created</value>
   </data>
   <data name="GenerarEstad" xml:space="preserve">
     <value>Generate Statistics</value>
   </data>
   <data name="LActual" xml:space="preserve">
-    <value>Actual</value>
+    <value>Old password</value>
   </data>
   <data name="LApliFun" xml:space="preserve">
     <value>Functional applications</value>
@@ -322,22 +322,22 @@
     <value>Models</value>
   </data>
   <data name="LNCopies" xml:space="preserve">
-    <value>Nº Copies</value>
+    <value>Num Copies</value>
   </data>
   <data name="LNExtru" xml:space="preserve">
-    <value>Nº Extruders</value>
+    <value>Num Extruders</value>
   </data>
   <data name="LNom" xml:space="preserve">
     <value>Name</value>
   </data>
   <data name="LNomGcode" xml:space="preserve">
-    <value>Name of the GCode</value>
+    <value>GCode Name</value>
   </data>
   <data name="LNomUsuari" xml:space="preserve">
     <value>User name</value>
   </data>
   <data name="LNova" xml:space="preserve">
-    <value>New</value>
+    <value>New password</value>
   </data>
   <data name="Logout" xml:space="preserve">
     <value>Logout</value>
@@ -379,7 +379,7 @@
     <value>Users</value>
   </data>
   <data name="LVelMaxExt" xml:space="preserve">
-    <value>Maximum speed of the extruder</value>
+    <value>Max. speed of the extruder</value>
   </data>
   <data name="opcioCambiarIdioma" xml:space="preserve">
     <value>Change language</value>
@@ -421,22 +421,22 @@
     <value>Saved successfully.</value>
   </data>
   <data name="LabelnfoError" xml:space="preserve">
-    <value>Error saving.</value>
+    <value>Failed saving.</value>
   </data>
   <data name="LabelnfoNoSelect" xml:space="preserve">
     <value>Fill in all fields.</value>
   </data>
   <data name="BResfrescar" xml:space="preserve">
-    <value>Refresh list</value>
+    <value>Refresh List</value>
   </data>
   <data name="ButtonLogin_Cargando" xml:space="preserve">
     <value>Loading</value>
   </data>
   <data name="MFicheroCorrectos" xml:space="preserve">
-    <value>Successfully generated files.</value>
+    <value>File generated successfully.</value>
   </data>
   <data name="MFicheroError" xml:space="preserve">
-    <value>Error generating files.</value>
+    <value>Failed generating files.</value>
   </data>
   <data name="MSGRellenarError" xml:space="preserve">
     <value>Fill in all fields</value>
@@ -448,7 +448,7 @@
     <value>Password updated correctly.</value>
   </data>
   <data name="MSGUserPasswordUpdateError" xml:space="preserve">
-    <value>Error updating the password.</value>
+    <value>Failed updating the password.</value>
   </data>
   <data name="MSGUserRepetirError" xml:space="preserve">
     <value>Passwords do not match.</value>
@@ -457,31 +457,31 @@
     <value>User data saved correctly.</value>
   </data>
   <data name="MSGUserUpdateError" xml:space="preserve">
-    <value>Error saving user data.</value>
+    <value>Failed saving user data.</value>
   </data>
   <data name="MSGDeleteCorrect" xml:space="preserve">
-    <value>Elimination done correctly.</value>
+    <value>Correctly eliminated.</value>
   </data>
   <data name="MSGDeleteError" xml:space="preserve">
-    <value>Error removing.</value>
+    <value>Failed removing.</value>
   </data>
   <data name="MSGUserExist" xml:space="preserve">
-    <value>The nickname is used.</value>
+    <value>The nickname is already in use.</value>
   </data>
   <data name="MSGInsertCorrecto" xml:space="preserve">
-    <value>The insert has been correct.</value>
+    <value>Added correctly.</value>
   </data>
   <data name="MSGInsertIncorrecto" xml:space="preserve">
-    <value>Insertion failed.</value>
+    <value>Adding failed.</value>
   </data>
   <data name="MSGImpressionsCancelarCorrect" xml:space="preserve">
-    <value>Impressora canceled correctly.</value>
+    <value>Print correctly canceled.</value>
   </data>
   <data name="MSGImpressionsCancelarError" xml:space="preserve">
     <value>Error canceling the printer.</value>
   </data>
   <data name="MSGImpressionsCancelarErrorSelect" xml:space="preserve">
-    <value>Aquesta Impressora no es pot cancel·lar.</value>
+    <value>Can not cancell print.</value>
   </data>
   <data name="MSGImpressionsRetirarCorrect" xml:space="preserve">
     <value>Status updated correctly.</value>

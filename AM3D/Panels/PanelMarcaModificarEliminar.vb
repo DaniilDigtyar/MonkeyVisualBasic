@@ -3,8 +3,8 @@
     Public marcaSeleccionada As Marca = New Marca("")
     Private Sub BTModificarMarca_Click(sender As Object, e As EventArgs) Handles BTModificarMarca.Click
         marcaSeleccionada = New Marca(DGMarca.SelectedRows.Item(0).Cells(0).Value)
+        ModificarMarca.TBMarca.Text = marcaSeleccionada.GetSetMarca
         ModificarMarca.Show()
-
     End Sub
 
     Private Sub PanelMarcaModificarEliminar_Load(sender As Object, e As EventArgs) Handles MyBase.Load

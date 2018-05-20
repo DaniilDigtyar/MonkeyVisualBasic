@@ -22,7 +22,7 @@ Partial Class PanelGcodeAfegir
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BTBorrar = New System.Windows.Forms.Button()
         Me.BTAfegir = New System.Windows.Forms.Button()
         Me.TBNomGcode = New System.Windows.Forms.TextBox()
@@ -46,7 +46,7 @@ Partial Class PanelGcodeAfegir
         Me.BTBorrar.Location = New System.Drawing.Point(31, 285)
         Me.BTBorrar.Name = "BTBorrar"
         Me.BTBorrar.Size = New System.Drawing.Size(298, 62)
-        Me.BTBorrar.TabIndex = 53
+        Me.BTBorrar.TabIndex = 5
         Me.BTBorrar.Text = "Borrar"
         Me.BTBorrar.UseVisualStyleBackColor = False
         '
@@ -60,16 +60,17 @@ Partial Class PanelGcodeAfegir
         Me.BTAfegir.Location = New System.Drawing.Point(31, 210)
         Me.BTAfegir.Name = "BTAfegir"
         Me.BTAfegir.Size = New System.Drawing.Size(298, 62)
-        Me.BTAfegir.TabIndex = 52
+        Me.BTAfegir.TabIndex = 4
         Me.BTAfegir.Text = "Afegir"
         Me.BTAfegir.UseVisualStyleBackColor = False
         '
         'TBNomGcode
         '
         Me.TBNomGcode.Location = New System.Drawing.Point(165, 83)
+        Me.TBNomGcode.MaxLength = 20
         Me.TBNomGcode.Name = "TBNomGcode"
         Me.TBNomGcode.Size = New System.Drawing.Size(164, 20)
-        Me.TBNomGcode.TabIndex = 51
+        Me.TBNomGcode.TabIndex = 2
         '
         'LNomGcode
         '
@@ -87,7 +88,7 @@ Partial Class PanelGcodeAfegir
         Me.TBRuta.Location = New System.Drawing.Point(165, 44)
         Me.TBRuta.Name = "TBRuta"
         Me.TBRuta.Size = New System.Drawing.Size(164, 20)
-        Me.TBRuta.TabIndex = 55
+        Me.TBRuta.TabIndex = 1
         '
         'LRuta
         '
@@ -105,7 +106,7 @@ Partial Class PanelGcodeAfegir
         Me.LMaterialsSup.AutoSize = True
         Me.LMaterialsSup.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMaterialsSup.ForeColor = System.Drawing.Color.Black
-        Me.LMaterialsSup.Location = New System.Drawing.Point(364, 21)
+        Me.LMaterialsSup.Location = New System.Drawing.Point(358, 21)
         Me.LMaterialsSup.Name = "LMaterialsSup"
         Me.LMaterialsSup.Size = New System.Drawing.Size(128, 20)
         Me.LMaterialsSup.TabIndex = 57
@@ -118,14 +119,14 @@ Partial Class PanelGcodeAfegir
         Me.DGMaterial.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DGMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGMaterial.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.material, Me.descripcio})
-        Me.DGMaterial.Location = New System.Drawing.Point(368, 44)
+        Me.DGMaterial.Location = New System.Drawing.Point(362, 44)
         Me.DGMaterial.MultiSelect = False
         Me.DGMaterial.Name = "DGMaterial"
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DGMaterial.Size = New System.Drawing.Size(337, 303)
-        Me.DGMaterial.TabIndex = 58
+        Me.DGMaterial.Size = New System.Drawing.Size(343, 303)
+        Me.DGMaterial.TabIndex = 3
         '
         'material
         '

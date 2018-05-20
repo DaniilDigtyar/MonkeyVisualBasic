@@ -211,7 +211,7 @@
     <value>Recordar usuari</value>
   </data>
   <data name="ErrorFitxer" xml:space="preserve">
-    <value>No s'ha pogut crear el fitxer</value>
+    <value>No s'ha pogut crear el fitxers</value>
   </data>
   <data name="GenerarEstad" xml:space="preserve">
     <value>Generar Estadistiques</value>
@@ -223,19 +223,19 @@
     <value>Aplicacions funcionals</value>
   </data>
   <data name="LAreaX" xml:space="preserve">
-    <value>Area d'impressió X</value>
+    <value>Àrea d'impressió X</value>
   </data>
   <data name="LAreaY" xml:space="preserve">
-    <value>Area d'impressió Y</value>
+    <value>Àrea d'impressió Y</value>
   </data>
   <data name="LAreaZ" xml:space="preserve">
-    <value>Area d'impressió Z</value>
+    <value>Àrea d'impressió Z</value>
   </data>
   <data name="LBControl" xml:space="preserve">
     <value>Control</value>
   </data>
   <data name="LBenvingut" xml:space="preserve">
-    <value>Benvingut</value>
+    <value>Benvingut/da</value>
   </data>
   <data name="LBGestio" xml:space="preserve">
     <value>Gestió</value>
@@ -352,7 +352,7 @@
     <value>Repeteix la contrasenya</value>
   </data>
   <data name="LResMaxCapa" xml:space="preserve">
-    <value>Resolució máxima de capa</value>
+    <value>Resolució màxima de capa</value>
   </data>
   <data name="LResMinCapa" xml:space="preserve">
     <value>Resolució mínima de capa</value>
@@ -367,13 +367,13 @@
     <value>Nom Tècnic</value>
   </data>
   <data name="LTempMaxExt" xml:space="preserve">
-    <value>Temperatura máxima del extrusor</value>
+    <value>Temperatura màxima de l'extrusor</value>
   </data>
   <data name="LTempMaxLlit" xml:space="preserve">
-    <value>Temperatura máxima del llit</value>
+    <value>Temperatura màxima del llit</value>
   </data>
   <data name="LTempMinExt" xml:space="preserve">
-    <value>Temperatura mínima del extrusor</value>
+    <value>Temperatura mínima de l'extrusor</value>
   </data>
   <data name="LTempMinLlit" xml:space="preserve">
     <value>Temperatura mínima del llit</value>
@@ -385,7 +385,7 @@
     <value>Usuaris</value>
   </data>
   <data name="LVelMaxExt" xml:space="preserve">
-    <value>Velocitat máxima de l'extrusor</value>
+    <value>Velocitat màxima de l'extrusor</value>
   </data>
   <data name="opcioCambiarIdioma" xml:space="preserve">
     <value>Canviar idioma</value>
@@ -463,16 +463,16 @@
     <value>Dades d'usuari guardats correctament.</value>
   </data>
   <data name="MSGUserUpdateError" xml:space="preserve">
-    <value>Error en desar dades d'usuari.</value>
+    <value>Error en desar les dades d'usuari.</value>
   </data>
   <data name="MSGDeleteCorrect" xml:space="preserve">
-    <value>Eliminació feta correctament.</value>
+    <value>Eliminació completada.</value>
   </data>
   <data name="MSGDeleteError" xml:space="preserve">
     <value>Error en l'eliminació.</value>
   </data>
   <data name="MSGUserExist" xml:space="preserve">
-    <value>L'nickname és usat.</value>
+    <value>L'usuari ja esta en ús.</value>
   </data>
   <data name="MSGInsertCorrecto" xml:space="preserve">
     <value>La inserció ha estat correcta.</value>
@@ -487,7 +487,7 @@
     <value>No s'ha pogut cancel·lar la impressora.</value>
   </data>
   <data name="MSGImpressionsCancelarErrorSelect" xml:space="preserve">
-    <value>Aquesta Impressora no es pot cancel·lar.</value>
+    <value>Aquesta impressora no es pot cancel·lar.</value>
   </data>
   <data name="MSGImpressionsRetirarCorrect" xml:space="preserve">
     <value>Estat actualitzat correctament.</value>

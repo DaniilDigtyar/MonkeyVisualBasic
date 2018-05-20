@@ -22,15 +22,15 @@ Partial Class PanelGcodeModificarEliminar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BTEliminarGcode = New System.Windows.Forms.Button()
         Me.BTModificarGcode = New System.Windows.Forms.Button()
         Me.DGGcode = New System.Windows.Forms.DataGridView()
+        Me.BResfrescar = New System.Windows.Forms.Button()
         Me.nomGcode = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Hex = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.usuari = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BResfrescar = New System.Windows.Forms.Button()
         CType(Me.DGGcode, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -44,7 +44,7 @@ Partial Class PanelGcodeModificarEliminar
         Me.BTEliminarGcode.Location = New System.Drawing.Point(183, 18)
         Me.BTEliminarGcode.Name = "BTEliminarGcode"
         Me.BTEliminarGcode.Size = New System.Drawing.Size(154, 62)
-        Me.BTEliminarGcode.TabIndex = 9
+        Me.BTEliminarGcode.TabIndex = 2
         Me.BTEliminarGcode.Text = "Eliminar Gcode"
         Me.BTEliminarGcode.UseVisualStyleBackColor = False
         '
@@ -58,7 +58,7 @@ Partial Class PanelGcodeModificarEliminar
         Me.BTModificarGcode.Location = New System.Drawing.Point(23, 18)
         Me.BTModificarGcode.Name = "BTModificarGcode"
         Me.BTModificarGcode.Size = New System.Drawing.Size(154, 62)
-        Me.BTModificarGcode.TabIndex = 8
+        Me.BTModificarGcode.TabIndex = 1
         Me.BTModificarGcode.Text = "Modificar Gcode"
         Me.BTModificarGcode.UseVisualStyleBackColor = False
         '
@@ -69,22 +69,36 @@ Partial Class PanelGcodeModificarEliminar
         Me.DGGcode.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DGGcode.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGGcode.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nomGcode, Me.Hex, Me.usuari})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGGcode.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGGcode.DefaultCellStyle = DataGridViewCellStyle1
         Me.DGGcode.Location = New System.Drawing.Point(23, 86)
         Me.DGGcode.MultiSelect = False
         Me.DGGcode.Name = "DGGcode"
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
-        Me.DGGcode.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        Me.DGGcode.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.DGGcode.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGGcode.Size = New System.Drawing.Size(739, 268)
-        Me.DGGcode.TabIndex = 37
+        Me.DGGcode.TabIndex = 4
+        '
+        'BResfrescar
+        '
+        Me.BResfrescar.BackColor = System.Drawing.Color.White
+        Me.BResfrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BResfrescar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BResfrescar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BResfrescar.ForeColor = System.Drawing.Color.Black
+        Me.BResfrescar.Location = New System.Drawing.Point(608, 18)
+        Me.BResfrescar.Name = "BResfrescar"
+        Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
+        Me.BResfrescar.TabIndex = 3
+        Me.BResfrescar.Text = "Refresca llista"
+        Me.BResfrescar.UseVisualStyleBackColor = False
         '
         'nomGcode
         '
@@ -97,26 +111,13 @@ Partial Class PanelGcodeModificarEliminar
         Me.Hex.HeaderText = "Material suportat"
         Me.Hex.Name = "Hex"
         Me.Hex.ReadOnly = True
+        Me.Hex.Width = 150
         '
         'usuari
         '
         Me.usuari.HeaderText = "Usuari"
         Me.usuari.Name = "usuari"
         Me.usuari.ReadOnly = True
-        '
-        'BResfrescar
-        '
-        Me.BResfrescar.BackColor = System.Drawing.Color.White
-        Me.BResfrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BResfrescar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BResfrescar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BResfrescar.ForeColor = System.Drawing.Color.Black
-        Me.BResfrescar.Location = New System.Drawing.Point(608, 18)
-        Me.BResfrescar.Name = "BResfrescar"
-        Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
-        Me.BResfrescar.TabIndex = 38
-        Me.BResfrescar.Text = "Refresca llista"
-        Me.BResfrescar.UseVisualStyleBackColor = False
         '
         'PanelGcodeModificarEliminar
         '
@@ -139,8 +140,8 @@ Partial Class PanelGcodeModificarEliminar
     Friend WithEvents BTEliminarGcode As Button
     Friend WithEvents BTModificarGcode As Button
     Friend WithEvents DGGcode As DataGridView
+    Friend WithEvents BResfrescar As Button
     Friend WithEvents nomGcode As DataGridViewTextBoxColumn
     Friend WithEvents Hex As DataGridViewTextBoxColumn
     Friend WithEvents usuari As DataGridViewTextBoxColumn
-    Friend WithEvents BResfrescar As Button
 End Class

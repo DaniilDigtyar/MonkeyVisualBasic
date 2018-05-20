@@ -132,17 +132,17 @@ Partial Class FInici
         '
         Me.LBenvingut.AutoSize = True
         Me.LBenvingut.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBenvingut.Location = New System.Drawing.Point(272, 25)
+        Me.LBenvingut.Location = New System.Drawing.Point(276, 9)
         Me.LBenvingut.Name = "LBenvingut"
-        Me.LBenvingut.Size = New System.Drawing.Size(135, 31)
+        Me.LBenvingut.Size = New System.Drawing.Size(173, 31)
         Me.LBenvingut.TabIndex = 13
-        Me.LBenvingut.Text = "Benvingut"
+        Me.LBenvingut.Text = "Benvingut/da"
         '
         'LabelNomUsuari
         '
         Me.LabelNomUsuari.AutoSize = True
         Me.LabelNomUsuari.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNomUsuari.Location = New System.Drawing.Point(400, 25)
+        Me.LabelNomUsuari.Location = New System.Drawing.Point(441, 9)
         Me.LabelNomUsuari.Name = "LabelNomUsuari"
         Me.LabelNomUsuari.Size = New System.Drawing.Size(150, 31)
         Me.LabelNomUsuari.TabIndex = 14
@@ -212,7 +212,7 @@ Partial Class FInici
         '
         Me.LApliFun.AutoSize = True
         Me.LApliFun.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LApliFun.Location = New System.Drawing.Point(265, 70)
+        Me.LApliFun.Location = New System.Drawing.Point(276, 63)
         Me.LApliFun.Name = "LApliFun"
         Me.LApliFun.Size = New System.Drawing.Size(290, 31)
         Me.LApliFun.TabIndex = 21

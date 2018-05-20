@@ -19,7 +19,6 @@ Public Class Connection
             connectionUsuaris.Open()
             Return True
         Catch e As Exception
-            MessageBox.Show(e.Message(), "Error in connectUsuaris.")
             Return False
         End Try
     End Function
@@ -36,7 +35,6 @@ Public Class Connection
             End If
             Return False
         Catch e As Exception
-            MessageBox.Show(e.Message, "Error in disconnectUsuaris.")
             Return False
         End Try
     End Function
@@ -54,7 +52,6 @@ Public Class Connection
             connectionClient.Open()
             Return True
         Catch e As Exception
-            MessageBox.Show(e.Message(), "Error in connectDataBaseClient.")
             Return False
         End Try
     End Function
@@ -71,7 +68,6 @@ Public Class Connection
             End If
             Return False
         Catch e As Exception
-            MessageBox.Show(e.Message, "Error in disconnectUsuaris.")
             Return False
         End Try
     End Function

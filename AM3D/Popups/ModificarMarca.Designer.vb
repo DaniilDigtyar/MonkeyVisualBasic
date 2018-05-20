@@ -33,17 +33,18 @@ Partial Class ModificarMarca
         '
         'TBMarca
         '
-        Me.TBMarca.Location = New System.Drawing.Point(175, 39)
+        Me.TBMarca.Location = New System.Drawing.Point(145, 35)
+        Me.TBMarca.MaxLength = 20
         Me.TBMarca.Name = "TBMarca"
         Me.TBMarca.Size = New System.Drawing.Size(141, 20)
-        Me.TBMarca.TabIndex = 34
+        Me.TBMarca.TabIndex = 1
         '
         'LMarca
         '
         Me.LMarca.AutoSize = True
         Me.LMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMarca.ForeColor = System.Drawing.Color.Black
-        Me.LMarca.Location = New System.Drawing.Point(47, 39)
+        Me.LMarca.Location = New System.Drawing.Point(17, 35)
         Me.LMarca.Name = "LMarca"
         Me.LMarca.Size = New System.Drawing.Size(53, 20)
         Me.LMarca.TabIndex = 33
@@ -56,10 +57,10 @@ Partial Class ModificarMarca
         Me.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTCancelar.ForeColor = System.Drawing.Color.Black
-        Me.BTCancelar.Location = New System.Drawing.Point(51, 177)
+        Me.BTCancelar.Location = New System.Drawing.Point(21, 173)
         Me.BTCancelar.Name = "BTCancelar"
         Me.BTCancelar.Size = New System.Drawing.Size(265, 62)
-        Me.BTCancelar.TabIndex = 51
+        Me.BTCancelar.TabIndex = 3
         Me.BTCancelar.Text = "Cancelar"
         Me.BTCancelar.UseVisualStyleBackColor = False
         '
@@ -70,10 +71,10 @@ Partial Class ModificarMarca
         Me.BTModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificar.ForeColor = System.Drawing.Color.Black
-        Me.BTModificar.Location = New System.Drawing.Point(51, 109)
+        Me.BTModificar.Location = New System.Drawing.Point(21, 105)
         Me.BTModificar.Name = "BTModificar"
         Me.BTModificar.Size = New System.Drawing.Size(265, 62)
-        Me.BTModificar.TabIndex = 50
+        Me.BTModificar.TabIndex = 2
         Me.BTModificar.Text = "Modificar"
         Me.BTModificar.UseVisualStyleBackColor = False
         '
@@ -82,7 +83,7 @@ Partial Class ModificarMarca
         Me.MenuSup.BackColor = System.Drawing.Color.Black
         Me.MenuSup.Location = New System.Drawing.Point(0, 0)
         Me.MenuSup.Name = "MenuSup"
-        Me.MenuSup.Size = New System.Drawing.Size(361, 19)
+        Me.MenuSup.Size = New System.Drawing.Size(301, 19)
         Me.MenuSup.TabIndex = 67
         '
         'LabelInfo
@@ -90,7 +91,7 @@ Partial Class ModificarMarca
         Me.LabelInfo.AutoSize = True
         Me.LabelInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
         Me.LabelInfo.ForeColor = System.Drawing.Color.DarkRed
-        Me.LabelInfo.Location = New System.Drawing.Point(48, 73)
+        Me.LabelInfo.Location = New System.Drawing.Point(18, 69)
         Me.LabelInfo.Name = "LabelInfo"
         Me.LabelInfo.Size = New System.Drawing.Size(0, 18)
         Me.LabelInfo.TabIndex = 71
@@ -100,7 +101,7 @@ Partial Class ModificarMarca
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(359, 303)
+        Me.ClientSize = New System.Drawing.Size(299, 250)
         Me.Controls.Add(Me.LabelInfo)
         Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.BTCancelar)

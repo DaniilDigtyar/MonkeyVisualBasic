@@ -50,34 +50,38 @@ Partial Class FPerfil
         'TBEmail
         '
         Me.TBEmail.Enabled = False
-        Me.TBEmail.Location = New System.Drawing.Point(228, 222)
+        Me.TBEmail.Location = New System.Drawing.Point(260, 222)
+        Me.TBEmail.MaxLength = 40
         Me.TBEmail.Name = "TBEmail"
         Me.TBEmail.Size = New System.Drawing.Size(179, 20)
-        Me.TBEmail.TabIndex = 55
+        Me.TBEmail.TabIndex = 5
         '
         'TBCognom
         '
         Me.TBCognom.Enabled = False
-        Me.TBCognom.Location = New System.Drawing.Point(228, 187)
+        Me.TBCognom.Location = New System.Drawing.Point(260, 187)
+        Me.TBCognom.MaxLength = 40
         Me.TBCognom.Name = "TBCognom"
         Me.TBCognom.Size = New System.Drawing.Size(179, 20)
-        Me.TBCognom.TabIndex = 54
+        Me.TBCognom.TabIndex = 4
         '
         'TBNom
         '
         Me.TBNom.Enabled = False
-        Me.TBNom.Location = New System.Drawing.Point(228, 152)
+        Me.TBNom.Location = New System.Drawing.Point(260, 152)
+        Me.TBNom.MaxLength = 20
         Me.TBNom.Name = "TBNom"
         Me.TBNom.Size = New System.Drawing.Size(179, 20)
-        Me.TBNom.TabIndex = 53
+        Me.TBNom.TabIndex = 3
         '
         'TBdni
         '
         Me.TBdni.Enabled = False
-        Me.TBdni.Location = New System.Drawing.Point(228, 119)
+        Me.TBdni.Location = New System.Drawing.Point(260, 119)
+        Me.TBdni.MaxLength = 20
         Me.TBdni.Name = "TBdni"
         Me.TBdni.Size = New System.Drawing.Size(179, 20)
-        Me.TBdni.TabIndex = 52
+        Me.TBdni.TabIndex = 2
         '
         'LEmail
         '
@@ -130,7 +134,7 @@ Partial Class FPerfil
         Me.CBModificar.Location = New System.Drawing.Point(48, 74)
         Me.CBModificar.Name = "CBModificar"
         Me.CBModificar.Size = New System.Drawing.Size(92, 24)
-        Me.CBModificar.TabIndex = 56
+        Me.CBModificar.TabIndex = 1
         Me.CBModificar.Text = "Modificar"
         Me.CBModificar.UseVisualStyleBackColor = True
         '
@@ -147,27 +151,27 @@ Partial Class FPerfil
         '
         'TextBoxRepeteix
         '
-        Me.TextBoxRepeteix.Location = New System.Drawing.Point(228, 460)
+        Me.TextBoxRepeteix.Location = New System.Drawing.Point(260, 460)
         Me.TextBoxRepeteix.Name = "TextBoxRepeteix"
         Me.TextBoxRepeteix.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxRepeteix.Size = New System.Drawing.Size(179, 20)
-        Me.TextBoxRepeteix.TabIndex = 63
+        Me.TextBoxRepeteix.TabIndex = 9
         '
         'TextBoxNova
         '
-        Me.TextBoxNova.Location = New System.Drawing.Point(228, 425)
+        Me.TextBoxNova.Location = New System.Drawing.Point(260, 425)
         Me.TextBoxNova.Name = "TextBoxNova"
         Me.TextBoxNova.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxNova.Size = New System.Drawing.Size(179, 20)
-        Me.TextBoxNova.TabIndex = 62
+        Me.TextBoxNova.TabIndex = 8
         '
         'TextBoxActual
         '
-        Me.TextBoxActual.Location = New System.Drawing.Point(228, 392)
+        Me.TextBoxActual.Location = New System.Drawing.Point(260, 392)
         Me.TextBoxActual.Name = "TextBoxActual"
         Me.TextBoxActual.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxActual.Size = New System.Drawing.Size(179, 20)
-        Me.TextBoxActual.TabIndex = 61
+        Me.TextBoxActual.TabIndex = 7
         '
         'LRContra
         '
@@ -213,7 +217,7 @@ Partial Class FPerfil
         Me.BTActualitzar.Location = New System.Drawing.Point(535, 117)
         Me.BTActualitzar.Name = "BTActualitzar"
         Me.BTActualitzar.Size = New System.Drawing.Size(190, 62)
-        Me.BTActualitzar.TabIndex = 64
+        Me.BTActualitzar.TabIndex = 6
         Me.BTActualitzar.Text = "Actualitzar"
         Me.BTActualitzar.UseVisualStyleBackColor = False
         '
@@ -227,7 +231,7 @@ Partial Class FPerfil
         Me.BTCanviarContra.Location = New System.Drawing.Point(535, 390)
         Me.BTCanviarContra.Name = "BTCanviarContra"
         Me.BTCanviarContra.Size = New System.Drawing.Size(190, 62)
-        Me.BTCanviarContra.TabIndex = 65
+        Me.BTCanviarContra.TabIndex = 10
         Me.BTCanviarContra.Text = "Canviar"
         Me.BTCanviarContra.UseVisualStyleBackColor = False
         '

@@ -65,7 +65,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Refresh list.
+        '''  Looks up a localized string similar to Refresh List.
         '''</summary>
         Friend Shared ReadOnly Property BResfrescar() As String
             Get
@@ -83,7 +83,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Ad.
+        '''  Looks up a localized string similar to Add.
         '''</summary>
         Friend Shared ReadOnly Property BTAfegir() As String
             Get
@@ -407,7 +407,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to The file could not be created.
+        '''  Looks up a localized string similar to The files could not be created.
         '''</summary>
         Friend Shared ReadOnly Property ErrorFitxer() As String
             Get
@@ -443,7 +443,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Error saving..
+        '''  Looks up a localized string similar to Failed saving..
         '''</summary>
         Friend Shared ReadOnly Property LabelnfoError() As String
             Get
@@ -461,7 +461,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Actual.
+        '''  Looks up a localized string similar to Old password.
         '''</summary>
         Friend Shared ReadOnly Property LActual() As String
             Get
@@ -785,7 +785,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Nº Copies.
+        '''  Looks up a localized string similar to Num Copies.
         '''</summary>
         Friend Shared ReadOnly Property LNCopies() As String
             Get
@@ -794,7 +794,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Nº Extruders.
+        '''  Looks up a localized string similar to Num Extruders.
         '''</summary>
         Friend Shared ReadOnly Property LNExtru() As String
             Get
@@ -812,7 +812,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Name of the GCode.
+        '''  Looks up a localized string similar to GCode Name.
         '''</summary>
         Friend Shared ReadOnly Property LNomGcode() As String
             Get
@@ -830,7 +830,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to New.
+        '''  Looks up a localized string similar to New password.
         '''</summary>
         Friend Shared ReadOnly Property LNova() As String
             Get
@@ -965,7 +965,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Maximum speed of the extruder.
+        '''  Looks up a localized string similar to Max. speed of the extruder.
         '''</summary>
         Friend Shared ReadOnly Property LVelMaxExt() As String
             Get
@@ -974,7 +974,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Successfully generated files..
+        '''  Looks up a localized string similar to File generated successfully..
         '''</summary>
         Friend Shared ReadOnly Property MFicheroCorrectos() As String
             Get
@@ -983,7 +983,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Error generating files..
+        '''  Looks up a localized string similar to Failed generating files..
         '''</summary>
         Friend Shared ReadOnly Property MFicheroError() As String
             Get
@@ -992,7 +992,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Elimination done correctly..
+        '''  Looks up a localized string similar to Correctly eliminated..
         '''</summary>
         Friend Shared ReadOnly Property MSGDeleteCorrect() As String
             Get
@@ -1001,7 +1001,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Error removing..
+        '''  Looks up a localized string similar to Failed removing..
         '''</summary>
         Friend Shared ReadOnly Property MSGDeleteError() As String
             Get
@@ -1010,7 +1010,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Impressora canceled correctly..
+        '''  Looks up a localized string similar to Print correctly canceled..
         '''</summary>
         Friend Shared ReadOnly Property MSGImpressionsCancelarCorrect() As String
             Get
@@ -1028,7 +1028,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Aquesta Impressora no es pot cancel·lar..
+        '''  Looks up a localized string similar to Can not cancell print..
         '''</summary>
         Friend Shared ReadOnly Property MSGImpressionsCancelarErrorSelect() As String
             Get
@@ -1064,7 +1064,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to The insert has been correct..
+        '''  Looks up a localized string similar to Added correctly..
         '''</summary>
         Friend Shared ReadOnly Property MSGInsertCorrecto() As String
             Get
@@ -1073,7 +1073,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Insertion failed..
+        '''  Looks up a localized string similar to Adding failed..
         '''</summary>
         Friend Shared ReadOnly Property MSGInsertIncorrecto() As String
             Get
@@ -1100,7 +1100,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to The nickname is used..
+        '''  Looks up a localized string similar to The nickname is already in use..
         '''</summary>
         Friend Shared ReadOnly Property MSGUserExist() As String
             Get
@@ -1118,7 +1118,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Error updating the password..
+        '''  Looks up a localized string similar to Failed updating the password..
         '''</summary>
         Friend Shared ReadOnly Property MSGUserPasswordUpdateError() As String
             Get
@@ -1145,7 +1145,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Error saving user data..
+        '''  Looks up a localized string similar to Failed saving user data..
         '''</summary>
         Friend Shared ReadOnly Property MSGUserUpdateError() As String
             Get

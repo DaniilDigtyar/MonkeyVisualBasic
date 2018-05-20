@@ -47,7 +47,7 @@ Partial Class FCambIdiom
         Me.BTCatala.Location = New System.Drawing.Point(147, 163)
         Me.BTCatala.Name = "BTCatala"
         Me.BTCatala.Size = New System.Drawing.Size(179, 133)
-        Me.BTCatala.TabIndex = 16
+        Me.BTCatala.TabIndex = 1
         Me.BTCatala.Text = "Català"
         Me.BTCatala.UseVisualStyleBackColor = False
         '
@@ -61,7 +61,7 @@ Partial Class FCambIdiom
         Me.BTIngles.Location = New System.Drawing.Point(455, 163)
         Me.BTIngles.Name = "BTIngles"
         Me.BTIngles.Size = New System.Drawing.Size(179, 133)
-        Me.BTIngles.TabIndex = 15
+        Me.BTIngles.TabIndex = 2
         Me.BTIngles.Text = "English"
         Me.BTIngles.UseVisualStyleBackColor = False
         '

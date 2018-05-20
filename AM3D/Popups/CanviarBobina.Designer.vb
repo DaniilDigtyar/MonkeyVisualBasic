@@ -44,8 +44,8 @@ Partial Class CanviarBobina
         Me.CBImpressora.FormattingEnabled = True
         Me.CBImpressora.Location = New System.Drawing.Point(24, 55)
         Me.CBImpressora.Name = "CBImpressora"
-        Me.CBImpressora.Size = New System.Drawing.Size(121, 21)
-        Me.CBImpressora.TabIndex = 23
+        Me.CBImpressora.Size = New System.Drawing.Size(154, 21)
+        Me.CBImpressora.TabIndex = 1
         '
         'LImpressora
         '
@@ -68,7 +68,7 @@ Partial Class CanviarBobina
         Me.BTCancelar.Location = New System.Drawing.Point(24, 315)
         Me.BTCancelar.Name = "BTCancelar"
         Me.BTCancelar.Size = New System.Drawing.Size(154, 62)
-        Me.BTCancelar.TabIndex = 21
+        Me.BTCancelar.TabIndex = 4
         Me.BTCancelar.Text = "Cancelar"
         Me.BTCancelar.UseVisualStyleBackColor = False
         '
@@ -82,7 +82,7 @@ Partial Class CanviarBobina
         Me.BTCanviar.Location = New System.Drawing.Point(24, 232)
         Me.BTCanviar.Name = "BTCanviar"
         Me.BTCanviar.Size = New System.Drawing.Size(154, 62)
-        Me.BTCanviar.TabIndex = 20
+        Me.BTCanviar.TabIndex = 3
         Me.BTCanviar.Text = "Canviar"
         Me.BTCanviar.UseVisualStyleBackColor = False
         '
@@ -91,7 +91,7 @@ Partial Class CanviarBobina
         Me.LBobina.AutoSize = True
         Me.LBobina.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBobina.ForeColor = System.Drawing.Color.Black
-        Me.LBobina.Location = New System.Drawing.Point(208, 27)
+        Me.LBobina.Location = New System.Drawing.Point(179, 27)
         Me.LBobina.Name = "LBobina"
         Me.LBobina.Size = New System.Drawing.Size(73, 25)
         Me.LBobina.TabIndex = 24
@@ -117,7 +117,7 @@ Partial Class CanviarBobina
         Me.DataGridViewBobina.Name = "DataGridViewBobina"
         Me.DataGridViewBobina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridViewBobina.Size = New System.Drawing.Size(323, 322)
-        Me.DataGridViewBobina.TabIndex = 27
+        Me.DataGridViewBobina.TabIndex = 2
         '
         'codi_bobina
         '

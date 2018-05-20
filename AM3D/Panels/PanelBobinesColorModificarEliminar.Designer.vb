@@ -43,7 +43,7 @@ Partial Class PanelBobinesColorModificarEliminar
         Me.BTEliminarColor.Location = New System.Drawing.Point(191, 25)
         Me.BTEliminarColor.Name = "BTEliminarColor"
         Me.BTEliminarColor.Size = New System.Drawing.Size(154, 62)
-        Me.BTEliminarColor.TabIndex = 9
+        Me.BTEliminarColor.TabIndex = 2
         Me.BTEliminarColor.Text = "Eliminar Color"
         Me.BTEliminarColor.UseVisualStyleBackColor = False
         '
@@ -57,7 +57,7 @@ Partial Class PanelBobinesColorModificarEliminar
         Me.BTModificarColor.Location = New System.Drawing.Point(31, 25)
         Me.BTModificarColor.Name = "BTModificarColor"
         Me.BTModificarColor.Size = New System.Drawing.Size(154, 62)
-        Me.BTModificarColor.TabIndex = 8
+        Me.BTModificarColor.TabIndex = 1
         Me.BTModificarColor.Text = "Modificar Color"
         Me.BTModificarColor.UseVisualStyleBackColor = False
         '
@@ -71,7 +71,7 @@ Partial Class PanelBobinesColorModificarEliminar
         Me.BResfrescar.Location = New System.Drawing.Point(616, 25)
         Me.BResfrescar.Name = "BResfrescar"
         Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
-        Me.BResfrescar.TabIndex = 35
+        Me.BResfrescar.TabIndex = 3
         Me.BResfrescar.Text = "Refresca llista"
         Me.BResfrescar.UseVisualStyleBackColor = False
         '
@@ -95,11 +95,11 @@ Partial Class PanelBobinesColorModificarEliminar
         Me.DGMarcaProductora.Name = "DGMarcaProductora"
         Me.DGMarcaProductora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMarcaProductora.Size = New System.Drawing.Size(739, 268)
-        Me.DGMarcaProductora.TabIndex = 36
+        Me.DGMarcaProductora.TabIndex = 4
         '
         'color
         '
-        Me.color.HeaderText = "Nombre"
+        Me.color.HeaderText = "Nom"
         Me.color.Name = "color"
         Me.color.ReadOnly = True
         '

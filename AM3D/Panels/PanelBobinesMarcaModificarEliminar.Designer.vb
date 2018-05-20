@@ -40,7 +40,7 @@ Partial Class PanelBobinesMarcaModificarEliminar
         Me.BTEliminarMarca.Location = New System.Drawing.Point(196, 16)
         Me.BTEliminarMarca.Name = "BTEliminarMarca"
         Me.BTEliminarMarca.Size = New System.Drawing.Size(154, 62)
-        Me.BTEliminarMarca.TabIndex = 12
+        Me.BTEliminarMarca.TabIndex = 2
         Me.BTEliminarMarca.Text = "Eliminar Marca"
         Me.BTEliminarMarca.UseVisualStyleBackColor = False
         '
@@ -54,7 +54,7 @@ Partial Class PanelBobinesMarcaModificarEliminar
         Me.BTModificarMarca.Location = New System.Drawing.Point(36, 16)
         Me.BTModificarMarca.Name = "BTModificarMarca"
         Me.BTModificarMarca.Size = New System.Drawing.Size(154, 62)
-        Me.BTModificarMarca.TabIndex = 11
+        Me.BTModificarMarca.TabIndex = 1
         Me.BTModificarMarca.Text = "Modificar Marca"
         Me.BTModificarMarca.UseVisualStyleBackColor = False
         '
@@ -70,7 +70,7 @@ Partial Class PanelBobinesMarcaModificarEliminar
         Me.DGMarcaProductora.Name = "DGMarcaProductora"
         Me.DGMarcaProductora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMarcaProductora.Size = New System.Drawing.Size(739, 268)
-        Me.DGMarcaProductora.TabIndex = 32
+        Me.DGMarcaProductora.TabIndex = 4
         '
         'marca
         '
@@ -89,7 +89,7 @@ Partial Class PanelBobinesMarcaModificarEliminar
         Me.BResfrescar.Location = New System.Drawing.Point(621, 16)
         Me.BResfrescar.Name = "BResfrescar"
         Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
-        Me.BResfrescar.TabIndex = 34
+        Me.BResfrescar.TabIndex = 3
         Me.BResfrescar.Text = "Refresca llista"
         Me.BResfrescar.UseVisualStyleBackColor = False
         '

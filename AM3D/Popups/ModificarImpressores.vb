@@ -6,23 +6,7 @@
 
 
     Private Sub ModificarImpressores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim listaModels As HashSet(Of Models) = New HashSet(Of Models)
-        Dim listaMarca As HashSet(Of Marca) = New HashSet(Of Marca)
-        Dim models As Models
-        Dim marca As Marca
 
-        listaMarca = SQLCommands.SelectAllMarquesFromDatabase(Globals.userCredentials.GetSetBaseDades)
-        listaModels = SQLCommands.SelectAllModelsFromDatabaseWhere(Globals.userCredentials.GetSetBaseDades, PanelLlistaImpressores.marcaSeleccionada)
-        For Each models In listaModels
-            CBModel.Items.Add(models.GetSetModel)
-        Next models
-        For Each marca In listaMarca
-            CBMarca.Items.Add(marca.GetSetMarca)
-        Next marca
-
-        CBMarca.Text = PanelLlistaImpressores.marcaSeleccionada
-        CBModel.Text = PanelLlistaImpressores.modelSeleccionada
-        TBNomImpressora.Text = PanelLlistaImpressores.nomSeleccionada
     End Sub
 
 
@@ -33,7 +17,7 @@
         CBModel.SelectedIndex = -1
         CBModel.Enabled = False
         Labelnfo.Visible = False
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub MenuSup_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MenuSup.MouseDown
@@ -73,7 +57,7 @@
                     Else
                         Labelnfo.Text = My.Resources.eng.LabelnfoCorrecte
                     End If
-                    Me.Close()
+                    Me.Hide()
                 Else
                     If Globals.lang = "cat" Then
                         Labelnfo.Text = My.Resources.cat.LabelnfoError

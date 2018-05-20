@@ -24,8 +24,8 @@
         ModificarModel.TBResMaxCap.Text = caracteristicaSeleccionada.GetSetResolucioCapaMaxima
         ModificarModel.TBDiametre.Text = caracteristicaSeleccionada.GetSetDiametreFilamentAcceptat
 
-
-
+        ModificarModel.CBMarca.Items.Clear()
+        ModificarModel.DGMaterial.Rows.Clear()
         listaMarca = SQLCommands.SelectAllMarquesFromDatabase(Globals.userCredentials.GetSetBaseDades)
         listaMaterials = SQLCommands.SelectAllMaterialsFromDatabase(Globals.userCredentials.GetSetBaseDades)
 

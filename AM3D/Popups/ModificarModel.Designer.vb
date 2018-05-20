@@ -44,7 +44,6 @@ Partial Class ModificarModel
         Me.LResMaxCapa = New System.Windows.Forms.Label()
         Me.LResMinCapa = New System.Windows.Forms.Label()
         Me.LVelMaxExt = New System.Windows.Forms.Label()
-        Me.LAreaZ = New System.Windows.Forms.Label()
         Me.LAreaY = New System.Windows.Forms.Label()
         Me.LAreaX = New System.Windows.Forms.Label()
         Me.LTempMinLlit = New System.Windows.Forms.Label()
@@ -60,6 +59,7 @@ Partial Class ModificarModel
         Me.material = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.descripcio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CBMarca = New System.Windows.Forms.ComboBox()
+        Me.LAreaZ = New System.Windows.Forms.Label()
         CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -73,7 +73,7 @@ Partial Class ModificarModel
         Me.BTCancelar.Location = New System.Drawing.Point(443, 281)
         Me.BTCancelar.Name = "BTCancelar"
         Me.BTCancelar.Size = New System.Drawing.Size(189, 62)
-        Me.BTCancelar.TabIndex = 79
+        Me.BTCancelar.TabIndex = 17
         Me.BTCancelar.Text = "Cancelar"
         Me.BTCancelar.UseVisualStyleBackColor = False
         '
@@ -87,7 +87,7 @@ Partial Class ModificarModel
         Me.BTModificar.Location = New System.Drawing.Point(443, 206)
         Me.BTModificar.Name = "BTModificar"
         Me.BTModificar.Size = New System.Drawing.Size(189, 62)
-        Me.BTModificar.TabIndex = 78
+        Me.BTModificar.TabIndex = 16
         Me.BTModificar.Text = "Modificar"
         Me.BTModificar.UseVisualStyleBackColor = False
         '
@@ -105,93 +105,106 @@ Partial Class ModificarModel
         'TBDiametre
         '
         Me.TBDiametre.Location = New System.Drawing.Point(676, 124)
+        Me.TBDiametre.MaxLength = 20
         Me.TBDiametre.Name = "TBDiametre"
         Me.TBDiametre.Size = New System.Drawing.Size(106, 20)
-        Me.TBDiametre.TabIndex = 74
+        Me.TBDiametre.TabIndex = 14
         '
         'TBResMaxCap
         '
         Me.TBResMaxCap.Location = New System.Drawing.Point(676, 93)
+        Me.TBResMaxCap.MaxLength = 20
         Me.TBResMaxCap.Name = "TBResMaxCap"
         Me.TBResMaxCap.Size = New System.Drawing.Size(106, 20)
-        Me.TBResMaxCap.TabIndex = 73
+        Me.TBResMaxCap.TabIndex = 13
         '
         'TBResMinCap
         '
         Me.TBResMinCap.Location = New System.Drawing.Point(676, 60)
+        Me.TBResMinCap.MaxLength = 20
         Me.TBResMinCap.Name = "TBResMinCap"
         Me.TBResMinCap.Size = New System.Drawing.Size(106, 20)
-        Me.TBResMinCap.TabIndex = 72
+        Me.TBResMinCap.TabIndex = 12
         '
         'TBVelMinExt
         '
         Me.TBVelMinExt.Location = New System.Drawing.Point(676, 28)
+        Me.TBVelMinExt.MaxLength = 20
         Me.TBVelMinExt.Name = "TBVelMinExt"
         Me.TBVelMinExt.Size = New System.Drawing.Size(106, 20)
-        Me.TBVelMinExt.TabIndex = 71
+        Me.TBVelMinExt.TabIndex = 11
         '
         'TBImpZ
         '
         Me.TBImpZ.Location = New System.Drawing.Point(277, 323)
+        Me.TBImpZ.MaxLength = 20
         Me.TBImpZ.Name = "TBImpZ"
         Me.TBImpZ.Size = New System.Drawing.Size(141, 20)
-        Me.TBImpZ.TabIndex = 70
+        Me.TBImpZ.TabIndex = 10
         '
         'TBAImpY
         '
         Me.TBAImpY.Location = New System.Drawing.Point(277, 294)
+        Me.TBAImpY.MaxLength = 20
         Me.TBAImpY.Name = "TBAImpY"
         Me.TBAImpY.Size = New System.Drawing.Size(141, 20)
-        Me.TBAImpY.TabIndex = 69
+        Me.TBAImpY.TabIndex = 9
         '
         'TBAImpX
         '
         Me.TBAImpX.Location = New System.Drawing.Point(277, 265)
+        Me.TBAImpX.MaxLength = 20
         Me.TBAImpX.Name = "TBAImpX"
         Me.TBAImpX.Size = New System.Drawing.Size(141, 20)
-        Me.TBAImpX.TabIndex = 68
+        Me.TBAImpX.TabIndex = 8
         '
         'TBTempMinLlit
         '
         Me.TBTempMinLlit.Location = New System.Drawing.Point(277, 229)
+        Me.TBTempMinLlit.MaxLength = 20
         Me.TBTempMinLlit.Name = "TBTempMinLlit"
         Me.TBTempMinLlit.Size = New System.Drawing.Size(141, 20)
-        Me.TBTempMinLlit.TabIndex = 67
+        Me.TBTempMinLlit.TabIndex = 7
         '
         'TBTempMaxLlit
         '
         Me.TBTempMaxLlit.Location = New System.Drawing.Point(277, 194)
+        Me.TBTempMaxLlit.MaxLength = 20
         Me.TBTempMaxLlit.Name = "TBTempMaxLlit"
         Me.TBTempMaxLlit.Size = New System.Drawing.Size(141, 20)
-        Me.TBTempMaxLlit.TabIndex = 66
+        Me.TBTempMaxLlit.TabIndex = 6
         '
         'TBTempMinExt
         '
         Me.TBTempMinExt.Location = New System.Drawing.Point(277, 161)
+        Me.TBTempMinExt.MaxLength = 20
         Me.TBTempMinExt.Name = "TBTempMinExt"
         Me.TBTempMinExt.Size = New System.Drawing.Size(141, 20)
-        Me.TBTempMinExt.TabIndex = 65
+        Me.TBTempMinExt.TabIndex = 5
         '
         'TBTempMaxEx
         '
         Me.TBTempMaxEx.Location = New System.Drawing.Point(277, 126)
+        Me.TBTempMaxEx.MaxLength = 20
         Me.TBTempMaxEx.Name = "TBTempMaxEx"
         Me.TBTempMaxEx.Size = New System.Drawing.Size(141, 20)
-        Me.TBTempMaxEx.TabIndex = 64
+        Me.TBTempMaxEx.TabIndex = 4
         '
         'TBExtrusors
         '
         Me.TBExtrusors.Location = New System.Drawing.Point(277, 93)
+        Me.TBExtrusors.MaxLength = 20
         Me.TBExtrusors.Name = "TBExtrusors"
         Me.TBExtrusors.Size = New System.Drawing.Size(141, 20)
-        Me.TBExtrusors.TabIndex = 63
+        Me.TBExtrusors.TabIndex = 3
         '
         'TBModel
         '
         Me.TBModel.Location = New System.Drawing.Point(277, 58)
+        Me.TBModel.MaxLength = 20
         Me.TBModel.Name = "TBModel"
         Me.TBModel.Size = New System.Drawing.Size(141, 20)
-        Me.TBModel.TabIndex = 62
+        Me.TBModel.TabIndex = 2
         '
         'LDiametre
         '
@@ -236,17 +249,6 @@ Partial Class ModificarModel
         Me.LVelMaxExt.Size = New System.Drawing.Size(218, 20)
         Me.LVelMaxExt.TabIndex = 58
         Me.LVelMaxExt.Text = "Velocitat máxima de l'extrusor"
-        '
-        'LAreaZ
-        '
-        Me.LAreaZ.AutoSize = True
-        Me.LAreaZ.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LAreaZ.ForeColor = System.Drawing.Color.Black
-        Me.LAreaZ.Location = New System.Drawing.Point(22, 323)
-        Me.LAreaZ.Name = "LAreaZ"
-        Me.LAreaZ.Size = New System.Drawing.Size(140, 20)
-        Me.LAreaZ.TabIndex = 57
-        Me.LAreaZ.Text = "Area d'impressió Z"
         '
         'LAreaY
         '
@@ -379,7 +381,7 @@ Partial Class ModificarModel
         Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMaterial.Size = New System.Drawing.Size(144, 193)
-        Me.DGMaterial.TabIndex = 82
+        Me.DGMaterial.TabIndex = 15
         '
         'material
         '
@@ -401,7 +403,18 @@ Partial Class ModificarModel
         Me.CBMarca.Location = New System.Drawing.Point(277, 26)
         Me.CBMarca.Name = "CBMarca"
         Me.CBMarca.Size = New System.Drawing.Size(141, 21)
-        Me.CBMarca.TabIndex = 83
+        Me.CBMarca.TabIndex = 1
+        '
+        'LAreaZ
+        '
+        Me.LAreaZ.AutoSize = True
+        Me.LAreaZ.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LAreaZ.ForeColor = System.Drawing.Color.Black
+        Me.LAreaZ.Location = New System.Drawing.Point(22, 323)
+        Me.LAreaZ.Name = "LAreaZ"
+        Me.LAreaZ.Size = New System.Drawing.Size(140, 20)
+        Me.LAreaZ.TabIndex = 57
+        Me.LAreaZ.Text = "Area d'impressió Z"
         '
         'ModificarModel
         '
@@ -473,7 +486,6 @@ Partial Class ModificarModel
     Friend WithEvents LResMaxCapa As Label
     Friend WithEvents LResMinCapa As Label
     Friend WithEvents LVelMaxExt As Label
-    Friend WithEvents LAreaZ As Label
     Friend WithEvents LAreaY As Label
     Friend WithEvents LAreaX As Label
     Friend WithEvents LTempMinLlit As Label
@@ -489,4 +501,5 @@ Partial Class ModificarModel
     Friend WithEvents material As DataGridViewTextBoxColumn
     Friend WithEvents descripcio As DataGridViewTextBoxColumn
     Friend WithEvents CBMarca As ComboBox
+    Friend WithEvents LAreaZ As Label
 End Class

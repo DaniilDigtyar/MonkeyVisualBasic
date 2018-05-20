@@ -58,47 +58,52 @@ Partial Class ModificarUsuari
         Me.BTModificar.Location = New System.Drawing.Point(26, 195)
         Me.BTModificar.Name = "BTModificar"
         Me.BTModificar.Size = New System.Drawing.Size(196, 62)
-        Me.BTModificar.TabIndex = 26
+        Me.BTModificar.TabIndex = 6
         Me.BTModificar.Text = "Modificar dades"
         Me.BTModificar.UseVisualStyleBackColor = False
         '
         'TBRContrasenya
         '
         Me.TBRContrasenya.Location = New System.Drawing.Point(255, 343)
+        Me.TBRContrasenya.MaxLength = 20
         Me.TBRContrasenya.Name = "TBRContrasenya"
         Me.TBRContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBRContrasenya.Size = New System.Drawing.Size(196, 20)
-        Me.TBRContrasenya.TabIndex = 25
+        Me.TBRContrasenya.TabIndex = 10
         '
         'TBContrasenya
         '
         Me.TBContrasenya.Location = New System.Drawing.Point(255, 291)
+        Me.TBContrasenya.MaxLength = 20
         Me.TBContrasenya.Name = "TBContrasenya"
         Me.TBContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBContrasenya.Size = New System.Drawing.Size(196, 20)
-        Me.TBContrasenya.TabIndex = 24
+        Me.TBContrasenya.TabIndex = 7
         '
         'TBCongnom
         '
         Me.TBCongnom.Location = New System.Drawing.Point(255, 121)
+        Me.TBCongnom.MaxLength = 40
         Me.TBCongnom.Name = "TBCongnom"
         Me.TBCongnom.Size = New System.Drawing.Size(196, 20)
-        Me.TBCongnom.TabIndex = 23
+        Me.TBCongnom.TabIndex = 4
         '
         'TBNom
         '
         Me.TBNom.Location = New System.Drawing.Point(255, 94)
+        Me.TBNom.MaxLength = 20
         Me.TBNom.Name = "TBNom"
         Me.TBNom.Size = New System.Drawing.Size(196, 20)
-        Me.TBNom.TabIndex = 22
+        Me.TBNom.TabIndex = 3
         '
         'TBNickname
         '
         Me.TBNickname.Enabled = False
         Me.TBNickname.Location = New System.Drawing.Point(255, 42)
+        Me.TBNickname.MaxLength = 20
         Me.TBNickname.Name = "TBNickname"
         Me.TBNickname.Size = New System.Drawing.Size(196, 20)
-        Me.TBNickname.TabIndex = 21
+        Me.TBNickname.TabIndex = 1
         '
         'LRepeteixContra
         '
@@ -165,23 +170,24 @@ Partial Class ModificarUsuari
         Me.BTCancelar.Location = New System.Drawing.Point(255, 404)
         Me.BTCancelar.Name = "BTCancelar"
         Me.BTCancelar.Size = New System.Drawing.Size(196, 62)
-        Me.BTCancelar.TabIndex = 27
+        Me.BTCancelar.TabIndex = 12
         Me.BTCancelar.Text = "Cancelar"
         Me.BTCancelar.UseVisualStyleBackColor = False
         '
         'TBCorreu
         '
         Me.TBCorreu.Location = New System.Drawing.Point(255, 147)
+        Me.TBCorreu.MaxLength = 40
         Me.TBCorreu.Name = "TBCorreu"
         Me.TBCorreu.Size = New System.Drawing.Size(196, 20)
-        Me.TBCorreu.TabIndex = 29
+        Me.TBCorreu.TabIndex = 5
         '
         'LCorreu
         '
         Me.LCorreu.AutoSize = True
         Me.LCorreu.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LCorreu.ForeColor = System.Drawing.Color.Black
-        Me.LCorreu.Location = New System.Drawing.Point(21, 141)
+        Me.LCorreu.Location = New System.Drawing.Point(21, 147)
         Me.LCorreu.Name = "LCorreu"
         Me.LCorreu.Size = New System.Drawing.Size(72, 25)
         Me.LCorreu.TabIndex = 28
@@ -198,10 +204,11 @@ Partial Class ModificarUsuari
         'TBNovaContraseña
         '
         Me.TBNovaContraseña.Location = New System.Drawing.Point(255, 316)
+        Me.TBNovaContraseña.MaxLength = 20
         Me.TBNovaContraseña.Name = "TBNovaContraseña"
         Me.TBNovaContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBNovaContraseña.Size = New System.Drawing.Size(196, 20)
-        Me.TBNovaContraseña.TabIndex = 83
+        Me.TBNovaContraseña.TabIndex = 8
         '
         'LabelNovaContraseña
         '
@@ -210,16 +217,17 @@ Partial Class ModificarUsuari
         Me.LabelNovaContraseña.ForeColor = System.Drawing.Color.Black
         Me.LabelNovaContraseña.Location = New System.Drawing.Point(23, 310)
         Me.LabelNovaContraseña.Name = "LabelNovaContraseña"
-        Me.LabelNovaContraseña.Size = New System.Drawing.Size(160, 25)
+        Me.LabelNovaContraseña.Size = New System.Drawing.Size(170, 25)
         Me.LabelNovaContraseña.TabIndex = 82
-        Me.LabelNovaContraseña.Text = "Nova contraseña"
+        Me.LabelNovaContraseña.Text = "Nova contrasenya"
         '
         'TBDni
         '
         Me.TBDni.Location = New System.Drawing.Point(255, 68)
+        Me.TBDni.MaxLength = 9
         Me.TBDni.Name = "TBDni"
         Me.TBDni.Size = New System.Drawing.Size(196, 20)
-        Me.TBDni.TabIndex = 85
+        Me.TBDni.TabIndex = 2
         '
         'Label1
         '
@@ -252,7 +260,7 @@ Partial Class ModificarUsuari
         Me.ButtonModConstraseña.Location = New System.Drawing.Point(28, 404)
         Me.ButtonModConstraseña.Name = "ButtonModConstraseña"
         Me.ButtonModConstraseña.Size = New System.Drawing.Size(196, 62)
-        Me.ButtonModConstraseña.TabIndex = 87
+        Me.ButtonModConstraseña.TabIndex = 11
         Me.ButtonModConstraseña.Text = "Modificar constrasenya"
         Me.ButtonModConstraseña.UseVisualStyleBackColor = False
         '
@@ -269,9 +277,9 @@ Partial Class ModificarUsuari
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Black
-        Me.Panel1.Location = New System.Drawing.Point(12, 263)
+        Me.Panel1.Location = New System.Drawing.Point(12, 272)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(456, 10)
+        Me.Panel1.Size = New System.Drawing.Size(456, 4)
         Me.Panel1.TabIndex = 90
         '
         'ModificarUsuari

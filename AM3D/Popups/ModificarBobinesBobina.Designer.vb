@@ -26,9 +26,6 @@ Partial Class ModificarBobinesBobina
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarBobinesBobina))
         Me.MenuSup = New System.Windows.Forms.Panel()
         Me.DGColor = New System.Windows.Forms.DataGridView()
-        Me.color = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Hex = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColorBackground = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGMarcaProductora = New System.Windows.Forms.DataGridView()
         Me.marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGMaterial = New System.Windows.Forms.DataGridView()
@@ -42,6 +39,9 @@ Partial Class ModificarBobinesBobina
         Me.LDiametre = New System.Windows.Forms.Label()
         Me.BTCancelar = New System.Windows.Forms.Button()
         Me.LabelInfo = New System.Windows.Forms.Label()
+        Me.color = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Hex = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColorBackground = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DGColor, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGMarcaProductora, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGMaterial, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,30 +70,12 @@ Partial Class ModificarBobinesBobina
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DGColor.DefaultCellStyle = DataGridViewCellStyle1
-        Me.DGColor.Location = New System.Drawing.Point(500, 68)
+        Me.DGColor.Location = New System.Drawing.Point(500, 50)
         Me.DGColor.MultiSelect = False
         Me.DGColor.Name = "DGColor"
         Me.DGColor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGColor.Size = New System.Drawing.Size(286, 258)
-        Me.DGColor.TabIndex = 88
-        '
-        'color
-        '
-        Me.color.HeaderText = "Nombre"
-        Me.color.Name = "color"
-        Me.color.ReadOnly = True
-        '
-        'Hex
-        '
-        Me.Hex.HeaderText = "Hex"
-        Me.Hex.Name = "Hex"
-        Me.Hex.ReadOnly = True
-        '
-        'ColorBackground
-        '
-        Me.ColorBackground.HeaderText = "Color"
-        Me.ColorBackground.Name = "ColorBackground"
-        Me.ColorBackground.ReadOnly = True
+        Me.DGColor.TabIndex = 4
         '
         'DGMarcaProductora
         '
@@ -102,12 +84,12 @@ Partial Class ModificarBobinesBobina
         Me.DGMarcaProductora.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DGMarcaProductora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGMarcaProductora.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.marca})
-        Me.DGMarcaProductora.Location = New System.Drawing.Point(319, 66)
+        Me.DGMarcaProductora.Location = New System.Drawing.Point(319, 48)
         Me.DGMarcaProductora.MultiSelect = False
         Me.DGMarcaProductora.Name = "DGMarcaProductora"
         Me.DGMarcaProductora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMarcaProductora.Size = New System.Drawing.Size(175, 260)
-        Me.DGMarcaProductora.TabIndex = 87
+        Me.DGMarcaProductora.TabIndex = 3
         '
         'marca
         '
@@ -123,12 +105,12 @@ Partial Class ModificarBobinesBobina
         Me.DGMaterial.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DGMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGMaterial.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.material, Me.descripcio})
-        Me.DGMaterial.Location = New System.Drawing.Point(170, 68)
+        Me.DGMaterial.Location = New System.Drawing.Point(170, 50)
         Me.DGMaterial.MultiSelect = False
         Me.DGMaterial.Name = "DGMaterial"
         Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMaterial.Size = New System.Drawing.Size(143, 260)
-        Me.DGMaterial.TabIndex = 86
+        Me.DGMaterial.TabIndex = 2
         '
         'material
         '
@@ -150,10 +132,10 @@ Partial Class ModificarBobinesBobina
         Me.BTAfegir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTAfegir.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTAfegir.ForeColor = System.Drawing.Color.Black
-        Me.BTAfegir.Location = New System.Drawing.Point(9, 202)
+        Me.BTAfegir.Location = New System.Drawing.Point(9, 184)
         Me.BTAfegir.Name = "BTAfegir"
         Me.BTAfegir.Size = New System.Drawing.Size(155, 58)
-        Me.BTAfegir.TabIndex = 84
+        Me.BTAfegir.TabIndex = 5
         Me.BTAfegir.Text = "Modificar"
         Me.BTAfegir.UseVisualStyleBackColor = False
         '
@@ -162,7 +144,7 @@ Partial Class ModificarBobinesBobina
         Me.LColor.AutoSize = True
         Me.LColor.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LColor.ForeColor = System.Drawing.Color.Black
-        Me.LColor.Location = New System.Drawing.Point(496, 45)
+        Me.LColor.Location = New System.Drawing.Point(496, 27)
         Me.LColor.Name = "LColor"
         Me.LColor.Size = New System.Drawing.Size(46, 20)
         Me.LColor.TabIndex = 83
@@ -173,7 +155,7 @@ Partial Class ModificarBobinesBobina
         Me.LMarca.AutoSize = True
         Me.LMarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMarca.ForeColor = System.Drawing.Color.Black
-        Me.LMarca.Location = New System.Drawing.Point(315, 45)
+        Me.LMarca.Location = New System.Drawing.Point(315, 27)
         Me.LMarca.Name = "LMarca"
         Me.LMarca.Size = New System.Drawing.Size(135, 20)
         Me.LMarca.TabIndex = 82
@@ -184,7 +166,7 @@ Partial Class ModificarBobinesBobina
         Me.LMaterial.AutoSize = True
         Me.LMaterial.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMaterial.ForeColor = System.Drawing.Color.Black
-        Me.LMaterial.Location = New System.Drawing.Point(166, 45)
+        Me.LMaterial.Location = New System.Drawing.Point(166, 27)
         Me.LMaterial.Name = "LMaterial"
         Me.LMaterial.Size = New System.Drawing.Size(65, 20)
         Me.LMaterial.TabIndex = 81
@@ -192,17 +174,18 @@ Partial Class ModificarBobinesBobina
         '
         'TBDiametre
         '
-        Me.TBDiametre.Location = New System.Drawing.Point(13, 68)
+        Me.TBDiametre.Location = New System.Drawing.Point(13, 50)
+        Me.TBDiametre.MaxLength = 20
         Me.TBDiametre.Name = "TBDiametre"
         Me.TBDiametre.Size = New System.Drawing.Size(151, 20)
-        Me.TBDiametre.TabIndex = 80
+        Me.TBDiametre.TabIndex = 1
         '
         'LDiametre
         '
         Me.LDiametre.AutoSize = True
         Me.LDiametre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LDiametre.ForeColor = System.Drawing.Color.Black
-        Me.LDiametre.Location = New System.Drawing.Point(9, 45)
+        Me.LDiametre.Location = New System.Drawing.Point(9, 27)
         Me.LDiametre.Name = "LDiametre"
         Me.LDiametre.Size = New System.Drawing.Size(74, 20)
         Me.LDiametre.TabIndex = 79
@@ -215,10 +198,10 @@ Partial Class ModificarBobinesBobina
         Me.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTCancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTCancelar.ForeColor = System.Drawing.Color.Black
-        Me.BTCancelar.Location = New System.Drawing.Point(9, 266)
+        Me.BTCancelar.Location = New System.Drawing.Point(9, 248)
         Me.BTCancelar.Name = "BTCancelar"
         Me.BTCancelar.Size = New System.Drawing.Size(155, 62)
-        Me.BTCancelar.TabIndex = 89
+        Me.BTCancelar.TabIndex = 6
         Me.BTCancelar.Text = "Cancelar"
         Me.BTCancelar.UseVisualStyleBackColor = False
         '
@@ -227,18 +210,36 @@ Partial Class ModificarBobinesBobina
         Me.LabelInfo.AutoSize = True
         Me.LabelInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
         Me.LabelInfo.ForeColor = System.Drawing.Color.DarkRed
-        Me.LabelInfo.Location = New System.Drawing.Point(12, 340)
+        Me.LabelInfo.Location = New System.Drawing.Point(12, 322)
         Me.LabelInfo.Name = "LabelInfo"
         Me.LabelInfo.Size = New System.Drawing.Size(0, 18)
         Me.LabelInfo.TabIndex = 90
         Me.LabelInfo.Visible = False
+        '
+        'color
+        '
+        Me.color.HeaderText = "Nom"
+        Me.color.Name = "color"
+        Me.color.ReadOnly = True
+        '
+        'Hex
+        '
+        Me.Hex.HeaderText = "Hex"
+        Me.Hex.Name = "Hex"
+        Me.Hex.ReadOnly = True
+        '
+        'ColorBackground
+        '
+        Me.ColorBackground.HeaderText = "Color"
+        Me.ColorBackground.Name = "ColorBackground"
+        Me.ColorBackground.ReadOnly = True
         '
         'ModificarBobinesBobina
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(798, 388)
+        Me.ClientSize = New System.Drawing.Size(798, 353)
         Me.Controls.Add(Me.LabelInfo)
         Me.Controls.Add(Me.BTCancelar)
         Me.Controls.Add(Me.DGColor)
@@ -265,9 +266,6 @@ Partial Class ModificarBobinesBobina
     End Sub
     Friend WithEvents MenuSup As Panel
     Friend WithEvents DGColor As DataGridView
-    Friend WithEvents color As DataGridViewTextBoxColumn
-    Friend WithEvents Hex As DataGridViewTextBoxColumn
-    Friend WithEvents ColorBackground As DataGridViewTextBoxColumn
     Friend WithEvents DGMarcaProductora As DataGridView
     Friend WithEvents marca As DataGridViewTextBoxColumn
     Friend WithEvents DGMaterial As DataGridView
@@ -281,4 +279,7 @@ Partial Class ModificarBobinesBobina
     Friend WithEvents LDiametre As Label
     Friend WithEvents BTCancelar As Button
     Friend WithEvents LabelInfo As Label
+    Friend WithEvents color As DataGridViewTextBoxColumn
+    Friend WithEvents Hex As DataGridViewTextBoxColumn
+    Friend WithEvents ColorBackground As DataGridViewTextBoxColumn
 End Class

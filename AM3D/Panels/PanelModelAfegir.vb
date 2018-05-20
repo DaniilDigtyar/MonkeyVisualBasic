@@ -111,4 +111,70 @@
             End If
         End If
     End Sub
+
+    Private Sub TBTempMaxEx_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBTempMaxEx.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TBTempMinExt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBTempMinExt.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TBTempMaxLlit_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBTempMaxLlit.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TBTempMinLlit_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBTempMinLlit.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TBAImpX_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBAImpX.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TBAImpY_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBAImpY.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TBImpZ_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBImpZ.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TBVelMaxExt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBVelMaxExt.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TBResMinCap_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBResMinCap.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TBResMaxCap_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBResMaxCap.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TBDiametre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBDiametre.KeyPress
+        If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) AndAlso e.KeyChar <> "," Then
+            e.Handled = True
+        End If
+    End Sub
 End Class

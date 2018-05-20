@@ -22,7 +22,7 @@ Partial Class PanelModelAfegir
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.LModel = New System.Windows.Forms.Label()
         Me.LMarca = New System.Windows.Forms.Label()
         Me.LNExtrusors = New System.Windows.Forms.Label()
@@ -89,9 +89,9 @@ Partial Class PanelModelAfegir
         Me.LNExtrusors.ForeColor = System.Drawing.Color.Black
         Me.LNExtrusors.Location = New System.Drawing.Point(21, 92)
         Me.LNExtrusors.Name = "LNExtrusors"
-        Me.LNExtrusors.Size = New System.Drawing.Size(97, 20)
+        Me.LNExtrusors.Size = New System.Drawing.Size(101, 20)
         Me.LNExtrusors.TabIndex = 18
-        Me.LNExtrusors.Text = "Nº Extrusors"
+        Me.LNExtrusors.Text = "Nº Extrusors "
         '
         'LTempMaxExt
         '
@@ -217,100 +217,113 @@ Partial Class PanelModelAfegir
         'TBModel
         '
         Me.TBModel.Location = New System.Drawing.Point(276, 59)
+        Me.TBModel.MaxLength = 20
         Me.TBModel.Name = "TBModel"
         Me.TBModel.Size = New System.Drawing.Size(141, 20)
-        Me.TBModel.TabIndex = 30
+        Me.TBModel.TabIndex = 2
         '
         'TBExtrusors
         '
         Me.TBExtrusors.Location = New System.Drawing.Point(276, 94)
+        Me.TBExtrusors.MaxLength = 20
         Me.TBExtrusors.Name = "TBExtrusors"
         Me.TBExtrusors.Size = New System.Drawing.Size(141, 20)
-        Me.TBExtrusors.TabIndex = 31
+        Me.TBExtrusors.TabIndex = 3
         '
         'TBTempMaxEx
         '
         Me.TBTempMaxEx.Location = New System.Drawing.Point(276, 129)
+        Me.TBTempMaxEx.MaxLength = 20
         Me.TBTempMaxEx.Name = "TBTempMaxEx"
         Me.TBTempMaxEx.Size = New System.Drawing.Size(141, 20)
-        Me.TBTempMaxEx.TabIndex = 32
+        Me.TBTempMaxEx.TabIndex = 4
         '
         'TBTempMinExt
         '
         Me.TBTempMinExt.Location = New System.Drawing.Point(276, 164)
+        Me.TBTempMinExt.MaxLength = 20
         Me.TBTempMinExt.Name = "TBTempMinExt"
         Me.TBTempMinExt.Size = New System.Drawing.Size(141, 20)
-        Me.TBTempMinExt.TabIndex = 33
+        Me.TBTempMinExt.TabIndex = 5
         '
         'TBTempMaxLlit
         '
         Me.TBTempMaxLlit.Location = New System.Drawing.Point(276, 197)
+        Me.TBTempMaxLlit.MaxLength = 20
         Me.TBTempMaxLlit.Name = "TBTempMaxLlit"
         Me.TBTempMaxLlit.Size = New System.Drawing.Size(141, 20)
-        Me.TBTempMaxLlit.TabIndex = 34
+        Me.TBTempMaxLlit.TabIndex = 6
         '
         'TBTempMinLlit
         '
         Me.TBTempMinLlit.Location = New System.Drawing.Point(276, 232)
+        Me.TBTempMinLlit.MaxLength = 20
         Me.TBTempMinLlit.Name = "TBTempMinLlit"
         Me.TBTempMinLlit.Size = New System.Drawing.Size(141, 20)
-        Me.TBTempMinLlit.TabIndex = 35
+        Me.TBTempMinLlit.TabIndex = 7
         '
         'TBAImpX
         '
         Me.TBAImpX.Location = New System.Drawing.Point(276, 268)
+        Me.TBAImpX.MaxLength = 20
         Me.TBAImpX.Name = "TBAImpX"
         Me.TBAImpX.Size = New System.Drawing.Size(141, 20)
-        Me.TBAImpX.TabIndex = 36
+        Me.TBAImpX.TabIndex = 8
         '
         'TBAImpY
         '
         Me.TBAImpY.Location = New System.Drawing.Point(276, 297)
+        Me.TBAImpY.MaxLength = 20
         Me.TBAImpY.Name = "TBAImpY"
         Me.TBAImpY.Size = New System.Drawing.Size(141, 20)
-        Me.TBAImpY.TabIndex = 37
+        Me.TBAImpY.TabIndex = 9
         '
         'TBImpZ
         '
         Me.TBImpZ.Location = New System.Drawing.Point(276, 326)
+        Me.TBImpZ.MaxLength = 20
         Me.TBImpZ.Name = "TBImpZ"
         Me.TBImpZ.Size = New System.Drawing.Size(141, 20)
-        Me.TBImpZ.TabIndex = 38
+        Me.TBImpZ.TabIndex = 10
         '
         'TBVelMaxExt
         '
         Me.TBVelMaxExt.Location = New System.Drawing.Point(637, 28)
+        Me.TBVelMaxExt.MaxLength = 20
         Me.TBVelMaxExt.Name = "TBVelMaxExt"
         Me.TBVelMaxExt.Size = New System.Drawing.Size(144, 20)
-        Me.TBVelMaxExt.TabIndex = 39
+        Me.TBVelMaxExt.TabIndex = 11
         '
         'TBResMinCap
         '
         Me.TBResMinCap.Location = New System.Drawing.Point(637, 61)
+        Me.TBResMinCap.MaxLength = 20
         Me.TBResMinCap.Name = "TBResMinCap"
         Me.TBResMinCap.Size = New System.Drawing.Size(144, 20)
-        Me.TBResMinCap.TabIndex = 40
+        Me.TBResMinCap.TabIndex = 12
         '
         'TBResMaxCap
         '
         Me.TBResMaxCap.Location = New System.Drawing.Point(637, 94)
+        Me.TBResMaxCap.MaxLength = 20
         Me.TBResMaxCap.Name = "TBResMaxCap"
         Me.TBResMaxCap.Size = New System.Drawing.Size(144, 20)
-        Me.TBResMaxCap.TabIndex = 41
+        Me.TBResMaxCap.TabIndex = 13
         '
         'TBDiametre
         '
         Me.TBDiametre.Location = New System.Drawing.Point(637, 127)
+        Me.TBDiametre.MaxLength = 20
         Me.TBDiametre.Name = "TBDiametre"
         Me.TBDiametre.Size = New System.Drawing.Size(144, 20)
-        Me.TBDiametre.TabIndex = 42
+        Me.TBDiametre.TabIndex = 14
         '
         'LMaterialSup
         '
         Me.LMaterialSup.AutoSize = True
         Me.LMaterialSup.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMaterialSup.ForeColor = System.Drawing.Color.Black
-        Me.LMaterialSup.Location = New System.Drawing.Point(500, 164)
+        Me.LMaterialSup.Location = New System.Drawing.Point(423, 164)
         Me.LMaterialSup.Name = "LMaterialSup"
         Me.LMaterialSup.Size = New System.Drawing.Size(131, 20)
         Me.LMaterialSup.TabIndex = 45
@@ -326,7 +339,7 @@ Partial Class PanelModelAfegir
         Me.BTAfegir.Location = New System.Drawing.Point(424, 216)
         Me.BTAfegir.Name = "BTAfegir"
         Me.BTAfegir.Size = New System.Drawing.Size(194, 62)
-        Me.BTAfegir.TabIndex = 46
+        Me.BTAfegir.TabIndex = 16
         Me.BTAfegir.Text = "Afegir"
         Me.BTAfegir.UseVisualStyleBackColor = False
         '
@@ -340,7 +353,7 @@ Partial Class PanelModelAfegir
         Me.BTBorrar.Location = New System.Drawing.Point(424, 284)
         Me.BTBorrar.Name = "BTBorrar"
         Me.BTBorrar.Size = New System.Drawing.Size(194, 62)
-        Me.BTBorrar.TabIndex = 47
+        Me.BTBorrar.TabIndex = 17
         Me.BTBorrar.Text = "Borrar"
         Me.BTBorrar.UseVisualStyleBackColor = False
         '
@@ -354,11 +367,11 @@ Partial Class PanelModelAfegir
         Me.DGMaterial.Location = New System.Drawing.Point(637, 164)
         Me.DGMaterial.MultiSelect = False
         Me.DGMaterial.Name = "DGMaterial"
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DGMaterial.Size = New System.Drawing.Size(144, 193)
-        Me.DGMaterial.TabIndex = 68
+        Me.DGMaterial.Size = New System.Drawing.Size(144, 182)
+        Me.DGMaterial.TabIndex = 15
         '
         'material
         '
@@ -380,7 +393,7 @@ Partial Class PanelModelAfegir
         Me.CBMarca.Location = New System.Drawing.Point(276, 25)
         Me.CBMarca.Name = "CBMarca"
         Me.CBMarca.Size = New System.Drawing.Size(141, 21)
-        Me.CBMarca.TabIndex = 69
+        Me.CBMarca.TabIndex = 1
         '
         'PanelModelAfegir
         '

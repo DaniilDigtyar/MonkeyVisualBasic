@@ -47,9 +47,10 @@ Partial Class PanelBobinesBobinaAfegir
         'TBDiametre
         '
         Me.TBDiametre.Location = New System.Drawing.Point(16, 57)
+        Me.TBDiametre.MaxLength = 10
         Me.TBDiametre.Name = "TBDiametre"
         Me.TBDiametre.Size = New System.Drawing.Size(151, 20)
-        Me.TBDiametre.TabIndex = 54
+        Me.TBDiametre.TabIndex = 0
         '
         'LDiametre
         '
@@ -105,7 +106,7 @@ Partial Class PanelBobinesBobinaAfegir
         Me.BTAfegir.Location = New System.Drawing.Point(12, 188)
         Me.BTAfegir.Name = "BTAfegir"
         Me.BTAfegir.Size = New System.Drawing.Size(155, 58)
-        Me.BTAfegir.TabIndex = 65
+        Me.BTAfegir.TabIndex = 4
         Me.BTAfegir.Text = "Afegir"
         Me.BTAfegir.UseVisualStyleBackColor = False
         '
@@ -119,7 +120,7 @@ Partial Class PanelBobinesBobinaAfegir
         Me.BTBorrar.Location = New System.Drawing.Point(12, 285)
         Me.BTBorrar.Name = "BTBorrar"
         Me.BTBorrar.Size = New System.Drawing.Size(155, 58)
-        Me.BTBorrar.TabIndex = 66
+        Me.BTBorrar.TabIndex = 5
         Me.BTBorrar.Text = "Borrar"
         Me.BTBorrar.UseVisualStyleBackColor = False
         '
@@ -135,7 +136,7 @@ Partial Class PanelBobinesBobinaAfegir
         Me.DGMaterial.Name = "DGMaterial"
         Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMaterial.Size = New System.Drawing.Size(143, 288)
-        Me.DGMaterial.TabIndex = 67
+        Me.DGMaterial.TabIndex = 1
         '
         'material
         '
@@ -162,7 +163,7 @@ Partial Class PanelBobinesBobinaAfegir
         Me.DGMarcaProductora.Name = "DGMarcaProductora"
         Me.DGMarcaProductora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMarcaProductora.Size = New System.Drawing.Size(175, 288)
-        Me.DGMarcaProductora.TabIndex = 68
+        Me.DGMarcaProductora.TabIndex = 2
         '
         'marca
         '
@@ -191,7 +192,7 @@ Partial Class PanelBobinesBobinaAfegir
         Me.DGColor.Name = "DGColor"
         Me.DGColor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGColor.Size = New System.Drawing.Size(286, 286)
-        Me.DGColor.TabIndex = 69
+        Me.DGColor.TabIndex = 3
         '
         'color
         '

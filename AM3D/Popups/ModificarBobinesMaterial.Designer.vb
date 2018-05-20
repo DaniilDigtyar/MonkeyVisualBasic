@@ -35,17 +35,18 @@ Partial Class ModificarBobinesMaterial
         '
         'TBTecnic
         '
-        Me.TBTecnic.Location = New System.Drawing.Point(196, 78)
+        Me.TBTecnic.Location = New System.Drawing.Point(175, 55)
+        Me.TBTecnic.MaxLength = 20
         Me.TBTecnic.Name = "TBTecnic"
         Me.TBTecnic.Size = New System.Drawing.Size(141, 20)
-        Me.TBTecnic.TabIndex = 67
+        Me.TBTecnic.TabIndex = 2
         '
         'LTecnic
         '
         Me.LTecnic.AutoSize = True
         Me.LTecnic.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LTecnic.ForeColor = System.Drawing.Color.Black
-        Me.LTecnic.Location = New System.Drawing.Point(29, 78)
+        Me.LTecnic.Location = New System.Drawing.Point(8, 55)
         Me.LTecnic.Name = "LTecnic"
         Me.LTecnic.Size = New System.Drawing.Size(92, 20)
         Me.LTecnic.TabIndex = 66
@@ -58,10 +59,10 @@ Partial Class ModificarBobinesMaterial
         Me.BTBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTBorrar.ForeColor = System.Drawing.Color.Black
-        Me.BTBorrar.Location = New System.Drawing.Point(57, 235)
+        Me.BTBorrar.Location = New System.Drawing.Point(36, 188)
         Me.BTBorrar.Name = "BTBorrar"
         Me.BTBorrar.Size = New System.Drawing.Size(245, 62)
-        Me.BTBorrar.TabIndex = 65
+        Me.BTBorrar.TabIndex = 4
         Me.BTBorrar.Text = "Borrar"
         Me.BTBorrar.UseVisualStyleBackColor = False
         '
@@ -72,26 +73,27 @@ Partial Class ModificarBobinesMaterial
         Me.BTModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificar.ForeColor = System.Drawing.Color.Black
-        Me.BTModificar.Location = New System.Drawing.Point(57, 150)
+        Me.BTModificar.Location = New System.Drawing.Point(36, 120)
         Me.BTModificar.Name = "BTModificar"
         Me.BTModificar.Size = New System.Drawing.Size(245, 62)
-        Me.BTModificar.TabIndex = 64
+        Me.BTModificar.TabIndex = 3
         Me.BTModificar.Text = "Modificar"
         Me.BTModificar.UseVisualStyleBackColor = False
         '
         'TBMaterial
         '
-        Me.TBMaterial.Location = New System.Drawing.Point(196, 36)
+        Me.TBMaterial.Location = New System.Drawing.Point(175, 29)
+        Me.TBMaterial.MaxLength = 20
         Me.TBMaterial.Name = "TBMaterial"
         Me.TBMaterial.Size = New System.Drawing.Size(141, 20)
-        Me.TBMaterial.TabIndex = 63
+        Me.TBMaterial.TabIndex = 1
         '
         'LMaterial
         '
         Me.LMaterial.AutoSize = True
         Me.LMaterial.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMaterial.ForeColor = System.Drawing.Color.Black
-        Me.LMaterial.Location = New System.Drawing.Point(29, 34)
+        Me.LMaterial.Location = New System.Drawing.Point(8, 27)
         Me.LMaterial.Name = "LMaterial"
         Me.LMaterial.Size = New System.Drawing.Size(65, 20)
         Me.LMaterial.TabIndex = 62
@@ -102,7 +104,7 @@ Partial Class ModificarBobinesMaterial
         Me.MenuSup.BackColor = System.Drawing.Color.Black
         Me.MenuSup.Location = New System.Drawing.Point(0, 0)
         Me.MenuSup.Name = "MenuSup"
-        Me.MenuSup.Size = New System.Drawing.Size(366, 19)
+        Me.MenuSup.Size = New System.Drawing.Size(328, 19)
         Me.MenuSup.TabIndex = 68
         '
         'LabelInfo
@@ -110,7 +112,7 @@ Partial Class ModificarBobinesMaterial
         Me.LabelInfo.AutoSize = True
         Me.LabelInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
         Me.LabelInfo.ForeColor = System.Drawing.Color.DarkRed
-        Me.LabelInfo.Location = New System.Drawing.Point(30, 116)
+        Me.LabelInfo.Location = New System.Drawing.Point(9, 85)
         Me.LabelInfo.Name = "LabelInfo"
         Me.LabelInfo.Size = New System.Drawing.Size(0, 18)
         Me.LabelInfo.TabIndex = 69
@@ -120,7 +122,7 @@ Partial Class ModificarBobinesMaterial
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(364, 332)
+        Me.ClientSize = New System.Drawing.Size(326, 265)
         Me.Controls.Add(Me.LabelInfo)
         Me.Controls.Add(Me.MenuSup)
         Me.Controls.Add(Me.TBTecnic)

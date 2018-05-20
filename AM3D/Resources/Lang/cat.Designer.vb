@@ -398,7 +398,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to No s&apos;ha pogut crear el fitxer.
+        '''  Looks up a localized string similar to No s&apos;ha pogut crear el fitxers.
         '''</summary>
         Friend Shared ReadOnly Property ErrorFitxer() As String
             Get
@@ -470,7 +470,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Area d&apos;impressió X.
+        '''  Looks up a localized string similar to Àrea d&apos;impressió X.
         '''</summary>
         Friend Shared ReadOnly Property LAreaX() As String
             Get
@@ -479,7 +479,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Area d&apos;impressió Y.
+        '''  Looks up a localized string similar to Àrea d&apos;impressió Y.
         '''</summary>
         Friend Shared ReadOnly Property LAreaY() As String
             Get
@@ -488,7 +488,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Area d&apos;impressió Z.
+        '''  Looks up a localized string similar to Àrea d&apos;impressió Z.
         '''</summary>
         Friend Shared ReadOnly Property LAreaZ() As String
             Get
@@ -506,7 +506,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Benvingut.
+        '''  Looks up a localized string similar to Benvingut/da.
         '''</summary>
         Friend Shared ReadOnly Property LBenvingut() As String
             Get
@@ -875,7 +875,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Resolució máxima de capa.
+        '''  Looks up a localized string similar to Resolució màxima de capa.
         '''</summary>
         Friend Shared ReadOnly Property LResMaxCapa() As String
             Get
@@ -920,7 +920,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Temperatura máxima del extrusor.
+        '''  Looks up a localized string similar to Temperatura màxima de l&apos;extrusor.
         '''</summary>
         Friend Shared ReadOnly Property LTempMaxExt() As String
             Get
@@ -929,7 +929,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Temperatura máxima del llit.
+        '''  Looks up a localized string similar to Temperatura màxima del llit.
         '''</summary>
         Friend Shared ReadOnly Property LTempMaxLlit() As String
             Get
@@ -938,7 +938,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Temperatura mínima del extrusor.
+        '''  Looks up a localized string similar to Temperatura mínima de l&apos;extrusor.
         '''</summary>
         Friend Shared ReadOnly Property LTempMinExt() As String
             Get
@@ -974,7 +974,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Velocitat máxima de l&apos;extrusor.
+        '''  Looks up a localized string similar to Velocitat màxima de l&apos;extrusor.
         '''</summary>
         Friend Shared ReadOnly Property LVelMaxExt() As String
             Get
@@ -1001,7 +1001,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Eliminació feta correctament..
+        '''  Looks up a localized string similar to Eliminació completada..
         '''</summary>
         Friend Shared ReadOnly Property MSGDeleteCorrect() As String
             Get
@@ -1037,7 +1037,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Aquesta Impressora no es pot cancel·lar..
+        '''  Looks up a localized string similar to Aquesta impressora no es pot cancel·lar..
         '''</summary>
         Friend Shared ReadOnly Property MSGImpressionsCancelarErrorSelect() As String
             Get
@@ -1109,7 +1109,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to L&apos;nickname és usat..
+        '''  Looks up a localized string similar to L&apos;usuari ja esta en ús..
         '''</summary>
         Friend Shared ReadOnly Property MSGUserExist() As String
             Get
@@ -1154,7 +1154,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Error en desar dades d&apos;usuari..
+        '''  Looks up a localized string similar to Error en desar les dades d&apos;usuari..
         '''</summary>
         Friend Shared ReadOnly Property MSGUserUpdateError() As String
             Get

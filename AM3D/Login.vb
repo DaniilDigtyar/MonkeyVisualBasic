@@ -4,6 +4,7 @@
     Dim myCoolPoint As New Point
 
     Protected Overrides Sub OnLoad(e As EventArgs)
+        Me.AcceptButton = ButtonLogin
         TextBoxContrasenya.Text = "dani220497"
         CBIdioma.Items.Add("Català")
         CBIdioma.Items.Add("English")
@@ -62,7 +63,7 @@
     Private Sub CBIdioma_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles CBIdioma.KeyPress
         e.Handled = True
     End Sub
-  
+
     Private Sub ButtonLogin_Click(sender As Object, e As EventArgs) Handles ButtonLogin.Click
         Dim SQLCommands As New SQLCommands
         Try
@@ -111,5 +112,4 @@
         End If
 
     End Sub
-
 End Class

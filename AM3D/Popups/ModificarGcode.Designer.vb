@@ -55,7 +55,7 @@ Partial Class ModificarGcode
         Me.TBRuta.Location = New System.Drawing.Point(189, 37)
         Me.TBRuta.Name = "TBRuta"
         Me.TBRuta.Size = New System.Drawing.Size(231, 20)
-        Me.TBRuta.TabIndex = 63
+        Me.TBRuta.TabIndex = 1
         '
         'LRutaFich
         '
@@ -78,7 +78,7 @@ Partial Class ModificarGcode
         Me.BTCancelar.Location = New System.Drawing.Point(33, 530)
         Me.BTCancelar.Name = "BTCancelar"
         Me.BTCancelar.Size = New System.Drawing.Size(387, 62)
-        Me.BTCancelar.TabIndex = 61
+        Me.BTCancelar.TabIndex = 5
         Me.BTCancelar.Text = "Cancelar"
         Me.BTCancelar.UseVisualStyleBackColor = False
         '
@@ -92,16 +92,17 @@ Partial Class ModificarGcode
         Me.BTModificar.Location = New System.Drawing.Point(33, 462)
         Me.BTModificar.Name = "BTModificar"
         Me.BTModificar.Size = New System.Drawing.Size(387, 62)
-        Me.BTModificar.TabIndex = 60
+        Me.BTModificar.TabIndex = 4
         Me.BTModificar.Text = "Modificar"
         Me.BTModificar.UseVisualStyleBackColor = False
         '
         'TBNomGcode
         '
         Me.TBNomGcode.Location = New System.Drawing.Point(189, 72)
+        Me.TBNomGcode.MaxLength = 20
         Me.TBNomGcode.Name = "TBNomGcode"
         Me.TBNomGcode.Size = New System.Drawing.Size(231, 20)
-        Me.TBNomGcode.TabIndex = 59
+        Me.TBNomGcode.TabIndex = 2
         '
         'LNomGcode
         '
@@ -136,7 +137,7 @@ Partial Class ModificarGcode
         Me.DGMaterial.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMaterial.Size = New System.Drawing.Size(387, 303)
-        Me.DGMaterial.TabIndex = 67
+        Me.DGMaterial.TabIndex = 3
         '
         'material
         '

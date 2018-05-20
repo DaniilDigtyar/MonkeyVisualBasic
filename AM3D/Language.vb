@@ -48,6 +48,7 @@
             FImpressions.BTCancelar.Text = My.Resources.cat.BTCancelar
             FImpressions.BTImpressionsPeçaRetirada.Text = My.Resources.cat.BTImpressionsPeçaRetirada
             FImpressions.BTImprimirG.Text = My.Resources.cat.BTImprimirG
+            FImpressions.BResfrescar.Text = My.Resources.cat.BResfrescar
             FImpressores.BTConnectar.Text = My.Resources.cat.BTConnectar
             FImpressores.BTLlista.Text = My.Resources.cat.BTLlista
             FInici.LBenvingut.Text = My.Resources.cat.LBenvingut
@@ -86,23 +87,27 @@
             PanelBobinesBobinaAfegir.LColor.Text = My.Resources.cat.LColor
             PanelBobinesBobinaModificarEliminar.BTModificarBobina.Text = My.Resources.cat.BTModificarBobina
             PanelBobinesBobinaModificarEliminar.BTEliminarBobina.Text = My.Resources.cat.BTEliminarBobina
+            PanelBobinesBobinaModificarEliminar.BResfrescar.Text = My.Resources.cat.BResfrescar
             PanelBobinesColorAfegir.LColor.Text = My.Resources.cat.LColor
             PanelBobinesColorAfegir.LHex.Text = My.Resources.cat.LHex
             PanelBobinesColorAfegir.BTAfegir.Text = My.Resources.cat.BTAfegir
             PanelBobinesColorAfegir.BTBorrar.Text = My.Resources.cat.BTBorrar
             PanelBobinesColorModificarEliminar.BTModificarColor.Text = My.Resources.cat.BTModificarColor
             PanelBobinesColorModificarEliminar.BTEliminarColor.Text = My.Resources.cat.BTEliminarColor
+            PanelBobinesColorModificarEliminar.BResfrescar.Text = My.Resources.cat.BResfrescar
             PanelBobinesMarcaAfegir.LMarcaProductora.Text = My.Resources.cat.LMarcaProductora
             PanelBobinesMarcaAfegir.BTAfegir.Text = My.Resources.cat.BTAfegir
             PanelBobinesMarcaAfegir.BTBorrar.Text = My.Resources.cat.BTBorrar
             PanelBobinesMarcaModificarEliminar.BTModificarMarca.Text = My.Resources.cat.BTModificarMarca
             PanelBobinesMarcaModificarEliminar.BTEliminarMarca.Text = My.Resources.cat.BTEliminarMarca
+            PanelBobinesMarcaModificarEliminar.BResfrescar.Text = My.Resources.cat.BResfrescar
             PanelBobinesMaterialAfegir.LMaterial.Text = My.Resources.cat.LMaterial
             PanelBobinesMaterialAfegir.LTecnic.Text = My.Resources.cat.LTecnic
             PanelBobinesMaterialAfegir.BTAfegir.Text = My.Resources.cat.BTAfegir
             PanelBobinesMaterialAfegir.BTBorrar.Text = My.Resources.cat.BTBorrar
             PanelBobinesMaterialModificarEliminar.BTEliminarMaterial.Text = My.Resources.cat.BTEliminarMaterial
             PanelBobinesMaterialModificarEliminar.BTModificarMaterial.Text = My.Resources.cat.BTModificarMaterial
+            PanelBobinesMaterialModificarEliminar.BResfrescar.Text = My.Resources.cat.BResfrescar
             PanelConnectarNovaImpressora.LModel.Text = My.Resources.cat.LModel
             PanelConnectarNovaImpressora.LMarca.Text = My.Resources.cat.LMarca
             PanelConnectarNovaImpressora.LNom.Text = My.Resources.cat.LNom
@@ -116,6 +121,7 @@
             PanelGcodeAfegir.BTBorrar.Text = My.Resources.cat.BTBorrar
             PanelGcodeModificarEliminar.BTModificarGcode.Text = My.Resources.cat.BTModificarGcode
             PanelGcodeModificarEliminar.BTEliminarGcode.Text = My.Resources.cat.BTEliminarGcode
+            PanelGcodeModificarEliminar.BResfrescar.Text = My.Resources.cat.BResfrescar
             PanelLlistaImpressores.BTCambiarBobina.Text = My.Resources.cat.BTCambiarBobina
             PanelLlistaImpressores.BTModificarImpressora.Text = My.Resources.cat.BTModificarImpressora
             PanelLlistaImpressores.BTEliminarImpressora.Text = My.Resources.cat.BTEliminarImpressora
@@ -125,6 +131,7 @@
             PanelMarcaAfegir.BTBorrar.Text = My.Resources.cat.BTBorrar
             PanelMarcaModificarEliminar.BTModificarMarca.Text = My.Resources.cat.BTModificarMarca
             PanelMarcaModificarEliminar.BTEliminarMarca.Text = My.Resources.cat.BTEliminarMarca
+            PanelMarcaModificarEliminar.BResfrescar.Text = My.Resources.cat.BResfrescar
             PanelModelAfegir.LMarca.Text = My.Resources.cat.LMarca
             PanelModelAfegir.LModel.Text = My.Resources.cat.LModel
             PanelModelAfegir.LNExtrusors.Text = My.Resources.cat.LNExtru
@@ -144,8 +151,10 @@
             PanelModelAfegir.BTBorrar.Text = My.Resources.cat.BTBorrar
             PanelModelModificarEliminar.BTModificarModel.Text = My.Resources.cat.BTModificarModel
             PanelModelModificarEliminar.BTEliminarModel.Text = My.Resources.cat.BTEliminarModel
+            PanelModelModificarEliminar.BResfrescar.Text = My.Resources.cat.BResfrescar
             PanelModificarEliminarUsuaris.BTModificarUsuari.Text = My.Resources.cat.BTModificarUsuari
             PanelModificarEliminarUsuaris.BTEliminarUsuari.Text = My.Resources.cat.BTEliminarUsuari
+            PanelModificarEliminarUsuaris.BResfrescar.Text = My.Resources.cat.BResfrescar
             PanelUsuarisAfegir.LNomUsuari.Text = My.Resources.cat.LNomUsuari
             PanelUsuarisAfegir.LNom.Text = My.Resources.cat.LNom
             PanelUsuarisAfegir.LCognom.Text = My.Resources.cat.LCognom
@@ -162,9 +171,14 @@
             ImprimirGCODE.LNomGcode.Text = My.Resources.cat.LNomGcode
             ImprimirGCODE.LImpressora.Text = My.Resources.cat.LImpressora
             ImprimirGCODE.LNCopies.Text = My.Resources.cat.LNCopies
+            ImprimirGCODE.BTImprimir.Text = My.Resources.cat.BTImprimirG
+            ImprimirGCODE.BTImprimirCancelar.Text = My.Resources.cat.BTCancelar
             ModificarBobinesBobina.LDiametre.Text = My.Resources.cat.LDiametre
             ModificarBobinesBobina.LMaterial.Text = My.Resources.cat.LMaterial
+            ModificarBobinesBobina.LMarca.Text = My.Resources.eng.LMarcaProductora
             ModificarBobinesBobina.LColor.Text = My.Resources.cat.LColor
+            ModificarBobinesBobina.BTAfegir.Text = My.Resources.cat.BTModificarBobina
+            ModificarBobinesBobina.BTCancelar.Text = My.Resources.cat.BTCancelar
             ModificarBobinesColor.LColor.Text = My.Resources.cat.LColor
             ModificarBobinesColor.LHex.Text = My.Resources.cat.LHex
             ModificarBobinesColor.BTModificar.Text = My.Resources.cat.CBModificar
@@ -183,6 +197,12 @@
             ModificarGcode.LRutaFich.Text = My.Resources.cat.LRutaFich
             ModificarGcode.LMaterialsSup.Text = My.Resources.cat.LMaterialsSup
             ModificarGcode.BTModificar.Text = My.Resources.cat.CBModificar
+            ModificarGcode.BTCancelar.Text = My.Resources.cat.BTCancelar
+            ModificarImpressores.LMarca.Text = My.Resources.cat.LMarca
+            ModificarImpressores.LModel.Text = My.Resources.cat.LModel
+            ModificarImpressores.LNom.Text = My.Resources.cat.LNom
+            ModificarImpressores.BTImpressoraGuardar.Text = My.Resources.cat.BTGuardar
+            ModificarImpressores.BTCancelar.Text = My.Resources.cat.BTCancelar
             ModificarModel.LMarca.Text = My.Resources.cat.LMarca
             ModificarModel.LModel.Text = My.Resources.cat.LModel
             ModificarModel.LNExtru.Text = My.Resources.cat.LNExtru
@@ -206,12 +226,13 @@
             ModificarUsuari.LCorreu.Text = My.Resources.cat.LCorreu
             ModificarUsuari.LContrasenya.Text = My.Resources.cat.LContrasenya
             ModificarUsuari.LRepeteixContra.Text = My.Resources.cat.LRContra
+            ModificarUsuari.LabelNovaContraseña.Text = My.Resources.cat.LNova
             ModificarUsuari.BTCancelar.Text = My.Resources.cat.BTCancelar
             ModificarUsuari.BTModificar.Text = My.Resources.cat.CBModificar
+            ModificarUsuari.ButtonModConstraseña.Text = My.Resources.cat.BTModificarUsuari
 
             MenuPrincipal.user.Items.Add(opcio1)
             MenuPrincipal.user.Items.Add(opcio2)
-            'MenuPrincipal.user.Text = opcio2
             MenuPrincipal.user.Items.Add(opcio3)
             MenuPrincipal.user.Items.Add(opcio4)
         Else
@@ -222,7 +243,6 @@
             opcio4 = My.Resources.eng.opcioGenerarEstadistiques
             MenuPrincipal.LBControl.Text = My.Resources.eng.LBControl
             MenuPrincipal.LBGestio.Text = My.Resources.eng.LBGestio
-
             MenuPrincipal.LBImpressions.Text = My.Resources.eng.LBImpressions
             MenuPrincipal.LBImpressores.Text = My.Resources.eng.LBImpressores
             MenuPrincipal.LBInici.Text = My.Resources.eng.LInici
@@ -233,14 +253,13 @@
             Login.ButtonLogin.Text = My.Resources.eng.ButtonLogin
             Login.LabelErrorLogin.Text = My.Resources.eng.LabelErrorLogin
 
-
-            FUsuaris.BTAfegir.Text = My.Resources.eng.BTAfegir
-            FUsuaris.BTModificarEliminar.Text = My.Resources.eng.BTModificarEliminar
-
             MenuPrincipal.LBUsuaris.Text = My.Resources.eng.LUsuaris
             MenuPrincipal.LBBobines.Text = My.Resources.eng.LBobines
             MenuPrincipal.LBModelsCar.Text = My.Resources.eng.LModels
             MenuPrincipal.LBGCode.Text = My.Resources.eng.LGcode
+
+            FUsuaris.BTAfegir.Text = My.Resources.eng.BTAfegir
+            FUsuaris.BTModificarEliminar.Text = My.Resources.eng.BTModificarEliminar
 
             FBobines.LBobina.Text = My.Resources.eng.LBobina
             FBobines.LColor.Text = My.Resources.eng.LColor
@@ -260,6 +279,7 @@
             FImpressions.BTCancelar.Text = My.Resources.eng.BTCancelar
             FImpressions.BTImpressionsPeçaRetirada.Text = My.Resources.eng.BTImpressionsPeçaRetirada
             FImpressions.BTImprimirG.Text = My.Resources.eng.BTImprimirG
+            FImpressions.BResfrescar.Text = My.Resources.eng.BResfrescar
             FImpressores.BTConnectar.Text = My.Resources.eng.BTConnectar
             FImpressores.BTLlista.Text = My.Resources.eng.BTLlista
             FInici.LBenvingut.Text = My.Resources.eng.LBenvingut
@@ -298,23 +318,27 @@
             PanelBobinesBobinaAfegir.LColor.Text = My.Resources.eng.LColor
             PanelBobinesBobinaModificarEliminar.BTModificarBobina.Text = My.Resources.eng.BTModificarBobina
             PanelBobinesBobinaModificarEliminar.BTEliminarBobina.Text = My.Resources.eng.BTEliminarBobina
+            PanelBobinesBobinaModificarEliminar.BResfrescar.Text = My.Resources.eng.BResfrescar
             PanelBobinesColorAfegir.LColor.Text = My.Resources.eng.LColor
             PanelBobinesColorAfegir.LHex.Text = My.Resources.eng.LHex
             PanelBobinesColorAfegir.BTAfegir.Text = My.Resources.eng.BTAfegir
             PanelBobinesColorAfegir.BTBorrar.Text = My.Resources.eng.BTBorrar
             PanelBobinesColorModificarEliminar.BTModificarColor.Text = My.Resources.eng.BTModificarColor
             PanelBobinesColorModificarEliminar.BTEliminarColor.Text = My.Resources.eng.BTEliminarColor
+            PanelBobinesColorModificarEliminar.BResfrescar.Text = My.Resources.eng.BResfrescar
             PanelBobinesMarcaAfegir.LMarcaProductora.Text = My.Resources.eng.LMarcaProductora
             PanelBobinesMarcaAfegir.BTAfegir.Text = My.Resources.eng.BTAfegir
             PanelBobinesMarcaAfegir.BTBorrar.Text = My.Resources.eng.BTBorrar
             PanelBobinesMarcaModificarEliminar.BTModificarMarca.Text = My.Resources.eng.BTModificarMarca
             PanelBobinesMarcaModificarEliminar.BTEliminarMarca.Text = My.Resources.eng.BTEliminarMarca
+            PanelBobinesMarcaModificarEliminar.BResfrescar.Text = My.Resources.eng.BResfrescar
             PanelBobinesMaterialAfegir.LMaterial.Text = My.Resources.eng.LMaterial
             PanelBobinesMaterialAfegir.LTecnic.Text = My.Resources.eng.LTecnic
             PanelBobinesMaterialAfegir.BTAfegir.Text = My.Resources.eng.BTAfegir
             PanelBobinesMaterialAfegir.BTBorrar.Text = My.Resources.eng.BTBorrar
             PanelBobinesMaterialModificarEliminar.BTEliminarMaterial.Text = My.Resources.eng.BTEliminarMaterial
             PanelBobinesMaterialModificarEliminar.BTModificarMaterial.Text = My.Resources.eng.BTModificarMaterial
+            PanelBobinesMaterialModificarEliminar.BResfrescar.Text = My.Resources.eng.BResfrescar
             PanelConnectarNovaImpressora.LModel.Text = My.Resources.eng.LModel
             PanelConnectarNovaImpressora.LMarca.Text = My.Resources.eng.LMarca
             PanelConnectarNovaImpressora.LNom.Text = My.Resources.eng.LNom
@@ -328,6 +352,7 @@
             PanelGcodeAfegir.BTBorrar.Text = My.Resources.eng.BTBorrar
             PanelGcodeModificarEliminar.BTModificarGcode.Text = My.Resources.eng.BTModificarGcode
             PanelGcodeModificarEliminar.BTEliminarGcode.Text = My.Resources.eng.BTEliminarGcode
+            PanelGcodeModificarEliminar.BResfrescar.Text = My.Resources.eng.BResfrescar
             PanelLlistaImpressores.BTCambiarBobina.Text = My.Resources.eng.BTCambiarBobina
             PanelLlistaImpressores.BTModificarImpressora.Text = My.Resources.eng.BTModificarImpressora
             PanelLlistaImpressores.BTEliminarImpressora.Text = My.Resources.eng.BTEliminarImpressora
@@ -337,6 +362,7 @@
             PanelMarcaAfegir.BTBorrar.Text = My.Resources.eng.BTBorrar
             PanelMarcaModificarEliminar.BTModificarMarca.Text = My.Resources.eng.BTModificarMarca
             PanelMarcaModificarEliminar.BTEliminarMarca.Text = My.Resources.eng.BTEliminarMarca
+            PanelMarcaModificarEliminar.BResfrescar.Text = My.Resources.eng.BResfrescar
             PanelModelAfegir.LMarca.Text = My.Resources.eng.LMarca
             PanelModelAfegir.LModel.Text = My.Resources.eng.LModel
             PanelModelAfegir.LNExtrusors.Text = My.Resources.eng.LNExtru
@@ -356,8 +382,10 @@
             PanelModelAfegir.BTBorrar.Text = My.Resources.eng.BTBorrar
             PanelModelModificarEliminar.BTModificarModel.Text = My.Resources.eng.BTModificarModel
             PanelModelModificarEliminar.BTEliminarModel.Text = My.Resources.eng.BTEliminarModel
+            PanelModelModificarEliminar.BResfrescar.Text = My.Resources.eng.BResfrescar
             PanelModificarEliminarUsuaris.BTModificarUsuari.Text = My.Resources.eng.BTModificarUsuari
             PanelModificarEliminarUsuaris.BTEliminarUsuari.Text = My.Resources.eng.BTEliminarUsuari
+            PanelModificarEliminarUsuaris.BResfrescar.Text = My.Resources.eng.BResfrescar
             PanelUsuarisAfegir.LNomUsuari.Text = My.Resources.eng.LNomUsuari
             PanelUsuarisAfegir.LNom.Text = My.Resources.eng.LNom
             PanelUsuarisAfegir.LCognom.Text = My.Resources.eng.LCognom
@@ -369,14 +397,19 @@
             PanelUsuarisAfegir.BTEsborrar.Text = My.Resources.eng.BTBorrar
             CanviarBobina.LImpressora.Text = My.Resources.eng.LImpressora
             CanviarBobina.LBobina.Text = My.Resources.eng.LBobina
-            CanviarBobina.BTCanviar.Text = My.Resources.eng.BTCanviarBobina
+            CanviarBobina.BTCanviar.Text = My.Resources.eng.BTCambiarBobina
             CanviarBobina.BTCancelar.Text = My.Resources.eng.BTCancelar
             ImprimirGCODE.LNomGcode.Text = My.Resources.eng.LNomGcode
             ImprimirGCODE.LImpressora.Text = My.Resources.eng.LImpressora
             ImprimirGCODE.LNCopies.Text = My.Resources.eng.LNCopies
+            ImprimirGCODE.BTImprimir.Text = My.Resources.eng.BTImprimirG
+            ImprimirGCODE.BTImprimirCancelar.Text = My.Resources.eng.BTCancelar
             ModificarBobinesBobina.LDiametre.Text = My.Resources.eng.LDiametre
             ModificarBobinesBobina.LMaterial.Text = My.Resources.eng.LMaterial
+            ModificarBobinesBobina.LMarca.Text = My.Resources.eng.LMarcaProductora
             ModificarBobinesBobina.LColor.Text = My.Resources.eng.LColor
+            ModificarBobinesBobina.BTAfegir.Text = My.Resources.eng.BTModificarBobina
+            ModificarBobinesBobina.BTCancelar.Text = My.Resources.eng.BTCancelar
             ModificarBobinesColor.LColor.Text = My.Resources.eng.LColor
             ModificarBobinesColor.LHex.Text = My.Resources.eng.LHex
             ModificarBobinesColor.BTModificar.Text = My.Resources.eng.CBModificar
@@ -396,6 +429,11 @@
             ModificarGcode.LMaterialsSup.Text = My.Resources.eng.LMaterialsSup
             ModificarGcode.BTModificar.Text = My.Resources.eng.CBModificar
             ModificarGcode.BTCancelar.Text = My.Resources.eng.BTCancelar
+            ModificarImpressores.LMarca.Text = My.Resources.eng.LMarca
+            ModificarImpressores.LModel.Text = My.Resources.eng.LModel
+            ModificarImpressores.LNom.Text = My.Resources.eng.LNom
+            ModificarImpressores.BTImpressoraGuardar.Text = My.Resources.eng.BTGuardar
+            ModificarImpressores.BTCancelar.Text = My.Resources.eng.BTCancelar
             ModificarModel.LMarca.Text = My.Resources.eng.LMarca
             ModificarModel.LModel.Text = My.Resources.eng.LModel
             ModificarModel.LNExtru.Text = My.Resources.eng.LNExtru
@@ -419,12 +457,13 @@
             ModificarUsuari.LCorreu.Text = My.Resources.eng.LCorreu
             ModificarUsuari.LContrasenya.Text = My.Resources.eng.LContrasenya
             ModificarUsuari.LRepeteixContra.Text = My.Resources.eng.LRContra
+            ModificarUsuari.LabelNovaContraseña.Text = My.Resources.eng.LNova
             ModificarUsuari.BTCancelar.Text = My.Resources.eng.BTCancelar
             ModificarUsuari.BTModificar.Text = My.Resources.eng.CBModificar
+            ModificarUsuari.ButtonModConstraseña.Text = My.Resources.eng.BTModificarUsuari
 
             MenuPrincipal.user.Items.Add(opcio1)
             MenuPrincipal.user.Items.Add(opcio2)
-            'MenuPrincipal.user.Text = opcio2
             MenuPrincipal.user.Items.Add(opcio3)
             MenuPrincipal.user.Items.Add(opcio4)
         End If

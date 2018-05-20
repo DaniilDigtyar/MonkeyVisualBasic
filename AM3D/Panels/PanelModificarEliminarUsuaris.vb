@@ -4,14 +4,25 @@
 
     Private Sub BTModificarUsuari_Click(sender As Object, e As EventArgs) Handles BTModificarUsuari.Click
         Dim nickname, contraseña, dni, nom, cognom, email As String
-        nickname = DGUsuaris.SelectedRows.Item(0).Cells(0).Value
-        contraseña = ""
-        dni = DGUsuaris.SelectedRows.Item(0).Cells(1).Value
-        nom = DGUsuaris.SelectedRows.Item(0).Cells(2).Value
-        cognom = DGUsuaris.SelectedRows.Item(0).Cells(3).Value
-        email = DGUsuaris.SelectedRows.Item(0).Cells(4).Value
-        usuariSeleccionat = New Usuaris(nickname, contraseña, dni, nom, cognom, email)
-        ModificarUsuari.Show()
+        Try
+
+            nickname = DGUsuaris.SelectedRows.Item(0).Cells(0).Value
+            contraseña = ""
+            dni = DGUsuaris.SelectedRows.Item(0).Cells(1).Value
+            nom = DGUsuaris.SelectedRows.Item(0).Cells(2).Value
+            cognom = DGUsuaris.SelectedRows.Item(0).Cells(3).Value
+            email = DGUsuaris.SelectedRows.Item(0).Cells(4).Value
+            usuariSeleccionat = New Usuaris(nickname, contraseña, dni, nom, cognom, email)
+            ModificarUsuari.TBNickname.Text = usuariSeleccionat.GetSetNickname
+            ModificarUsuari.TBDni.Text = usuariSeleccionat.GetSetDNI
+            ModificarUsuari.TBNom.Text = usuariSeleccionat.GetSetNom
+            ModificarUsuari.TBCongnom.Text = usuariSeleccionat.GetSetCognom
+            ModificarUsuari.TBCorreu.Text = usuariSeleccionat.GetSetEmail
+            ModificarUsuari.Show()
+        Catch ex As Exception
+
+        End Try
+
     End Sub
 
     Private Sub PanelModificarEliminarUsuaris_Load(sender As Object, e As EventArgs) Handles MyBase.Load

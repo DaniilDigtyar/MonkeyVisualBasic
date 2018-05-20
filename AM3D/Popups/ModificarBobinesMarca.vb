@@ -14,7 +14,7 @@
                 Else
                     LabelInfo.Text = My.Resources.eng.LabelnfoCorrecte
                 End If
-                Me.Close()
+                Me.Hide()
             Else
                 If Globals.lang = "cat" Then
                     LabelInfo.Text = My.Resources.cat.LabelnfoError
@@ -32,7 +32,7 @@
     End Sub
 
     Private Sub BTBorrar_Click(sender As Object, e As EventArgs) Handles BTCancelar.Click
-        Me.Close()
+        Me.Hide()
         TBMarca.Text = ""
     End Sub
     Dim allowCoolMove As Boolean = False
@@ -55,6 +55,6 @@
     End Sub
 
     Private Sub ModificarBobinesMarca_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TBMarca.Text = PanelBobinesMarcaModificarEliminar.marcaBobinaSeleccionada.GetSetMarcaProductora
+
     End Sub
 End Class

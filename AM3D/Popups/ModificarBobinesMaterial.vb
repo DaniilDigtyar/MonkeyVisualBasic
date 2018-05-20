@@ -2,7 +2,7 @@
     Dim SQLCommands As SQLCommands = New SQLCommands()
 
     Private Sub BTBorrar_Click(sender As Object, e As EventArgs) Handles BTBorrar.Click
-        Me.Close()
+        Me.Hide()
         TBTecnic.Text = ""
         TBMaterial.Text = ""
     End Sub
@@ -26,8 +26,7 @@
     End Sub
 
     Private Sub ModificarBobinesMaterial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TBTecnic.Text = PanelBobinesMaterialModificarEliminar.materialSeleccionat.GetSetDescripcio
-        TBMaterial.Text = PanelBobinesMaterialModificarEliminar.materialSeleccionat.GetSetTipusMaterial
+
     End Sub
 
     Private Sub BTModificar_Click(sender As Object, e As EventArgs) Handles BTModificar.Click
@@ -43,7 +42,7 @@
                 Else
                     LabelInfo.Text = My.Resources.eng.LabelnfoCorrecte
                 End If
-                Me.Close()
+                Me.Hide()
             Else
                 If Globals.lang = "cat" Then
                     LabelInfo.Text = My.Resources.cat.LabelnfoError

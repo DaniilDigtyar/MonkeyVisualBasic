@@ -65,7 +65,7 @@ Partial Class FBobines
         Me.BTBobinaModif.Location = New System.Drawing.Point(13, 86)
         Me.BTBobinaModif.Name = "BTBobinaModif"
         Me.BTBobinaModif.Size = New System.Drawing.Size(169, 38)
-        Me.BTBobinaModif.TabIndex = 19
+        Me.BTBobinaModif.TabIndex = 2
         Me.BTBobinaModif.Text = "Modificar/Eliminar"
         Me.BTBobinaModif.UseVisualStyleBackColor = False
         '
@@ -79,7 +79,7 @@ Partial Class FBobines
         Me.BTBobinaAfegir.Location = New System.Drawing.Point(47, 40)
         Me.BTBobinaAfegir.Name = "BTBobinaAfegir"
         Me.BTBobinaAfegir.Size = New System.Drawing.Size(92, 38)
-        Me.BTBobinaAfegir.TabIndex = 18
+        Me.BTBobinaAfegir.TabIndex = 1
         Me.BTBobinaAfegir.Text = "Afegir"
         Me.BTBobinaAfegir.UseVisualStyleBackColor = False
         '
@@ -104,7 +104,7 @@ Partial Class FBobines
         Me.BTColorModif.Location = New System.Drawing.Point(221, 86)
         Me.BTColorModif.Name = "BTColorModif"
         Me.BTColorModif.Size = New System.Drawing.Size(169, 38)
-        Me.BTColorModif.TabIndex = 26
+        Me.BTColorModif.TabIndex = 4
         Me.BTColorModif.Text = "Modificar/Eliminar"
         Me.BTColorModif.UseVisualStyleBackColor = False
         '
@@ -118,7 +118,7 @@ Partial Class FBobines
         Me.BTColorAfegir.Location = New System.Drawing.Point(255, 40)
         Me.BTColorAfegir.Name = "BTColorAfegir"
         Me.BTColorAfegir.Size = New System.Drawing.Size(92, 38)
-        Me.BTColorAfegir.TabIndex = 25
+        Me.BTColorAfegir.TabIndex = 3
         Me.BTColorAfegir.Text = "Afegir"
         Me.BTColorAfegir.UseVisualStyleBackColor = False
         '
@@ -143,7 +143,7 @@ Partial Class FBobines
         Me.BTMarcaModif.Location = New System.Drawing.Point(437, 86)
         Me.BTMarcaModif.Name = "BTMarcaModif"
         Me.BTMarcaModif.Size = New System.Drawing.Size(169, 38)
-        Me.BTMarcaModif.TabIndex = 29
+        Me.BTMarcaModif.TabIndex = 6
         Me.BTMarcaModif.Text = "Modificar/Eliminar"
         Me.BTMarcaModif.UseVisualStyleBackColor = False
         '
@@ -157,7 +157,7 @@ Partial Class FBobines
         Me.BTMarcaAfegir.Location = New System.Drawing.Point(471, 40)
         Me.BTMarcaAfegir.Name = "BTMarcaAfegir"
         Me.BTMarcaAfegir.Size = New System.Drawing.Size(92, 38)
-        Me.BTMarcaAfegir.TabIndex = 28
+        Me.BTMarcaAfegir.TabIndex = 5
         Me.BTMarcaAfegir.Text = "Afegir"
         Me.BTMarcaAfegir.UseVisualStyleBackColor = False
         '
@@ -182,7 +182,7 @@ Partial Class FBobines
         Me.BTMaterialModif.Location = New System.Drawing.Point(645, 86)
         Me.BTMaterialModif.Name = "BTMaterialModif"
         Me.BTMaterialModif.Size = New System.Drawing.Size(169, 38)
-        Me.BTMaterialModif.TabIndex = 32
+        Me.BTMaterialModif.TabIndex = 8
         Me.BTMaterialModif.Text = "Modificar/Eliminar"
         Me.BTMaterialModif.UseVisualStyleBackColor = False
         '
@@ -196,7 +196,7 @@ Partial Class FBobines
         Me.BTMaterialAfegir.Location = New System.Drawing.Point(679, 40)
         Me.BTMaterialAfegir.Name = "BTMaterialAfegir"
         Me.BTMaterialAfegir.Size = New System.Drawing.Size(92, 38)
-        Me.BTMaterialAfegir.TabIndex = 31
+        Me.BTMaterialAfegir.TabIndex = 7
         Me.BTMaterialAfegir.Text = "Afegir"
         Me.BTMaterialAfegir.UseVisualStyleBackColor = False
         '

@@ -4,7 +4,7 @@
     Dim SQLCommands As New SQLCommands()
 
     Private Sub BTCancelar_Click(sender As Object, e As EventArgs) Handles BTCancelar.Click
-        Me.Close()
+        Me.Hide()
         TBNomGcode.Text = ""
         TBRuta.Text = ""
     End Sub
@@ -38,25 +38,7 @@
     End Sub
 
     Private Sub ModificarGcode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim listaMaterial As HashSet(Of Materials) = New HashSet(Of Materials)
-        Dim material As Materials
-        Dim indice As Integer
 
-        TBNomGcode.Text = PanelGcodeModificarEliminar.gcodeSeleccionat.GetSetNomGcode
-
-        listaMaterial = SQLCommands.SelectAllMaterialsFromDatabase(Globals.userCredentials.GetSetBaseDades)
-
-        For Each material In listaMaterial
-            DGMaterial.Rows.Add(material.GetSetTipusMaterial, material.GetSetDescripcio)
-        Next material
-
-        For i As Integer = 0 To DGMaterial.Rows.Count - 1
-            If (DGMaterial.Rows(i).Cells(0).Value.ToString.Equals(PanelGcodeModificarEliminar.gcodeSeleccionat.GetSetTipusMaterialSuportat)) Then
-                indice = DGMaterial.Rows(i).Index
-            End If
-        Next i
-
-        DGMaterial.Rows(indice).Selected = True
     End Sub
 
     Private Sub BTModificar_Click(sender As Object, e As EventArgs) Handles BTModificar.Click
@@ -72,7 +54,7 @@
                 Else
                     LabelInfo.Text = My.Resources.eng.LabelnfoCorrecte
                 End If
-                Me.Close()
+                Me.Hide()
             Else
                 If Globals.lang = "cat" Then
                     LabelInfo.Text = My.Resources.cat.LabelnfoError

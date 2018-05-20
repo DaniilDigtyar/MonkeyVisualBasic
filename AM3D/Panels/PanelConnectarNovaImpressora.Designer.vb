@@ -78,7 +78,7 @@ Partial Class PanelConnectarNovaImpressora
         Me.LBobina.AutoSize = True
         Me.LBobina.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBobina.ForeColor = System.Drawing.Color.Black
-        Me.LBobina.Location = New System.Drawing.Point(404, 40)
+        Me.LBobina.Location = New System.Drawing.Point(378, 12)
         Me.LBobina.Name = "LBobina"
         Me.LBobina.Size = New System.Drawing.Size(73, 25)
         Me.LBobina.TabIndex = 4
@@ -107,6 +107,7 @@ Partial Class PanelConnectarNovaImpressora
         'TBNomImpressora
         '
         Me.TBNomImpressora.Location = New System.Drawing.Point(163, 187)
+        Me.TBNomImpressora.MaxLength = 20
         Me.TBNomImpressora.Name = "TBNomImpressora"
         Me.TBNomImpressora.Size = New System.Drawing.Size(169, 20)
         Me.TBNomImpressora.TabIndex = 3
@@ -121,7 +122,7 @@ Partial Class PanelConnectarNovaImpressora
         Me.BTImpressoraGuardar.Location = New System.Drawing.Point(58, 264)
         Me.BTImpressoraGuardar.Name = "BTImpressoraGuardar"
         Me.BTImpressoraGuardar.Size = New System.Drawing.Size(154, 62)
-        Me.BTImpressoraGuardar.TabIndex = 8
+        Me.BTImpressoraGuardar.TabIndex = 5
         Me.BTImpressoraGuardar.Text = "Guardar"
         Me.BTImpressoraGuardar.UseVisualStyleBackColor = False
         '
@@ -132,10 +133,10 @@ Partial Class PanelConnectarNovaImpressora
         Me.BTImpressoraBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTImpressoraBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTImpressoraBorrar.ForeColor = System.Drawing.Color.Black
-        Me.BTImpressoraBorrar.Location = New System.Drawing.Point(297, 264)
+        Me.BTImpressoraBorrar.Location = New System.Drawing.Point(218, 264)
         Me.BTImpressoraBorrar.Name = "BTImpressoraBorrar"
         Me.BTImpressoraBorrar.Size = New System.Drawing.Size(154, 62)
-        Me.BTImpressoraBorrar.TabIndex = 9
+        Me.BTImpressoraBorrar.TabIndex = 6
         Me.BTImpressoraBorrar.Text = "Borrar"
         Me.BTImpressoraBorrar.UseVisualStyleBackColor = False
         '
@@ -146,12 +147,12 @@ Partial Class PanelConnectarNovaImpressora
         Me.DataGridViewBobina.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DataGridViewBobina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridViewBobina.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codi_bobina, Me.Bobina, Me.color, Me.marca_productora, Me.Diametre})
-        Me.DataGridViewBobina.Location = New System.Drawing.Point(496, 12)
+        Me.DataGridViewBobina.Location = New System.Drawing.Point(457, 12)
         Me.DataGridViewBobina.MultiSelect = False
         Me.DataGridViewBobina.Name = "DataGridViewBobina"
         Me.DataGridViewBobina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridViewBobina.Size = New System.Drawing.Size(294, 350)
-        Me.DataGridViewBobina.TabIndex = 10
+        Me.DataGridViewBobina.Size = New System.Drawing.Size(333, 350)
+        Me.DataGridViewBobina.TabIndex = 4
         '
         'codi_bobina
         '

@@ -4,6 +4,8 @@
 
     Private Sub BTModificarMaterial_Click(sender As Object, e As EventArgs) Handles BTModificarMaterial.Click
         materialSeleccionat = New Materials(DGMaterial.SelectedRows.Item(0).Cells(0).Value, DGMaterial.SelectedRows.Item(0).Cells(1).Value)
+        ModificarBobinesMaterial.TBTecnic.Text = materialSeleccionat.GetSetDescripcio
+        ModificarBobinesMaterial.TBMaterial.Text = materialSeleccionat.GetSetTipusMaterial
         ModificarBobinesMaterial.Show()
 
     End Sub

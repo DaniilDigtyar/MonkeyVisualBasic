@@ -41,7 +41,7 @@ Partial Class PanelBobinesColorAfegir
         Me.BTBorrar.Location = New System.Drawing.Point(46, 212)
         Me.BTBorrar.Name = "BTBorrar"
         Me.BTBorrar.Size = New System.Drawing.Size(245, 62)
-        Me.BTBorrar.TabIndex = 53
+        Me.BTBorrar.TabIndex = 4
         Me.BTBorrar.Text = "Borrar"
         Me.BTBorrar.UseVisualStyleBackColor = False
         '
@@ -55,16 +55,17 @@ Partial Class PanelBobinesColorAfegir
         Me.BTAfegir.Location = New System.Drawing.Point(46, 137)
         Me.BTAfegir.Name = "BTAfegir"
         Me.BTAfegir.Size = New System.Drawing.Size(245, 62)
-        Me.BTAfegir.TabIndex = 52
+        Me.BTAfegir.TabIndex = 3
         Me.BTAfegir.Text = "Afegir"
         Me.BTAfegir.UseVisualStyleBackColor = False
         '
         'TBColor
         '
         Me.TBColor.Location = New System.Drawing.Point(150, 31)
+        Me.TBColor.MaxLength = 20
         Me.TBColor.Name = "TBColor"
         Me.TBColor.Size = New System.Drawing.Size(141, 20)
-        Me.TBColor.TabIndex = 51
+        Me.TBColor.TabIndex = 1
         '
         'LColor
         '
@@ -83,7 +84,7 @@ Partial Class PanelBobinesColorAfegir
         Me.TBHex.MaxLength = 7
         Me.TBHex.Name = "TBHex"
         Me.TBHex.Size = New System.Drawing.Size(141, 20)
-        Me.TBHex.TabIndex = 55
+        Me.TBHex.TabIndex = 2
         '
         'LHex
         '

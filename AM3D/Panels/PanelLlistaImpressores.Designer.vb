@@ -22,8 +22,8 @@ Partial Class PanelLlistaImpressores
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BTCambiarBobina = New System.Windows.Forms.Button()
         Me.BTModificarImpressora = New System.Windows.Forms.Button()
         Me.BTEliminarImpressora = New System.Windows.Forms.Button()
@@ -48,7 +48,7 @@ Partial Class PanelLlistaImpressores
         Me.BTCambiarBobina.Location = New System.Drawing.Point(37, 21)
         Me.BTCambiarBobina.Name = "BTCambiarBobina"
         Me.BTCambiarBobina.Size = New System.Drawing.Size(154, 62)
-        Me.BTCambiarBobina.TabIndex = 2
+        Me.BTCambiarBobina.TabIndex = 1
         Me.BTCambiarBobina.Text = "Canviar Bobina"
         Me.BTCambiarBobina.UseVisualStyleBackColor = False
         '
@@ -59,10 +59,10 @@ Partial Class PanelLlistaImpressores
         Me.BTModificarImpressora.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTModificarImpressora.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTModificarImpressora.ForeColor = System.Drawing.Color.Black
-        Me.BTModificarImpressora.Location = New System.Drawing.Point(226, 21)
+        Me.BTModificarImpressora.Location = New System.Drawing.Point(197, 21)
         Me.BTModificarImpressora.Name = "BTModificarImpressora"
         Me.BTModificarImpressora.Size = New System.Drawing.Size(154, 62)
-        Me.BTModificarImpressora.TabIndex = 3
+        Me.BTModificarImpressora.TabIndex = 2
         Me.BTModificarImpressora.Text = "Modificar impressora"
         Me.BTModificarImpressora.UseVisualStyleBackColor = False
         '
@@ -73,10 +73,10 @@ Partial Class PanelLlistaImpressores
         Me.BTEliminarImpressora.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BTEliminarImpressora.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTEliminarImpressora.ForeColor = System.Drawing.Color.Black
-        Me.BTEliminarImpressora.Location = New System.Drawing.Point(424, 21)
+        Me.BTEliminarImpressora.Location = New System.Drawing.Point(357, 21)
         Me.BTEliminarImpressora.Name = "BTEliminarImpressora"
         Me.BTEliminarImpressora.Size = New System.Drawing.Size(154, 62)
-        Me.BTEliminarImpressora.TabIndex = 4
+        Me.BTEliminarImpressora.TabIndex = 3
         Me.BTEliminarImpressora.Text = "Eliminar impressora"
         Me.BTEliminarImpressora.UseVisualStyleBackColor = False
         '
@@ -85,31 +85,31 @@ Partial Class PanelLlistaImpressores
         Me.DGImpressores.AllowUserToAddRows = False
         Me.DGImpressores.AllowUserToDeleteRows = False
         Me.DGImpressores.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGImpressores.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGImpressores.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.DGImpressores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGImpressores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.codi_impressora, Me.nom_assignat, Me.estat, Me.marca, Me.Model, Me.bobina})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGImpressores.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGImpressores.DefaultCellStyle = DataGridViewCellStyle4
         Me.DGImpressores.GridColor = System.Drawing.SystemColors.ControlLight
-        Me.DGImpressores.Location = New System.Drawing.Point(37, 98)
+        Me.DGImpressores.Location = New System.Drawing.Point(37, 89)
         Me.DGImpressores.MultiSelect = False
         Me.DGImpressores.Name = "DGImpressores"
         Me.DGImpressores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DGImpressores.Size = New System.Drawing.Size(729, 246)
-        Me.DGImpressores.TabIndex = 11
+        Me.DGImpressores.Size = New System.Drawing.Size(729, 255)
+        Me.DGImpressores.TabIndex = 5
         '
         'codi_impressora
         '
@@ -157,7 +157,7 @@ Partial Class PanelLlistaImpressores
         Me.BResfrescar.Location = New System.Drawing.Point(612, 21)
         Me.BResfrescar.Name = "BResfrescar"
         Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
-        Me.BResfrescar.TabIndex = 12
+        Me.BResfrescar.TabIndex = 4
         Me.BResfrescar.Text = "Refresca llista"
         Me.BResfrescar.UseVisualStyleBackColor = False
         '

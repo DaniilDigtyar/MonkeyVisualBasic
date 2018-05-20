@@ -37,7 +37,7 @@ Partial Class FImpressores
         Me.BTLlista.Location = New System.Drawing.Point(614, 39)
         Me.BTLlista.Name = "BTLlista"
         Me.BTLlista.Size = New System.Drawing.Size(154, 62)
-        Me.BTLlista.TabIndex = 1
+        Me.BTLlista.TabIndex = 2
         Me.BTLlista.Text = "Llista d'impressores"
         Me.BTLlista.UseVisualStyleBackColor = False
         '
@@ -51,7 +51,7 @@ Partial Class FImpressores
         Me.BTConnectar.Location = New System.Drawing.Point(70, 39)
         Me.BTConnectar.Name = "BTConnectar"
         Me.BTConnectar.Size = New System.Drawing.Size(154, 62)
-        Me.BTConnectar.TabIndex = 2
+        Me.BTConnectar.TabIndex = 1
         Me.BTConnectar.Text = "Connectar nova impressora"
         Me.BTConnectar.UseVisualStyleBackColor = False
         '

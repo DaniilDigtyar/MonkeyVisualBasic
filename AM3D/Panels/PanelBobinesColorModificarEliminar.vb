@@ -4,6 +4,8 @@
 
     Private Sub BTModificarColor_Click(sender As Object, e As EventArgs) Handles BTModificarColor.Click
         colorSeleccionado = New Colors(DGMarcaProductora.SelectedRows.Item(0).Cells(0).Value, DGMarcaProductora.SelectedRows.Item(0).Cells(1).Value)
+        ModificarBobinesColor.TBColor.Text = colorSeleccionado.GetSetColor
+        ModificarBobinesColor.TBHex.Text = colorSeleccionado.GetSetHex
         ModificarBobinesColor.Show()
     End Sub
 

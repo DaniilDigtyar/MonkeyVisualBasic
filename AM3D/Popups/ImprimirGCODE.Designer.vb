@@ -46,7 +46,7 @@ Partial Class ImprimirGCODE
         Me.BTImprimirCancelar.Location = New System.Drawing.Point(204, 220)
         Me.BTImprimirCancelar.Name = "BTImprimirCancelar"
         Me.BTImprimirCancelar.Size = New System.Drawing.Size(154, 62)
-        Me.BTImprimirCancelar.TabIndex = 11
+        Me.BTImprimirCancelar.TabIndex = 5
         Me.BTImprimirCancelar.Text = "Cancelar"
         Me.BTImprimirCancelar.UseVisualStyleBackColor = False
         '
@@ -60,7 +60,7 @@ Partial Class ImprimirGCODE
         Me.BTImprimir.Location = New System.Drawing.Point(12, 220)
         Me.BTImprimir.Name = "BTImprimir"
         Me.BTImprimir.Size = New System.Drawing.Size(154, 62)
-        Me.BTImprimir.TabIndex = 10
+        Me.BTImprimir.TabIndex = 4
         Me.BTImprimir.Text = "Imprimir"
         Me.BTImprimir.UseVisualStyleBackColor = False
         '
@@ -69,7 +69,7 @@ Partial Class ImprimirGCODE
         Me.LNomGcode.AutoSize = True
         Me.LNomGcode.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNomGcode.ForeColor = System.Drawing.Color.Black
-        Me.LNomGcode.Location = New System.Drawing.Point(22, 32)
+        Me.LNomGcode.Location = New System.Drawing.Point(12, 32)
         Me.LNomGcode.Name = "LNomGcode"
         Me.LNomGcode.Size = New System.Drawing.Size(116, 25)
         Me.LNomGcode.TabIndex = 12
@@ -80,7 +80,7 @@ Partial Class ImprimirGCODE
         Me.LImpressora.AutoSize = True
         Me.LImpressora.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LImpressora.ForeColor = System.Drawing.Color.Black
-        Me.LImpressora.Location = New System.Drawing.Point(236, 32)
+        Me.LImpressora.Location = New System.Drawing.Point(199, 32)
         Me.LImpressora.Name = "LImpressora"
         Me.LImpressora.Size = New System.Drawing.Size(109, 25)
         Me.LImpressora.TabIndex = 14
@@ -91,7 +91,7 @@ Partial Class ImprimirGCODE
         Me.LNCopies.AutoSize = True
         Me.LNCopies.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNCopies.ForeColor = System.Drawing.Color.Black
-        Me.LNCopies.Location = New System.Drawing.Point(22, 109)
+        Me.LNCopies.Location = New System.Drawing.Point(12, 109)
         Me.LNCopies.Name = "LNCopies"
         Me.LNCopies.Size = New System.Drawing.Size(100, 25)
         Me.LNCopies.TabIndex = 16
@@ -101,19 +101,19 @@ Partial Class ImprimirGCODE
         '
         Me.CBGcode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBGcode.FormattingEnabled = True
-        Me.CBGcode.Location = New System.Drawing.Point(27, 68)
+        Me.CBGcode.Location = New System.Drawing.Point(12, 60)
         Me.CBGcode.Name = "CBGcode"
-        Me.CBGcode.Size = New System.Drawing.Size(121, 21)
-        Me.CBGcode.TabIndex = 18
+        Me.CBGcode.Size = New System.Drawing.Size(154, 21)
+        Me.CBGcode.TabIndex = 1
         '
         'CBImpriImpressora
         '
         Me.CBImpriImpressora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBImpriImpressora.FormattingEnabled = True
-        Me.CBImpriImpressora.Location = New System.Drawing.Point(227, 68)
+        Me.CBImpriImpressora.Location = New System.Drawing.Point(204, 60)
         Me.CBImpriImpressora.Name = "CBImpriImpressora"
-        Me.CBImpriImpressora.Size = New System.Drawing.Size(121, 21)
-        Me.CBImpriImpressora.TabIndex = 19
+        Me.CBImpriImpressora.Size = New System.Drawing.Size(154, 21)
+        Me.CBImpriImpressora.TabIndex = 2
         '
         'MenuSup
         '
@@ -125,10 +125,10 @@ Partial Class ImprimirGCODE
         '
         'TBCopies
         '
-        Me.TBCopies.Location = New System.Drawing.Point(24, 149)
+        Me.TBCopies.Location = New System.Drawing.Point(17, 137)
         Me.TBCopies.Name = "TBCopies"
-        Me.TBCopies.Size = New System.Drawing.Size(120, 20)
-        Me.TBCopies.TabIndex = 21
+        Me.TBCopies.Size = New System.Drawing.Size(149, 20)
+        Me.TBCopies.TabIndex = 3
         '
         'LabelInfo
         '

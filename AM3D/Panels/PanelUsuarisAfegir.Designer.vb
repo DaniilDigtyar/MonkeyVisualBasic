@@ -38,10 +38,10 @@ Partial Class PanelUsuarisAfegir
         Me.TBCorreu = New System.Windows.Forms.TextBox()
         Me.LCorreu = New System.Windows.Forms.Label()
         Me.DataGridViewPermisos = New System.Windows.Forms.DataGridView()
-        Me.codi_permis = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.descripcio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TBDNI = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.codi_permis = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.descripcio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridViewPermisos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -103,39 +103,44 @@ Partial Class PanelUsuarisAfegir
         'TBNickname
         '
         Me.TBNickname.Location = New System.Drawing.Point(256, 53)
+        Me.TBNickname.MaxLength = 20
         Me.TBNickname.Name = "TBNickname"
         Me.TBNickname.Size = New System.Drawing.Size(196, 20)
-        Me.TBNickname.TabIndex = 8
+        Me.TBNickname.TabIndex = 1
         '
         'TBNom
         '
         Me.TBNom.Location = New System.Drawing.Point(256, 86)
+        Me.TBNom.MaxLength = 20
         Me.TBNom.Name = "TBNom"
         Me.TBNom.Size = New System.Drawing.Size(196, 20)
-        Me.TBNom.TabIndex = 9
+        Me.TBNom.TabIndex = 2
         '
         'TBCongnom
         '
         Me.TBCongnom.Location = New System.Drawing.Point(256, 119)
+        Me.TBCongnom.MaxLength = 40
         Me.TBCongnom.Name = "TBCongnom"
         Me.TBCongnom.Size = New System.Drawing.Size(196, 20)
-        Me.TBCongnom.TabIndex = 10
+        Me.TBCongnom.TabIndex = 3
         '
         'TBContrasenya
         '
         Me.TBContrasenya.Location = New System.Drawing.Point(256, 219)
+        Me.TBContrasenya.MaxLength = 20
         Me.TBContrasenya.Name = "TBContrasenya"
         Me.TBContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBContrasenya.Size = New System.Drawing.Size(196, 20)
-        Me.TBContrasenya.TabIndex = 11
+        Me.TBContrasenya.TabIndex = 6
         '
         'TBRContrasenya
         '
         Me.TBRContrasenya.Location = New System.Drawing.Point(256, 254)
+        Me.TBRContrasenya.MaxLength = 20
         Me.TBRContrasenya.Name = "TBRContrasenya"
         Me.TBRContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBRContrasenya.Size = New System.Drawing.Size(196, 20)
-        Me.TBRContrasenya.TabIndex = 12
+        Me.TBRContrasenya.TabIndex = 7
         '
         'LPermisos
         '
@@ -158,7 +163,7 @@ Partial Class PanelUsuarisAfegir
         Me.BTEsborrar.Location = New System.Drawing.Point(282, 295)
         Me.BTEsborrar.Name = "BTEsborrar"
         Me.BTEsborrar.Size = New System.Drawing.Size(170, 61)
-        Me.BTEsborrar.TabIndex = 16
+        Me.BTEsborrar.TabIndex = 10
         Me.BTEsborrar.Text = "Esborrar"
         Me.BTEsborrar.UseVisualStyleBackColor = False
         '
@@ -172,16 +177,17 @@ Partial Class PanelUsuarisAfegir
         Me.BTCrear.Location = New System.Drawing.Point(17, 295)
         Me.BTCrear.Name = "BTCrear"
         Me.BTCrear.Size = New System.Drawing.Size(170, 61)
-        Me.BTCrear.TabIndex = 15
+        Me.BTCrear.TabIndex = 9
         Me.BTCrear.Text = "Crear"
         Me.BTCrear.UseVisualStyleBackColor = False
         '
         'TBCorreu
         '
         Me.TBCorreu.Location = New System.Drawing.Point(256, 152)
+        Me.TBCorreu.MaxLength = 40
         Me.TBCorreu.Name = "TBCorreu"
         Me.TBCorreu.Size = New System.Drawing.Size(196, 20)
-        Me.TBCorreu.TabIndex = 18
+        Me.TBCorreu.TabIndex = 4
         '
         'LCorreu
         '
@@ -205,27 +211,15 @@ Partial Class PanelUsuarisAfegir
         Me.DataGridViewPermisos.Name = "DataGridViewPermisos"
         Me.DataGridViewPermisos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridViewPermisos.Size = New System.Drawing.Size(300, 302)
-        Me.DataGridViewPermisos.TabIndex = 28
-        '
-        'codi_permis
-        '
-        Me.codi_permis.HeaderText = "Codi Permis"
-        Me.codi_permis.Name = "codi_permis"
-        Me.codi_permis.ReadOnly = True
-        '
-        'descripcio
-        '
-        Me.descripcio.HeaderText = "Descripció"
-        Me.descripcio.Name = "descripcio"
-        Me.descripcio.ReadOnly = True
-        Me.descripcio.Width = 150
+        Me.DataGridViewPermisos.TabIndex = 8
         '
         'TBDNI
         '
         Me.TBDNI.Location = New System.Drawing.Point(256, 185)
+        Me.TBDNI.MaxLength = 9
         Me.TBDNI.Name = "TBDNI"
         Me.TBDNI.Size = New System.Drawing.Size(196, 20)
-        Me.TBDNI.TabIndex = 30
+        Me.TBDNI.TabIndex = 5
         '
         'Label1
         '
@@ -237,6 +231,19 @@ Partial Class PanelUsuarisAfegir
         Me.Label1.Size = New System.Drawing.Size(45, 25)
         Me.Label1.TabIndex = 29
         Me.Label1.Text = "DNI"
+        '
+        'codi_permis
+        '
+        Me.codi_permis.HeaderText = "Codi Permís"
+        Me.codi_permis.Name = "codi_permis"
+        Me.codi_permis.ReadOnly = True
+        '
+        'descripcio
+        '
+        Me.descripcio.HeaderText = "Descripció"
+        Me.descripcio.Name = "descripcio"
+        Me.descripcio.ReadOnly = True
+        Me.descripcio.Width = 150
         '
         'PanelUsuarisAfegir
         '
@@ -288,8 +295,8 @@ Partial Class PanelUsuarisAfegir
     Friend WithEvents TBCorreu As TextBox
     Friend WithEvents LCorreu As Label
     Friend WithEvents DataGridViewPermisos As DataGridView
-    Friend WithEvents codi_permis As DataGridViewTextBoxColumn
-    Friend WithEvents descripcio As DataGridViewTextBoxColumn
     Friend WithEvents TBDNI As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents codi_permis As DataGridViewTextBoxColumn
+    Friend WithEvents descripcio As DataGridViewTextBoxColumn
 End Class

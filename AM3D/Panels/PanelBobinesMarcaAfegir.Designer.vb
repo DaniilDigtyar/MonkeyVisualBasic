@@ -31,9 +31,10 @@ Partial Class PanelBobinesMarcaAfegir
         'TBMarca
         '
         Me.TBMarca.Location = New System.Drawing.Point(180, 30)
+        Me.TBMarca.MaxLength = 20
         Me.TBMarca.Name = "TBMarca"
         Me.TBMarca.Size = New System.Drawing.Size(141, 20)
-        Me.TBMarca.TabIndex = 59
+        Me.TBMarca.TabIndex = 1
         '
         'LMarcaProductora
         '
@@ -56,7 +57,7 @@ Partial Class PanelBobinesMarcaAfegir
         Me.BTBorrar.Location = New System.Drawing.Point(29, 167)
         Me.BTBorrar.Name = "BTBorrar"
         Me.BTBorrar.Size = New System.Drawing.Size(245, 62)
-        Me.BTBorrar.TabIndex = 57
+        Me.BTBorrar.TabIndex = 3
         Me.BTBorrar.Text = "Borrar"
         Me.BTBorrar.UseVisualStyleBackColor = False
         '
@@ -70,7 +71,7 @@ Partial Class PanelBobinesMarcaAfegir
         Me.BTAfegir.Location = New System.Drawing.Point(29, 92)
         Me.BTAfegir.Name = "BTAfegir"
         Me.BTAfegir.Size = New System.Drawing.Size(245, 62)
-        Me.BTAfegir.TabIndex = 56
+        Me.BTAfegir.TabIndex = 2
         Me.BTAfegir.Text = "Afegir"
         Me.BTAfegir.UseVisualStyleBackColor = False
         '

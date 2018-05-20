@@ -52,6 +52,23 @@
     End Sub
 
     Private Sub BTImprimirG_Click(sender As Object, e As EventArgs) Handles BTImprimirG.Click
+        Dim listaGcodes As HashSet(Of Gcode) = New HashSet(Of Gcode)
+        Dim gcode As Gcode
+        Dim listaImpressores As HashSet(Of Impressores) = New HashSet(Of Impressores)
+        Dim impressora As Impressores
+
+        listaImpressores = SQLCommand.SelectAllPrintersFromDatabase(Globals.userCredentials.GetSetBaseDades)
+        listaGcodes = SQLCommand.SelectAllGcodesFromDatabase(Globals.userCredentials.GetSetBaseDades)
+        ImprimirGCODE.CBImpriImpressora.Items.Clear()
+        ImprimirGCODE.CBGcode.Items.Clear()
+
+        For Each impressora In listaImpressores
+            ImprimirGCODE.CBImpriImpressora.Items.Add(impressora.GetSetCodiImpressora)
+        Next impressora
+
+        For Each gcode In listaGcodes
+            ImprimirGCODE.CBGcode.Items.Add(gcode.GetSetNomGcode)
+        Next gcode
         ImprimirGCODE.Show()
     End Sub
 

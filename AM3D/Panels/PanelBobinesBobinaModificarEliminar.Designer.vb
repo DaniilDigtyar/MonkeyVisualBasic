@@ -44,7 +44,7 @@ Partial Class PanelBobinesBobinaModificarEliminar
         Me.BTEliminarBobina.Location = New System.Drawing.Point(172, 16)
         Me.BTEliminarBobina.Name = "BTEliminarBobina"
         Me.BTEliminarBobina.Size = New System.Drawing.Size(154, 62)
-        Me.BTEliminarBobina.TabIndex = 9
+        Me.BTEliminarBobina.TabIndex = 2
         Me.BTEliminarBobina.Text = "Eliminar Bobina"
         Me.BTEliminarBobina.UseVisualStyleBackColor = False
         '
@@ -58,7 +58,7 @@ Partial Class PanelBobinesBobinaModificarEliminar
         Me.BTModificarBobina.Location = New System.Drawing.Point(12, 16)
         Me.BTModificarBobina.Name = "BTModificarBobina"
         Me.BTModificarBobina.Size = New System.Drawing.Size(154, 62)
-        Me.BTModificarBobina.TabIndex = 8
+        Me.BTModificarBobina.TabIndex = 1
         Me.BTModificarBobina.Text = "Modificar Bobina"
         Me.BTModificarBobina.UseVisualStyleBackColor = False
         '
@@ -73,7 +73,7 @@ Partial Class PanelBobinesBobinaModificarEliminar
         Me.DGBobina.Name = "DGBobina"
         Me.DGBobina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGBobina.Size = New System.Drawing.Size(777, 280)
-        Me.DGBobina.TabIndex = 32
+        Me.DGBobina.TabIndex = 4
         '
         'codi_bobina
         '
@@ -112,10 +112,10 @@ Partial Class PanelBobinesBobinaModificarEliminar
         Me.BResfrescar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BResfrescar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BResfrescar.ForeColor = System.Drawing.Color.Black
-        Me.BResfrescar.Location = New System.Drawing.Point(635, 12)
+        Me.BResfrescar.Location = New System.Drawing.Point(635, 16)
         Me.BResfrescar.Name = "BResfrescar"
         Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
-        Me.BResfrescar.TabIndex = 34
+        Me.BResfrescar.TabIndex = 3
         Me.BResfrescar.Text = "Refresca llista"
         Me.BResfrescar.UseVisualStyleBackColor = False
         '

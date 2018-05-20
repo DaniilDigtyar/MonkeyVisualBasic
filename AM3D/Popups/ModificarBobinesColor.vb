@@ -1,13 +1,15 @@
 ﻿Public Class ModificarBobinesColor
     Dim SQLCommands As SQLCommands = New SQLCommands()
+    Dim allowCoolMove As Boolean = False
+    Dim myCoolPoint As New Point
+
     Private Sub BTBorrar_Click(sender As Object, e As EventArgs) Handles BTCancelar.Click
-        Me.Close()
+        Me.Hide()
         TBColor.Text = ""
         TBHex.Text = ""
 
     End Sub
-    Dim allowCoolMove As Boolean = False
-    Dim myCoolPoint As New Point
+
     Private Sub MenuSup_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MenuSup.MouseDown
         allowCoolMove = True
         myCoolPoint = New Point(e.X, e.Y)
@@ -26,8 +28,7 @@
     End Sub
 
     Private Sub ModificarBobinesColor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TBColor.Text = PanelBobinesColorModificarEliminar.colorSeleccionado.GetSetColor
-        TBHex.Text = PanelBobinesColorModificarEliminar.colorSeleccionado.GetSetHex
+
     End Sub
 
     Private Sub TBHex_TextChanged(sender As Object, e As EventArgs) Handles TBHex.TextChanged
@@ -53,7 +54,7 @@
                 Else
                     LabelInfo.Text = My.Resources.eng.LabelnfoCorrecte
                 End If
-                Me.Close()
+                Me.Hide()
             Else
                 If Globals.lang = "cat" Then
                     LabelInfo.Text = My.Resources.cat.LabelnfoError

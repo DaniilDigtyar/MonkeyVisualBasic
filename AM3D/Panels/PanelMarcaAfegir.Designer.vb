@@ -31,9 +31,10 @@ Partial Class PanelMarcaAfegir
         'TBMarca
         '
         Me.TBMarca.Location = New System.Drawing.Point(153, 26)
+        Me.TBMarca.MaxLength = 20
         Me.TBMarca.Name = "TBMarca"
         Me.TBMarca.Size = New System.Drawing.Size(141, 20)
-        Me.TBMarca.TabIndex = 32
+        Me.TBMarca.TabIndex = 1
         '
         'LMarca
         '
@@ -56,7 +57,7 @@ Partial Class PanelMarcaAfegir
         Me.BTBorrar.Location = New System.Drawing.Point(29, 156)
         Me.BTBorrar.Name = "BTBorrar"
         Me.BTBorrar.Size = New System.Drawing.Size(265, 62)
-        Me.BTBorrar.TabIndex = 49
+        Me.BTBorrar.TabIndex = 3
         Me.BTBorrar.Text = "Borrar"
         Me.BTBorrar.UseVisualStyleBackColor = False
         '
@@ -70,7 +71,7 @@ Partial Class PanelMarcaAfegir
         Me.BTAfegir.Location = New System.Drawing.Point(29, 81)
         Me.BTAfegir.Name = "BTAfegir"
         Me.BTAfegir.Size = New System.Drawing.Size(265, 62)
-        Me.BTAfegir.TabIndex = 48
+        Me.BTAfegir.TabIndex = 2
         Me.BTAfegir.Text = "Afegir"
         Me.BTAfegir.UseVisualStyleBackColor = False
         '

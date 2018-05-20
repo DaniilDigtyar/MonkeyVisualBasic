@@ -41,7 +41,7 @@ Partial Class PanelBobinesMaterialModificarEliminar
         Me.BTEliminarMaterial.Location = New System.Drawing.Point(189, 16)
         Me.BTEliminarMaterial.Name = "BTEliminarMaterial"
         Me.BTEliminarMaterial.Size = New System.Drawing.Size(154, 62)
-        Me.BTEliminarMaterial.TabIndex = 12
+        Me.BTEliminarMaterial.TabIndex = 2
         Me.BTEliminarMaterial.Text = "Eliminar Material"
         Me.BTEliminarMaterial.UseVisualStyleBackColor = False
         '
@@ -55,7 +55,7 @@ Partial Class PanelBobinesMaterialModificarEliminar
         Me.BTModificarMaterial.Location = New System.Drawing.Point(29, 16)
         Me.BTModificarMaterial.Name = "BTModificarMaterial"
         Me.BTModificarMaterial.Size = New System.Drawing.Size(154, 62)
-        Me.BTModificarMaterial.TabIndex = 11
+        Me.BTModificarMaterial.TabIndex = 1
         Me.BTModificarMaterial.Text = "Modificar Material"
         Me.BTModificarMaterial.UseVisualStyleBackColor = False
         '
@@ -71,7 +71,7 @@ Partial Class PanelBobinesMaterialModificarEliminar
         Me.DGMaterial.Name = "DGMaterial"
         Me.DGMaterial.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMaterial.Size = New System.Drawing.Size(739, 268)
-        Me.DGMaterial.TabIndex = 31
+        Me.DGMaterial.TabIndex = 4
         '
         'material
         '
@@ -96,7 +96,7 @@ Partial Class PanelBobinesMaterialModificarEliminar
         Me.BResfrescar.Location = New System.Drawing.Point(614, 16)
         Me.BResfrescar.Name = "BResfrescar"
         Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
-        Me.BResfrescar.TabIndex = 33
+        Me.BResfrescar.TabIndex = 3
         Me.BResfrescar.Text = "Refresca llista"
         Me.BResfrescar.UseVisualStyleBackColor = False
         '

@@ -26,8 +26,8 @@ Partial Class PanelMarcaModificarEliminar
         Me.BTEliminarMarca = New System.Windows.Forms.Button()
         Me.BTModificarMarca = New System.Windows.Forms.Button()
         Me.DGMarca = New System.Windows.Forms.DataGridView()
-        Me.marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BResfrescar = New System.Windows.Forms.Button()
+        Me.marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DGMarca, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,7 +41,7 @@ Partial Class PanelMarcaModificarEliminar
         Me.BTEliminarMarca.Location = New System.Drawing.Point(195, 16)
         Me.BTEliminarMarca.Name = "BTEliminarMarca"
         Me.BTEliminarMarca.Size = New System.Drawing.Size(154, 62)
-        Me.BTEliminarMarca.TabIndex = 9
+        Me.BTEliminarMarca.TabIndex = 2
         Me.BTEliminarMarca.Text = "Eliminar Marca"
         Me.BTEliminarMarca.UseVisualStyleBackColor = False
         '
@@ -55,7 +55,7 @@ Partial Class PanelMarcaModificarEliminar
         Me.BTModificarMarca.Location = New System.Drawing.Point(35, 16)
         Me.BTModificarMarca.Name = "BTModificarMarca"
         Me.BTModificarMarca.Size = New System.Drawing.Size(154, 62)
-        Me.BTModificarMarca.TabIndex = 8
+        Me.BTModificarMarca.TabIndex = 1
         Me.BTModificarMarca.Text = "Modificar Marca"
         Me.BTModificarMarca.UseVisualStyleBackColor = False
         '
@@ -72,13 +72,7 @@ Partial Class PanelMarcaModificarEliminar
         Me.DGMarca.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGMarca.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGMarca.Size = New System.Drawing.Size(739, 268)
-        Me.DGMarca.TabIndex = 30
-        '
-        'marca
-        '
-        Me.marca.HeaderText = "Marca"
-        Me.marca.Name = "marca"
-        Me.marca.ReadOnly = True
+        Me.DGMarca.TabIndex = 4
         '
         'BResfrescar
         '
@@ -90,9 +84,16 @@ Partial Class PanelMarcaModificarEliminar
         Me.BResfrescar.Location = New System.Drawing.Point(620, 12)
         Me.BResfrescar.Name = "BResfrescar"
         Me.BResfrescar.Size = New System.Drawing.Size(154, 62)
-        Me.BResfrescar.TabIndex = 33
+        Me.BResfrescar.TabIndex = 3
         Me.BResfrescar.Text = "Refresca llista"
         Me.BResfrescar.UseVisualStyleBackColor = False
+        '
+        'marca
+        '
+        Me.marca.HeaderText = "Marca"
+        Me.marca.Name = "marca"
+        Me.marca.ReadOnly = True
+        Me.marca.Width = 150
         '
         'PanelMarcaModificarEliminar
         '
@@ -115,6 +116,6 @@ Partial Class PanelMarcaModificarEliminar
     Friend WithEvents BTEliminarMarca As Button
     Friend WithEvents BTModificarMarca As Button
     Friend WithEvents DGMarca As DataGridView
-    Friend WithEvents marca As DataGridViewTextBoxColumn
     Friend WithEvents BResfrescar As Button
+    Friend WithEvents marca As DataGridViewTextBoxColumn
 End Class

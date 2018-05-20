@@ -4,6 +4,25 @@
 
     Private Sub BTModificarGcode_Click(sender As Object, e As EventArgs) Handles BTModificarGcode.Click
         gcodeSeleccionat = New Gcode(DGGcode.SelectedRows.Item(0).Cells(0).Value, DGGcode.SelectedRows.Item(0).Cells(1).Value, DGGcode.SelectedRows.Item(0).Cells(2).Value)
+        Dim listaMaterial As HashSet(Of Materials) = New HashSet(Of Materials)
+        Dim material As Materials
+        Dim indice As Integer
+
+        ModificarGcode.TBNomGcode.Text = gcodeSeleccionat.GetSetNomGcode
+        ModificarGcode.DGMaterial.Rows.Clear()
+        listaMaterial = SQLCommands.SelectAllMaterialsFromDatabase(Globals.userCredentials.GetSetBaseDades)
+
+        For Each material In listaMaterial
+            ModificarGcode.DGMaterial.Rows.Add(material.GetSetTipusMaterial, material.GetSetDescripcio)
+        Next material
+
+        For i As Integer = 0 To ModificarGcode.DGMaterial.Rows.Count - 1
+            If (ModificarGcode.DGMaterial.Rows(i).Cells(0).Value.ToString.Equals(gcodeSeleccionat.GetSetTipusMaterialSuportat)) Then
+                indice = ModificarGcode.DGMaterial.Rows(i).Index
+            End If
+        Next i
+
+        ModificarGcode.DGMaterial.Rows(indice).Selected = True
         ModificarGcode.Show()
     End Sub
 
