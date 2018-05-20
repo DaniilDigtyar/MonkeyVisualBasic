@@ -76,6 +76,7 @@
                             SQLCommands.InsertPrintIntoDatabase(Globals.userCredentials.GetSetBaseDades, print)
                         End While
                     End If
+
                 Else
                     ' No estaba fent res
                     i = 1
@@ -91,6 +92,10 @@
                         SQLCommands.InsertPrintIntoDatabase(Globals.userCredentials.GetSetBaseDades, print)
                     End While
                 End If
+                CBGcode.Text = ""
+                CBImpriImpressora.Text = ""
+                TBCopies.Text = 0
+                Me.Hide()
             Else
                 If Globals.lang = "cat" Then
                     LabelInfo.Text = (My.Resources.cat.MSGRellenarError)
