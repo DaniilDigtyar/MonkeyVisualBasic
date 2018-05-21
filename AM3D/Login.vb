@@ -5,7 +5,6 @@
 
     Protected Overrides Sub OnLoad(e As EventArgs)
         Me.AcceptButton = ButtonLogin
-        TextBoxContrasenya.Text = "dani220497"
         CBIdioma.Items.Add("Català")
         CBIdioma.Items.Add("English")
         If Globals.lang = "cat" Then
