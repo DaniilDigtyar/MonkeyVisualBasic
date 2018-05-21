@@ -16,7 +16,7 @@
     End Sub
 
     Public Overrides Function GetHashCode() As Integer
-        Return Me.GetSetNomGcode.GetHashCode + Me.GetSetNumeroCopia.GetHashCode + Me.GetSetCodiImpresora.GetHashCode
+        Return (Me.GetSetNomGcode.ToString.Concat(Me.GetSetNumeroCopia.ToString.Concat(Me.GetSetCodiImpresora.ToString))).GetHashCode
     End Function
 
     Public Overrides Function Equals(obj As Object) As Boolean

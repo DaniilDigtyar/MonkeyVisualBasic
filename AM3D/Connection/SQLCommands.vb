@@ -214,7 +214,7 @@ Public Class SQLCommands
             End If
 
         Catch ex As Exception
-
+            MsgBox(ex.ToString)
         Finally
             Me.disconnectDataBaseClient()
         End Try
