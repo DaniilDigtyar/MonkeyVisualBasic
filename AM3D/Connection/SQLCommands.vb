@@ -1285,8 +1285,8 @@ Public Class SQLCommands
             cmd.Connection = connectionClient
             afectat = cmd.ExecuteNonQuery()
             Return afectat
-            'Catch ex As Exception
-            '
+        Catch ex As Exception
+
         Finally
             Me.disconnectDataBaseClient()
         End Try
